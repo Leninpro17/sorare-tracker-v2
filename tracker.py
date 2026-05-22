@@ -16,8 +16,14 @@ for player, data in players.items():
     u23 = data["u23"]
     starter = data["starter"]
     price = data["price"]
+    position = data["position"]
+    l15 = data["l15"]
+    l40 = data["l40"]
 
+    # -------------------
     # TRADING SCORE
+    # -------------------
+
     trading = 0
 
     if u23:
@@ -25,39 +31,48 @@ for player, data in players.items():
 
     if age <= 21:
         trading += 20
+    elif age <= 24:
+        trading += 10
 
     if starter:
         trading += 20
+
+    if position == "GK":
+        trading += 15
 
     if price <= 5:
         trading += 30
     elif price <= 10:
         trading += 20
-    elif price <= 20:
+    elif price <= 15:
         trading += 10
 
+    # -------------------
     # UTILITY SCORE
+    # -------------------
+
     utility = 0
 
     if starter:
         utility += 50
 
-    if u23:
-        utility += 15
+    utility += int(l15 / 2)
 
-    if price <= 10:
-        utility += 15
-    elif price <= 20:
-        utility += 10
+    utility += int((l40 - 40) / 2)
 
-    if age <= 25:
-        utility += 10
+    if position == "GK":
+        utility += 15
 
     results.append({
         "player": player,
+        "position": position,
         "trading": trading,
-        "utility": utility
+        "utility": utility,
+        "price": price,
+        "l15": l15
     })
+
+# Ranking
 
 trading_rank = sorted(
     results,
@@ -71,57 +86,95 @@ utility_rank = sorted(
     reverse=True
 )
 
+gk_rank = sorted(
+    [p for p in results if p["position"] == "GK"],
+    key=lambda x: x["utility"],
+    reverse=True
+)
+
+# Report
+
 report = "📊 EUROPE LIMITED REPORT\n\n"
+
+# Trading
 
 report += "📈 TRADING SCORE\n"
 
 for p in trading_rank[:5]:
     report += f"• {p['player']} ({p['trading']})\n"
 
-report += "\n🏆 UTILITY SCORE\n"
+report += "\n"
+
+# Utility
+
+report += "🏆 UTILITY SCORE\n"
 
 for p in utility_rank[:5]:
     report += f"• {p['player']} ({p['utility']})\n"
 
-report += "\n🔥 STRONG BUY\n"
+report += "\n"
+
+# GK
+
+report += "🥅 TOP GK\n"
+
+for p in gk_rank[:3]:
+    report += f"• {p['player']} (U:{p['utility']})\n"
+
+report += "\n"
+
+# Strong Buy
+
+report += "🔥 STRONG BUY\n"
 
 strong_buy = []
 
 for p in results:
-    if p["trading"] >= 60 and p["utility"] >= 70:
-        strong_buy.append(p["player"])
+    if p["trading"] >= 60 and p["utility"] >= 80:
+        strong_buy.append(p)
 
 if strong_buy:
-    for player in strong_buy:
-        report += f"• {player}\n"
+    for p in strong_buy:
+        report += (
+            f"• {p['player']} "
+            f"(T:{p['trading']} U:{p['utility']})\n"
+        )
 else:
     report += "Nessuno\n"
 
-report += "\n⚠️ WATCHLIST\n"
+report += "\n"
+
+# Watchlist
+
+report += "⚠️ WATCHLIST\n"
 
 watchlist = []
 
 for p in results:
-    if p["trading"] >= 40 and p["trading"] < 60:
-        watchlist.append(p["player"])
+    if 45 <= p["trading"] < 60:
+        watchlist.append(p)
 
 if watchlist:
-    for player in watchlist:
-        report += f"• {player}\n"
+    for p in watchlist:
+        report += f"• {p['player']}\n"
 else:
     report += "Nessuno\n"
 
-report += "\n🔴 SELL CANDIDATES\n"
+report += "\n"
+
+# Sell Candidates
+
+report += "🔴 SELL CANDIDATES\n"
 
 sell = []
 
 for p in results:
-    if p["trading"] < 30 and p["utility"] >= 60:
-        sell.append(p["player"])
+    if p["trading"] < 40 and p["utility"] >= 80:
+        sell.append(p)
 
 if sell:
-    for player in sell:
-        report += f"• {player}\n"
+    for p in sell:
+        report += f"• {p['player']}\n"
 else:
     report += "Nessuno\n"
 
