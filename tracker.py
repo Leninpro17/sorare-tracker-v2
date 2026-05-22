@@ -83,7 +83,13 @@ for player, data in players.items():
         value += 5
 
     if u23:
+        value += 25
+
+    if position == "GK":
         value += 15
+
+    if age >= 30:
+        value -= 15
 
     results.append({
         "player": player,
@@ -92,10 +98,13 @@ for player, data in players.items():
         "utility": utility,
         "value": value,
         "price": price,
-        "l15": l15
+        "l15": l15,
+        "owned": data["owned"]
     })
 
-# Rankings
+# -------------------
+# RANKINGS
+# -------------------
 
 value_rank = sorted(
     results,
@@ -121,9 +130,70 @@ gk_rank = sorted(
     reverse=True
 )
 
-# Report
+# -------------------
+# PORTFOLIO LOGIC
+# -------------------
+
+owned_cards = []
+buy_targets = []
+switch_targets = []
+
+for p in results:
+
+    if p["owned"]:
+        owned_cards.append(p)
+
+    if (not p["owned"]) and p["value"] >= 75:
+        buy_targets.append(p)
+
+    if p["owned"] and p["value"] < 50:
+        switch_targets.append(p)
+
+# -------------------
+# REPORT
+# -------------------
 
 report = "📊 EUROPE LIMITED REPORT\n\n"
+
+# PORTFOLIO
+
+report += "💼 MY PORTFOLIO\n"
+
+if owned_cards:
+    for p in owned_cards:
+        report += f"• {p['player']}\n"
+else:
+    report += "Nessuna carta posseduta configurata\n"
+
+report += "\n"
+
+# BUY TARGETS
+
+report += "🛒 BUY TARGETS\n"
+
+for p in sorted(
+    buy_targets,
+    key=lambda x: x["value"],
+    reverse=True
+)[:5]:
+    report += (
+        f"• {p['player']} "
+        f"(V:{p['value']})\n"
+    )
+
+report += "\n"
+
+# SWITCH
+
+report += "🔄 SWITCH CANDIDATES\n"
+
+if switch_targets:
+    for p in switch_targets:
+        report += f"• {p['player']}\n"
+else:
+    report += "Nessuno\n"
+
+report += "\n"
 
 # VALUE
 
@@ -212,7 +282,7 @@ else:
 
 report += "\n"
 
-# SELL
+# SELL CANDIDATES
 
 report += "🔴 SELL CANDIDATES\n"
 
@@ -227,6 +297,10 @@ if sell:
         report += f"• {p['player']}\n"
 else:
     report += "Nessuno\n"
+
+# -------------------
+# TELEGRAM
+# -------------------
 
 url = f"https://api.telegram.org/bot{TOKEN}/sendMessage"
 
