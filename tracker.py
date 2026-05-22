@@ -63,16 +63,45 @@ for player, data in players.items():
     if position == "GK":
         utility += 15
 
+    # -------------------
+    # VALUE SCORE
+    # -------------------
+
+    value = 0
+
+    value += int(utility * 0.4)
+
+    if price <= 5:
+        value += 40
+    elif price <= 10:
+        value += 35
+    elif price <= 15:
+        value += 25
+    elif price <= 20:
+        value += 15
+    else:
+        value += 5
+
+    if u23:
+        value += 15
+
     results.append({
         "player": player,
         "position": position,
         "trading": trading,
         "utility": utility,
+        "value": value,
         "price": price,
         "l15": l15
     })
 
-# Ranking
+# Rankings
+
+value_rank = sorted(
+    results,
+    key=lambda x: x["value"],
+    reverse=True
+)
 
 trading_rank = sorted(
     results,
@@ -96,7 +125,28 @@ gk_rank = sorted(
 
 report = "📊 EUROPE LIMITED REPORT\n\n"
 
-# Trading
+# VALUE
+
+report += "💎 VALUE SCORE\n"
+
+for p in value_rank[:5]:
+    report += (
+        f"• {p['player']} "
+        f"(V:{p['value']} €{p['price']})\n"
+    )
+
+report += "\n"
+
+# BEST BUYS
+
+report += "🛒 BEST BUYS TODAY\n"
+
+for p in value_rank[:3]:
+    report += f"• {p['player']}\n"
+
+report += "\n"
+
+# TRADING
 
 report += "📈 TRADING SCORE\n"
 
@@ -105,7 +155,7 @@ for p in trading_rank[:5]:
 
 report += "\n"
 
-# Utility
+# UTILITY
 
 report += "🏆 UTILITY SCORE\n"
 
@@ -123,7 +173,7 @@ for p in gk_rank[:3]:
 
 report += "\n"
 
-# Strong Buy
+# STRONG BUY
 
 report += "🔥 STRONG BUY\n"
 
@@ -144,7 +194,7 @@ else:
 
 report += "\n"
 
-# Watchlist
+# WATCHLIST
 
 report += "⚠️ WATCHLIST\n"
 
@@ -162,7 +212,7 @@ else:
 
 report += "\n"
 
-# Sell Candidates
+# SELL
 
 report += "🔴 SELL CANDIDATES\n"
 
