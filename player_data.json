@@ -1,0 +1,50 @@
+{
+  "Konstantinos Karetsas": {
+    "age": 17,
+    "u23": true,
+    "starter": true,
+    "price": 18
+  },
+  "Noah Sadiki": {
+    "age": 20,
+    "u23": true,
+    "starter": true,
+    "price": 15
+  },
+  "Ryotaro Ito": {
+    "age": 27,
+    "u23": false,
+    "starter": true,
+    "price": 10
+  },
+  "Jan Reichert": {
+    "age": 24,
+    "u23": false,
+    "starter": true,
+    "price": 4
+  },
+  "Finn Dahmen": {
+    "age": 27,
+    "u23": false,
+    "starter": true,
+    "price": 8
+  },
+  "Christos Tzolis": {
+    "age": 23,
+    "u23": true,
+    "starter": true,
+    "price": 28
+  },
+  "Hans Vanaken": {
+    "age": 32,
+    "u23": false,
+    "starter": true,
+    "price": 18
+  },
+  "Brandon Mechele": {
+    "age": 32,
+    "u23": false,
+    "starter": true,
+    "price": 14
+  }
+}
