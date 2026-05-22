@@ -5,81 +5,105 @@ import requests
 TOKEN = os.environ["TELEGRAM_TOKEN"]
 CHAT_ID = os.environ["CHAT_ID"]
 
-with open("trading_scores.json", "r") as f:
-    trading = json.load(f)
+with open("player_data.json", "r") as f:
+    players = json.load(f)
 
-with open("utility_scores.json", "r") as f:
-    utility = json.load(f)
+results = []
+
+for player, data in players.items():
+
+    age = data["age"]
+    u23 = data["u23"]
+    starter = data["starter"]
+    price = data["price"]
+
+    # TRADING SCORE
+    trading = 0
+
+    if u23:
+        trading += 30
+
+    if age <= 21:
+        trading += 20
+
+    if starter:
+        trading += 20
+
+    if price <= 5:
+        trading += 30
+    elif price <= 10:
+        trading += 20
+    elif price <= 20:
+        trading += 10
+
+    # UTILITY SCORE
+    utility = 0
+
+    if starter:
+        utility += 50
+
+    if u23:
+        utility += 15
+
+    if price <= 10:
+        utility += 15
+    elif price <= 20:
+        utility += 10
+
+    if age <= 25:
+        utility += 10
+
+    results.append({
+        "player": player,
+        "trading": trading,
+        "utility": utility
+    })
+
+trading_rank = sorted(
+    results,
+    key=lambda x: x["trading"],
+    reverse=True
+)
+
+utility_rank = sorted(
+    results,
+    key=lambda x: x["utility"],
+    reverse=True
+)
 
 report = "📊 EUROPE LIMITED REPORT\n\n"
 
-# Ranking Trading
-trading_rank = sorted(
-    trading.items(),
-    key=lambda x: x[1],
-    reverse=True
-)
-
 report += "📈 TRADING SCORE\n"
 
-for i, (player, score) in enumerate(trading_rank[:5], start=1):
-    report += f"{i}. {player} - {score}\n"
+for p in trading_rank[:5]:
+    report += f"• {p['player']} ({p['trading']})\n"
 
-report += "\n"
+report += "\n🏆 UTILITY SCORE\n"
 
-# Ranking Utility
-utility_rank = sorted(
-    utility.items(),
-    key=lambda x: x[1],
-    reverse=True
-)
+for p in utility_rank[:5]:
+    report += f"• {p['player']} ({p['utility']})\n"
 
-report += "🏆 UTILITY SCORE\n"
+report += "\n🔥 STRONG BUY\n"
 
-for i, (player, score) in enumerate(utility_rank[:5], start=1):
-    report += f"{i}. {player} - {score}\n"
-
-report += "\n"
-
-# Strong Buy
 strong_buy = []
 
-for player in trading:
-
-    trading_score = trading.get(player, 0)
-    utility_score = utility.get(player, 0)
-
-    if trading_score >= 85 and utility_score >= 75:
-        strong_buy.append(
-            (player, trading_score, utility_score)
-        )
-
-report += "🔥 STRONG BUY\n"
+for p in results:
+    if p["trading"] >= 60 and p["utility"] >= 70:
+        strong_buy.append(p["player"])
 
 if strong_buy:
-    for player, t, u in strong_buy:
-        report += f"• {player} (T:{t} U:{u})\n"
+    for player in strong_buy:
+        report += f"• {player}\n"
 else:
     report += "Nessuno\n"
 
-report += "\n"
+report += "\n⚠️ WATCHLIST\n"
 
-# Watchlist
 watchlist = []
 
-for player in trading:
-
-    trading_score = trading.get(player, 0)
-    utility_score = utility.get(player, 0)
-
-    if (
-        trading_score >= 75
-        and utility_score >= 60
-        and trading_score < 85
-    ):
-        watchlist.append(player)
-
-report += "⚠️ WATCHLIST\n"
+for p in results:
+    if p["trading"] >= 40 and p["trading"] < 60:
+        watchlist.append(p["player"])
 
 if watchlist:
     for player in watchlist:
@@ -87,23 +111,16 @@ if watchlist:
 else:
     report += "Nessuno\n"
 
-report += "\n"
+report += "\n🔴 SELL CANDIDATES\n"
 
-# Sell Candidates
-sell_candidates = []
+sell = []
 
-for player in trading:
+for p in results:
+    if p["trading"] < 30 and p["utility"] >= 60:
+        sell.append(p["player"])
 
-    trading_score = trading.get(player, 0)
-    utility_score = utility.get(player, 0)
-
-    if trading_score < 70 and utility_score >= 80:
-        sell_candidates.append(player)
-
-report += "🔴 SELL CANDIDATES\n"
-
-if sell_candidates:
-    for player in sell_candidates:
+if sell:
+    for player in sell:
         report += f"• {player}\n"
 else:
     report += "Nessuno\n"
