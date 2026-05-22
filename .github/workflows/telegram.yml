@@ -18,7 +18,7 @@ jobs:
 
       - run: pip install -r requirements.txt
 
-      - run: python send_message.py
+      - run: python tracker.py
         env:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
           CHAT_ID: ${{ secrets.CHAT_ID }}
