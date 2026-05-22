@@ -7,8 +7,8 @@
     "position": "GK",
     "l15": 48,
     "l40": 48,
-    "league": "Bundesliga 2"
-    "owned": true
+    "league": "Bundesliga 2",
+    "owned": false
   },
   "Finn Dahmen": {
     "age": 27,
@@ -18,8 +18,8 @@
     "position": "GK",
     "l15": 52,
     "l40": 50,
-    "league": "Bundesliga"
-    "owned": true
+    "league": "Bundesliga",
+    "owned": false
   },
   "Christos Tzolis": {
     "age": 23,
@@ -29,8 +29,8 @@
     "position": "FWD",
     "l15": 63,
     "l40": 58,
-    "league": "Jupiler Pro League"
-    "owned": true
+    "league": "Jupiler Pro League",
+    "owned": false
   },
   "Hans Vanaken": {
     "age": 32,
@@ -40,8 +40,8 @@
     "position": "MID",
     "l15": 60,
     "l40": 57,
-    "league": "Jupiler Pro League"
-  "owned": true
+    "league": "Jupiler Pro League",
+    "owned": false
   },
   "Brandon Mechele": {
     "age": 32,
@@ -51,7 +51,7 @@
     "position": "DEF",
     "l15": 56,
     "l40": 54,
-    "league": "Jupiler Pro League"
+    "league": "Jupiler Pro League",
     "owned": false
   },
   "Noah Sadiki": {
@@ -62,7 +62,7 @@
     "position": "MID",
     "l15": 54,
     "l40": 50,
-    "league": "Jupiler Pro League"
+    "league": "Jupiler Pro League",
     "owned": false
   },
   "Maxim De Cuyper": {
@@ -73,7 +73,7 @@
     "position": "DEF",
     "l15": 58,
     "l40": 54,
-    "league": "Jupiler Pro League"
+    "league": "Jupiler Pro League",
     "owned": false
   },
   "Konstantinos Karetsas": {
@@ -84,7 +84,7 @@
     "position": "MID",
     "l15": 49,
     "l40": 42,
-    "league": "Jupiler Pro League"
+    "league": "Jupiler Pro League",
     "owned": false
   },
   "Jeppe Erenbjerg": {
@@ -95,7 +95,7 @@
     "position": "MID",
     "l15": 52,
     "l40": 48,
-    "league": "Superliga"
+    "league": "Superliga",
     "owned": false
   },
   "Ryotaro Ito": {
@@ -106,7 +106,7 @@
     "position": "MID",
     "l15": 55,
     "l40": 51,
-    "league": "Jupiler Pro League"
+    "league": "Jupiler Pro League",
     "owned": false
   },
   "Rihito Yamamoto": {
@@ -117,7 +117,7 @@
     "position": "MID",
     "l15": 51,
     "l40": 48,
-    "league": "Jupiler Pro League"
+    "league": "Jupiler Pro League",
     "owned": false
   },
   "Ross Sykes": {
@@ -128,7 +128,7 @@
     "position": "DEF",
     "l15": 53,
     "l40": 49,
-    "league": "Jupiler Pro League"
+    "league": "Jupiler Pro League",
     "owned": false
   },
   "Myron van Brederode": {
@@ -139,7 +139,7 @@
     "position": "FWD",
     "l15": 50,
     "l40": 45,
-    "league": "Eredivisie"
+    "league": "Eredivisie",
     "owned": false
   }
 }
