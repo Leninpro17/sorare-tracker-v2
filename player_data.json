@@ -8,6 +8,7 @@
     "l15": 48,
     "l40": 48,
     "league": "Bundesliga 2"
+    "owned": true
   },
   "Finn Dahmen": {
     "age": 27,
@@ -18,6 +19,7 @@
     "l15": 52,
     "l40": 50,
     "league": "Bundesliga"
+    "owned": true
   },
   "Christos Tzolis": {
     "age": 23,
@@ -28,6 +30,7 @@
     "l15": 63,
     "l40": 58,
     "league": "Jupiler Pro League"
+    "owned": true
   },
   "Hans Vanaken": {
     "age": 32,
@@ -38,6 +41,7 @@
     "l15": 60,
     "l40": 57,
     "league": "Jupiler Pro League"
+  "owned": true
   },
   "Brandon Mechele": {
     "age": 32,
@@ -48,6 +52,7 @@
     "l15": 56,
     "l40": 54,
     "league": "Jupiler Pro League"
+    "owned": false
   },
   "Noah Sadiki": {
     "age": 20,
@@ -58,6 +63,7 @@
     "l15": 54,
     "l40": 50,
     "league": "Jupiler Pro League"
+    "owned": false
   },
   "Maxim De Cuyper": {
     "age": 24,
@@ -68,6 +74,7 @@
     "l15": 58,
     "l40": 54,
     "league": "Jupiler Pro League"
+    "owned": false
   },
   "Konstantinos Karetsas": {
     "age": 17,
@@ -78,6 +85,7 @@
     "l15": 49,
     "l40": 42,
     "league": "Jupiler Pro League"
+    "owned": false
   },
   "Jeppe Erenbjerg": {
     "age": 21,
@@ -88,6 +96,7 @@
     "l15": 52,
     "l40": 48,
     "league": "Superliga"
+    "owned": false
   },
   "Ryotaro Ito": {
     "age": 27,
@@ -98,6 +107,7 @@
     "l15": 55,
     "l40": 51,
     "league": "Jupiler Pro League"
+    "owned": false
   },
   "Rihito Yamamoto": {
     "age": 23,
@@ -108,6 +118,7 @@
     "l15": 51,
     "l40": 48,
     "league": "Jupiler Pro League"
+    "owned": false
   },
   "Ross Sykes": {
     "age": 27,
@@ -118,6 +129,7 @@
     "l15": 53,
     "l40": 49,
     "league": "Jupiler Pro League"
+    "owned": false
   },
   "Myron van Brederode": {
     "age": 22,
@@ -128,5 +140,6 @@
     "l15": 50,
     "l40": 45,
     "league": "Eredivisie"
+    "owned": false
   }
 }
