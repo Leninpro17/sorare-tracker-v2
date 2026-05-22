@@ -14,13 +14,4 @@ response = requests.get(
 )
 
 print(response.status_code)
-
-data = response.json()
-
-print("Teams found:", len(data["response"]))
-
-for team in data["response"]:
-    print(
-        team["team"]["id"],
-        team["team"]["name"]
-    )
+print(response.text)
