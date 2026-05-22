@@ -11,19 +11,14 @@ with open("trading_scores.json", "r") as f:
 with open("utility_scores.json", "r") as f:
     utility = json.load(f)
 
+report = "📊 EUROPE LIMITED REPORT\n\n"
+
+# Ranking Trading
 trading_rank = sorted(
     trading.items(),
     key=lambda x: x[1],
     reverse=True
 )
-
-utility_rank = sorted(
-    utility.items(),
-    key=lambda x: x[1],
-    reverse=True
-)
-
-report = "📊 EUROPE LIMITED REPORT\n\n"
 
 report += "📈 TRADING SCORE\n"
 
@@ -32,6 +27,13 @@ for i, (player, score) in enumerate(trading_rank[:5], start=1):
 
 report += "\n"
 
+# Ranking Utility
+utility_rank = sorted(
+    utility.items(),
+    key=lambda x: x[1],
+    reverse=True
+)
+
 report += "🏆 UTILITY SCORE\n"
 
 for i, (player, score) in enumerate(utility_rank[:5], start=1):
@@ -39,10 +41,72 @@ for i, (player, score) in enumerate(utility_rank[:5], start=1):
 
 report += "\n"
 
-report += "🚨 BUY TARGETS\n"
+# Strong Buy
+strong_buy = []
 
-for player, score in trading_rank[:3]:
-    report += f"• {player}\n"
+for player in trading:
+
+    trading_score = trading.get(player, 0)
+    utility_score = utility.get(player, 0)
+
+    if trading_score >= 85 and utility_score >= 75:
+        strong_buy.append(
+            (player, trading_score, utility_score)
+        )
+
+report += "🔥 STRONG BUY\n"
+
+if strong_buy:
+    for player, t, u in strong_buy:
+        report += f"• {player} (T:{t} U:{u})\n"
+else:
+    report += "Nessuno\n"
+
+report += "\n"
+
+# Watchlist
+watchlist = []
+
+for player in trading:
+
+    trading_score = trading.get(player, 0)
+    utility_score = utility.get(player, 0)
+
+    if (
+        trading_score >= 75
+        and utility_score >= 60
+        and trading_score < 85
+    ):
+        watchlist.append(player)
+
+report += "⚠️ WATCHLIST\n"
+
+if watchlist:
+    for player in watchlist:
+        report += f"• {player}\n"
+else:
+    report += "Nessuno\n"
+
+report += "\n"
+
+# Sell Candidates
+sell_candidates = []
+
+for player in trading:
+
+    trading_score = trading.get(player, 0)
+    utility_score = utility.get(player, 0)
+
+    if trading_score < 70 and utility_score >= 80:
+        sell_candidates.append(player)
+
+report += "🔴 SELL CANDIDATES\n"
+
+if sell_candidates:
+    for player in sell_candidates:
+        report += f"• {player}\n"
+else:
+    report += "Nessuno\n"
 
 url = f"https://api.telegram.org/bot{TOKEN}/sendMessage"
 
