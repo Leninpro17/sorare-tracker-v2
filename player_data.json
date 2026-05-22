@@ -1,50 +1,132 @@
 {
-  "Konstantinos Karetsas": {
-    "age": 17,
-    "u23": true,
-    "starter": true,
-    "price": 18
-  },
-  "Noah Sadiki": {
-    "age": 20,
-    "u23": true,
-    "starter": true,
-    "price": 15
-  },
-  "Ryotaro Ito": {
-    "age": 27,
-    "u23": false,
-    "starter": true,
-    "price": 10
-  },
   "Jan Reichert": {
     "age": 24,
     "u23": false,
     "starter": true,
-    "price": 4
+    "price": 4,
+    "position": "GK",
+    "l15": 48,
+    "l40": 48,
+    "league": "Bundesliga 2"
   },
   "Finn Dahmen": {
     "age": 27,
     "u23": false,
     "starter": true,
-    "price": 8
+    "price": 8,
+    "position": "GK",
+    "l15": 52,
+    "l40": 50,
+    "league": "Bundesliga"
   },
   "Christos Tzolis": {
     "age": 23,
     "u23": true,
     "starter": true,
-    "price": 28
+    "price": 28,
+    "position": "FWD",
+    "l15": 63,
+    "l40": 58,
+    "league": "Jupiler Pro League"
   },
   "Hans Vanaken": {
     "age": 32,
     "u23": false,
     "starter": true,
-    "price": 18
+    "price": 18,
+    "position": "MID",
+    "l15": 60,
+    "l40": 57,
+    "league": "Jupiler Pro League"
   },
   "Brandon Mechele": {
     "age": 32,
     "u23": false,
     "starter": true,
-    "price": 14
+    "price": 14,
+    "position": "DEF",
+    "l15": 56,
+    "l40": 54,
+    "league": "Jupiler Pro League"
+  },
+  "Noah Sadiki": {
+    "age": 20,
+    "u23": true,
+    "starter": true,
+    "price": 15,
+    "position": "MID",
+    "l15": 54,
+    "l40": 50,
+    "league": "Jupiler Pro League"
+  },
+  "Maxim De Cuyper": {
+    "age": 24,
+    "u23": false,
+    "starter": true,
+    "price": 18,
+    "position": "DEF",
+    "l15": 58,
+    "l40": 54,
+    "league": "Jupiler Pro League"
+  },
+  "Konstantinos Karetsas": {
+    "age": 17,
+    "u23": true,
+    "starter": true,
+    "price": 18,
+    "position": "MID",
+    "l15": 49,
+    "l40": 42,
+    "league": "Jupiler Pro League"
+  },
+  "Jeppe Erenbjerg": {
+    "age": 21,
+    "u23": true,
+    "starter": true,
+    "price": 12,
+    "position": "MID",
+    "l15": 52,
+    "l40": 48,
+    "league": "Superliga"
+  },
+  "Ryotaro Ito": {
+    "age": 27,
+    "u23": false,
+    "starter": true,
+    "price": 10,
+    "position": "MID",
+    "l15": 55,
+    "l40": 51,
+    "league": "Jupiler Pro League"
+  },
+  "Rihito Yamamoto": {
+    "age": 23,
+    "u23": true,
+    "starter": true,
+    "price": 9,
+    "position": "MID",
+    "l15": 51,
+    "l40": 48,
+    "league": "Jupiler Pro League"
+  },
+  "Ross Sykes": {
+    "age": 27,
+    "u23": false,
+    "starter": true,
+    "price": 7,
+    "position": "DEF",
+    "l15": 53,
+    "l40": 49,
+    "league": "Jupiler Pro League"
+  },
+  "Myron van Brederode": {
+    "age": 22,
+    "u23": true,
+    "starter": true,
+    "price": 14,
+    "position": "FWD",
+    "l15": 50,
+    "l40": 45,
+    "league": "Eredivisie"
   }
 }
