@@ -15,16 +15,12 @@ payload = {
 r = requests.post(
     "https://api.sorare.com/graphql",
     json=payload,
-    headers={
-        "content-type": "application/json"
-    }
+    headers={"content-type": "application/json"}
 )
-
-print("STATUS:", r.status_code)
 
 data = r.json()
 
 with open("player_test.json", "w", encoding="utf-8") as f:
     json.dump(data, f, indent=2, ensure_ascii=False)
 
-print("saved player_test.json")
+print(json.dumps(data, indent=2, ensure_ascii=False)[:30000])
