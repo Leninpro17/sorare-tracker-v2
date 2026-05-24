@@ -25,7 +25,7 @@ all_players = []
 
 for club_slug in JUPILER_CLUBS:
 
-    print(f"Scanning {club_slug}")
+    print(f"\nScanning {club_slug}")
 
     payload = {
         "operationName": "FootballClubOverviewQuery",
@@ -38,25 +38,31 @@ for club_slug in JUPILER_CLUBS:
         }
     }
 
-    r = requests.post(
-        "https://api.sorare.com/graphql",
-        json=payload,
-        headers={"content-type": "application/json"}
-    )
-
-    if r.status_code != 200:
-        print("ERROR:", club_slug, r.status_code)
-        continue
-
-    data = r.json()
-
     try:
+        response = requests.post(
+            "https://api.sorare.com/graphql",
+            json=payload,
+            headers={
+                "content-type": "application/json"
+            },
+            timeout=30
+        )
+
+        print("STATUS:", response.status_code)
+
+        if response.status_code != 200:
+            continue
+
+        data = response.json()
+
         club = data["data"]["football"]["club"]
 
         club_name = club["name"]
 
-        memberships = (
-            club["activeMemberships"]["nodes"]
+        memberships = club["activeMemberships"]["nodes"]
+
+        print(
+            f"Club: {club_name} | Players: {len(memberships)}"
         )
 
         for membership in memberships:
@@ -70,18 +76,27 @@ for club_slug in JUPILER_CLUBS:
                 "country": (
                     player.get("country", {})
                     .get("name")
+                    if player.get("country")
+                    else None
                 ),
                 "club": club_name,
                 "club_slug": club_slug,
-                "avatar": player.get("avatarPictureUrl")
+                "avatarPictureUrl": player.get(
+                    "avatarPictureUrl"
+                ),
+                "membershipStartDate": membership.get(
+                    "startDate"
+                )
             })
 
     except Exception as e:
-        print("ERROR PARSING", club_slug, e)
+        print("ERROR:", club_slug)
+        print(str(e))
 
 output = {
     "updated_at": datetime.utcnow().isoformat(),
     "league": "Jupiler Pro League",
+    "total_players": len(all_players),
     "players": all_players
 }
 
@@ -97,6 +112,8 @@ with open(
         ensure_ascii=False
     )
 
-print()
+print("\n==============================")
+print("DONE")
 print("Players saved:", len(all_players))
-print("File: player_data.json")
+print("File created: player_data.json")
+print("==============================")
