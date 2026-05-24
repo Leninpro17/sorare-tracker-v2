@@ -19,13 +19,20 @@ jobs:
       - name: Install requests
         run: pip install requests
 
-      - name: Test player query
-        env:
-          AUTHORIZATION: ${{ secrets.AUTHORIZATION }}
-        run: python test_player.py
+      - name: Build player database
+        run: python build_player_data.py
 
-      - name: Upload player test
+      - name: Update player metrics
+        run: python update_player_metrics.py
+
+      - name: Upload player data
         uses: actions/upload-artifact@v4
         with:
-          name: player-test
-          path: player_test.json
+          name: player-data
+          path: player_data.json
+
+      - name: Upload player metrics
+        uses: actions/upload-artifact@v4
+        with:
+          name: player-metrics
+          path: player_metrics.json
