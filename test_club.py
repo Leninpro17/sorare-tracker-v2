@@ -30,9 +30,11 @@ print("saved genk.json")
 # Cerca automaticamente tutti i player nel JSON
 def scan(obj):
     if isinstance(obj, dict):
-        if "player" in obj:
-            print(json.dumps(obj["player"], ensure_ascii=False)[:500])
-            print("=" * 80)
+
+        if obj.get("__typename") == "Player":
+            print("\nPLAYER FOUND")
+            print(json.dumps(obj, indent=2, ensure_ascii=False)[:3000])
+            print("=" * 100)
 
         for v in obj.values():
             scan(v)
@@ -40,5 +42,3 @@ def scan(obj):
     elif isinstance(obj, list):
         for item in obj:
             scan(item)
-
-scan(data)
