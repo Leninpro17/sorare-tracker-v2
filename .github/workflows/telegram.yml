@@ -18,6 +18,6 @@ jobs:
 
       - run: pip install -r requirements.txt
 
-      - run: python build_proleague.py
+      - run: python test_sorare.py
         env:
           API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
