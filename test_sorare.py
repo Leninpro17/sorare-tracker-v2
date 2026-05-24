@@ -1,9 +1,13 @@
 import requests
 
 query = """
-query {
+{
   football {
-    __typename
+    clubs(first: 5) {
+      nodes {
+        name
+      }
+    }
   }
 }
 """
@@ -14,4 +18,4 @@ r = requests.post(
 )
 
 print(r.status_code)
-print(r.text[:500])
+print(r.text)
