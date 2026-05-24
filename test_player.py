@@ -4,17 +4,16 @@ import json
 PLAYER_SLUG = "bryan-heynen"
 
 payload = {
-    "operationName": "AnyPlayerLayoutQuery",
+    "operationName": "PerformanceBlockQuery",
     "variables": {
-        "slug": PLAYER_SLUG,
-        "onlyPrimary": False
+        "slug": PLAYER_SLUG
     },
     "extensions": {
-        "operationId": "React/a809e5dae931764014e854f4ba174c338195ee3fe2cf12bc971687941c0fe40d"
+        "operationId": "PerformanceBlockQuery"
     }
 }
 
-print(f"Downloading data for {PLAYER_SLUG}")
+print(f"Downloading performance data for {PLAYER_SLUG}")
 
 r = requests.post(
     "https://api.sorare.com/graphql",
@@ -26,36 +25,50 @@ r = requests.post(
 
 print("STATUS:", r.status_code)
 
-data = r.json()
+try:
+    data = r.json()
+except Exception as e:
+    print("JSON ERROR:", e)
+    print(r.text[:5000])
+    raise
 
-with open("player_test.json", "w", encoding="utf-8") as f:
+with open("performance_test.json", "w", encoding="utf-8") as f:
     json.dump(data, f, indent=2, ensure_ascii=False)
 
-print("Saved player_test.json")
+print("Saved performance_test.json")
 
 
-def scan(obj, path=""):
+KEYWORDS = [
+    "l5",
+    "l10",
+    "l15",
+    "l40",
+    "score",
+    "scores",
+    "average",
+    "averageScore",
+    "price",
+    "valuation",
+    "starter",
+    "starting",
+    "decisive",
+    "aa",
+    "game",
+    "games",
+    "performance"
+]
+
+
+def scan(obj, path="root"):
+
     if isinstance(obj, dict):
 
         for k, v in obj.items():
 
-            current_path = f"{path}.{k}" if path else k
+            current_path = f"{path}.{k}"
 
-            keywords = [
-                "score",
-                "scores",
-                "average",
-                "l5",
-                "l10",
-                "l15",
-                "l40",
-                "game",
-                "stat",
-                "recent",
-                "last"
-            ]
+            if any(word.lower() in k.lower() for word in KEYWORDS):
 
-            if any(word in k.lower() for word in keywords):
                 print("\n" + "=" * 100)
                 print("FOUND:", current_path)
 
@@ -75,3 +88,12 @@ def scan(obj, path=""):
 print("\nSTARTING SCAN")
 scan(data)
 print("\nSCAN COMPLETE")
+
+
+print("\nFIRST 10000 CHARS OF RESPONSE")
+print("=" * 100)
+
+try:
+    print(json.dumps(data, indent=2, ensure_ascii=False)[:10000])
+except:
+    pass
