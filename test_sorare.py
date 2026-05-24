@@ -3,10 +3,9 @@ import requests
 query = """
 {
   football {
-    clubs(first: 5) {
-      nodes {
-        name
-      }
+    clubs(first: 1) {
+      name
+      slug
     }
   }
 }
