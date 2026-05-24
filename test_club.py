@@ -20,7 +20,7 @@ r = requests.post(
     }
 )
 
-print(r.status_code)
+print("STATUS:", r.status_code)
 
 try:
     data = r.json()
@@ -30,6 +30,10 @@ try:
 
     print("saved genk.json")
 
+    print("\n===== JSON PREVIEW =====\n")
+    print(json.dumps(data, indent=2, ensure_ascii=False)[:5000])
+
 except Exception as e:
-    print(r.text)
+    print("ERROR:")
     print(e)
+    print(r.text)
