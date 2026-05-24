@@ -19,13 +19,13 @@ jobs:
       - name: Install requests
         run: pip install requests
 
-      - name: Run test_club.py
+      - name: Build player database
         env:
           AUTHORIZATION: ${{ secrets.AUTHORIZATION }}
-        run: python test_club.py
+        run: python build_player_data.py
 
-      - name: Upload genk.json
+      - name: Upload player_data.json
         uses: actions/upload-artifact@v4
         with:
-          name: genk-json
-          path: genk.json
+          name: player-data
+          path: player_data.json
