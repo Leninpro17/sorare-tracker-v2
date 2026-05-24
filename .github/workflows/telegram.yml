@@ -2,22 +2,30 @@ name: Telegram Test
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '0 8 * * *'
 
 jobs:
   run:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
 
-      - uses: actions/setup-python@v5
+      - name: Setup Python
+        uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: "3.11"
 
-      - run: pip install -r requirements.txt
+      - name: Install requests
+        run: pip install requests
 
-      - run: python test_club.py
-  env:
-    AUTHORIZATION: ${{ secrets.AUTHORIZATION }}
+      - name: Run test_club.py
+        env:
+          AUTHORIZATION: ${{ secrets.AUTHORIZATION }}
+        run: python test_club.py
+
+      - name: Upload genk.json
+        uses: actions/upload-artifact@v4
+        with:
+          name: genk-json
+          path: genk.json
