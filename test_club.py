@@ -47,7 +47,3 @@ def scan(obj):
 
 
 scan(data)
-
-import shutil
-
-shutil.copy("genk.json", "docs/genk.json")
