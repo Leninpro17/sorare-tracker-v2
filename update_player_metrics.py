@@ -74,8 +74,13 @@ def fetch_metrics(player):
         timeout=30
     )
 
-    if r.status_code != 200:
-        raise Exception(f"HTTP {r.status_code}: {r.text[:200]}")
+    if r.status_code == 429:
+    print("Rate limit hit. Waiting 60 seconds...")
+    time.sleep(60)
+    return fetch_metrics(player)
+
+if r.status_code != 200:
+    raise Exception(f"HTTP {r.status_code}: {r.text[:200]}")
 
     data = r.json()
 
