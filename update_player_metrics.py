@@ -67,23 +67,29 @@ def fetch_metrics(player):
         }
     }
 
-    r = requests.post(
-        "https://api.sorare.com/graphql",
-        json=payload,
-        headers={"content-type": "application/json"},
-        timeout=30
-    )
+    for attempt in range(5):
+        response = requests.post(
+            "https://api.sorare.com/graphql",
+            json=payload,
+            headers={"content-type": "application/json"},
+            timeout=30
+        )
 
-    if r.status_code == 429:
-    print("Rate limit hit. Waiting 60 seconds...")
-    time.sleep(60)
-    return fetch_metrics(player)
+        if response.status_code == 200:
+            break
 
-if r.status_code != 200:
-    raise Exception(f"HTTP {r.status_code}: {r.text[:200]}")
+        if response.status_code == 429:
+            wait = 60 * (attempt + 1)
+            print(f"Rate limit hit for {slug}. Waiting {wait} seconds...")
+            time.sleep(wait)
+            continue
 
-    data = r.json()
+        raise Exception(f"HTTP {response.status_code}: {response.text[:300]}")
 
+    else:
+        raise Exception(f"Too many rate limits for {slug}")
+
+    data = response.json()
     any_player = data.get("data", {}).get("anyPlayer", {})
 
     avg = any_player.get("anySo5AverageLastScore", {})
@@ -101,17 +107,21 @@ if r.status_code != 200:
         "club_slug": player.get("club_slug"),
         "position": player.get("position"),
         "country": player.get("country"),
+
         "l5": any_player.get("lastFiveSo5AverageScore"),
         "l10": any_player.get("lastTenPlayedSo5AverageScore"),
         "l40": any_player.get("lastFortySo5AverageScore"),
         "seasonAverage": any_player.get("seasonAverage"),
+
         "aa": avg.get("averageValueAllAround"),
         "decisive": avg.get("averageValueDecisive"),
         "total": avg.get("averageValueTotal"),
         "lastScores": avg.get("lastIndividualScores"),
+
         "minutesLast10": get_stat_value(avg, "MINS_PLAYED"),
         "gamesStartedLast10": games_started,
         "starterRate": starter_rate,
+
         "updated_at": datetime.utcnow().isoformat()
     }
 
@@ -133,20 +143,23 @@ for i, player in enumerate(players, start=1):
     print(f"[{i}/{len(players)}] {name}")
 
     try:
-        metrics.append(fetch_metrics(player))
+        metric = fetch_metrics(player)
+        metrics.append(metric)
     except Exception as e:
         print("ERROR:", slug, str(e))
         errors.append({
             "slug": slug,
+            "name": name,
             "error": str(e)
         })
 
-    time.sleep(0.25)
+    time.sleep(2)
 
 output = {
     "updated_at": datetime.utcnow().isoformat(),
     "source": "Sorare PerformanceBlocksQuery",
     "total_players": len(metrics),
+    "total_errors": len(errors),
     "errors": errors,
     "players": metrics
 }
