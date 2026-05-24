@@ -4,12 +4,14 @@ import json
 PLAYER_SLUG = "bryan-heynen"
 
 payload = {
-    "operationName": "PerformanceBlockQuery",
+    "operationName": "PerformanceBlocksQuery",
     "variables": {
-        "slug": PLAYER_SLUG
+        "playerSlug": PLAYER_SLUG,
+        "position": "Midfielder",
+        "span": "LAST_TEN"
     },
     "extensions": {
-        "operationId": "PerformanceBlockQuery"
+        "operationId": "React/3ea98095326204593e8d89d7cf014fdf849f43b2b5534ce70047281efa62403e"
     }
 }
 
@@ -27,9 +29,8 @@ print("STATUS:", r.status_code)
 
 try:
     data = r.json()
-except Exception as e:
-    print("JSON ERROR:", e)
-    print(r.text[:5000])
+except Exception:
+    print(r.text)
     raise
 
 with open("performance_test.json", "w", encoding="utf-8") as f:
@@ -39,23 +40,21 @@ print("Saved performance_test.json")
 
 
 KEYWORDS = [
-    "l5",
-    "l10",
-    "l15",
-    "l40",
     "score",
     "scores",
     "average",
     "averageScore",
-    "price",
-    "valuation",
+    "l10",
+    "l40",
+    "percentile",
     "starter",
-    "starting",
     "decisive",
+    "allaround",
     "aa",
-    "game",
-    "games",
-    "performance"
+    "performance",
+    "rank",
+    "price",
+    "valuation"
 ]
 
 
@@ -88,12 +87,3 @@ def scan(obj, path="root"):
 print("\nSTARTING SCAN")
 scan(data)
 print("\nSCAN COMPLETE")
-
-
-print("\nFIRST 10000 CHARS OF RESPONSE")
-print("=" * 100)
-
-try:
-    print(json.dumps(data, indent=2, ensure_ascii=False)[:10000])
-except:
-    pass
