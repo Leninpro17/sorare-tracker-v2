@@ -22,7 +22,7 @@ jobs:
       - name: Build player database
         env:
           AUTHORIZATION: ${{ secrets.AUTHORIZATION }}
-        run: python build_player_data.py
+        run: python test_player.py
 
       - name: Upload player_data.json
         uses: actions/upload-artifact@v4
