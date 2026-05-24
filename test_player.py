@@ -55,6 +55,7 @@ KEYWORDS = [
     "rank",
     "price",
     "valuation"
+    "age"
 ]
 
 
