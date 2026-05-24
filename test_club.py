@@ -1,76 +1,24 @@
 import requests
 import json
 
-URL = "https://api.sorare.com/graphql"
-
-query = """
-query FootballClubOverviewQuery($slug: String!, $seasonStartYear: Int!) {
-  football {
-    club(slug: $slug) {
-      name
-      slug
-      code
-
-      country {
-        name
-        slug
-      }
-
-      activeCompetitions {
-        displayName
-        slug
-      }
-
-      domesticLeague {
-        displayName
-        slug
-
-        stages {
-          groups {
-            contestants {
-              rank
-              points
-              matchesPlayed
-              matchesWon
-              matchesDrawn
-              matchesLost
-              goalsFor
-              goalsAgainst
-
-              team {
-                name
-                slug
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
-"""
-
 payload = {
     "operationName": "FootballClubOverviewQuery",
     "variables": {
         "slug": "genk-genk",
         "seasonStartYear": 2025
     },
-    "query": query
-}
-
-headers = {
-    "Content-Type": "application/json"
+    "extensions": {
+        "operationId": "React/a288341ac39d1684e9492982e6dbcf7369b005b3df0afff9eeceaa81430ecf5b"
+    }
 }
 
 r = requests.post(
-    URL,
-    headers=headers,
+    "https://api.sorare.com/graphql",
     json=payload,
-    timeout=30
+    headers={
+        "content-type": "application/json"
+    }
 )
-
-print(r.status_code)
 
 data = r.json()
 
@@ -78,3 +26,19 @@ with open("genk.json", "w", encoding="utf-8") as f:
     json.dump(data, f, indent=2, ensure_ascii=False)
 
 print("saved genk.json")
+
+# Cerca automaticamente tutti i player nel JSON
+def scan(obj):
+    if isinstance(obj, dict):
+        if "player" in obj:
+            print(json.dumps(obj["player"], ensure_ascii=False)[:500])
+            print("=" * 80)
+
+        for v in obj.values():
+            scan(v)
+
+    elif isinstance(obj, list):
+        for item in obj:
+            scan(item)
+
+scan(data)
