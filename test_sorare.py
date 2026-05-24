@@ -2,10 +2,10 @@ import requests
 
 query = """
 {
-  football {
-    clubs(first: 1) {
+  __type(name: "Club") {
+    name
+    fields {
       name
-      slug
     }
   }
 }
