@@ -1,39 +1,80 @@
 import requests
 import json
 
+URL = "https://api.sorare.com/graphql"
+
+query = """
+query FootballClubOverviewQuery($slug: String!, $seasonStartYear: Int!) {
+  football {
+    club(slug: $slug) {
+      name
+      slug
+      code
+
+      country {
+        name
+        slug
+      }
+
+      activeCompetitions {
+        displayName
+        slug
+      }
+
+      domesticLeague {
+        displayName
+        slug
+
+        stages {
+          groups {
+            contestants {
+              rank
+              points
+              matchesPlayed
+              matchesWon
+              matchesDrawn
+              matchesLost
+              goalsFor
+              goalsAgainst
+
+              team {
+                name
+                slug
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+"""
+
 payload = {
     "operationName": "FootballClubOverviewQuery",
     "variables": {
         "slug": "genk-genk",
         "seasonStartYear": 2025
     },
-    "extensions": {
-        "operationId": "React/a288341ac39d1684e9492982e6dbcf7369b005b3df0afff9eeceaa81430ecf5b"
-    }
+    "query": query
+}
+
+headers = {
+    "Content-Type": "application/json"
 }
 
 r = requests.post(
-    "https://api.sorare.com/graphql",
+    URL,
+    headers=headers,
     json=payload,
-    headers={
-        "content-type": "application/json"
-    }
+    timeout=30
 )
 
-print("STATUS:", r.status_code)
+print(r.status_code)
 
-try:
-    data = r.json()
+data = r.json()
 
-    with open("genk.json", "w", encoding="utf-8") as f:
-        json.dump(data, f, indent=2, ensure_ascii=False)
+with open("genk.json", "w", encoding="utf-8") as f:
+    json.dump(data, f, indent=2, ensure_ascii=False)
 
-    print("saved genk.json")
-
-    print("\n===== JSON PREVIEW =====\n")
-    print(json.dumps(data, indent=2, ensure_ascii=False)[:5000])
-
-except Exception as e:
-    print("ERROR:")
-    print(e)
-    print(r.text)
+print("saved genk.json")
