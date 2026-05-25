@@ -1,12 +1,13 @@
 import json
 import time
 import requests
-from datetime import datetime, date
+from datetime import datetime
 
 INPUT_FILE = "player_data.json"
 OUTPUT_FILE = "player_metrics.json"
 
-OPERATION_ID = "React/3ea98095326204593e8d89d7cf014fdf849f43b2b5534ce70047281efa62403e"
+PERFORMANCE_OPERATION_ID = "React/3ea98095326204593e8d89d7cf014fdf849f43b2b5534ce70047281efa62403e"
+LAYOUT_OPERATION_ID = "React/a809e5dae931764014e854f4ba174c338195ee3fe2cf12bc971687941c0fe40d"
 
 POSITION_MAP = {
     "Goalkeeper": "Goalkeeper",
@@ -20,14 +21,34 @@ POSITION_MAP = {
 }
 
 
+def post_sorare(payload, slug):
+    for attempt in range(5):
+        response = requests.post(
+            "https://api.sorare.com/graphql",
+            json=payload,
+            headers={"content-type": "application/json"},
+            timeout=30
+        )
+
+        if response.status_code == 200:
+            return response.json()
+
+        if response.status_code == 429:
+            wait = 60 * (attempt + 1)
+            print(f"Rate limit hit for {slug}. Waiting {wait} seconds...")
+            time.sleep(wait)
+            continue
+
+        raise Exception(f"HTTP {response.status_code}: {response.text[:300]}")
+
+    raise Exception(f"Too many rate limits for {slug}")
+
+
 def get_players():
     with open(INPUT_FILE, "r", encoding="utf-8") as f:
         data = json.load(f)
 
-    if isinstance(data, dict) and "players" in data:
-        return data["players"]
-
-    return data
+    return data["players"] if isinstance(data, dict) and "players" in data else data
 
 
 def get_stat_value(avg_block, stat_name):
@@ -41,23 +62,28 @@ def get_stat_value(avg_block, stat_name):
     return None
 
 
-def calculate_age(birth_date):
-    if not birth_date:
-        return None
+def fetch_layout(slug):
+    payload = {
+        "operationName": "AnyPlayerLayoutQuery",
+        "variables": {
+            "onlyPrimary": False,
+            "slug": slug
+        },
+        "extensions": {
+            "operationId": LAYOUT_OPERATION_ID
+        }
+    }
 
-    try:
-        born = datetime.fromisoformat(birth_date[:10]).date()
-        today = date.today()
-        return today.year - born.year - (
-            (today.month, today.day) < (born.month, born.day)
-        )
-    except Exception:
-        return None
+    data = post_sorare(payload, slug)
+    return data.get("data", {}).get("anyPlayer", {}) or {}
 
 
-def fetch_metrics(player):
+def fetch_performance(player):
     slug = player.get("slug")
-    position = POSITION_MAP.get(player.get("position"), player.get("position", "Midfielder"))
+    position = POSITION_MAP.get(
+        player.get("position"),
+        player.get("position", "Midfielder")
+    )
 
     payload = {
         "operationName": "PerformanceBlocksQuery",
@@ -67,37 +93,21 @@ def fetch_metrics(player):
             "span": "LAST_TEN"
         },
         "extensions": {
-            "operationId": OPERATION_ID
+            "operationId": PERFORMANCE_OPERATION_ID
         }
     }
 
-    for attempt in range(5):
-        response = requests.post(
-            "https://api.sorare.com/graphql",
-            json=payload,
-            headers={"content-type": "application/json"},
-            timeout=30
-        )
+    data = post_sorare(payload, slug)
+    return data.get("data", {}).get("anyPlayer", {}) or {}
 
-        if response.status_code == 200:
-            break
 
-        if response.status_code == 429:
-            wait = 60 * (attempt + 1)
-            print(f"Rate limit hit for {slug}. Waiting {wait} seconds...")
-            time.sleep(wait)
-            continue
+def fetch_metrics(player):
+    slug = player.get("slug")
 
-        raise Exception(f"HTTP {response.status_code}: {response.text[:300]}")
-    else:
-        raise Exception(f"Too many rate limits for {slug}")
+    layout = fetch_layout(slug)
+    performance = fetch_performance(player)
 
-    data = response.json()
-    any_player = data.get("data", {}).get("anyPlayer", {})
-    avg = any_player.get("anySo5AverageLastScore", {})
-
-    birth_date = any_player.get("birthDate") or any_player.get("birthdate")
-    age = calculate_age(birth_date)
+    avg = performance.get("anySo5AverageLastScore", {})
 
     games_started = get_stat_value(avg, "GAME_STARTED")
     starter_rate = round((games_started / 10) * 100, 1) if games_started is not None else None
@@ -110,14 +120,14 @@ def fetch_metrics(player):
         "position": player.get("position"),
         "country": player.get("country"),
 
-        "birthDate": birth_date,
-        "age": age,
-        "u23": age is not None and age <= 23,
+        "age": layout.get("age"),
+        "birthDay": layout.get("birthDay"),
+        "u23": layout.get("u23Eligible"),
 
-        "l5": any_player.get("lastFiveSo5AverageScore"),
-        "l10": any_player.get("lastTenPlayedSo5AverageScore"),
-        "l40": any_player.get("lastFortySo5AverageScore"),
-        "seasonAverage": any_player.get("seasonAverage"),
+        "l5": performance.get("lastFiveSo5AverageScore"),
+        "l10": performance.get("lastTenPlayedSo5AverageScore"),
+        "l40": performance.get("lastFortySo5AverageScore"),
+        "seasonAverage": performance.get("seasonAverage"),
 
         "aa": avg.get("averageValueAllAround"),
         "decisive": avg.get("averageValueDecisive"),
@@ -151,13 +161,17 @@ for i, player in enumerate(players, start=1):
         metrics.append(fetch_metrics(player))
     except Exception as e:
         print("ERROR:", slug, str(e))
-        errors.append({"slug": slug, "name": name, "error": str(e)})
+        errors.append({
+            "slug": slug,
+            "name": name,
+            "error": str(e)
+        })
 
-    time.sleep(2)
+    time.sleep(3)
 
 output = {
     "updated_at": datetime.utcnow().isoformat(),
-    "source": "Sorare PerformanceBlocksQuery",
+    "source": "Sorare Layout + PerformanceBlocksQuery",
     "total_players": len(metrics),
     "total_errors": len(errors),
     "errors": errors,
