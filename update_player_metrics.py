@@ -1,3 +1,4 @@
+import os
 import json
 import time
 import requests
@@ -142,7 +143,17 @@ def fetch_metrics(player):
     }
 
 
-players = get_players()
+all_players = get_players()
+
+OFFSET_PLAYERS = int(os.environ.get("OFFSET_PLAYERS", 0))
+LIMIT_PLAYERS = int(os.environ.get("LIMIT_PLAYERS", 150))
+
+players = all_players[OFFSET_PLAYERS:OFFSET_PLAYERS + LIMIT_PLAYERS]
+
+print(f"Total players: {len(all_players)}")
+print(f"Offset: {OFFSET_PLAYERS}")
+print(f"Limit: {LIMIT_PLAYERS}")
+print(f"Players in this run: {len(players)}")
 metrics = []
 errors = []
 
