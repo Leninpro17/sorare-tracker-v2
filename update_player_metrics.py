@@ -1,7 +1,7 @@
 import json
 import time
 import requests
-from datetime import datetime
+from datetime import datetime, date
 
 INPUT_FILE = "player_data.json"
 OUTPUT_FILE = "player_metrics.json"
@@ -27,13 +27,6 @@ def get_players():
     if isinstance(data, dict) and "players" in data:
         return data["players"]
 
-    if isinstance(data, dict):
-        players = []
-        for slug, info in data.items():
-            info["slug"] = slug
-            players.append(info)
-        return players
-
     return data
 
 
@@ -48,12 +41,23 @@ def get_stat_value(avg_block, stat_name):
     return None
 
 
+def calculate_age(birth_date):
+    if not birth_date:
+        return None
+
+    try:
+        born = datetime.fromisoformat(birth_date[:10]).date()
+        today = date.today()
+        return today.year - born.year - (
+            (today.month, today.day) < (born.month, born.day)
+        )
+    except Exception:
+        return None
+
+
 def fetch_metrics(player):
     slug = player.get("slug")
-    position = POSITION_MAP.get(
-        player.get("position"),
-        player.get("position", "Midfielder")
-    )
+    position = POSITION_MAP.get(player.get("position"), player.get("position", "Midfielder"))
 
     payload = {
         "operationName": "PerformanceBlocksQuery",
@@ -85,20 +89,18 @@ def fetch_metrics(player):
             continue
 
         raise Exception(f"HTTP {response.status_code}: {response.text[:300]}")
-
     else:
         raise Exception(f"Too many rate limits for {slug}")
 
     data = response.json()
     any_player = data.get("data", {}).get("anyPlayer", {})
-
     avg = any_player.get("anySo5AverageLastScore", {})
 
-    games_started = get_stat_value(avg, "GAME_STARTED")
+    birth_date = any_player.get("birthDate") or any_player.get("birthdate")
+    age = calculate_age(birth_date)
 
-    starter_rate = None
-    if games_started is not None:
-        starter_rate = round((games_started / 10) * 100, 1)
+    games_started = get_stat_value(avg, "GAME_STARTED")
+    starter_rate = round((games_started / 10) * 100, 1) if games_started is not None else None
 
     return {
         "slug": slug,
@@ -107,6 +109,10 @@ def fetch_metrics(player):
         "club_slug": player.get("club_slug"),
         "position": player.get("position"),
         "country": player.get("country"),
+
+        "birthDate": birth_date,
+        "age": age,
+        "u23": age is not None and age <= 23,
 
         "l5": any_player.get("lastFiveSo5AverageScore"),
         "l10": any_player.get("lastTenPlayedSo5AverageScore"),
@@ -127,7 +133,6 @@ def fetch_metrics(player):
 
 
 players = get_players()
-
 metrics = []
 errors = []
 
@@ -143,15 +148,10 @@ for i, player in enumerate(players, start=1):
     print(f"[{i}/{len(players)}] {name}")
 
     try:
-        metric = fetch_metrics(player)
-        metrics.append(metric)
+        metrics.append(fetch_metrics(player))
     except Exception as e:
         print("ERROR:", slug, str(e))
-        errors.append({
-            "slug": slug,
-            "name": name,
-            "error": str(e)
-        })
+        errors.append({"slug": slug, "name": name, "error": str(e)})
 
     time.sleep(2)
 
