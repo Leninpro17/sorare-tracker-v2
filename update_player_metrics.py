@@ -154,8 +154,28 @@ print(f"Total players: {len(all_players)}")
 print(f"Offset: {OFFSET_PLAYERS}")
 print(f"Limit: {LIMIT_PLAYERS}")
 print(f"Players in this run: {len(players)}")
-metrics = []
-errors = []
+# Load existing metrics if present
+existing_metrics_by_slug = {}
+existing_errors = []
+
+if os.path.exists(OUTPUT_FILE):
+    try:
+        with open(OUTPUT_FILE, "r", encoding="utf-8") as f:
+            existing_output = json.load(f)
+
+        for item in existing_output.get("players", []):
+            if item.get("slug"):
+                existing_metrics_by_slug[item["slug"]] = item
+
+        existing_errors = existing_output.get("errors", [])
+
+        print(f"Existing metrics loaded: {len(existing_metrics_by_slug)}")
+
+    except Exception as e:
+        print("Could not load existing metrics:", str(e))
+
+
+errors = existing_errors
 
 print(f"Players to update: {len(players)}")
 
@@ -169,24 +189,30 @@ for i, player in enumerate(players, start=1):
     print(f"[{i}/{len(players)}] {name}")
 
     try:
-        metrics.append(fetch_metrics(player))
+        metric = fetch_metrics(player)
+        existing_metrics_by_slug[slug] = metric
     except Exception as e:
         print("ERROR:", slug, str(e))
         errors.append({
             "slug": slug,
             "name": name,
-            "error": str(e)
+            "error": str(e),
+            "updated_at": datetime.utcnow().isoformat()
         })
 
     time.sleep(3)
 
+all_metrics = list(existing_metrics_by_slug.values())
+
 output = {
     "updated_at": datetime.utcnow().isoformat(),
     "source": "Sorare Layout + PerformanceBlocksQuery",
-    "total_players": len(metrics),
+    "total_players": len(all_metrics),
     "total_errors": len(errors),
+    "offset": OFFSET_PLAYERS,
+    "limit": LIMIT_PLAYERS,
     "errors": errors,
-    "players": metrics
+    "players": all_metrics
 }
 
 with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
@@ -194,7 +220,7 @@ with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
 
 print("==============================")
 print("DONE")
-print("Metrics saved:", len(metrics))
+print("Metrics saved:", len(all_metrics))
 print("Errors:", len(errors))
 print("File created:", OUTPUT_FILE)
 print("==============================")
