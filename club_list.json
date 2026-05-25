@@ -1,0 +1,74 @@
+{
+  "updated_at": "2026-05-25T22:07:22.785334",
+  "league": "Jupiler Pro League",
+  "league_slug": "jupiler-pro-league",
+  "seasonStartYear": 2025,
+  "seed_club": "genk-genk",
+  "total_clubs": 16,
+  "clubs": [
+    {
+      "name": "Cercle Brugge KSV",
+      "slug": "cercle-brugge-brugge"
+    },
+    {
+      "name": "Club Brugge KV",
+      "slug": "club-brugge-brugge"
+    },
+    {
+      "name": "F.C.V. Dender E.H.",
+      "slug": "dender-denderleeuw"
+    },
+    {
+      "name": "KAA Gent",
+      "slug": "gent-gent"
+    },
+    {
+      "name": "KRC Genk",
+      "slug": "genk-genk"
+    },
+    {
+      "name": "KVC Westerlo",
+      "slug": "westerlo-westerlo"
+    },
+    {
+      "name": "Oud-Heverlee Leuven",
+      "slug": "oh-leuven-heverlee"
+    },
+    {
+      "name": "RAAL La Louvière",
+      "slug": "la-louviere-la-louviere"
+    },
+    {
+      "name": "RSC Anderlecht",
+      "slug": "anderlecht-bruxelles-brussel"
+    },
+    {
+      "name": "Royal Antwerp FC",
+      "slug": "antwerp-deurne"
+    },
+    {
+      "name": "Royal Charleroi S.C.",
+      "slug": "sporting-charleroi-charleroi"
+    },
+    {
+      "name": "Royal Union Saint-Gilloise",
+      "slug": "union-saint-gilloise-bruxelles-brussels"
+    },
+    {
+      "name": "SV Zulte-Waregem",
+      "slug": "zulte-waregem-waregem"
+    },
+    {
+      "name": "Sint-Truidense VV",
+      "slug": "sint-truiden-sint-truiden-st-trond"
+    },
+    {
+      "name": "Standard de Liège",
+      "slug": "standard-liege-liege-luik"
+    },
+    {
+      "name": "YR KV Mechelen",
+      "slug": "mechelen-mechelen-malines"
+    }
+  ]
+}
