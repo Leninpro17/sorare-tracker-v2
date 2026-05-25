@@ -2,6 +2,15 @@ name: Telegram Test
 
 on:
   workflow_dispatch:
+    inputs:
+      offset:
+        description: "Da quale giocatore partire"
+        required: true
+        default: "0"
+      limit:
+        description: "Quanti giocatori aggiornare"
+        required: true
+        default: "150"
 
 permissions:
   contents: write
@@ -26,6 +35,9 @@ jobs:
         run: python build_player_data.py
 
       - name: Update player metrics
+        env:
+          OFFSET_PLAYERS: ${{ github.event.inputs.offset }}
+          LIMIT_PLAYERS: ${{ github.event.inputs.limit }}
         run: python update_player_metrics.py
 
       - name: Upload player data
