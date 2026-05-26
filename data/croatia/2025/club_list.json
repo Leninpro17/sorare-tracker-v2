@@ -1,0 +1,51 @@
+{
+  "updated_at": "2026-05-26T15:55:18.890737",
+  "league": "HNL",
+  "league_key": "croatia",
+  "league_slug": "1-hnl",
+  "seasonStartYear": 2025,
+  "seed_club": "rijeka-rijeka",
+  "total_clubs": 10,
+  "clubs": [
+    {
+      "name": "GNK Dinamo Zagreb",
+      "slug": "dinamo-zagreb-zagreb"
+    },
+    {
+      "name": "HNK Gorica",
+      "slug": "gorica-velika-gorica"
+    },
+    {
+      "name": "HNK Hajduk Split",
+      "slug": "hajduk-split-split"
+    },
+    {
+      "name": "HNK Rijeka",
+      "slug": "rijeka-rijeka"
+    },
+    {
+      "name": "NK Istra 1961",
+      "slug": "istra-1961-pula"
+    },
+    {
+      "name": "NK Lokomotiva Zagreb",
+      "slug": "lokomotiva-zagreb-zagreb"
+    },
+    {
+      "name": "NK Osijek",
+      "slug": "osijek-osijek"
+    },
+    {
+      "name": "NK Slaven Belupo",
+      "slug": "slaven-koprivnica-koprivnica"
+    },
+    {
+      "name": "NK Varaždin",
+      "slug": "varazdin-varazdin"
+    },
+    {
+      "name": "NK Vukovar '91",
+      "slug": "vukovar-vukovar"
+    }
+  ]
+}
