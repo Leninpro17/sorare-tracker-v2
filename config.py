@@ -4,8 +4,8 @@ LEAGUES = {
         "seed_club_slug": "genk-genk"
     },
     "croatia": {
-        "name": "HNL",
-        "seed_club_slug": "hnk-rijeka"
+       "name": "HNL",
+       "seed_club_slug": "rijeka-rijeka"
     },
     "bundesliga2": {
         "name": "2. Bundesliga",
