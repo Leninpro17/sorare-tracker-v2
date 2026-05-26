@@ -1,24 +1,36 @@
-# config.py
-
 LEAGUES = {
     "belgium": {
         "name": "Jupiler Pro League",
-        "api_league_id": 144,
-        "country": "Belgium"
+        "seed_club_slug": "genk-genk"
     },
     "croatia": {
         "name": "HNL",
-        "api_league_id": 210,
-        "country": "Croatia"
-    },
-    "segunda": {
-        "name": "Segunda División",
-        "api_league_id": 141,
-        "country": "Spain"
+        "seed_club_slug": "hnk-rijeka"
     },
     "bundesliga2": {
         "name": "2. Bundesliga",
-        "api_league_id": 79,
-        "country": "Germany"
+        "seed_club_slug": "sc-paderborn-07"
+    },
+    "segunda": {
+        "name": "Segunda División",
+        "seed_club_slug": "real-oviedo"
+    },
+
+    # Nuove leghe
+    "laliga": {
+        "name": "LaLiga",
+        "seed_club_slug": "real-madrid"
+    },
+    "eredivisie": {
+        "name": "Eredivisie",
+        "seed_club_slug": "psv-eindhoven"
+    },
+    "ligue1": {
+        "name": "Ligue 1",
+        "seed_club_slug": "paris-saint-germain"
+    },
+    "bundesliga": {
+        "name": "Bundesliga",
+        "seed_club_slug": "fc-bayern-munich"
     }
 }
