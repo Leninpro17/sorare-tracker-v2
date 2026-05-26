@@ -1,85 +1,129 @@
+import os
 import json
+import argparse
 import requests
 from datetime import datetime
+from config import LEAGUES
 
-OUTPUT_FILE = "club_list.json"
 
-SEED_CLUB_SLUG = "genk-genk"
-SEASON_START_YEAR = 2025
-LEAGUE_NAME = "Jupiler Pro League"
+API_KEY = os.getenv("API_FOOTBALL_KEY")
+BASE_URL = "https://v3.football.api-sports.io"
 
-OPERATION_ID = "React/a288341ac39d1684e9492982e6dbcf7369b005b3df0afff9eeceaa81430ecf5b"
 
-payload = {
-    "operationName": "FootballClubOverviewQuery",
-    "variables": {
-        "slug": SEED_CLUB_SLUG,
-        "seasonStartYear": SEASON_START_YEAR
-    },
-    "extensions": {
-        "operationId": OPERATION_ID
+def ensure_dir(path):
+    os.makedirs(path, exist_ok=True)
+
+
+def fetch_clubs(api_league_id, season):
+    url = f"{BASE_URL}/teams"
+
+    headers = {
+        "x-apisports-key": API_KEY
     }
-}
 
-response = requests.post(
-    "https://api.sorare.com/graphql",
-    json=payload,
-    headers={"content-type": "application/json"},
-    timeout=30
-)
+    params = {
+        "league": api_league_id,
+        "season": season
+    }
 
-print("STATUS:", response.status_code)
-response.raise_for_status()
+    response = requests.get(url, headers=headers, params=params)
 
-data = response.json()
+    print(f"STATUS: {response.status_code}")
 
-club = data["data"]["football"]["club"]
-domestic_league = club["domesticLeague"]
+    if response.status_code != 200:
+        raise Exception(f"API error: {response.text}")
 
-clubs_by_slug = {}
+    data = response.json()
 
-for stage in domestic_league.get("stages", []):
-    for group in stage.get("groups", []):
-        for contestant in group.get("contestants", []):
-            team = contestant.get("team")
+    clubs = []
 
-            if not team:
-                continue
+    for item in data.get("response", []):
+        team = item.get("team", {})
+        venue = item.get("venue", {})
 
-            slug = team.get("slug")
-            name = team.get("name")
+        clubs.append({
+            "api_team_id": team.get("id"),
+            "name": team.get("name"),
+            "code": team.get("code"),
+            "country": team.get("country"),
+            "founded": team.get("founded"),
+            "national": team.get("national"),
+            "logo": team.get("logo"),
+            "venue_name": venue.get("name"),
+            "venue_city": venue.get("city")
+        })
 
-            if slug and name:
-                clubs_by_slug[slug] = {
-                    "name": name,
-                    "slug": slug
-                }
+    return clubs
 
-clubs = sorted(
-    clubs_by_slug.values(),
-    key=lambda x: x["name"]
-)
 
-output = {
-    "updated_at": datetime.utcnow().isoformat(),
-    "league": LEAGUE_NAME,
-    "league_slug": domestic_league.get("slug"),
-    "seasonStartYear": SEASON_START_YEAR,
-    "seed_club": SEED_CLUB_SLUG,
-    "total_clubs": len(clubs),
-    "clubs": clubs
-}
+def save_club_list(league_slug, season, league_info, clubs):
+    folder = f"data/{league_slug}/{season}"
+    ensure_dir(folder)
 
-with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-    json.dump(output, f, indent=2, ensure_ascii=False)
+    output_path = f"{folder}/club_list.json"
 
-print("==============================")
-print("DONE")
-print("League:", LEAGUE_NAME)
-print("Season:", SEASON_START_YEAR)
-print("Clubs saved:", len(clubs))
-print("File created:", OUTPUT_FILE)
-print("==============================")
+    payload = {
+        "league_slug": league_slug,
+        "league_name": league_info["name"],
+        "api_league_id": league_info["api_league_id"],
+        "country": league_info["country"],
+        "season": season,
+        "created_at": datetime.utcnow().isoformat(),
+        "clubs_count": len(clubs),
+        "clubs": clubs
+    }
 
-for club in clubs:
-    print(f"- {club['name']} | {club['slug']}")
+    with open(output_path, "w", encoding="utf-8") as f:
+        json.dump(payload, f, indent=2, ensure_ascii=False)
+
+    return output_path
+
+
+def main():
+    parser = argparse.ArgumentParser()
+
+    parser.add_argument(
+        "--league",
+        required=True,
+        choices=LEAGUES.keys(),
+        help="Liga da aggiornare: belgium, croatia, segunda, bundesliga2"
+    )
+
+    parser.add_argument(
+        "--season",
+        required=True,
+        type=int,
+        help="Stagione API, esempio 2026"
+    )
+
+    args = parser.parse_args()
+
+    if not API_KEY:
+        raise Exception("Manca API_FOOTBALL_KEY nelle variabili ambiente.")
+
+    league_slug = args.league
+    season = args.season
+    league_info = LEAGUES[league_slug]
+
+    clubs = fetch_clubs(
+        api_league_id=league_info["api_league_id"],
+        season=season
+    )
+
+    output_path = save_club_list(
+        league_slug=league_slug,
+        season=season,
+        league_info=league_info,
+        clubs=clubs
+    )
+
+    print("==============================")
+    print("DONE")
+    print(f"League: {league_info['name']}")
+    print(f"Season: {season}")
+    print(f"Clubs saved: {len(clubs)}")
+    print(f"File created: {output_path}")
+
+
+if __name__ == "__main__":
+    main()
