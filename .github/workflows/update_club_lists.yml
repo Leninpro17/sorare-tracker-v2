@@ -1,0 +1,53 @@
+name: Update Club Lists
+
+on:
+  workflow_dispatch:
+    inputs:
+      league:
+        description: "League key"
+        required: true
+        default: "belgium"
+        type: choice
+        options:
+          - belgium
+          - croatia
+          - bundesliga2
+          - segunda
+          - laliga
+          - eredivisie
+          - ligue1
+          - bundesliga
+
+      season:
+        description: "Season start year"
+        required: true
+        default: "2025"
+
+jobs:
+  update-club-list:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          pip install requests
+
+      - name: Run update_club_list.py
+        run: |
+          python update_club_list.py --league ${{ github.event.inputs.league }} --season ${{ github.event.inputs.season }}
+
+      - name: Commit updated club list
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add data/
+          git commit -m "Update club list ${{ github.event.inputs.league }} ${{ github.event.inputs.season }}" || echo "No changes to commit"
+          git push
