@@ -139,6 +139,9 @@ def main():
 
     clubs = extract_clubs(domestic_league)
 
+    if not clubs:
+    raise Exception("Nessun club trovato. Controlla seed club o season.")
+    
     output_file = save_club_list(
         league_key=league_key,
         league_name=league_name,
