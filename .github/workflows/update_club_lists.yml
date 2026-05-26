@@ -2,7 +2,7 @@ name: Update Club Lists
 
 permissions:
   contents: write
-  
+
 on:
   workflow_dispatch:
     inputs:
@@ -20,11 +20,11 @@ on:
           - eredivisie
           - ligue1
           - bundesliga
-
       season:
         description: "Season start year"
         required: true
         default: "2025"
+        type: string
 
 jobs:
   update-club-list:
@@ -40,12 +40,10 @@ jobs:
           python-version: "3.11"
 
       - name: Install dependencies
-        run: |
-          pip install requests
+        run: pip install requests
 
       - name: Run update_club_list.py
-        run: |
-          python update_club_list.py --league ${{ github.event.inputs.league }} --season ${{ github.event.inputs.season }}
+        run: python update_club_list.py --league "${{ github.event.inputs.league }}" --season "${{ github.event.inputs.season }}"
 
       - name: Commit updated club list
         run: |
