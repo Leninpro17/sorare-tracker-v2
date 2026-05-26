@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-05-26T21:17:59.849919",
+  "updated_at": "2026-05-26T21:26:45.655373",
   "league": "Jupiler Pro League",
   "league_key": "belgium",
   "seasonStartYear": 2025,
   "total_clubs": 16,
   "total_players": 534,
-  "offset": 150,
+  "offset": 300,
   "limit": 150,
   "club_errors": [],
   "player_errors": [],
@@ -4218,7 +4218,11 @@
       "position": "Defender",
       "country": "Belgium",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/ba551429-29b9-4f14-8ef5-672783f50577/picture/avatar-4ed0584d7c871efe87123214dd80d263.png",
-      "membershipStartDate": "2023-01-09T00:00:00+00:00"
+      "membershipStartDate": "2023-01-09T00:00:00+00:00",
+      "age": 21,
+      "birthDay": "2005-05-10",
+      "u23": true,
+      "layoutUpdatedAt": "2026-05-26T21:21:11.014866"
     },
     {
       "slug": "gerard-vandeplas",
@@ -4228,7 +4232,11 @@
       "position": "Forward",
       "country": "Belgium",
       "avatarPictureUrl": "",
-      "membershipStartDate": "2023-03-04T00:00:00+00:00"
+      "membershipStartDate": "2023-03-04T00:00:00+00:00",
+      "age": 20,
+      "birthDay": "2006-02-25",
+      "u23": true,
+      "layoutUpdatedAt": "2026-05-26T21:21:13.257567"
     },
     {
       "slug": "andreas-verstraeten",
@@ -4238,7 +4246,11 @@
       "position": "Midfielder",
       "country": "Belgium",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/d4cc462c-77d0-4162-b961-f4802bfb4083/picture/avatar-499bf9ec956160ea10a5d3f6908caed3.png",
-      "membershipStartDate": "2023-07-01T00:00:00+00:00"
+      "membershipStartDate": "2023-07-01T00:00:00+00:00",
+      "age": 20,
+      "birthDay": "2006-01-10",
+      "u23": true,
+      "layoutUpdatedAt": "2026-05-26T21:21:15.496343"
     },
     {
       "slug": "eran-tuypens",
@@ -4248,7 +4260,11 @@
       "position": "Defender",
       "country": "Belgium",
       "avatarPictureUrl": "",
-      "membershipStartDate": "2023-11-01T00:00:00+00:00"
+      "membershipStartDate": "2023-11-01T00:00:00+00:00",
+      "age": 20,
+      "birthDay": "2005-12-07",
+      "u23": true,
+      "layoutUpdatedAt": "2026-05-26T21:21:17.688932"
     },
     {
       "slug": "christopher-gavin-scott",
@@ -4258,7 +4274,11 @@
       "position": "Midfielder",
       "country": "Germany",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/6a14816b-5386-43e8-ab80-bb86b8e88d66/picture/avatar-5c91daf6e7db4a072be079a341175cd4.png",
-      "membershipStartDate": "2024-07-01T00:00:00+00:00"
+      "membershipStartDate": "2024-07-01T00:00:00+00:00",
+      "age": 23,
+      "birthDay": "2002-06-07",
+      "u23": true,
+      "layoutUpdatedAt": "2026-05-26T21:21:19.879686"
     },
     {
       "slug": "gyrano-kerk",
@@ -4268,7 +4288,11 @@
       "position": "Forward",
       "country": "Suriname",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/c48462b1-689a-4d85-970c-90e480e78621/picture/avatar-9ce8076548d7a3d64594191107b0c3f8.png",
-      "membershipStartDate": "2024-07-04T00:00:00+00:00"
+      "membershipStartDate": "2024-07-04T00:00:00+00:00",
+      "age": 30,
+      "birthDay": "1995-12-02",
+      "u23": false,
+      "layoutUpdatedAt": "2026-05-26T21:21:22.117576"
     },
     {
       "slug": "farouck-adekami",
@@ -4278,7 +4302,11 @@
       "position": "Midfielder",
       "country": "Côte d’Ivoire",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/6cad928b-3133-4131-99b9-2521dcd21355/picture/avatar-572795ac8b2e8e55205623e8d1fa5439.png",
-      "membershipStartDate": "2024-08-08T00:00:00+00:00"
+      "membershipStartDate": "2024-08-08T00:00:00+00:00",
+      "age": 20,
+      "birthDay": "2006-02-13",
+      "u23": true,
+      "layoutUpdatedAt": "2026-05-26T21:21:24.353597"
     },
     {
       "slug": "semm-renders",
@@ -4288,7 +4316,11 @@
       "position": "Defender",
       "country": "Belgium",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/72c1b6ab-5f5f-4afa-a517-19a4fd1fa91a/picture/avatar-98930ad87be4596084f2c6a5cd3dd630.png",
-      "membershipStartDate": "2024-08-31T00:00:00+00:00"
+      "membershipStartDate": "2024-08-31T00:00:00+00:00",
+      "age": 18,
+      "birthDay": "2007-12-17",
+      "u23": true,
+      "layoutUpdatedAt": "2026-05-26T21:21:26.606959"
     },
     {
       "slug": "dennis-praet",
@@ -4298,7 +4330,11 @@
       "position": "Midfielder",
       "country": "Belgium",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/4adba7b5-4d2b-48e5-8a7a-b5ac9a134a5c/picture/avatar-a9e39b9cac595c31fb2189d12cc47414.png",
-      "membershipStartDate": "2024-09-06T00:00:00+00:00"
+      "membershipStartDate": "2024-09-06T00:00:00+00:00",
+      "age": 32,
+      "birthDay": "1994-05-14",
+      "u23": false,
+      "layoutUpdatedAt": "2026-05-26T21:21:28.852850"
     },
     {
       "slug": "youssef-hamdaoui",
@@ -4308,7 +4344,11 @@
       "position": "Midfielder",
       "country": "Morocco",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/0d47b78d-a393-4c47-a77a-77821e48d0f0/picture/avatar-df35adc0b79b97f4817ac29eeed9b826.png",
-      "membershipStartDate": "2025-01-23T00:00:00+00:00"
+      "membershipStartDate": "2025-01-23T00:00:00+00:00",
+      "age": 18,
+      "birthDay": "2008-03-20",
+      "u23": true,
+      "layoutUpdatedAt": "2026-05-26T21:21:31.063120"
     },
     {
       "slug": "yannick-thoelen",
@@ -4318,7 +4358,11 @@
       "position": "Goalkeeper",
       "country": "Belgium",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/25ad6185-f1cf-42e0-9ed0-1c3bbe661ee1/picture/avatar-9cf08fce5e2b4c83dd2851c0a1494949.png",
-      "membershipStartDate": "2025-01-30T00:00:00+00:00"
+      "membershipStartDate": "2025-01-30T00:00:00+00:00",
+      "age": 35,
+      "birthDay": "1990-07-18",
+      "u23": false,
+      "layoutUpdatedAt": "2026-05-26T21:21:33.300766"
     },
     {
       "slug": "mauricio-leonel-benitez",
@@ -4328,7 +4372,11 @@
       "position": "Midfielder",
       "country": "Argentina",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/619b9018-2993-484f-aafb-d1a5f5ec8e20/picture/avatar-dd2476c083a250e6588bb168afcc6bb9.png",
-      "membershipStartDate": "2025-07-01T00:00:00+00:00"
+      "membershipStartDate": "2025-07-01T00:00:00+00:00",
+      "age": 22,
+      "birthDay": "2004-02-03",
+      "u23": true,
+      "layoutUpdatedAt": "2026-05-26T21:21:35.507460"
     },
     {
       "slug": "david-gabriel-jesus",
@@ -4338,7 +4386,11 @@
       "position": "Forward",
       "country": "Nigeria",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/6656bf0b-95e6-468c-aa19-7991fc24fb34/picture/avatar-43af56900b504733ab698979da6b953f.png",
-      "membershipStartDate": "2025-02-28T00:00:00+00:00"
+      "membershipStartDate": "2025-02-28T00:00:00+00:00",
+      "age": 19,
+      "birthDay": "2007-01-02",
+      "u23": true,
+      "layoutUpdatedAt": "2026-05-26T21:21:37.756354"
     },
     {
       "slug": "orseer-achihi",
@@ -4348,7 +4400,11 @@
       "position": "Forward",
       "country": "Nigeria",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/1b4cc509-a2e8-46ce-98be-63578f4abcd1/picture/avatar-e79c25d436ac177318598464b48db849.png",
-      "membershipStartDate": "2025-02-28T00:00:00+00:00"
+      "membershipStartDate": "2025-02-28T00:00:00+00:00",
+      "age": 19,
+      "birthDay": "2006-09-19",
+      "u23": true,
+      "layoutUpdatedAt": "2026-05-26T21:21:39.960183"
     },
     {
       "slug": "geoffry-hairemans",
@@ -4358,7 +4414,11 @@
       "position": "Midfielder",
       "country": "Belgium",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/1f72e7f5-67f2-472c-a849-eba395c3542b/picture/avatar-7354e1b1b78ae4f902459422967041c4.png",
-      "membershipStartDate": "2025-07-01T00:00:00+00:00"
+      "membershipStartDate": "2025-07-01T00:00:00+00:00",
+      "age": 34,
+      "birthDay": "1991-10-21",
+      "u23": false,
+      "layoutUpdatedAt": "2026-05-26T21:21:42.199769"
     },
     {
       "slug": "taishi-brandon-nozawa",
@@ -4368,7 +4428,11 @@
       "position": "Goalkeeper",
       "country": "Japan",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/95d09d45-28de-484c-aec4-c91b5b22ae3f/picture/avatar-85a99382fdfa169fbb72b8bf6556b48f.png",
-      "membershipStartDate": "2025-07-01T00:00:00+00:00"
+      "membershipStartDate": "2025-07-01T00:00:00+00:00",
+      "age": 23,
+      "birthDay": "2002-12-25",
+      "u23": true,
+      "layoutUpdatedAt": "2026-05-26T21:21:44.434009"
     },
     {
       "slug": "daam-foulon",
@@ -4378,7 +4442,11 @@
       "position": "Defender",
       "country": "Belgium",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/22c5373d-6015-4671-ad63-74de06ff13ba/picture/avatar-4ee8c24092cf2b2df49abb94443a2627.png",
-      "membershipStartDate": "2025-07-01T00:00:00+00:00"
+      "membershipStartDate": "2025-07-01T00:00:00+00:00",
+      "age": 27,
+      "birthDay": "1999-03-23",
+      "u23": false,
+      "layoutUpdatedAt": "2026-05-26T21:21:46.658705"
     },
     {
       "slug": "muhammadali-o-rinboyev",
@@ -4388,7 +4456,11 @@
       "position": "Forward",
       "country": "Uzbekistan",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/d34d7fc8-95fb-4029-bfa8-d8da034a2ec7/picture/avatar-0819ebbf249cf4eadaa2cca651eda02b.png",
-      "membershipStartDate": "2025-07-07T00:00:00+00:00"
+      "membershipStartDate": "2025-07-07T00:00:00+00:00",
+      "age": 21,
+      "birthDay": "2005-04-24",
+      "u23": true,
+      "layoutUpdatedAt": "2026-05-26T21:21:48.884254"
     },
     {
       "slug": "thibo-somers",
@@ -4398,7 +4470,11 @@
       "position": "Forward",
       "country": "Belgium",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/135e778a-37b1-4b1a-90bd-050df560ecee/picture/avatar-9da2e6f6611d0148d985cc16cd4ddc27.png",
-      "membershipStartDate": "2025-07-18T00:00:00+00:00"
+      "membershipStartDate": "2025-07-18T00:00:00+00:00",
+      "age": 27,
+      "birthDay": "1999-03-16",
+      "u23": false,
+      "layoutUpdatedAt": "2026-05-26T21:21:51.101859"
     },
     {
       "slug": "glenn-bijl",
@@ -4408,7 +4484,11 @@
       "position": "Defender",
       "country": "Netherlands",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/9c946013-701e-4762-93d4-ffcf9d1059c3/picture/avatar-84639f87414041891f2d4f7cc52be049.png",
-      "membershipStartDate": "2025-07-24T00:00:00+00:00"
+      "membershipStartDate": "2025-07-24T00:00:00+00:00",
+      "age": 30,
+      "birthDay": "1995-07-13",
+      "u23": false,
+      "layoutUpdatedAt": "2026-05-26T21:21:53.332496"
     },
     {
       "slug": "yuto-tsunashima",
@@ -4418,7 +4498,11 @@
       "position": "Midfielder",
       "country": "Japan",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/7b64b809-adcd-4a24-94c4-9828c06e6a24/picture/avatar-b906e9fecce1d8512d5cff528a356338.png",
-      "membershipStartDate": "2025-08-06T00:00:00+00:00"
+      "membershipStartDate": "2025-08-06T00:00:00+00:00",
+      "age": 25,
+      "birthDay": "2000-08-15",
+      "u23": false,
+      "layoutUpdatedAt": "2026-05-26T21:21:55.551742"
     },
     {
       "slug": "boubakar-kouyate",
@@ -4428,7 +4512,11 @@
       "position": "Defender",
       "country": "Mali",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/9726372d-0011-4101-84f7-78bda71c49b9/picture/avatar-5ebb2f0b2e3d85cc98deceded1d12976.png",
-      "membershipStartDate": "2025-08-12T00:00:00+00:00"
+      "membershipStartDate": "2025-08-12T00:00:00+00:00",
+      "age": 29,
+      "birthDay": "1997-04-15",
+      "u23": false,
+      "layoutUpdatedAt": "2026-05-26T21:21:57.832941"
     },
     {
       "slug": "marwan-saeed-masoud-al-sahafi",
@@ -4438,7 +4526,11 @@
       "position": "Forward",
       "country": "Saudi Arabia",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/1dd9e496-1789-4c1b-866e-3824dc1d7638/picture/avatar-8d0fe2c764b7bf797571ca1ff26be9e0.png",
-      "membershipStartDate": "2025-08-21T00:00:00+00:00"
+      "membershipStartDate": "2025-08-21T00:00:00+00:00",
+      "age": 22,
+      "birthDay": "2004-02-17",
+      "u23": true,
+      "layoutUpdatedAt": "2026-05-26T21:22:00.088997"
     },
     {
       "slug": "isaac-achmed-koroma-junior-babadi",
@@ -4448,7 +4540,11 @@
       "position": "Midfielder",
       "country": "Netherlands",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/bcc7aec5-2a23-4ee4-998e-8db26c16fb19/picture/avatar-f8cf0d43a7782651d33d33cd7865f603.png",
-      "membershipStartDate": "2025-09-01T00:00:00+00:00"
+      "membershipStartDate": "2025-09-01T00:00:00+00:00",
+      "age": 21,
+      "birthDay": "2005-04-06",
+      "u23": true,
+      "layoutUpdatedAt": "2026-05-26T21:22:02.554800"
     },
     {
       "slug": "mahamadou-diawara-2005-02-17",
@@ -4458,7 +4554,11 @@
       "position": "Midfielder",
       "country": "France",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/be10e30d-2da3-4fc6-ad40-9bb258ad9645/picture/avatar-6b8861645c7bcb2481dec362e9c9a877.png",
-      "membershipStartDate": "2025-09-08T00:00:00+00:00"
+      "membershipStartDate": "2025-09-08T00:00:00+00:00",
+      "age": 21,
+      "birthDay": "2005-02-17",
+      "u23": true,
+      "layoutUpdatedAt": "2026-05-26T21:22:04.778770"
     },
     {
       "slug": "jules-ahoka-jules",
@@ -4468,7 +4568,11 @@
       "position": "Midfielder",
       "country": "Congo - Kinshasa",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/deb408d3-7be9-4ab4-b650-dc19a33ce4db/picture/avatar-37c682154efe66ab394aeccca4c77744.png",
-      "membershipStartDate": "2025-09-08T00:00:00+00:00"
+      "membershipStartDate": "2025-09-08T00:00:00+00:00",
+      "age": 20,
+      "birthDay": "2005-12-17",
+      "u23": true,
+      "layoutUpdatedAt": "2026-05-26T21:22:07.132166"
     },
     {
       "slug": "xander-dierckx",
@@ -4478,7 +4582,11 @@
       "position": "Midfielder",
       "country": "Belgium",
       "avatarPictureUrl": "",
-      "membershipStartDate": "2025-10-17T00:00:00+00:00"
+      "membershipStartDate": "2025-10-17T00:00:00+00:00",
+      "age": 17,
+      "birthDay": "2009-02-27",
+      "u23": true,
+      "layoutUpdatedAt": "2026-05-26T21:22:09.320334"
     },
     {
       "slug": "rein-van-helden",
@@ -4488,7 +4596,11 @@
       "position": "Defender",
       "country": "Belgium",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/c79a0dc3-ff79-4baa-a455-401ad23f5265/avatar-rein-van-helden_antwerp-deurne_football_2025_home_card_edition_name%3Dclassic.png",
-      "membershipStartDate": "2026-01-23T00:00:00+00:00"
+      "membershipStartDate": "2026-01-23T00:00:00+00:00",
+      "age": 23,
+      "birthDay": "2002-07-24",
+      "u23": true,
+      "layoutUpdatedAt": "2026-05-26T21:22:11.525257"
     },
     {
       "slug": "louie-van-gelder",
@@ -4498,7 +4610,11 @@
       "position": "Midfielder",
       "country": "Belgium",
       "avatarPictureUrl": "",
-      "membershipStartDate": "2026-02-20T00:00:00+00:00"
+      "membershipStartDate": "2026-02-20T00:00:00+00:00",
+      "age": 17,
+      "birthDay": "2009-01-30",
+      "u23": true,
+      "layoutUpdatedAt": "2026-05-26T21:22:13.736151"
     },
     {
       "slug": "luca-schelfhout",
@@ -4508,7 +4624,11 @@
       "position": "Defender",
       "country": "Belgium",
       "avatarPictureUrl": "",
-      "membershipStartDate": "2026-02-27T00:00:00+00:00"
+      "membershipStartDate": "2026-02-27T00:00:00+00:00",
+      "age": 18,
+      "birthDay": "2007-09-17",
+      "u23": true,
+      "layoutUpdatedAt": "2026-05-26T21:22:15.917380"
     },
     {
       "slug": "jeff-godelaine",
@@ -4518,7 +4638,11 @@
       "position": "Forward",
       "country": "Belgium",
       "avatarPictureUrl": "",
-      "membershipStartDate": "2026-04-09T00:00:00+00:00"
+      "membershipStartDate": "2026-04-09T00:00:00+00:00",
+      "age": 19,
+      "birthDay": "2007-04-26",
+      "u23": true,
+      "layoutUpdatedAt": "2026-05-26T21:22:18.196769"
     },
     {
       "slug": "faris-haroun",
@@ -4528,7 +4652,11 @@
       "position": "Coach",
       "country": "Belgium",
       "avatarPictureUrl": "https://assets.sorare.com/player/79f1e8c7-4b6b-4f34-bb12-b3105f2e6764/picture/avatar-51c7cabf2ef9352b7e6de53a13e9ff0a.png",
-      "membershipStartDate": "2026-05-17T00:00:00+00:00"
+      "membershipStartDate": "2026-05-17T00:00:00+00:00",
+      "age": 40,
+      "birthDay": "1985-09-22",
+      "u23": false,
+      "layoutUpdatedAt": "2026-05-26T21:22:20.413912"
     },
     {
       "slug": "modibo-fofana-2007-11-03",
@@ -4538,7 +4666,11 @@
       "position": "Midfielder",
       "country": "Côte d’Ivoire",
       "avatarPictureUrl": "",
-      "membershipStartDate": "2026-05-18T00:00:00+00:00"
+      "membershipStartDate": "2026-05-18T00:00:00+00:00",
+      "age": 18,
+      "birthDay": "2007-11-03",
+      "u23": true,
+      "layoutUpdatedAt": "2026-05-26T21:22:22.581865"
     },
     {
       "slug": "isaac-mbenza",
@@ -4548,7 +4680,11 @@
       "position": "Midfielder",
       "country": "Belgium",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/6b5f916b-2a2c-45eb-bb20-d325ac525570/picture/avatar-8f31b68e9595de4446511559e45d2e7b.png",
-      "membershipStartDate": "2022-03-14T00:00:00+00:00"
+      "membershipStartDate": "2022-03-14T00:00:00+00:00",
+      "age": 30,
+      "birthDay": "1996-03-08",
+      "u23": false,
+      "layoutUpdatedAt": "2026-05-26T21:22:24.796600"
     },
     {
       "slug": "martin-delavalee",
@@ -4558,7 +4694,11 @@
       "position": "Goalkeeper",
       "country": "Belgium",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/3f5ac267-42ce-4bc0-a24c-d88492b9792c/picture/avatar-1d0689c552d13fe48116c444881e70dc.png",
-      "membershipStartDate": "2022-06-18T00:00:00+00:00"
+      "membershipStartDate": "2022-06-18T00:00:00+00:00",
+      "age": 22,
+      "birthDay": "2004-03-18",
+      "u23": true,
+      "layoutUpdatedAt": "2026-05-26T21:22:27.012676"
     },
     {
       "slug": "nicolas-closset",
@@ -4568,7 +4708,11 @@
       "position": "Goalkeeper",
       "country": "Belgium",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/62db8a52-d79f-4b48-985a-ceb7b23f989d/picture/avatar-4fa631be843bfaca5bc2bff82d4305fd.png",
-      "membershipStartDate": "2023-06-17T00:00:00+00:00"
+      "membershipStartDate": "2023-06-17T00:00:00+00:00",
+      "age": 21,
+      "birthDay": "2004-07-10",
+      "u23": true,
+      "layoutUpdatedAt": "2026-05-26T21:22:29.240496"
     },
     {
       "slug": "antoine-bernier",
@@ -4578,7 +4722,11 @@
       "position": "Forward",
       "country": "Belgium",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/3b1285f3-a986-4c43-8c21-a68864ced73f/picture/avatar-8f41e8d3ccc2956b9c4cf8cc03732750.png",
-      "membershipStartDate": "2023-06-23T00:00:00+00:00"
+      "membershipStartDate": "2023-06-23T00:00:00+00:00",
+      "age": 28,
+      "birthDay": "1997-09-10",
+      "u23": false,
+      "layoutUpdatedAt": "2026-05-26T21:22:31.443844"
     },
     {
       "slug": "parfait-guiagon",
@@ -4588,7 +4736,11 @@
       "position": "Midfielder",
       "country": "Côte d’Ivoire",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/49ba7225-ffef-462e-9a2a-d734a0dac2ab/picture/avatar-d8ca21fe92233428dca68c211d01f02c.png",
-      "membershipStartDate": "2023-08-29T00:00:00+00:00"
+      "membershipStartDate": "2023-08-29T00:00:00+00:00",
+      "age": 25,
+      "birthDay": "2001-02-22",
+      "u23": false,
+      "layoutUpdatedAt": "2026-05-26T21:22:33.701540"
     },
     {
       "slug": "etienne-camara",
@@ -4598,7 +4750,11 @@
       "position": "Midfielder",
       "country": "France",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/5bc26d80-221f-4eb1-91b1-9607d692c0ff/picture/avatar-3e0ab6e6e51020c2ca428834b3875a93.png",
-      "membershipStartDate": "2024-02-01T00:00:00+00:00"
+      "membershipStartDate": "2024-02-01T00:00:00+00:00",
+      "age": 23,
+      "birthDay": "2003-03-30",
+      "u23": true,
+      "layoutUpdatedAt": "2026-05-26T21:22:35.911912"
     },
     {
       "slug": "amine-boukamir",
@@ -4608,7 +4764,11 @@
       "position": "Midfielder",
       "country": "Morocco",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/f7e1e7ea-86f2-472e-aa71-fee2f233ecfe/picture/avatar-f886c7645f46eb14198f3e71db04c3ea.png",
-      "membershipStartDate": "2024-03-16T00:00:00+00:00"
+      "membershipStartDate": "2024-03-16T00:00:00+00:00",
+      "age": 19,
+      "birthDay": "2006-10-23",
+      "u23": true,
+      "layoutUpdatedAt": "2026-05-26T21:22:38.237288"
     },
     {
       "slug": "mardochee-nzita-theto",
@@ -4618,7 +4778,11 @@
       "position": "Defender",
       "country": "Belgium",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/24939120-26e1-4d7f-8af4-f2e7821563aa/picture/avatar-c8b87ca6c997f73976c8d3e7c67930ea.png",
-      "membershipStartDate": "2024-06-15T00:00:00+00:00"
+      "membershipStartDate": "2024-06-15T00:00:00+00:00",
+      "age": 26,
+      "birthDay": "2000-02-24",
+      "u23": false,
+      "layoutUpdatedAt": "2026-05-26T21:22:40.454441"
     },
     {
       "slug": "theo-defourny",
@@ -4628,7 +4792,11 @@
       "position": "Goalkeeper",
       "country": "Belgium",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/e9e91503-d8f8-4503-b524-e6de60675aa3/picture/avatar-c1af7991568d5d0b6091434b00454691.png",
-      "membershipStartDate": "2024-06-16T00:00:00+00:00"
+      "membershipStartDate": "2024-06-16T00:00:00+00:00",
+      "age": 34,
+      "birthDay": "1992-04-25",
+      "u23": false,
+      "layoutUpdatedAt": "2026-05-26T21:22:42.659335"
     },
     {
       "slug": "mohamed-kone-2002-03-07",
@@ -4638,7 +4806,11 @@
       "position": "Goalkeeper",
       "country": "Côte d’Ivoire",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/585db79c-2814-4df1-aeaa-e244d9e4c767/picture/avatar-c1b284bc10a120339ebf884bfde37b03.png",
-      "membershipStartDate": "2024-07-02T00:00:00+00:00"
+      "membershipStartDate": "2024-07-02T00:00:00+00:00",
+      "age": 24,
+      "birthDay": "2002-03-07",
+      "u23": true,
+      "layoutUpdatedAt": "2026-05-26T21:22:44.893298"
     },
     {
       "slug": "cheick-keita-2003-04-02",
@@ -4648,7 +4820,11 @@
       "position": "Defender",
       "country": "Mali",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/7bedb74f-76d3-4115-be9f-8f427bc3f8ae/picture/avatar-954b9de8946b5ca1718c1dd2dd20f08f.png",
-      "membershipStartDate": "2024-07-04T00:00:00+00:00"
+      "membershipStartDate": "2024-07-04T00:00:00+00:00",
+      "age": 23,
+      "birthDay": "2003-04-02",
+      "u23": true,
+      "layoutUpdatedAt": "2026-05-26T21:22:47.121418"
     },
     {
       "slug": "yacine-titraoui",
@@ -4658,7 +4834,11 @@
       "position": "Midfielder",
       "country": "Algeria",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/6e007845-1762-496f-81e4-7a7e219df716/picture/avatar-114c7415580469f1eba3202006ff5ff3.png",
-      "membershipStartDate": "2024-07-12T00:00:00+00:00"
+      "membershipStartDate": "2024-07-12T00:00:00+00:00",
+      "age": 22,
+      "birthDay": "2003-07-26",
+      "u23": true,
+      "layoutUpdatedAt": "2026-05-26T21:22:49.317801"
     },
     {
       "slug": "massamba-sow",
@@ -4668,7 +4848,11 @@
       "position": "Defender",
       "country": "France",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/7bc8b5b9-540d-41ee-b41e-c8fee98280f5/picture/avatar-94fcf9ab53837c37d45a518ef662c746.png",
-      "membershipStartDate": "2024-07-24T00:00:00+00:00"
+      "membershipStartDate": "2024-07-24T00:00:00+00:00",
+      "age": 21,
+      "birthDay": "2004-06-13",
+      "u23": true,
+      "layoutUpdatedAt": "2026-05-26T21:22:51.520246"
     },
     {
       "slug": "aiham-ousou",
@@ -4678,7 +4862,11 @@
       "position": "Defender",
       "country": "Syria",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/466d59e1-778d-4a4a-983b-c60bee93e792/picture/avatar-2143c6b826a95222d8a0c4248760292f.png",
-      "membershipStartDate": "2024-07-31T00:00:00+00:00"
+      "membershipStartDate": "2024-07-31T00:00:00+00:00",
+      "age": 26,
+      "birthDay": "2000-01-09",
+      "u23": false,
+      "layoutUpdatedAt": "2026-05-26T21:22:53.784487"
     },
     {
       "slug": "quentin-benaets",
@@ -4688,7 +4876,11 @@
       "position": "Forward",
       "country": "Belgium",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/7ecf97b5-2b7b-484f-817c-091b798ced7b/picture/avatar-e578db6ff20ae4085802eb6e4f30b566.png",
-      "membershipStartDate": "2024-10-19T00:00:00+00:00"
+      "membershipStartDate": "2024-10-19T00:00:00+00:00",
+      "age": 22,
+      "birthDay": "2003-08-26",
+      "u23": true,
+      "layoutUpdatedAt": "2026-05-26T21:22:55.988771"
     },
     {
       "slug": "robin-denuit",
@@ -4698,7 +4890,11 @@
       "position": "Defender",
       "country": "Belgium",
       "avatarPictureUrl": "",
-      "membershipStartDate": "2025-05-03T00:00:00+00:00"
+      "membershipStartDate": "2025-05-03T00:00:00+00:00",
+      "age": 24,
+      "birthDay": "2002-02-21",
+      "u23": true,
+      "layoutUpdatedAt": "2026-05-26T21:22:58.161909"
     },
     {
       "slug": "jakob-napoleon-romsaas",
@@ -4708,7 +4904,11 @@
       "position": "Midfielder",
       "country": "Norway",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/aaaecc13-3ba9-4365-a940-08a3030407f6/picture/avatar-37d39af825a17c41f43953081652c1ad.png",
-      "membershipStartDate": "2025-06-17T00:00:00+00:00"
+      "membershipStartDate": "2025-06-17T00:00:00+00:00",
+      "age": 22,
+      "birthDay": "2004-05-16",
+      "u23": true,
+      "layoutUpdatedAt": "2026-05-26T21:23:00.471809"
     },
     {
       "slug": "mehdi-boukamir",
@@ -4718,7 +4918,11 @@
       "position": "Defender",
       "country": "Morocco",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/8743554f-419d-4c78-8be0-ddd16492609c/picture/avatar-c4d17395e4c8bdd3c7c3176a6ebf2b0c.png",
-      "membershipStartDate": "2025-07-01T00:00:00+00:00"
+      "membershipStartDate": "2025-07-01T00:00:00+00:00",
+      "age": 22,
+      "birthDay": "2004-01-26",
+      "u23": true,
+      "layoutUpdatedAt": "2026-05-26T21:23:02.718323"
     },
     {
       "slug": "raymond-anokye-asante",
@@ -4728,7 +4932,11 @@
       "position": "Forward",
       "country": "Ghana",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/f95c1ae9-3519-4695-8026-8650f6754fe6/picture/avatar-95aa0d7f6d7997af395f594968f1e706.png",
-      "membershipStartDate": "2025-07-01T00:00:00+00:00"
+      "membershipStartDate": "2025-07-01T00:00:00+00:00",
+      "age": 21,
+      "birthDay": "2004-05-27",
+      "u23": true,
+      "layoutUpdatedAt": "2026-05-26T21:23:04.918280"
     },
     {
       "slug": "mory-kera",
@@ -4738,7 +4946,11 @@
       "position": "Midfielder",
       "country": "Belgium",
       "avatarPictureUrl": "",
-      "membershipStartDate": "2025-07-01T00:00:00+00:00"
+      "membershipStartDate": "2025-07-01T00:00:00+00:00",
+      "age": 17,
+      "birthDay": "2008-06-26",
+      "u23": true,
+      "layoutUpdatedAt": "2026-05-26T21:23:07.227530"
     },
     {
       "slug": "antoine-colassin",
@@ -4748,7 +4960,11 @@
       "position": "Forward",
       "country": "Belgium",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/17c77a39-10a5-4980-8c54-5a120eaf4bfe/picture/avatar-0836b8795399137c3e9bae9b6554af1d.png",
-      "membershipStartDate": "2025-07-08T00:00:00+00:00"
+      "membershipStartDate": "2025-07-08T00:00:00+00:00",
+      "age": 25,
+      "birthDay": "2001-02-26",
+      "u23": false,
+      "layoutUpdatedAt": "2026-05-26T21:23:09.456520"
     },
     {
       "slug": "yassine-khalifi",
@@ -4758,7 +4974,11 @@
       "position": "Midfielder",
       "country": "Morocco",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/82053b3d-bdcf-4d3b-b907-2437aadc1a53/picture/avatar-d98c8ee90cad404af0031b0e62f1b614.png",
-      "membershipStartDate": "2025-07-14T00:00:00+00:00"
+      "membershipStartDate": "2025-07-14T00:00:00+00:00",
+      "age": 20,
+      "birthDay": "2005-08-09",
+      "u23": true,
+      "layoutUpdatedAt": "2026-05-26T21:23:11.726916"
     },
     {
       "slug": "aurelien-scheidler",
@@ -4768,7 +4988,11 @@
       "position": "Forward",
       "country": "France",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/714eb66a-f478-44a9-acea-5f089331d425/picture/avatar-dfead9caac270aa3317011368be257a1.png",
-      "membershipStartDate": "2025-08-19T00:00:00+00:00"
+      "membershipStartDate": "2025-08-19T00:00:00+00:00",
+      "age": 27,
+      "birthDay": "1998-06-04",
+      "u23": false,
+      "layoutUpdatedAt": "2026-05-26T21:23:13.958498"
     },
     {
       "slug": "kevin-van-den-kerkhof",
@@ -4778,7 +5002,11 @@
       "position": "Defender",
       "country": "France",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/87e5620d-3467-4a5f-9270-900e6b4c2786/picture/avatar-b4510af84e8a1e97725aa048aa54afd4.png",
-      "membershipStartDate": "2025-08-20T00:00:00+00:00"
+      "membershipStartDate": "2025-08-20T00:00:00+00:00",
+      "age": 30,
+      "birthDay": "1996-03-14",
+      "u23": false,
+      "layoutUpdatedAt": "2026-05-26T21:23:16.162341"
     },
     {
       "slug": "jules-gaudin",
@@ -4788,7 +5016,11 @@
       "position": "Defender",
       "country": "France",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/8283e1ee-9d41-4c01-aa02-987205274b21/picture/avatar-8d70b928982e0b3083591cbf00d9f8c2.png",
-      "membershipStartDate": "2025-08-21T00:00:00+00:00"
+      "membershipStartDate": "2025-08-21T00:00:00+00:00",
+      "age": 26,
+      "birthDay": "2000-05-09",
+      "u23": false,
+      "layoutUpdatedAt": "2026-05-26T21:23:18.431680"
     },
     {
       "slug": "patrick-pflucke",
@@ -4798,7 +5030,11 @@
       "position": "Forward",
       "country": "Germany",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/b71a56a3-3614-4da7-b5c2-2e761240ae8e/picture/avatar-00e7a513d373881fa7132861e80cb17d.png",
-      "membershipStartDate": "2025-09-02T00:00:00+00:00"
+      "membershipStartDate": "2025-09-02T00:00:00+00:00",
+      "age": 29,
+      "birthDay": "1996-11-30",
+      "u23": false,
+      "layoutUpdatedAt": "2026-05-26T21:23:20.642432"
     },
     {
       "slug": "filip-szymczak",
@@ -4808,7 +5044,11 @@
       "position": "Forward",
       "country": "Poland",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/02a613b6-4baf-473d-911a-07e539f4d180/picture/avatar-871d5673786354a60cafd5ab7ab60227.png",
-      "membershipStartDate": "2025-09-03T00:00:00+00:00"
+      "membershipStartDate": "2025-09-03T00:00:00+00:00",
+      "age": 24,
+      "birthDay": "2002-05-06",
+      "u23": true,
+      "layoutUpdatedAt": "2026-05-26T21:23:22.866343"
     },
     {
       "slug": "lewin-blum",
@@ -4818,7 +5058,11 @@
       "position": "Defender",
       "country": "Switzerland",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/29fadb6e-88c0-4cb7-ab0d-feb7c4489b80/picture/avatar-a3d2c7c2eb8cd921a0cca184abd60345.png",
-      "membershipStartDate": "2025-09-06T00:00:00+00:00"
+      "membershipStartDate": "2025-09-06T00:00:00+00:00",
+      "age": 24,
+      "birthDay": "2001-07-27",
+      "u23": true,
+      "layoutUpdatedAt": "2026-05-26T21:23:25.130361"
     },
     {
       "slug": "yoann-cisse",
@@ -4828,7 +5072,11 @@
       "position": "Midfielder",
       "country": "France",
       "avatarPictureUrl": "",
-      "membershipStartDate": "2026-02-10T00:00:00+00:00"
+      "membershipStartDate": "2026-02-10T00:00:00+00:00",
+      "age": 21,
+      "birthDay": "2004-12-13",
+      "u23": true,
+      "layoutUpdatedAt": "2026-05-26T21:23:27.300962"
     },
     {
       "slug": "mario-kohnen",
@@ -4838,7 +5086,11 @@
       "position": "Coach",
       "country": "Belgium",
       "avatarPictureUrl": "",
-      "membershipStartDate": "2026-04-07T00:00:00+00:00"
+      "membershipStartDate": "2026-04-07T00:00:00+00:00",
+      "age": 39,
+      "birthDay": "1986-10-07",
+      "u23": false,
+      "layoutUpdatedAt": "2026-05-26T21:23:29.479423"
     },
     {
       "slug": "matteo-noto",
@@ -4848,7 +5100,11 @@
       "position": "Midfielder",
       "country": "Belgium",
       "avatarPictureUrl": "",
-      "membershipStartDate": "2026-04-24T00:00:00+00:00"
+      "membershipStartDate": "2026-04-24T00:00:00+00:00",
+      "age": 18,
+      "birthDay": "2007-09-27",
+      "u23": true,
+      "layoutUpdatedAt": "2026-05-26T21:23:31.659253"
     },
     {
       "slug": "christian-burgess",
@@ -4858,7 +5114,11 @@
       "position": "Defender",
       "country": "England",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/a4b8ce90-86d7-4e60-8915-25653b10e072/picture/avatar-c651a8197b2f27a9c42d491840f20cee.png",
-      "membershipStartDate": "2020-07-07T00:00:00+00:00"
+      "membershipStartDate": "2020-07-07T00:00:00+00:00",
+      "age": 34,
+      "birthDay": "1991-10-07",
+      "u23": false,
+      "layoutUpdatedAt": "2026-05-26T21:23:33.896231"
     },
     {
       "slug": "guillaume-francois",
@@ -4868,7 +5128,11 @@
       "position": "Defender",
       "country": "Belgium",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/25c2510c-1892-466a-a719-3aabbb5e3a1a/picture/avatar-f41ed3ee948a164560a2d604b8b6d09e.png",
-      "membershipStartDate": "2020-08-12T00:00:00+00:00"
+      "membershipStartDate": "2020-08-12T00:00:00+00:00",
+      "age": 35,
+      "birthDay": "1990-06-03",
+      "u23": false,
+      "layoutUpdatedAt": "2026-05-26T21:23:36.101886"
     },
     {
       "slug": "soulaimane-berradi",
@@ -4878,7 +5142,11 @@
       "position": "Midfielder",
       "country": "Belgium",
       "avatarPictureUrl": "",
-      "membershipStartDate": "2022-01-17T00:00:00+00:00"
+      "membershipStartDate": "2022-01-17T00:00:00+00:00",
+      "age": 21,
+      "birthDay": "2004-11-20",
+      "u23": true,
+      "layoutUpdatedAt": "2026-05-26T21:23:38.295735"
     },
     {
       "slug": "ross-sykes",
@@ -4888,7 +5156,11 @@
       "position": "Defender",
       "country": "England",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/e1b28a0a-e6c0-4c88-9958-9bd50fb90545/picture/avatar-44e5a159152303057959745bb3158e7c.png",
-      "membershipStartDate": "2022-07-01T00:00:00+00:00"
+      "membershipStartDate": "2022-07-01T00:00:00+00:00",
+      "age": 27,
+      "birthDay": "1999-03-26",
+      "u23": false,
+      "layoutUpdatedAt": "2026-05-26T21:23:40.485493"
     },
     {
       "slug": "fedde-leysen",
@@ -4898,7 +5170,11 @@
       "position": "Defender",
       "country": "Belgium",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/562e21c1-2235-45b6-b065-6c8d0b97160f/picture/avatar-c19a95115eef8d81a3f22763d6559d35.png",
-      "membershipStartDate": "2023-06-15T00:00:00+00:00"
+      "membershipStartDate": "2023-06-15T00:00:00+00:00",
+      "age": 22,
+      "birthDay": "2003-07-09",
+      "u23": true,
+      "layoutUpdatedAt": "2026-05-26T21:23:42.750557"
     },
     {
       "slug": "kevin-mac-allister",
@@ -4908,7 +5184,11 @@
       "position": "Defender",
       "country": "Argentina",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/92c849eb-3051-4d44-8e25-3138fb974cc8/picture/avatar-c8a7a2d62f500398677c717624fdaaee.png",
-      "membershipStartDate": "2023-07-13T00:00:00+00:00"
+      "membershipStartDate": "2023-07-13T00:00:00+00:00",
+      "age": 28,
+      "birthDay": "1997-11-07",
+      "u23": false,
+      "layoutUpdatedAt": "2026-05-26T21:23:44.960183"
     },
     {
       "slug": "kevin-jose-rodriguez-cortez",
@@ -4918,7 +5198,11 @@
       "position": "Forward",
       "country": "Ecuador",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/f929b4b3-de36-4f20-a40d-5f34d2bcafd7/picture/avatar-c0d47f1df3f383a29b2002d1778f4534.png",
-      "membershipStartDate": "2023-09-01T00:00:00+00:00"
+      "membershipStartDate": "2023-09-01T00:00:00+00:00",
+      "age": 26,
+      "birthDay": "2000-03-04",
+      "u23": false,
+      "layoutUpdatedAt": "2026-05-26T21:23:47.161978"
     },
     {
       "slug": "kamiel-van-de-perre",
@@ -4928,7 +5212,11 @@
       "position": "Midfielder",
       "country": "Belgium",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/c9315fcf-b89e-49b7-891a-01e53c9e75bb/picture/avatar-e04d357ff17829e083a31790d1fb17f1.png",
-      "membershipStartDate": "2024-06-15T00:00:00+00:00"
+      "membershipStartDate": "2024-06-15T00:00:00+00:00",
+      "age": 22,
+      "birthDay": "2004-02-12",
+      "u23": true,
+      "layoutUpdatedAt": "2026-05-26T21:23:49.378543"
     },
     {
       "slug": "vic-chambaere",
@@ -4938,7 +5226,11 @@
       "position": "Goalkeeper",
       "country": "Belgium",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/3a977b58-90b6-4801-acee-79a612f9478e/picture/avatar-58fae33f383d71f048b87eb08f2ebef9.png",
-      "membershipStartDate": "2024-06-15T00:00:00+00:00"
+      "membershipStartDate": "2024-06-15T00:00:00+00:00",
+      "age": 23,
+      "birthDay": "2003-01-10",
+      "u23": true,
+      "layoutUpdatedAt": "2026-05-26T21:23:51.624082"
     },
     {
       "slug": "anan-khalaili",
@@ -4948,7 +5240,11 @@
       "position": "Forward",
       "country": "Israel",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/c28e9d33-ad02-488a-a31a-e32ef1991db1/picture/avatar-6b1582be1697a27cedcef660d6348387.png",
-      "membershipStartDate": "2024-06-17T00:00:00+00:00"
+      "membershipStartDate": "2024-06-17T00:00:00+00:00",
+      "age": 21,
+      "birthDay": "2004-09-03",
+      "u23": true,
+      "layoutUpdatedAt": "2026-05-26T21:23:53.881341"
     },
     {
       "slug": "mohammed-gadafi-fuseini",
@@ -4958,7 +5254,11 @@
       "position": "Forward",
       "country": "Ghana",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/b2a2500f-13f2-4f54-b03b-d6b0a710cb5c/picture/avatar-d802746d7eb1d22112dda1e3f066d620.png",
-      "membershipStartDate": "2024-07-02T00:00:00+00:00"
+      "membershipStartDate": "2024-07-02T00:00:00+00:00",
+      "age": 24,
+      "birthDay": "2002-05-16",
+      "u23": true,
+      "layoutUpdatedAt": "2026-05-26T21:23:56.081282"
     },
     {
       "slug": "promise-oluwatobi-emmanuel-akinpelu",
@@ -4968,7 +5268,11 @@
       "position": "Forward",
       "country": "Canada",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/3b14822b-54e3-42f8-8f29-a86f2d87e483/picture/avatar-096ff68247165dd964b796d2bf591c11.png",
-      "membershipStartDate": "2024-07-02T00:00:00+00:00"
+      "membershipStartDate": "2024-07-02T00:00:00+00:00",
+      "age": 24,
+      "birthDay": "2001-07-03",
+      "u23": true,
+      "layoutUpdatedAt": "2026-05-26T21:23:58.309551"
     },
     {
       "slug": "adriaan-van-etten",
@@ -4978,7 +5282,11 @@
       "position": "Goalkeeper",
       "country": "Belgium",
       "avatarPictureUrl": "",
-      "membershipStartDate": "2024-07-13T00:00:00+00:00"
+      "membershipStartDate": "2024-07-13T00:00:00+00:00",
+      "age": 18,
+      "birthDay": "2007-08-02",
+      "u23": true,
+      "layoutUpdatedAt": "2026-05-26T21:24:00.481938"
     },
     {
       "slug": "anouar-ait-el-hadj",
@@ -4988,7 +5296,11 @@
       "position": "Midfielder",
       "country": "Belgium",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/df75f871-26a6-48ff-aae3-ee2487a21f2a/picture/avatar-8ccff5b56508f9a04666b6ba3c8af62e.png",
-      "membershipStartDate": "2024-07-13T00:00:00+00:00"
+      "membershipStartDate": "2024-07-13T00:00:00+00:00",
+      "age": 24,
+      "birthDay": "2002-04-20",
+      "u23": true,
+      "layoutUpdatedAt": "2026-05-26T21:24:02.921922"
     },
     {
       "slug": "ousseynou-niang",
@@ -4998,7 +5310,11 @@
       "position": "Midfielder",
       "country": "Senegal",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/12a6c090-a6e7-4e29-b988-e98db3e4e0bc/picture/avatar-8f8708cbb960d929f2408eb164b33e17.png",
-      "membershipStartDate": "2024-09-03T00:00:00+00:00"
+      "membershipStartDate": "2024-09-03T00:00:00+00:00",
+      "age": 24,
+      "birthDay": "2001-10-12",
+      "u23": true,
+      "layoutUpdatedAt": "2026-05-26T21:24:05.133525"
     },
     {
       "slug": "mamadou-thierno-barry",
@@ -5008,7 +5324,11 @@
       "position": "Defender",
       "country": "Senegal",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/1738ef92-d648-49ed-b133-930b62335149/picture/avatar-8ab1700afab70fe77832a57bb3c51723.png",
-      "membershipStartDate": "2025-01-27T00:00:00+00:00"
+      "membershipStartDate": "2025-01-27T00:00:00+00:00",
+      "age": 21,
+      "birthDay": "2005-03-20",
+      "u23": true,
+      "layoutUpdatedAt": "2026-05-26T21:24:07.472801"
     },
     {
       "slug": "marc-giger",
@@ -5018,7 +5338,11 @@
       "position": "Forward",
       "country": "Switzerland",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/cbf92f2a-0077-4366-8622-fd97d1fd5ea1/picture/avatar-71e898b2ac54b8404be85c9f0b825997.png",
-      "membershipStartDate": "2025-01-31T00:00:00+00:00"
+      "membershipStartDate": "2025-01-31T00:00:00+00:00",
+      "age": 22,
+      "birthDay": "2004-03-27",
+      "u23": true,
+      "layoutUpdatedAt": "2026-05-26T21:24:09.667753"
     },
     {
       "slug": "giorgi-kavelashvili",
@@ -5028,7 +5352,11 @@
       "position": "Goalkeeper",
       "country": "Georgia",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/68699038-de72-4cf0-9893-e46548643e8c/picture/avatar-57d5bd2e29855cf92f9fd388cd959ecf.png",
-      "membershipStartDate": "2025-03-08T00:00:00+00:00"
+      "membershipStartDate": "2025-03-08T00:00:00+00:00",
+      "age": 19,
+      "birthDay": "2007-01-24",
+      "u23": true,
+      "layoutUpdatedAt": "2026-05-26T21:24:11.901642"
     },
     {
       "slug": "raul-alexander-florucz",
@@ -5038,7 +5366,11 @@
       "position": "Forward",
       "country": "Austria",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/0faf5399-b7b4-4b2d-98c2-ce0901f4b51e/picture/avatar-1dfc845638c67ecb01bcfb413748ca5a.png",
-      "membershipStartDate": "2025-06-17T00:00:00+00:00"
+      "membershipStartDate": "2025-06-17T00:00:00+00:00",
+      "age": 24,
+      "birthDay": "2001-06-10",
+      "u23": false,
+      "layoutUpdatedAt": "2026-05-26T21:24:14.130127"
     },
     {
       "slug": "adem-zorgane",
@@ -5048,7 +5380,11 @@
       "position": "Midfielder",
       "country": "Algeria",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/69d3f229-f607-41f5-bc6d-d90ce40306e1/picture/avatar-74ff29013fe0cfb7de124852c212d274.png",
-      "membershipStartDate": "2025-06-26T00:00:00+00:00"
+      "membershipStartDate": "2025-06-26T00:00:00+00:00",
+      "age": 26,
+      "birthDay": "2000-01-06",
+      "u23": false,
+      "layoutUpdatedAt": "2026-05-26T21:24:16.330467"
     },
     {
       "slug": "noah-stassin",
@@ -5058,7 +5394,11 @@
       "position": "Defender",
       "country": "Belgium",
       "avatarPictureUrl": "",
-      "membershipStartDate": "2025-07-01T00:00:00+00:00"
+      "membershipStartDate": "2025-07-01T00:00:00+00:00",
+      "age": 21,
+      "birthDay": "2004-07-05",
+      "u23": true,
+      "layoutUpdatedAt": "2026-05-26T21:24:18.497976"
     },
     {
       "slug": "nathan-huygevelde",
@@ -5068,7 +5408,11 @@
       "position": "Midfielder",
       "country": "Belgium",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/9de9f482-d3e9-4b94-b9c6-13bfdbcade36/picture/avatar-66f615dd2dfd64d7354e73f1d34c3a49.png",
-      "membershipStartDate": "2025-07-01T00:00:00+00:00"
+      "membershipStartDate": "2025-07-01T00:00:00+00:00",
+      "age": 22,
+      "birthDay": "2004-01-23",
+      "u23": true,
+      "layoutUpdatedAt": "2026-05-26T21:24:20.682121"
     },
     {
       "slug": "yari-stevens",
@@ -5078,7 +5422,11 @@
       "position": "Midfielder",
       "country": "Belgium",
       "avatarPictureUrl": "",
-      "membershipStartDate": "2025-07-04T00:00:00+00:00"
+      "membershipStartDate": "2025-07-04T00:00:00+00:00",
+      "age": 22,
+      "birthDay": "2003-12-18",
+      "u23": true,
+      "layoutUpdatedAt": "2026-05-26T21:24:22.868881"
     },
     {
       "slug": "youssef-hamoutahar",
@@ -5088,7 +5436,11 @@
       "position": "Midfielder",
       "country": "Belgium",
       "avatarPictureUrl": "",
-      "membershipStartDate": "2025-07-04T00:00:00+00:00"
+      "membershipStartDate": "2025-07-04T00:00:00+00:00",
+      "age": 19,
+      "birthDay": "2006-05-29",
+      "u23": true,
+      "layoutUpdatedAt": "2026-05-26T21:24:25.183462"
     },
     {
       "slug": "sekou-abrahame-keita",
@@ -5098,7 +5450,11 @@
       "position": "Forward",
       "country": "Belgium",
       "avatarPictureUrl": "",
-      "membershipStartDate": "2025-07-04T00:00:00+00:00"
+      "membershipStartDate": "2025-07-04T00:00:00+00:00",
+      "age": 20,
+      "birthDay": "2006-05-02",
+      "u23": true,
+      "layoutUpdatedAt": "2026-05-26T21:24:27.369613"
     },
     {
       "slug": "kjell-scherpen",
@@ -5108,7 +5464,11 @@
       "position": "Goalkeeper",
       "country": "Netherlands",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/102a2360-156d-420d-b141-f60aff80ffb0/picture/avatar-897844b66106e999000a3a63672908ad.png",
-      "membershipStartDate": "2025-07-23T00:00:00+00:00"
+      "membershipStartDate": "2025-07-23T00:00:00+00:00",
+      "age": 26,
+      "birthDay": "2000-01-23",
+      "u23": false,
+      "layoutUpdatedAt": "2026-05-26T21:24:29.621653"
     },
     {
       "slug": "guilherme-henriques-da-silva-carvalho",
@@ -5118,7 +5478,11 @@
       "position": "Midfielder",
       "country": "Brazil",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/ba96a767-12ab-4f32-b02a-3970f154beea/picture/avatar-fe70cac88f1d1c57bab1a3ce7d4611b4.png",
-      "membershipStartDate": "2025-08-12T00:00:00+00:00"
+      "membershipStartDate": "2025-08-12T00:00:00+00:00",
+      "age": 22,
+      "birthDay": "2003-06-11",
+      "u23": true,
+      "layoutUpdatedAt": "2026-05-26T21:24:31.831522"
     },
     {
       "slug": "rob-schoofs",
@@ -5128,7 +5492,11 @@
       "position": "Midfielder",
       "country": "Belgium",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/11a65cff-089a-47d2-8a72-8af684512507/picture/avatar-9851f99bf7a976b1a0b28b593506c33c.png",
-      "membershipStartDate": "2025-09-01T00:00:00+00:00"
+      "membershipStartDate": "2025-09-01T00:00:00+00:00",
+      "age": 32,
+      "birthDay": "1994-03-23",
+      "u23": false,
+      "layoutUpdatedAt": "2026-05-26T21:24:34.043815"
     },
     {
       "slug": "louis-patris",
@@ -5138,7 +5506,11 @@
       "position": "Defender",
       "country": "Belgium",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/d377bc1f-3d33-46a9-ad85-b15b3222ae10/picture/avatar-3edcd2698b85e9f3b02c0e69e0ee9868.png",
-      "membershipStartDate": "2025-09-02T00:00:00+00:00"
+      "membershipStartDate": "2025-09-02T00:00:00+00:00",
+      "age": 24,
+      "birthDay": "2001-06-07",
+      "u23": false,
+      "layoutUpdatedAt": "2026-05-26T21:24:36.267702"
     },
     {
       "slug": "ivan-pavlic",
@@ -5148,7 +5520,11 @@
       "position": "Midfielder",
       "country": "Belgium",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/77684f5f-462b-4cad-ac56-f2986a6e8662/picture/avatar-b8e4b4f8b87d21064e04c6793425cae6.png",
-      "membershipStartDate": "2025-09-03T00:00:00+00:00"
+      "membershipStartDate": "2025-09-03T00:00:00+00:00",
+      "age": 24,
+      "birthDay": "2001-11-10",
+      "u23": true,
+      "layoutUpdatedAt": "2026-05-26T21:24:38.495231"
     },
     {
       "slug": "jens-teunckens",
@@ -5158,7 +5534,11 @@
       "position": "Goalkeeper",
       "country": "Belgium",
       "avatarPictureUrl": "https://assets.sorare.com/player/cb0ad625-0e16-4123-bc39-1e2cb329ff69/picture/avatar-ddc07fe12ec1d7ca1247527b2c047fbd.png",
-      "membershipStartDate": "2025-10-09T00:00:00+00:00"
+      "membershipStartDate": "2025-10-09T00:00:00+00:00",
+      "age": 28,
+      "birthDay": "1998-01-30",
+      "u23": false,
+      "layoutUpdatedAt": "2026-05-26T21:24:40.704469"
     },
     {
       "slug": "david-hubert",
@@ -5168,7 +5548,11 @@
       "position": "Coach",
       "country": "Belgium",
       "avatarPictureUrl": "https://assets.sorare.com/player/91638acc-ace7-41dd-b4f0-20cb78c01f8d/picture/avatar-9e9072bd89024ca652dd555e09e54609.png",
-      "membershipStartDate": "2025-10-13T00:00:00+00:00"
+      "membershipStartDate": "2025-10-13T00:00:00+00:00",
+      "age": 38,
+      "birthDay": "1988-02-12",
+      "u23": false,
+      "layoutUpdatedAt": "2026-05-26T21:24:42.923246"
     },
     {
       "slug": "mateo-biondic",
@@ -5178,7 +5562,11 @@
       "position": "Forward",
       "country": "Germany",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/8f496ed4-e0c5-44f9-8c24-626c5d185311/avatar-mateo-biondic_union-saint-gilloise-bruxelles-brussels_football_2025_home_card_edition_name%3Dclassic.png",
-      "membershipStartDate": "2026-01-06T00:00:00+00:00"
+      "membershipStartDate": "2026-01-06T00:00:00+00:00",
+      "age": 22,
+      "birthDay": "2003-07-24",
+      "u23": true,
+      "layoutUpdatedAt": "2026-05-26T21:24:45.159279"
     },
     {
       "slug": "massire-sylla",
@@ -5188,7 +5576,11 @@
       "position": "Defender",
       "country": "Senegal",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/699ca2fe-f7ec-49bc-a83b-026f5c1f257a/avatar-massire-sylla_union-saint-gilloise-bruxelles-brussels_football_2025_home_card_edition_name%3Dclassic.png",
-      "membershipStartDate": "2026-01-13T00:00:00+00:00"
+      "membershipStartDate": "2026-01-13T00:00:00+00:00",
+      "age": 21,
+      "birthDay": "2005-01-07",
+      "u23": true,
+      "layoutUpdatedAt": "2026-05-26T21:24:47.360399"
     },
     {
       "slug": "besfort-zeneli",
@@ -5198,7 +5590,11 @@
       "position": "Midfielder",
       "country": "Sweden",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/d2340066-fed2-4989-a5e5-eb1c1d4ae916/avatar-besfort-zeneli_union-saint-gilloise-bruxelles-brussels_football_2025_home_card_edition_name%253Dclassic.png",
-      "membershipStartDate": "2026-01-13T00:00:00+00:00"
+      "membershipStartDate": "2026-01-13T00:00:00+00:00",
+      "age": 23,
+      "birthDay": "2002-11-21",
+      "u23": true,
+      "layoutUpdatedAt": "2026-05-26T21:24:49.589216"
     },
     {
       "slug": "louis-bostyn",
@@ -5208,7 +5604,11 @@
       "position": "Goalkeeper",
       "country": "Belgium",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/2a68228d-872f-4e87-aeba-b95c4f9dc736/picture/avatar-63bd570555a3f112a71c9f8c70e89a9a.png",
-      "membershipStartDate": "2014-07-01T00:00:00+00:00"
+      "membershipStartDate": "2014-07-01T00:00:00+00:00",
+      "age": 32,
+      "birthDay": "1993-10-04",
+      "u23": false,
+      "layoutUpdatedAt": "2026-05-26T21:24:51.839171"
     },
     {
       "slug": "jelle-vossen",
@@ -5218,7 +5618,11 @@
       "position": "Forward",
       "country": "Belgium",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/89ce204c-c4e6-4fa8-9504-b4d74f2e9f53/picture/avatar-d0d7880976d30015cedbef59594c93ab.png",
-      "membershipStartDate": "2020-01-30T00:00:00+00:00"
+      "membershipStartDate": "2020-01-30T00:00:00+00:00",
+      "age": 37,
+      "birthDay": "1989-03-22",
+      "u23": false,
+      "layoutUpdatedAt": "2026-05-26T21:24:54.063559"
     },
     {
       "slug": "lukas-willen",
@@ -5228,7 +5632,11 @@
       "position": "Defender",
       "country": "Belgium",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/b0cc18db-85c4-46e2-9879-44f810bff361/picture/avatar-6f5dd213813f23b735b2b8a6a084e518.png",
-      "membershipStartDate": "2021-09-24T00:00:00+00:00"
+      "membershipStartDate": "2021-09-24T00:00:00+00:00",
+      "age": 23,
+      "birthDay": "2003-04-25",
+      "u23": true,
+      "layoutUpdatedAt": "2026-05-26T21:24:56.271689"
     },
     {
       "slug": "arnaud-dobbels",
@@ -5238,7 +5646,11 @@
       "position": "Goalkeeper",
       "country": "Belgium",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/b78d23a2-232d-4193-a409-65d590dfb8dc/picture/avatar-ed775a89471d237dac76b7b614ea0dc9.png",
-      "membershipStartDate": "2023-02-11T00:00:00+00:00"
+      "membershipStartDate": "2023-02-11T00:00:00+00:00",
+      "age": 21,
+      "birthDay": "2005-02-02",
+      "u23": true,
+      "layoutUpdatedAt": "2026-05-26T21:24:58.471389"
     },
     {
       "slug": "thibaud-sergeant",
@@ -5248,7 +5660,11 @@
       "position": "Midfielder",
       "country": "Belgium",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/1dcc67c3-82e2-4d07-97b8-021f7ce2db4a/picture/avatar-7a65220ea21d6ed0b94b7126db0c3be1.png",
-      "membershipStartDate": "2023-08-12T00:00:00+00:00"
+      "membershipStartDate": "2023-08-12T00:00:00+00:00",
+      "age": 20,
+      "birthDay": "2005-09-19",
+      "u23": true,
+      "layoutUpdatedAt": "2026-05-26T21:25:00.741234"
     },
     {
       "slug": "yannick-cappelle",
@@ -5258,7 +5674,11 @@
       "position": "Defender",
       "country": "Belgium",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/f96dea80-d37f-4c39-8db7-6838aca4f898/picture/avatar-862095b41a1c0b41f3be607226d3ec9c.png",
-      "membershipStartDate": "2023-10-01T00:00:00+00:00"
+      "membershipStartDate": "2023-10-01T00:00:00+00:00",
+      "age": 22,
+      "birthDay": "2003-08-07",
+      "u23": true,
+      "layoutUpdatedAt": "2026-05-26T21:25:02.971577"
     },
     {
       "slug": "anton-tanghe",
@@ -5268,7 +5688,11 @@
       "position": "Defender",
       "country": "Belgium",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/84faf6c6-de71-4876-9f7e-3ee66501ca73/picture/avatar-dcb7e194af53256912180f5cf8ef6284.png",
-      "membershipStartDate": "2024-01-06T00:00:00+00:00"
+      "membershipStartDate": "2024-01-06T00:00:00+00:00",
+      "age": 27,
+      "birthDay": "1999-01-28",
+      "u23": false,
+      "layoutUpdatedAt": "2026-05-26T21:25:05.183670"
     },
     {
       "slug": "stavros-gavriel",
@@ -5278,7 +5702,11 @@
       "position": "Defender",
       "country": "Cyprus",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/82ebe1a8-7325-4d6b-a235-9186d65b79a8/picture/avatar-76918438209abc00b8310149b9e697b4.png",
-      "membershipStartDate": "2024-01-23T00:00:00+00:00"
+      "membershipStartDate": "2024-01-23T00:00:00+00:00",
+      "age": 24,
+      "birthDay": "2002-01-29",
+      "u23": true,
+      "layoutUpdatedAt": "2026-05-26T21:25:07.374865"
     },
     {
       "slug": "jeppe-erenbjerg",
@@ -5288,7 +5716,11 @@
       "position": "Forward",
       "country": "Denmark",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/306c32aa-dc47-410e-aa2e-f7c038a161e0/picture/avatar-b58c6410c5a39dd9f0c0542af3e6bf30.png",
-      "membershipStartDate": "2024-06-19T00:00:00+00:00"
+      "membershipStartDate": "2024-06-19T00:00:00+00:00",
+      "age": 26,
+      "birthDay": "2000-04-29",
+      "u23": false,
+      "layoutUpdatedAt": "2026-05-26T21:25:09.708338"
     },
     {
       "slug": "ibrahim-diabate",
@@ -5298,7 +5730,11 @@
       "position": "Midfielder",
       "country": "Côte d’Ivoire",
       "avatarPictureUrl": "",
-      "membershipStartDate": "2024-07-01T00:00:00+00:00"
+      "membershipStartDate": "2024-07-01T00:00:00+00:00",
+      "age": 22,
+      "birthDay": "2004-04-16",
+      "u23": true,
+      "layoutUpdatedAt": "2026-05-26T21:25:11.922836"
     },
     {
       "slug": "benoit-nyssen",
@@ -5308,7 +5744,11 @@
       "position": "Defender",
       "country": "Belgium",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/a9248dda-ab69-4266-b606-eaff2c8127e2/picture/avatar-9be56f4a1433715474fc2d94cbbfd366.png",
-      "membershipStartDate": "2024-07-11T00:00:00+00:00"
+      "membershipStartDate": "2024-07-11T00:00:00+00:00",
+      "age": 28,
+      "birthDay": "1997-09-12",
+      "u23": false,
+      "layoutUpdatedAt": "2026-05-26T21:25:14.129718"
     },
     {
       "slug": "franz-tangala",
@@ -5318,7 +5758,11 @@
       "position": "Midfielder",
       "country": "Belgium",
       "avatarPictureUrl": "",
-      "membershipStartDate": "2024-08-17T00:00:00+00:00"
+      "membershipStartDate": "2024-08-17T00:00:00+00:00",
+      "age": 21,
+      "birthDay": "2005-04-15",
+      "u23": true,
+      "layoutUpdatedAt": "2026-05-26T21:25:16.301618"
     },
     {
       "slug": "joseph-amankwaah-opoku",
@@ -5328,7 +5772,11 @@
       "position": "Forward",
       "country": "Ghana",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/38569b41-4f43-478e-be5d-7559b07e7954/picture/avatar-18a51ac1631939b9416f13d74076d2b9.png",
-      "membershipStartDate": "2024-08-30T00:00:00+00:00"
+      "membershipStartDate": "2024-08-30T00:00:00+00:00",
+      "age": 20,
+      "birthDay": "2005-08-08",
+      "u23": true,
+      "layoutUpdatedAt": "2026-05-26T21:25:18.526492"
     },
     {
       "slug": "laurent-lemoine",
@@ -5338,7 +5786,11 @@
       "position": "Defender",
       "country": "Belgium",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/d1935d30-9a14-4bb4-b184-5363408ac09a/picture/avatar-329ab4787893b9c55ff82644d5c8a8e2.png",
-      "membershipStartDate": "2024-09-05T00:00:00+00:00"
+      "membershipStartDate": "2024-09-05T00:00:00+00:00",
+      "age": 28,
+      "birthDay": "1998-04-24",
+      "u23": false,
+      "layoutUpdatedAt": "2026-05-26T21:25:20.761028"
     },
     {
       "slug": "siebe-van-keymolen",
@@ -5348,7 +5800,11 @@
       "position": "Midfielder",
       "country": "Belgium",
       "avatarPictureUrl": "",
-      "membershipStartDate": "2025-02-20T00:00:00+00:00"
+      "membershipStartDate": "2025-02-20T00:00:00+00:00",
+      "age": 21,
+      "birthDay": "2005-02-10",
+      "u23": true,
+      "layoutUpdatedAt": "2026-05-26T21:25:22.949575"
     },
     {
       "slug": "benoit-de-jaegere",
@@ -5358,7 +5814,11 @@
       "position": "Defender",
       "country": "Belgium",
       "avatarPictureUrl": "",
-      "membershipStartDate": "2025-04-05T00:00:00+00:00"
+      "membershipStartDate": "2025-04-05T00:00:00+00:00",
+      "age": 22,
+      "birthDay": "2004-04-12",
+      "u23": true,
+      "layoutUpdatedAt": "2026-05-26T21:25:25.135418"
     },
     {
       "slug": "brent-gabriel",
@@ -5368,7 +5828,11 @@
       "position": "Goalkeeper",
       "country": "Belgium",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/757d1cdb-f0e9-434f-b35b-3da14922487b/picture/avatar-bc422a9678c2981bd0797fb633d11a4d.png",
-      "membershipStartDate": "2025-06-17T00:00:00+00:00"
+      "membershipStartDate": "2025-06-17T00:00:00+00:00",
+      "age": 27,
+      "birthDay": "1999-01-27",
+      "u23": false,
+      "layoutUpdatedAt": "2026-05-26T21:25:27.358060"
     },
     {
       "slug": "thomas-claes",
@@ -5378,7 +5842,11 @@
       "position": "Midfielder",
       "country": "Belgium",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/0527db28-49d9-43ac-bb58-64f13eeadda5/picture/avatar-6ac6f198a5f262184f54e4872f9d460a.png",
-      "membershipStartDate": "2025-06-20T00:00:00+00:00"
+      "membershipStartDate": "2025-06-20T00:00:00+00:00",
+      "age": 22,
+      "birthDay": "2004-03-26",
+      "u23": true,
+      "layoutUpdatedAt": "2026-05-26T21:25:29.564462"
     },
     {
       "slug": "enrique-lofolomo",
@@ -5388,7 +5856,11 @@
       "position": "Midfielder",
       "country": "Germany",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/9453b707-9ee3-455e-9eca-663b957386e6/picture/avatar-88022ace5d5f39c53c0286ede63751e5.png",
-      "membershipStartDate": "2025-07-01T00:00:00+00:00"
+      "membershipStartDate": "2025-07-01T00:00:00+00:00",
+      "age": 26,
+      "birthDay": "2000-04-14",
+      "u23": false,
+      "layoutUpdatedAt": "2026-05-26T21:25:31.809521"
     },
     {
       "slug": "wilguens-paugain",
@@ -5398,7 +5870,11 @@
       "position": "Defender",
       "country": "Haiti",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/e87fc805-a17e-4b84-ab9b-29899289ef75/picture/avatar-2c2d887c79da64d497a81b85219b28d8.png",
-      "membershipStartDate": "2025-07-01T00:00:00+00:00"
+      "membershipStartDate": "2025-07-01T00:00:00+00:00",
+      "age": 24,
+      "birthDay": "2001-08-24",
+      "u23": true,
+      "layoutUpdatedAt": "2026-05-26T21:25:34.005453"
     },
     {
       "slug": "tobias-hedl",
@@ -5408,7 +5884,11 @@
       "position": "Forward",
       "country": "Austria",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/9306cc62-0c09-494d-980d-e5f8035b32b5/picture/avatar-c9cc681ecbab69fda9f02e7af6f1a0aa.png",
-      "membershipStartDate": "2025-07-01T00:00:00+00:00"
+      "membershipStartDate": "2025-07-01T00:00:00+00:00",
+      "age": 23,
+      "birthDay": "2003-01-15",
+      "u23": true,
+      "layoutUpdatedAt": "2026-05-26T21:25:36.295053"
     },
     {
       "slug": "serxho-ujka",
@@ -5418,7 +5898,11 @@
       "position": "Midfielder",
       "country": "Albania",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/998218f8-cc28-4607-b209-23e99f644374/picture/avatar-23321e8ca61d4a4c94b4d79aba5c5544.png",
-      "membershipStartDate": "2025-07-18T00:00:00+00:00"
+      "membershipStartDate": "2025-07-18T00:00:00+00:00",
+      "age": 27,
+      "birthDay": "1998-08-27",
+      "u23": false,
+      "layoutUpdatedAt": "2026-05-26T21:25:38.513203"
     },
     {
       "slug": "jakob-kiilerich-rask",
@@ -5428,7 +5912,11 @@
       "position": "Defender",
       "country": "Denmark",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/c3bd41e4-0b3d-4297-ba37-3acf4043cf0b/picture/avatar-8808ef710c37cf4fa0cb9649c0f9f3ce.png",
-      "membershipStartDate": "2025-08-03T00:00:00+00:00"
+      "membershipStartDate": "2025-08-03T00:00:00+00:00",
+      "age": 26,
+      "birthDay": "2000-05-10",
+      "u23": false,
+      "layoutUpdatedAt": "2026-05-26T21:25:40.958180"
     },
     {
       "slug": "anosike-ementa",
@@ -5438,7 +5926,11 @@
       "position": "Forward",
       "country": "Denmark",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/f0e55834-ae7e-496b-bb7e-49a81378685b/picture/avatar-02e85d34512601da5dcb7aad38d13084.png",
-      "membershipStartDate": "2025-08-07T00:00:00+00:00"
+      "membershipStartDate": "2025-08-07T00:00:00+00:00",
+      "age": 24,
+      "birthDay": "2002-05-03",
+      "u23": true,
+      "layoutUpdatedAt": "2026-05-26T21:25:43.189862"
     },
     {
       "slug": "kewan-vemba",
@@ -5448,7 +5940,11 @@
       "position": "Forward",
       "country": "Belgium",
       "avatarPictureUrl": "",
-      "membershipStartDate": "2025-08-09T00:00:00+00:00"
+      "membershipStartDate": "2025-08-09T00:00:00+00:00",
+      "age": 20,
+      "birthDay": "2005-07-23",
+      "u23": true,
+      "layoutUpdatedAt": "2026-05-26T21:25:45.374110"
     },
     {
       "slug": "nikola-mituljikic",
@@ -5458,7 +5954,11 @@
       "position": "Forward",
       "country": "Serbia",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/5866a9e2-6bd8-400f-b44a-89b7cf63b458/picture/avatar-09eb178f839617da7591df8d73861f91.png",
-      "membershipStartDate": "2025-08-14T00:00:00+00:00"
+      "membershipStartDate": "2025-08-14T00:00:00+00:00",
+      "age": 23,
+      "birthDay": "2003-01-20",
+      "u23": true,
+      "layoutUpdatedAt": "2026-05-26T21:25:47.569619"
     },
     {
       "slug": "marley-ake",
@@ -5468,7 +5968,11 @@
       "position": "Midfielder",
       "country": "France",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/df202331-9b41-467c-8dc4-c9b631fe00de/picture/avatar-e65eadbdf78cddd32b0fbcef5b332376.png",
-      "membershipStartDate": "2025-09-02T00:00:00+00:00"
+      "membershipStartDate": "2025-09-02T00:00:00+00:00",
+      "age": 25,
+      "birthDay": "2001-01-05",
+      "u23": false,
+      "layoutUpdatedAt": "2026-05-26T21:25:49.816697"
     },
     {
       "slug": "emran-soglo",
@@ -5478,7 +5982,11 @@
       "position": "Defender",
       "country": "England",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/f10e8e17-723f-443d-b658-e85d90f22eaa/picture/avatar-16677426b899b2d29b1ce21d02f77290.png",
-      "membershipStartDate": "2025-09-08T00:00:00+00:00"
+      "membershipStartDate": "2025-09-08T00:00:00+00:00",
+      "age": 20,
+      "birthDay": "2005-07-11",
+      "u23": true,
+      "layoutUpdatedAt": "2026-05-26T21:25:52.018283"
     },
     {
       "slug": "tuur-dierickx",
@@ -5488,7 +5996,11 @@
       "position": "Midfielder",
       "country": "Belgium",
       "avatarPictureUrl": "",
-      "membershipStartDate": "2025-12-19T00:00:00+00:00"
+      "membershipStartDate": "2025-12-19T00:00:00+00:00",
+      "age": 18,
+      "birthDay": "2007-08-07",
+      "u23": true,
+      "layoutUpdatedAt": "2026-05-26T21:25:54.202699"
     },
     {
       "slug": "tristan-aldcroft-panduro",
@@ -5498,7 +6010,11 @@
       "position": "Midfielder",
       "country": "Denmark",
       "avatarPictureUrl": "",
-      "membershipStartDate": "2026-01-10T00:00:00+00:00"
+      "membershipStartDate": "2026-01-10T00:00:00+00:00",
+      "age": 18,
+      "birthDay": "2008-01-10",
+      "u23": true,
+      "layoutUpdatedAt": "2026-05-26T21:25:56.385320"
     },
     {
       "slug": "kadir-seven",
@@ -5508,7 +6024,11 @@
       "position": "Defender",
       "country": "Turkey",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/f639e44a-659d-4416-80c5-d688c8466bfb/picture/avatar-e1d82f90cc22b9a1913ab5986ec30741.png",
-      "membershipStartDate": "2026-01-22T00:00:00+00:00"
+      "membershipStartDate": "2026-01-22T00:00:00+00:00",
+      "age": 23,
+      "birthDay": "2003-05-05",
+      "u23": true,
+      "layoutUpdatedAt": "2026-05-26T21:25:58.585238"
     },
     {
       "slug": "mouhamed-yoro-sall",
@@ -5518,7 +6038,11 @@
       "position": "Defender",
       "country": "Senegal",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/c6075b55-ceb9-46f6-bef9-2ff554a29659/picture/avatar-4527e07d4ea63e4f6b5a77f4c47175cd.png",
-      "membershipStartDate": "2026-01-26T00:00:00+00:00"
+      "membershipStartDate": "2026-01-26T00:00:00+00:00",
+      "age": 18,
+      "birthDay": "2007-10-21",
+      "u23": true,
+      "layoutUpdatedAt": "2026-05-26T21:26:01.051477"
     },
     {
       "slug": "malick-mbaye-2004-04-06",
@@ -5528,7 +6052,11 @@
       "position": "Forward",
       "country": "Senegal",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/3c2f8289-73b5-422e-a85f-370e87a7f2d0/picture/avatar-fc1e85493bbbdad737fba8f7f65142de.png",
-      "membershipStartDate": "2026-02-02T00:00:00+00:00"
+      "membershipStartDate": "2026-02-02T00:00:00+00:00",
+      "age": 22,
+      "birthDay": "2004-04-06",
+      "u23": true,
+      "layoutUpdatedAt": "2026-05-26T21:26:03.282676"
     },
     {
       "slug": "dirk-asare",
@@ -5538,7 +6066,11 @@
       "position": "Midfielder",
       "country": "Belgium",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/919d36df-b9ac-4fe9-84a6-8c0b0553e760/picture/avatar-b306a4783a75a8b6be2c673cb1c8af1f.png",
-      "membershipStartDate": "2026-02-02T00:00:00+00:00"
+      "membershipStartDate": "2026-02-02T00:00:00+00:00",
+      "age": 21,
+      "birthDay": "2004-07-04",
+      "u23": true,
+      "layoutUpdatedAt": "2026-05-26T21:26:05.489147"
     },
     {
       "slug": "michael-beale",
@@ -5548,7 +6080,11 @@
       "position": "Coach",
       "country": "England",
       "avatarPictureUrl": "",
-      "membershipStartDate": "2026-05-19T00:00:00+00:00"
+      "membershipStartDate": "2026-05-19T00:00:00+00:00",
+      "age": 45,
+      "birthDay": "1980-09-04",
+      "u23": false,
+      "layoutUpdatedAt": "2026-05-26T21:26:07.666107"
     },
     {
       "slug": "charilaos-charisis-1995-01-12",
@@ -5558,7 +6094,11 @@
       "position": "Midfielder",
       "country": "Greece",
       "avatarPictureUrl": "",
-      "membershipStartDate": "2017-07-01T00:00:00+00:00"
+      "membershipStartDate": "2017-07-01T00:00:00+00:00",
+      "age": 31,
+      "birthDay": "1995-01-12",
+      "u23": false,
+      "layoutUpdatedAt": "2026-05-26T21:26:10.005633"
     },
     {
       "slug": "charilaos-charisis",
@@ -5568,7 +6108,11 @@
       "position": "Midfielder",
       "country": "Greece",
       "avatarPictureUrl": "",
-      "membershipStartDate": "2017-10-01T00:00:00+00:00"
+      "membershipStartDate": "2017-10-01T00:00:00+00:00",
+      "age": 31,
+      "birthDay": "1995-01-12",
+      "u23": false,
+      "layoutUpdatedAt": "2026-05-26T21:26:12.244985"
     },
     {
       "slug": "wolke-janssens",
@@ -5578,7 +6122,11 @@
       "position": "Defender",
       "country": "Belgium",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/7a610fe1-2c7f-43ef-9a2b-b6d9224ed7c4/picture/avatar-199ecced2262a0eb22164d65d0ca6877.png",
-      "membershipStartDate": "2018-07-01T00:00:00+00:00"
+      "membershipStartDate": "2018-07-01T00:00:00+00:00",
+      "age": 31,
+      "birthDay": "1995-01-11",
+      "u23": false,
+      "layoutUpdatedAt": "2026-05-26T21:26:14.473157"
     },
     {
       "slug": "matt-lendfers",
@@ -5588,7 +6136,11 @@
       "position": "Goalkeeper",
       "country": "Belgium",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/082048ff-8862-45ba-9276-12e29a96d7d1/picture/avatar-430fc3ff19502464e5f380083ebce135.png",
-      "membershipStartDate": "2022-04-13T00:00:00+00:00"
+      "membershipStartDate": "2022-04-13T00:00:00+00:00",
+      "age": 20,
+      "birthDay": "2006-03-10",
+      "u23": true,
+      "layoutUpdatedAt": "2026-05-26T21:26:16.689244"
     },
     {
       "slug": "jo-coppens",
@@ -5598,7 +6150,11 @@
       "position": "Goalkeeper",
       "country": "Belgium",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/a6fbced7-5255-4f6a-a794-da5f9a7d78bc/picture/avatar-ed2c93590b83d81f6667fd583a6976a4.png",
-      "membershipStartDate": "2022-06-21T00:00:00+00:00"
+      "membershipStartDate": "2022-06-21T00:00:00+00:00",
+      "age": 35,
+      "birthDay": "1990-12-21",
+      "u23": false,
+      "layoutUpdatedAt": "2026-05-26T21:26:18.892479"
     },
     {
       "slug": "robert-jan-vanwesemael",
@@ -5608,7 +6164,11 @@
       "position": "Defender",
       "country": "Belgium",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/6f8a2f1e-62d7-4e04-9f31-dcf5b7cdd4d0/picture/avatar-717d574db54b73d4551a84fd3c9d2ed6.png",
-      "membershipStartDate": "2023-06-12T00:00:00+00:00"
+      "membershipStartDate": "2023-06-12T00:00:00+00:00",
+      "age": 24,
+      "birthDay": "2002-03-26",
+      "u23": true,
+      "layoutUpdatedAt": "2026-05-26T21:26:21.112295"
     },
     {
       "slug": "ryotaro-ito",
@@ -5618,7 +6178,11 @@
       "position": "Midfielder",
       "country": "Japan",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/d8c03c88-8695-4164-85e3-0ce096d8fee7/picture/avatar-69d98ecaaf93193a2b96e46f0cd9d7c2.png",
-      "membershipStartDate": "2023-06-15T00:00:00+00:00"
+      "membershipStartDate": "2023-06-15T00:00:00+00:00",
+      "age": 28,
+      "birthDay": "1998-02-06",
+      "u23": false,
+      "layoutUpdatedAt": "2026-05-26T21:26:23.325362"
     },
     {
       "slug": "alouis-diriken",
@@ -5628,7 +6192,11 @@
       "position": "Midfielder",
       "country": "Belgium",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/d92c2faf-4075-402d-8ea8-18f03aaf3bda/picture/avatar-9cfab3cdca0ce5ddf49dfdc192323c45.png",
-      "membershipStartDate": "2023-07-01T00:00:00+00:00"
+      "membershipStartDate": "2023-07-01T00:00:00+00:00",
+      "age": 22,
+      "birthDay": "2004-04-01",
+      "u23": true,
+      "layoutUpdatedAt": "2026-05-26T21:26:25.546551"
     },
     {
       "slug": "adam-nhaili",
@@ -5638,7 +6206,11 @@
       "position": "Forward",
       "country": "Belgium",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/31b305ef-fa3e-47ad-a75d-ba458d534670/picture/avatar-544d31c616b2f480201965f6ed1cd862.png",
-      "membershipStartDate": "2023-07-07T00:00:00+00:00"
+      "membershipStartDate": "2023-07-07T00:00:00+00:00",
+      "age": 20,
+      "birthDay": "2005-08-09",
+      "u23": true,
+      "layoutUpdatedAt": "2026-05-26T21:26:27.738283"
     },
     {
       "slug": "rihito-yamamoto",
@@ -5648,7 +6220,11 @@
       "position": "Midfielder",
       "country": "Japan",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/55af5146-52f9-46c5-b8d6-33873e18d388/picture/avatar-f6b18a143aa9965831794f5deee858da.png",
-      "membershipStartDate": "2024-07-01T00:00:00+00:00"
+      "membershipStartDate": "2024-07-01T00:00:00+00:00",
+      "age": 24,
+      "birthDay": "2001-12-12",
+      "u23": true,
+      "layoutUpdatedAt": "2026-05-26T21:26:30.078859"
     },
     {
       "slug": "hugo-lambotte",
@@ -5658,7 +6234,11 @@
       "position": "Defender",
       "country": "Belgium",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/ac0a8677-5760-4606-94db-6d2ad6e2807b/picture/avatar-07cb5402472d7201eea007452921f2c9.png",
-      "membershipStartDate": "2024-07-08T00:00:00+00:00"
+      "membershipStartDate": "2024-07-08T00:00:00+00:00",
+      "age": 19,
+      "birthDay": "2006-06-20",
+      "u23": true,
+      "layoutUpdatedAt": "2026-05-26T21:26:32.318912"
     },
     {
       "slug": "leo-kokubo",
@@ -5668,7 +6248,11 @@
       "position": "Goalkeeper",
       "country": "Japan",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/1af10de9-5b29-45ff-8e9c-d40ad8c5cc8f/picture/avatar-7e5c87019c5a2ee34d97125b9935605b.png",
-      "membershipStartDate": "2024-07-11T00:00:00+00:00"
+      "membershipStartDate": "2024-07-11T00:00:00+00:00",
+      "age": 25,
+      "birthDay": "2001-01-23",
+      "u23": false,
+      "layoutUpdatedAt": "2026-05-26T21:26:34.551500"
     },
     {
       "slug": "shogo-taniguchi",
@@ -5678,7 +6262,11 @@
       "position": "Defender",
       "country": "Japan",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/7ce87f3e-2631-4a5d-a8d4-145eb6dea671/picture/avatar-b5d5c46d411f10859ecb2df8193a145b.png",
-      "membershipStartDate": "2024-07-19T00:00:00+00:00"
+      "membershipStartDate": "2024-07-19T00:00:00+00:00",
+      "age": 34,
+      "birthDay": "1991-07-15",
+      "u23": false,
+      "layoutUpdatedAt": "2026-05-26T21:26:36.779743"
     },
     {
       "slug": "isaias-del-pupo",
@@ -5688,7 +6276,11 @@
       "position": "Midfielder",
       "country": "Argentina",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/e9f9d90d-04f9-4f04-b69f-85e814db6641/picture/avatar-096fc32f19c113803a5bf582cc563d47.png",
-      "membershipStartDate": "2024-08-09T00:00:00+00:00"
+      "membershipStartDate": "2024-08-09T00:00:00+00:00",
+      "age": 23,
+      "birthDay": "2003-03-31",
+      "u23": true,
+      "layoutUpdatedAt": "2026-05-26T21:26:39.221469"
     },
     {
       "slug": "simen-kristiansen-juklerod",
@@ -5698,7 +6290,11 @@
       "position": "Defender",
       "country": "Norway",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/e23ea2e0-0831-4784-8d09-3619f0debf05/picture/avatar-fb5c1ac0c921f301bec1209d828759b4.png",
-      "membershipStartDate": "2025-01-16T00:00:00+00:00"
+      "membershipStartDate": "2025-01-16T00:00:00+00:00",
+      "age": 32,
+      "birthDay": "1994-05-18",
+      "u23": false,
+      "layoutUpdatedAt": "2026-05-26T21:26:41.426601"
     },
     {
       "slug": "visar-musliu",
@@ -5708,7 +6304,11 @@
       "position": "Defender",
       "country": "North Macedonia",
       "avatarPictureUrl": "https://assets.sorare.com/playerpicture/abe6ca18-e88b-48e3-b4e8-8d62f91e5f8e/picture/avatar-462e5e9bac54920971986450f1ad4e9e.png",
-      "membershipStartDate": "2025-02-03T00:00:00+00:00"
+      "membershipStartDate": "2025-02-03T00:00:00+00:00",
+      "age": 31,
+      "birthDay": "1994-11-13",
+      "u23": false,
+      "layoutUpdatedAt": "2026-05-26T21:26:43.654781"
     },
     {
       "slug": "wouter-vrancken",
