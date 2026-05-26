@@ -11,6 +11,14 @@ on:
         description: "Season start year"
         required: true
         default: "2025"
+      offset:
+        description: "Da quale giocatore partire"
+        required: true
+        default: "0"
+      limit:
+        description: "Quanti giocatori arricchire"
+        required: true
+        default: "150"
 
 permissions:
   contents: write
@@ -32,6 +40,9 @@ jobs:
         run: pip install requests
 
       - name: Build player data
+        env:
+          OFFSET_PLAYERS: ${{ github.event.inputs.offset }}
+          LIMIT_PLAYERS: ${{ github.event.inputs.limit }}
         run: python build_player_data.py --league ${{ github.event.inputs.league }} --season ${{ github.event.inputs.season }}
 
       - name: Upload player data
