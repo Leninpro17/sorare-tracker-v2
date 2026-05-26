@@ -1,119 +1,222 @@
-import requests
+import os
 import json
+import time
+import argparse
+import requests
 from datetime import datetime
+from config import LEAGUES
 
-JUPILER_CLUBS = [
-    "genk-genk",
-    "club-brugge-brugge",
-    "anderlecht-bruxelles-brussel",
-    "union-saint-gilloise-bruxelles-brussels",
-    "gent-gent",
-    "antwerp-deurne",
-    "sporting-charleroi-charleroi",
-    "sint-truiden-sint-truiden-st-trond",
-    "mechelen-mechelen-malines",
-    "oh-leuven-heverlee",
-    "westerlo-westerlo",
-    "standard-liege-liege-luik",
-    "cercle-brugge-brugge",
-    "dender-denderleeuw",
-    "zulte-waregem-waregem",
-    "la-louviere-la-louviere"
-]
+SORARE_URL = "https://api.sorare.com/graphql"
 
-all_players = []
+CLUB_OPERATION_ID = "React/a288341ac39d1684e9492982e6dbcf7369b005b3df0afff9eeceaa81430ecf5b"
+LAYOUT_OPERATION_ID = "React/a809e5dae931764014e854f4ba174c338195ee3fe2cf12bc971687941c0fe40d"
 
-for club_slug in JUPILER_CLUBS:
 
-    print(f"\nScanning {club_slug}")
+def post_sorare(payload, label):
+    for attempt in range(5):
+        response = requests.post(
+            SORARE_URL,
+            json=payload,
+            headers={"content-type": "application/json"},
+            timeout=30
+        )
 
+        if response.status_code == 200:
+            data = response.json()
+            if "errors" in data:
+                raise Exception(data["errors"])
+            return data
+
+        if response.status_code == 429:
+            wait = 60 * (attempt + 1)
+            print(f"Rate limit hit for {label}. Waiting {wait} seconds...")
+            time.sleep(wait)
+            continue
+
+        raise Exception(f"HTTP {response.status_code}: {response.text[:300]}")
+
+    raise Exception(f"Too many rate limits for {label}")
+
+
+def load_club_list(league_key, season_start_year):
+    file_path = f"data/{league_key}/{season_start_year}/club_list.json"
+
+    if not os.path.exists(file_path):
+        raise Exception(f"club_list.json non trovato: {file_path}")
+
+    with open(file_path, "r", encoding="utf-8") as f:
+        return json.load(f), file_path
+
+
+def fetch_club(club_slug, season_start_year):
     payload = {
         "operationName": "FootballClubOverviewQuery",
         "variables": {
             "slug": club_slug,
-            "seasonStartYear": 2025
+            "seasonStartYear": season_start_year
         },
         "extensions": {
-            "operationId": "React/a288341ac39d1684e9492982e6dbcf7369b005b3df0afff9eeceaa81430ecf5b"
+            "operationId": CLUB_OPERATION_ID
         }
     }
 
-    try:
-        response = requests.post(
-            "https://api.sorare.com/graphql",
-            json=payload,
-            headers={
-                "content-type": "application/json"
-            },
-            timeout=30
-        )
+    data = post_sorare(payload, club_slug)
+    club = data["data"]["football"]["club"]
 
-        print("STATUS:", response.status_code)
+    if not club:
+        raise Exception(f"Club non trovato: {club_slug}")
 
-        if response.status_code != 200:
-            continue
+    return club
 
-        data = response.json()
 
-        club = data["data"]["football"]["club"]
+def fetch_player_layout(player_slug):
+    payload = {
+        "operationName": "AnyPlayerLayoutQuery",
+        "variables": {
+            "onlyPrimary": False,
+            "slug": player_slug
+        },
+        "extensions": {
+            "operationId": LAYOUT_OPERATION_ID
+        }
+    }
 
-        club_name = club["name"]
+    data = post_sorare(payload, player_slug)
+    return data.get("data", {}).get("anyPlayer", {}) or {}
 
-        memberships = club["activeMemberships"]["nodes"]
 
-        print(
-            f"Club: {club_name} | Players: {len(memberships)}"
-        )
+def main():
+    parser = argparse.ArgumentParser()
 
-        for membership in memberships:
-
-            player = membership["player"]
-
-            all_players.append({
-                "slug": player.get("slug"),
-                "displayName": player.get("displayName"),
-                "position": player.get("position"),
-                "country": (
-                    player.get("country", {})
-                    .get("name")
-                    if player.get("country")
-                    else None
-                ),
-                "club": club_name,
-                "club_slug": club_slug,
-                "avatarPictureUrl": player.get(
-                    "avatarPictureUrl"
-                ),
-                "membershipStartDate": membership.get(
-                    "startDate"
-                )
-            })
-
-    except Exception as e:
-        print("ERROR:", club_slug)
-        print(str(e))
-
-output = {
-    "updated_at": datetime.utcnow().isoformat(),
-    "league": "Jupiler Pro League",
-    "total_players": len(all_players),
-    "players": all_players
-}
-
-with open(
-    "player_data.json",
-    "w",
-    encoding="utf-8"
-) as f:
-    json.dump(
-        output,
-        f,
-        indent=2,
-        ensure_ascii=False
+    parser.add_argument(
+        "--league",
+        required=True,
+        choices=LEAGUES.keys(),
+        help="Liga da aggiornare"
     )
 
-print("\n==============================")
-print("DONE")
-print("Players saved:", len(all_players))
-print("File created: player_data.json")
-print("==============================")
+    parser.add_argument(
+        "--season",
+        required=True,
+        type=int,
+        help="Anno inizio stagione. Esempio: 2025 per stagione 2025/26"
+    )
+
+    args = parser.parse_args()
+
+    league_key = args.league
+    season_start_year = args.season
+
+    league_config = LEAGUES[league_key]
+    league_name = league_config["name"]
+
+    club_list, club_list_file = load_club_list(
+        league_key,
+        season_start_year
+    )
+
+    output_dir = f"data/{league_key}/{season_start_year}"
+    os.makedirs(output_dir, exist_ok=True)
+
+    output_file = f"{output_dir}/player_data.json"
+
+    clubs = club_list.get("clubs", [])
+
+    if not clubs:
+        raise Exception(f"Nessun club trovato in {club_list_file}")
+
+    players_by_slug = {}
+    errors = []
+
+    print("Club list:", club_list_file)
+    print("League:", league_name)
+    print("Season:", season_start_year)
+    print("Clubs:", len(clubs))
+
+    for club_index, club_info in enumerate(clubs, start=1):
+        club_slug = club_info["slug"]
+
+        print(f"\n[{club_index}/{len(clubs)}] Scanning club: {club_slug}")
+
+        try:
+            club = fetch_club(
+                club_slug,
+                season_start_year
+            )
+
+            club_name = club["name"]
+            memberships = club["activeMemberships"]["nodes"]
+
+            print(f"Club: {club_name} | Players: {len(memberships)}")
+
+            for membership in memberships:
+                player = membership.get("player")
+
+                if not player:
+                    continue
+
+                player_slug = player.get("slug")
+
+                if not player_slug:
+                    continue
+
+                layout = fetch_player_layout(player_slug)
+
+                players_by_slug[player_slug] = {
+                    "slug": player_slug,
+                    "displayName": player.get("displayName"),
+                    "club": club_name,
+                    "club_slug": club_slug,
+                    "position": player.get("position"),
+                    "country": (
+                        player.get("country", {}).get("name")
+                        if player.get("country")
+                        else None
+                    ),
+                    "age": layout.get("age"),
+                    "birthDay": layout.get("birthDay"),
+                    "u23": layout.get("u23Eligible"),
+                    "avatarPictureUrl": player.get("avatarPictureUrl"),
+                    "membershipStartDate": membership.get("startDate")
+                }
+
+                time.sleep(0.7)
+
+        except Exception as e:
+            print("ERROR CLUB:", club_slug, str(e))
+            errors.append({
+                "club_slug": club_slug,
+                "error": str(e)
+            })
+
+    players = list(players_by_slug.values())
+
+    if not players:
+        raise Exception("Nessun giocatore trovato. Controlla club_list o query Sorare.")
+
+    output = {
+        "updated_at": datetime.utcnow().isoformat(),
+        "league": league_name,
+        "league_key": league_key,
+        "seasonStartYear": season_start_year,
+        "total_clubs": len(clubs),
+        "total_players": len(players),
+        "errors": errors,
+        "players": players
+    }
+
+    with open(output_file, "w", encoding="utf-8") as f:
+        json.dump(output, f, indent=2, ensure_ascii=False)
+
+    print("\n==============================")
+    print("DONE")
+    print("League:", league_name)
+    print("Season:", season_start_year)
+    print("Players saved:", len(players))
+    print("Errors:", len(errors))
+    print("File created:", output_file)
+    print("==============================")
+
+
+if __name__ == "__main__":
+    main()
