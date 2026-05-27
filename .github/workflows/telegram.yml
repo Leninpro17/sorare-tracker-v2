@@ -1,10 +1,10 @@
-name: Test Player Price
+name: Check Price Format
 
 on:
   workflow_dispatch:
 
 jobs:
-  test-price:
+  check-price:
     runs-on: ubuntu-latest
 
     steps:
@@ -16,14 +16,5 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Install requests
-        run: pip install requests
-
-      - name: Test price query
-        run: python test_price.py
-
-      - name: Upload price test
-        uses: actions/upload-artifact@v4
-        with:
-          name: price-test
-          path: price_test.json
+      - name: Check price format
+        run: python check_price.py
