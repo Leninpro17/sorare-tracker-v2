@@ -1,55 +1,47 @@
 import os
 import json
 import time
+import argparse
 import requests
 from datetime import datetime
+from config import LEAGUES
 
-INPUT_FILE = "player_data.json"
-OUTPUT_FILE = "player_metrics.json"
-
+SORARE_URL = "https://api.sorare.com/graphql"
 PERFORMANCE_OPERATION_ID = "React/3ea98095326204593e8d89d7cf014fdf849f43b2b5534ce70047281efa62403e"
-LAYOUT_OPERATION_ID = "React/a809e5dae931764014e854f4ba174c338195ee3fe2cf12bc971687941c0fe40d"
+
 
 POSITION_MAP = {
     "Goalkeeper": "Goalkeeper",
     "Defender": "Defender",
     "Midfielder": "Midfielder",
-    "Forward": "Forward",
-    "GK": "Goalkeeper",
-    "DEF": "Defender",
-    "MID": "Midfielder",
-    "FWD": "Forward"
+    "Forward": "Forward"
 }
 
 
-def post_sorare(payload, slug):
+def post_sorare(payload, label):
     for attempt in range(5):
         response = requests.post(
-            "https://api.sorare.com/graphql",
+            SORARE_URL,
             json=payload,
             headers={"content-type": "application/json"},
             timeout=30
         )
 
         if response.status_code == 200:
-            return response.json()
+            data = response.json()
+            if "errors" in data:
+                raise Exception(data["errors"])
+            return data
 
         if response.status_code == 429:
             wait = 60 * (attempt + 1)
-            print(f"Rate limit hit for {slug}. Waiting {wait} seconds...")
+            print(f"Rate limit hit for {label}. Waiting {wait} seconds...")
             time.sleep(wait)
             continue
 
         raise Exception(f"HTTP {response.status_code}: {response.text[:300]}")
 
-    raise Exception(f"Too many rate limits for {slug}")
-
-
-def get_players():
-    with open(INPUT_FILE, "r", encoding="utf-8") as f:
-        data = json.load(f)
-
-    return data["players"] if isinstance(data, dict) and "players" in data else data
+    raise Exception(f"Too many rate limits for {label}")
 
 
 def get_stat_value(avg_block, stat_name):
@@ -63,28 +55,9 @@ def get_stat_value(avg_block, stat_name):
     return None
 
 
-def fetch_layout(slug):
-    payload = {
-        "operationName": "AnyPlayerLayoutQuery",
-        "variables": {
-            "onlyPrimary": False,
-            "slug": slug
-        },
-        "extensions": {
-            "operationId": LAYOUT_OPERATION_ID
-        }
-    }
-
-    data = post_sorare(payload, slug)
-    return data.get("data", {}).get("anyPlayer", {}) or {}
-
-
 def fetch_performance(player):
-    slug = player.get("slug")
-    position = POSITION_MAP.get(
-        player.get("position"),
-        player.get("position", "Midfielder")
-    )
+    slug = player["slug"]
+    position = POSITION_MAP.get(player.get("position"), player.get("position", "Midfielder"))
 
     payload = {
         "operationName": "PerformanceBlocksQuery",
@@ -99,16 +72,8 @@ def fetch_performance(player):
     }
 
     data = post_sorare(payload, slug)
-    return data.get("data", {}).get("anyPlayer", {}) or {}
-
-
-def fetch_metrics(player):
-    slug = player.get("slug")
-
-    layout = fetch_layout(slug)
-    performance = fetch_performance(player)
-
-    avg = performance.get("anySo5AverageLastScore", {})
+    any_player = data.get("data", {}).get("anyPlayer", {}) or {}
+    avg = any_player.get("anySo5AverageLastScore", {}) or {}
 
     games_started = get_stat_value(avg, "GAME_STARTED")
     starter_rate = round((games_started / 10) * 100, 1) if games_started is not None else None
@@ -120,15 +85,14 @@ def fetch_metrics(player):
         "club_slug": player.get("club_slug"),
         "position": player.get("position"),
         "country": player.get("country"),
+        "age": player.get("age"),
+        "birthDay": player.get("birthDay"),
+        "u23": player.get("u23"),
 
-        "age": layout.get("age"),
-        "birthDay": layout.get("birthDay"),
-        "u23": layout.get("u23Eligible"),
-
-        "l5": performance.get("lastFiveSo5AverageScore"),
-        "l10": performance.get("lastTenPlayedSo5AverageScore"),
-        "l40": performance.get("lastFortySo5AverageScore"),
-        "seasonAverage": performance.get("seasonAverage"),
+        "l5": any_player.get("lastFiveSo5AverageScore"),
+        "l10": any_player.get("lastTenPlayedSo5AverageScore"),
+        "l40": any_player.get("lastFortySo5AverageScore"),
+        "seasonAverage": any_player.get("seasonAverage"),
 
         "aa": avg.get("averageValueAllAround"),
         "decisive": avg.get("averageValueDecisive"),
@@ -143,84 +107,116 @@ def fetch_metrics(player):
     }
 
 
-all_players = get_players()
+def main():
+    parser = argparse.ArgumentParser()
 
-OFFSET_PLAYERS = int(os.environ.get("OFFSET_PLAYERS", 0))
-LIMIT_PLAYERS = int(os.environ.get("LIMIT_PLAYERS", 150))
+    parser.add_argument("--league", required=True, choices=LEAGUES.keys())
+    parser.add_argument("--season", required=True, type=int)
+    parser.add_argument("--snapshot", required=False, default="manual")
 
-players = all_players[OFFSET_PLAYERS:OFFSET_PLAYERS + LIMIT_PLAYERS]
+    args = parser.parse_args()
 
-print(f"Total players: {len(all_players)}")
-print(f"Offset: {OFFSET_PLAYERS}")
-print(f"Limit: {LIMIT_PLAYERS}")
-print(f"Players in this run: {len(players)}")
-# Load existing metrics if present
-existing_metrics_by_slug = {}
-existing_errors = []
+    league_key = args.league
+    season = args.season
+    snapshot_label = args.snapshot
 
-if os.path.exists(OUTPUT_FILE):
-    try:
-        with open(OUTPUT_FILE, "r", encoding="utf-8") as f:
-            existing_output = json.load(f)
+    base_dir = f"data/{league_key}/{season}"
+    player_data_file = f"{base_dir}/player_data.json"
+    latest_file = f"{base_dir}/player_metrics_latest.json"
+    snapshot_dir = f"{base_dir}/snapshots"
+    snapshot_file = f"{snapshot_dir}/player_metrics_{snapshot_label}.json"
 
-        for item in existing_output.get("players", []):
+    os.makedirs(snapshot_dir, exist_ok=True)
+
+    with open(player_data_file, "r", encoding="utf-8") as f:
+        player_data = json.load(f)
+
+    all_players = player_data["players"]
+
+    OFFSET_PLAYERS = int(os.environ.get("OFFSET_PLAYERS", 0))
+    LIMIT_PLAYERS = int(os.environ.get("LIMIT_PLAYERS", 150))
+
+    players = all_players[OFFSET_PLAYERS:OFFSET_PLAYERS + LIMIT_PLAYERS]
+
+    existing_by_slug = {}
+    existing_errors = []
+
+    if os.path.exists(latest_file):
+        with open(latest_file, "r", encoding="utf-8") as f:
+            existing = json.load(f)
+
+        for item in existing.get("players", []):
             if item.get("slug"):
-                existing_metrics_by_slug[item["slug"]] = item
+                existing_by_slug[item["slug"]] = item
 
-        existing_errors = existing_output.get("errors", [])
+        existing_errors = existing.get("errors", [])
 
-        print(f"Existing metrics loaded: {len(existing_metrics_by_slug)}")
+        print(f"Existing metrics loaded: {len(existing_by_slug)}")
 
-    except Exception as e:
-        print("Could not load existing metrics:", str(e))
+    print("League:", league_key)
+    print("Season:", season)
+    print("Snapshot:", snapshot_label)
+    print("Total players:", len(all_players))
+    print("Offset:", OFFSET_PLAYERS)
+    print("Limit:", LIMIT_PLAYERS)
+    print("Players in this run:", len(players))
+
+    errors = existing_errors
+
+    for i, player in enumerate(players, start=1):
+        slug = player.get("slug")
+        name = player.get("displayName", slug)
+
+        if not slug:
+            continue
+
+        print(f"[{i}/{len(players)}] Updating metrics: {name}")
+
+        try:
+            metric = fetch_performance(player)
+            existing_by_slug[slug] = metric
+
+        except Exception as e:
+            print("ERROR:", slug, str(e))
+            errors.append({
+                "slug": slug,
+                "name": name,
+                "error": str(e),
+                "updated_at": datetime.utcnow().isoformat()
+            })
+
+        time.sleep(2)
+
+    metrics = list(existing_by_slug.values())
+
+    output = {
+        "updated_at": datetime.utcnow().isoformat(),
+        "league": player_data.get("league"),
+        "league_key": league_key,
+        "seasonStartYear": season,
+        "snapshot": snapshot_label,
+        "total_players": len(metrics),
+        "total_errors": len(errors),
+        "offset": OFFSET_PLAYERS,
+        "limit": LIMIT_PLAYERS,
+        "errors": errors,
+        "players": metrics
+    }
+
+    with open(latest_file, "w", encoding="utf-8") as f:
+        json.dump(output, f, indent=2, ensure_ascii=False)
+
+    with open(snapshot_file, "w", encoding="utf-8") as f:
+        json.dump(output, f, indent=2, ensure_ascii=False)
+
+    print("==============================")
+    print("DONE")
+    print("Metrics saved:", len(metrics))
+    print("Errors:", len(errors))
+    print("Latest file:", latest_file)
+    print("Snapshot file:", snapshot_file)
+    print("==============================")
 
 
-errors = existing_errors
-
-print(f"Players to update: {len(players)}")
-
-for i, player in enumerate(players, start=1):
-    slug = player.get("slug")
-    name = player.get("displayName", slug)
-
-    if not slug:
-        continue
-
-    print(f"[{i}/{len(players)}] {name}")
-
-    try:
-        metric = fetch_metrics(player)
-        existing_metrics_by_slug[slug] = metric
-    except Exception as e:
-        print("ERROR:", slug, str(e))
-        errors.append({
-            "slug": slug,
-            "name": name,
-            "error": str(e),
-            "updated_at": datetime.utcnow().isoformat()
-        })
-
-    time.sleep(3)
-
-all_metrics = list(existing_metrics_by_slug.values())
-
-output = {
-    "updated_at": datetime.utcnow().isoformat(),
-    "source": "Sorare Layout + PerformanceBlocksQuery",
-    "total_players": len(all_metrics),
-    "total_errors": len(errors),
-    "offset": OFFSET_PLAYERS,
-    "limit": LIMIT_PLAYERS,
-    "errors": errors,
-    "players": all_metrics
-}
-
-with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-    json.dump(output, f, indent=2, ensure_ascii=False)
-
-print("==============================")
-print("DONE")
-print("Metrics saved:", len(all_metrics))
-print("Errors:", len(errors))
-print("File created:", OUTPUT_FILE)
-print("==============================")
+if __name__ == "__main__":
+    main()
