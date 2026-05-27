@@ -1,0 +1,83 @@
+name: Update Player Metrics
+
+on:
+  workflow_dispatch:
+    inputs:
+      league:
+        description: "League key"
+        required: true
+        default: "belgium"
+
+      season:
+        description: "Season start year"
+        required: true
+        default: "2025"
+
+      snapshot:
+        description: "Snapshot label"
+        required: true
+        default: "pre_gw01"
+
+      offset:
+        description: "Da quale giocatore partire"
+        required: true
+        default: "0"
+
+      limit:
+        description: "Quanti giocatori aggiornare"
+        required: true
+        default: "150"
+
+permissions:
+  contents: write
+
+jobs:
+  update-player-metrics:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install requests
+        run: pip install requests
+
+      - name: Update player metrics
+        env:
+          OFFSET_PLAYERS: ${{ github.event.inputs.offset }}
+          LIMIT_PLAYERS: ${{ github.event.inputs.limit }}
+        run: |
+          python update_player_metrics.py \
+            --league ${{ github.event.inputs.league }} \
+            --season ${{ github.event.inputs.season }} \
+            --snapshot ${{ github.event.inputs.snapshot }}
+
+      - name: Upload latest metrics
+        uses: actions/upload-artifact@v4
+        with:
+          name: player-metrics-latest-${{ github.event.inputs.league }}-${{ github.event.inputs.season }}
+          path: data/${{ github.event.inputs.league }}/${{ github.event.inputs.season }}/player_metrics_latest.json
+
+      - name: Upload snapshot metrics
+        uses: actions/upload-artifact@v4
+        with:
+          name: player-metrics-snapshot-${{ github.event.inputs.snapshot }}
+          path: data/${{ github.event.inputs.league }}/${{ github.event.inputs.season }}/snapshots/player_metrics_${{ github.event.inputs.snapshot }}.json
+
+      - name: Commit updated metrics
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+
+          git add \
+            data/${{ github.event.inputs.league }}/${{ github.event.inputs.season }}/player_metrics_latest.json \
+            data/${{ github.event.inputs.league }}/${{ github.event.inputs.season }}/snapshots/
+
+          git commit -m "Update player metrics ${{ github.event.inputs.league }} ${{ github.event.inputs.snapshot }}" || echo "No changes to commit"
+
+          git push
