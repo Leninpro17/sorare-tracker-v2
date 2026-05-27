@@ -1,62 +1,8 @@
-name: Telegram Test
+- name: Test price query
+  run: python test_price.py
 
-on:
-  workflow_dispatch:
-    inputs:
-      offset:
-        description: "Da quale giocatore partire"
-        required: true
-        default: "0"
-      limit:
-        description: "Quanti giocatori aggiornare"
-        required: true
-        default: "150"
-
-permissions:
-  contents: write
-
-jobs:
-  run:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Setup Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.11"
-
-      - name: Install requests
-        run: pip install requests
-
-      - name: Build player database
-        run: python build_player_data.py
-
-      - name: Update player metrics
-        env:
-          OFFSET_PLAYERS: ${{ github.event.inputs.offset }}
-          LIMIT_PLAYERS: ${{ github.event.inputs.limit }}
-        run: python update_player_metrics.py
-
-      - name: Upload player data
-        uses: actions/upload-artifact@v4
-        with:
-          name: player-data
-          path: player_data.json
-
-      - name: Upload player metrics
-        uses: actions/upload-artifact@v4
-        with:
-          name: player-metrics
-          path: player_metrics.json
-
-      - name: Commit updated files
-        run: |
-          git config user.name "github-actions"
-          git config user.email "github-actions@github.com"
-
-          git add player_data.json player_metrics.json
-          git commit -m "Update player data and metrics" || echo "No changes to commit"
-          git push
+- name: Upload price test
+  uses: actions/upload-artifact@v4
+  with:
+    name: price-test
+    path: price_test.json
