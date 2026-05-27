@@ -1,0 +1,50 @@
+name: Generate Buy Signals
+
+on:
+  workflow_dispatch:
+    inputs:
+      league:
+        description: "League key"
+        required: true
+        default: "belgium"
+      season:
+        description: "Season start year"
+        required: true
+        default: "2025"
+
+permissions:
+  contents: write
+
+jobs:
+  generate-buy-signals:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Pull latest changes
+        run: git pull origin main
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Generate buy signals
+        run: python generate_buy_signals.py --league ${{ github.event.inputs.league }} --season ${{ github.event.inputs.season }}
+
+      - name: Upload buy signals
+        uses: actions/upload-artifact@v4
+        with:
+          name: buy-signals-${{ github.event.inputs.league }}-${{ github.event.inputs.season }}
+          path: data/${{ github.event.inputs.league }}/${{ github.event.inputs.season }}/buy_signals_latest.json
+
+      - name: Commit buy signals
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+
+          git add data/${{ github.event.inputs.league }}/${{ github.event.inputs.season }}/buy_signals_latest.json
+          git commit -m "Generate buy signals ${{ github.event.inputs.league }} ${{ github.event.inputs.season }}" || echo "No changes to commit"
+          git push
