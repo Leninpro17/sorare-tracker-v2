@@ -36,17 +36,22 @@ print("Saved price_test.json")
 
 
 KEYWORDS = [
-    "price",
-    "amount",
-    "eur",
-    "usd",
-    "wei",
-    "eth",
-    "floor",
+    "lowestprice",
     "limited",
     "rare",
-    "lowest",
-    "offer"
+    "superrare",
+    "unique",
+    "season",
+    "inseason",
+    "classic",
+    "cardedition",
+    "amounts",
+    "usdcents",
+    "eurcents",
+    "wei",
+    "offer",
+    "price",
+    "floor"
 ]
 
 
