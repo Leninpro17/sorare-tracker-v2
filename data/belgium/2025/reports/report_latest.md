@@ -1,6 +1,6 @@
 # Sorare Report - Jupiler Pro League 2025
 
-Generated at: `2026-05-28T07:11:12.070237`
+Generated at: `2026-05-28T09:07:42.381718`
 
 ## Summary
 
@@ -10,6 +10,28 @@ Generated at: `2026-05-28T07:11:12.070237`
 - Minutes Risk: **313**
 - Classic Value Watch: **50**
 - In-Season Value Watch: **127**
+- Top GK: **19**
+
+
+## 🧤 TOP GK
+
+| # | Player | Club | Pos | Age | L10 | L40 | AA | Starter | Limited Floor | Type | Score |
+|---|--------|------|-----|-----|-----|-----|----|---------|---------------|------|-------|
+| 1 | Lucca Kiaba Mounganga | KRC Genk | Goalkeeper | 17 | 57.0 | 57.0 | 11.35 | 100.0% | 0.006 ETH | IN_SEASON | 100 |
+| 2 | Davy Roef | KAA Gent | Goalkeeper | 32 | 55.0 | 50.0 | 12.15 | 100.0% | €3.0 | IN_SEASON | 100 |
+| 3 | Andreas Jungdal | KVC Westerlo | Goalkeeper | 24 | 53.0 | 52.0 | 11.31 | 100.0% | €3.85 | IN_SEASON | 100 |
+| 4 | Mohamed Koné | Royal Charleroi S.C. | Goalkeeper | 24 | 53.0 | 51.0 | 9.26 | 100.0% | €3.55 | IN_SEASON | 100 |
+| 5 | Kjell Scherpen | Royal Union Saint-Gilloise | Goalkeeper | 26 | 52.0 | 49.0 | 3.23 | 100.0% | €5.96 | IN_SEASON | 90 |
+| 6 | Brent Gabriel | SV Zulte-Waregem | Goalkeeper | 27 | 51.0 | 51.0 | 10.87 | 100.0% | €1.61 | IN_SEASON | 100 |
+| 7 | Warleson | Cercle Brugge KSV | Goalkeeper | 29 | 50.0 | 50.0 | 7.62 | 90.0% | €0.82 | IN_SEASON | 90 |
+| 8 | Taishi Brandon Nozawa | Royal Antwerp FC | Goalkeeper | 23 | 44.0 | 48.0 | 5.68 | 90.0% | $4.09 | IN_SEASON | 90 |
+| 9 | Matthieu Epolo | Standard de Liège | Goalkeeper | 21 | 55.0 | 53.0 | 10.36 | 80.0% | €7.2 | IN_SEASON | 100 |
+| 10 | Leo Kokubo | Sint-Truidense VV | Goalkeeper | 25 | 49.0 | 51.0 | 7.68 | 80.0% | €4.05 | IN_SEASON | 90 |
+| 11 | Marcos Peano | RAAL La Louvière | Goalkeeper | 27 | 47.0 | 53.0 | 8.11 | 80.0% | - | IN_SEASON | 90 |
+| 12 | Tobe Leysen | Oud-Heverlee Leuven | Goalkeeper | 24 | 44.0 | 49.0 | 7.38 | 80.0% | 0.0016 ETH | IN_SEASON | 90 |
+| 13 | Colin Coosemans | RSC Anderlecht | Goalkeeper | 33 | 38.0 | 46.0 | 3.19 | 80.0% | 0.0015 ETH | IN_SEASON | 70 |
+| 14 | Gauthier Gallon | F.C.V. Dender E.H. | Goalkeeper | 33 | 55.0 | 54.0 | 15.0 | 70.0% | €0.49 | IN_SEASON | 100 |
+| 15 | Danique van den Heuvel | Club Brugge KV | Goalkeeper | 22 | 42.0 | 44.0 | 7.4 | 30.0% | €1.8 | IN_SEASON | 65 |
 
 
 ## 🔥 TOP SAFE STARTER
