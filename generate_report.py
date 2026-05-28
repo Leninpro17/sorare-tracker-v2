@@ -77,6 +77,46 @@ def section(title, players, limit):
     return lines
 
 
+def filter_goalkeepers(signals):
+    all_players = []
+
+    for key in [
+        "safe_starter",
+        "aa_value",
+        "inseason_value_watch",
+        "classic_value_watch",
+        "u23_watch"
+    ]:
+        all_players.extend(signals.get(key, []))
+
+    by_slug = {}
+
+    for player in all_players:
+        if player.get("position") == "Goalkeeper":
+            slug = player.get("slug")
+
+            if not slug:
+                continue
+
+            previous = by_slug.get(slug)
+
+            if (
+                previous is None
+                or (player.get("signalScore") or 0) > (previous.get("signalScore") or 0)
+            ):
+                by_slug[slug] = player
+
+    return sorted(
+        by_slug.values(),
+        key=lambda x: (
+            x.get("starterRate") or 0,
+            x.get("l10") or 0,
+            x.get("signalScore") or 0
+        ),
+        reverse=True
+    )
+
+
 def main():
     parser = argparse.ArgumentParser()
 
@@ -122,6 +162,8 @@ def main():
     signals = data.get("signals", {})
     counts = data.get("counts", {})
 
+    top_gk = filter_goalkeepers(signals)
+
     lines = []
 
     lines.append(f"# Sorare Report - {data.get('league', league_key)} {season}")
@@ -136,7 +178,14 @@ def main():
     lines.append(f"- Minutes Risk: **{counts.get('minutes_risk', 0)}**")
     lines.append(f"- Classic Value Watch: **{counts.get('classic_value_watch', 0)}**")
     lines.append(f"- In-Season Value Watch: **{counts.get('inseason_value_watch', 0)}**")
+    lines.append(f"- Top GK: **{len(top_gk)}**")
     lines.append("")
+
+    lines += section(
+        "🧤 TOP GK",
+        top_gk,
+        limit
+    )
 
     lines += section(
         "🔥 TOP SAFE STARTER",
@@ -180,6 +229,7 @@ def main():
     print("==============================")
     print("DONE")
     print("Report file:", output_file)
+    print("Top GK:", len(top_gk))
     print("==============================")
 
 
