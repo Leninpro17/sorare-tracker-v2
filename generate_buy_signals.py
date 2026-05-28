@@ -37,18 +37,18 @@ def get_floor_currency(floor):
     return floor.get("referenceCurrency")
 
 
-def build_price_index(prices):
+def build_index(items):
     index = {}
 
-    for player in prices:
-        slug = player.get("slug")
+    for item in items:
+        slug = item.get("slug")
         if slug:
-            index[slug] = player
+            index[slug] = item
 
     return index
 
 
-def base_player(metric, price):
+def base_player(metric, price, projection):
     limited_floor = price.get("limitedFloor", {}) if price else {}
     rare_floor = price.get("rareFloor", {}) if price else {}
 
@@ -69,6 +69,13 @@ def base_player(metric, price):
         "minutesLast10": metric.get("minutesLast10"),
         "starterRate": metric.get("starterRate"),
 
+        "floorProjected": projection.get("floorProjected"),
+        "baseProjected": projection.get("baseProjected"),
+        "ceilingProjected": projection.get("ceilingProjected"),
+        "spikeRating": projection.get("spikeRating"),
+        "consistencyScore": projection.get("consistencyScore"),
+        "riskLevel": projection.get("riskLevel"),
+
         "limitedFloorValue": get_floor_value(limited_floor),
         "limitedFloorCurrency": get_floor_currency(limited_floor),
         "limitedFloorType": limited_floor.get("type"),
@@ -81,17 +88,24 @@ def base_player(metric, price):
     }
 
 
+def add_signal(bucket, player, score, reason):
+    item = dict(player)
+    item["signalScore"] = round(score, 1)
+    item["reason"] = reason
+    bucket.append(item)
+
+
 def score_safe_starter(p):
     score = 0
 
     if (p.get("starterRate") or 0) >= 80:
-        score += 35
+        score += 30
 
     if (p.get("minutesLast10") or 0) >= 700:
-        score += 25
+        score += 20
 
     if (p.get("l10") or 0) >= 45:
-        score += 20
+        score += 15
 
     if (p.get("l40") or 0) >= 45:
         score += 10
@@ -99,55 +113,57 @@ def score_safe_starter(p):
     if (p.get("aa") or 0) >= 10:
         score += 10
 
+    if (p.get("riskLevel") == "LOW"):
+        score += 15
+
     return score
 
 
 def score_aa_value(p):
     score = 0
-
     floor = p.get("limitedFloorValue")
 
     if (p.get("aa") or 0) >= 12:
-        score += 35
+        score += 30
 
     if (p.get("starterRate") or 0) >= 70:
-        score += 25
+        score += 20
 
-    if (p.get("l10") or 0) >= 40:
-        score += 15
+    if (p.get("baseProjected") or 0) >= 45:
+        score += 20
 
     if floor is not None:
         if floor <= 1:
-            score += 25
+            score += 30
         elif floor <= 3:
-            score += 15
+            score += 20
         elif floor <= 5:
-            score += 8
+            score += 10
 
     return score
 
 
 def score_u23_watch(p):
     score = 0
+    floor = p.get("limitedFloorValue")
 
     if p.get("u23") is True:
-        score += 35
+        score += 30
 
     if (p.get("starterRate") or 0) >= 50:
-        score += 25
-
-    if (p.get("l10") or 0) >= 40:
         score += 20
 
-    if (p.get("aa") or 0) >= 8:
-        score += 10
+    if (p.get("baseProjected") or 0) >= 40:
+        score += 20
 
-    floor = p.get("limitedFloorValue")
+    if (p.get("ceilingProjected") or 0) >= 60:
+        score += 15
+
     if floor is not None:
         if floor <= 5:
-            score += 10
+            score += 15
         elif floor <= 10:
-            score += 5
+            score += 8
 
     return score
 
@@ -156,36 +172,36 @@ def score_minutes_risk(p):
     score = 0
 
     if (p.get("starterRate") or 0) < 40:
-        score += 40
+        score += 35
 
     if (p.get("minutesLast10") or 0) < 300:
         score += 35
 
-    if (p.get("l10") or 0) < 35:
+    if (p.get("baseProjected") or 0) < 35:
         score += 15
 
-    if p.get("limitedFloorValue") is not None and p.get("limitedFloorValue") > 5:
-        score += 10
+    if p.get("riskLevel") == "HIGH":
+        score += 15
 
     return score
 
 
 def score_classic_value(p):
     score = 0
+    floor = p.get("limitedFloorValue")
 
     if p.get("limitedFloorType") == "CLASSIC":
-        score += 30
-
-    if (p.get("starterRate") or 0) >= 70:
         score += 25
 
-    if (p.get("l10") or 0) >= 45:
+    if (p.get("starterRate") or 0) >= 70:
+        score += 20
+
+    if (p.get("baseProjected") or 0) >= 45:
         score += 20
 
     if (p.get("aa") or 0) >= 10:
         score += 15
 
-    floor = p.get("limitedFloorValue")
     if floor is not None:
         if floor <= 1:
             score += 20
@@ -197,34 +213,153 @@ def score_classic_value(p):
 
 def score_inseason_value(p):
     score = 0
+    floor = p.get("limitedFloorValue")
 
     if p.get("limitedFloorType") == "IN_SEASON":
         score += 20
 
     if (p.get("starterRate") or 0) >= 70:
-        score += 25
+        score += 20
 
-    if (p.get("l10") or 0) >= 45:
+    if (p.get("baseProjected") or 0) >= 45:
         score += 20
 
     if (p.get("aa") or 0) >= 10:
         score += 15
 
-    floor = p.get("limitedFloorValue")
     if floor is not None:
         if floor <= 2:
-            score += 20
+            score += 25
         elif floor <= 5:
+            score += 12
+
+    return score
+
+
+def score_safe_floor(p):
+    score = 0
+
+    if (p.get("floorProjected") or 0) >= 40:
+        score += 30
+
+    if (p.get("baseProjected") or 0) >= 45:
+        score += 20
+
+    if (p.get("starterRate") or 0) >= 80:
+        score += 20
+
+    if (p.get("consistencyScore") or 0) >= 65:
+        score += 15
+
+    if p.get("riskLevel") == "LOW":
+        score += 15
+
+    return score
+
+
+def score_ceiling_value(p):
+    score = 0
+    floor = p.get("limitedFloorValue")
+
+    if (p.get("ceilingProjected") or 0) >= 65:
+        score += 35
+
+    if (p.get("spikeRating") or 0) >= 65:
+        score += 25
+
+    if (p.get("starterRate") or 0) >= 60:
+        score += 15
+
+    if floor is not None:
+        if floor <= 2:
+            score += 25
+        elif floor <= 5:
+            score += 15
+        elif floor <= 10:
+            score += 8
+
+    return score
+
+
+def score_target_360_watch(p):
+    """
+    Non significa che il singolo fa 360.
+    Significa che può essere utile in team target 360:
+    ceiling alto, spike alto, prezzo accessibile.
+    """
+    score = 0
+    floor = p.get("limitedFloorValue")
+
+    if (p.get("ceilingProjected") or 0) >= 70:
+        score += 35
+    elif (p.get("ceilingProjected") or 0) >= 60:
+        score += 20
+
+    if (p.get("spikeRating") or 0) >= 70:
+        score += 25
+    elif (p.get("spikeRating") or 0) >= 60:
+        score += 15
+
+    if (p.get("baseProjected") or 0) >= 45:
+        score += 15
+
+    if (p.get("starterRate") or 0) >= 70:
+        score += 15
+
+    if floor is not None:
+        if floor <= 5:
+            score += 10
+        elif floor <= 10:
+            score += 5
+
+    return score
+
+
+def score_low_risk_value(p):
+    score = 0
+    floor = p.get("limitedFloorValue")
+
+    if p.get("riskLevel") == "LOW":
+        score += 25
+
+    if (p.get("starterRate") or 0) >= 80:
+        score += 20
+
+    if (p.get("floorProjected") or 0) >= 40:
+        score += 20
+
+    if (p.get("baseProjected") or 0) >= 45:
+        score += 15
+
+    if floor is not None:
+        if floor <= 3:
+            score += 20
+        elif floor <= 6:
             score += 10
 
     return score
 
 
-def add_signal(bucket, player, score, reason):
-    item = dict(player)
-    item["signalScore"] = score
-    item["reason"] = reason
-    bucket.append(item)
+def score_high_spike_cheap(p):
+    score = 0
+    floor = p.get("limitedFloorValue")
+
+    if (p.get("spikeRating") or 0) >= 70:
+        score += 35
+
+    if (p.get("ceilingProjected") or 0) >= 65:
+        score += 30
+
+    if floor is not None:
+        if floor <= 2:
+            score += 25
+        elif floor <= 5:
+            score += 15
+
+    if (p.get("starterRate") or 0) >= 50:
+        score += 10
+
+    return score
 
 
 def main():
@@ -251,6 +386,7 @@ def main():
 
     metrics_file = f"{base_dir}/player_metrics_latest.json"
     prices_file = f"{base_dir}/player_prices_latest.json"
+    projections_file = f"{base_dir}/gw_projection_latest.json"
     output_file = f"{base_dir}/buy_signals_latest.json"
 
     if not os.path.exists(metrics_file):
@@ -259,16 +395,24 @@ def main():
     if not os.path.exists(prices_file):
         raise Exception(f"Prezzi non trovati: {prices_file}")
 
+    if not os.path.exists(projections_file):
+        raise Exception(f"Projection non trovata: {projections_file}")
+
     with open(metrics_file, "r", encoding="utf-8") as f:
         metrics_data = json.load(f)
 
     with open(prices_file, "r", encoding="utf-8") as f:
         prices_data = json.load(f)
 
+    with open(projections_file, "r", encoding="utf-8") as f:
+        projections_data = json.load(f)
+
     metrics = metrics_data.get("players", [])
     prices = prices_data.get("players", [])
+    projections = projections_data.get("players", [])
 
-    price_index = build_price_index(prices)
+    price_index = build_index(prices)
+    projection_index = build_index(projections)
 
     signals = {
         "safe_starter": [],
@@ -276,14 +420,21 @@ def main():
         "u23_watch": [],
         "minutes_risk": [],
         "classic_value_watch": [],
-        "inseason_value_watch": []
+        "inseason_value_watch": [],
+
+        "safe_floor": [],
+        "ceiling_value": [],
+        "target_360_watch": [],
+        "low_risk_value": [],
+        "high_spike_cheap": []
     }
 
     for metric in metrics:
         slug = metric.get("slug")
         price = price_index.get(slug, {})
+        projection = projection_index.get(slug, {})
 
-        p = base_player(metric, price)
+        p = base_player(metric, price, projection)
 
         safe_score = score_safe_starter(p)
         if safe_score >= 70:
@@ -291,7 +442,7 @@ def main():
                 signals["safe_starter"],
                 p,
                 safe_score,
-                "Alta titolarità, minuti solidi e buone medie."
+                "Alta titolarità, minuti solidi e rischio basso."
             )
 
         aa_score = score_aa_value(p)
@@ -300,7 +451,7 @@ def main():
                 signals["aa_value"],
                 p,
                 aa_score,
-                "Buon AA rispetto al prezzo Limited."
+                "Buon AA rispetto al prezzo Limited e projection solida."
             )
 
         u23_score = score_u23_watch(p)
@@ -309,7 +460,7 @@ def main():
                 signals["u23_watch"],
                 p,
                 u23_score,
-                "Profilo U23 con minuti e rendimento interessanti."
+                "Profilo U23 con minuti, projection e upside interessanti."
             )
 
         risk_score = score_minutes_risk(p)
@@ -327,7 +478,7 @@ def main():
                 signals["classic_value_watch"],
                 p,
                 classic_score,
-                "Floor Classic interessante con metriche solide."
+                "Floor Classic interessante con metriche/projection solide."
             )
 
         inseason_score = score_inseason_value(p)
@@ -336,7 +487,52 @@ def main():
                 signals["inseason_value_watch"],
                 p,
                 inseason_score,
-                "Floor In-Season interessante con metriche solide."
+                "Floor In-Season interessante con metriche/projection solide."
+            )
+
+        safe_floor_score = score_safe_floor(p)
+        if safe_floor_score >= 70:
+            add_signal(
+                signals["safe_floor"],
+                p,
+                safe_floor_score,
+                "Profilo con buon floor projected, consistenza e rischio basso."
+            )
+
+        ceiling_score = score_ceiling_value(p)
+        if ceiling_score >= 70:
+            add_signal(
+                signals["ceiling_value"],
+                p,
+                ceiling_score,
+                "Ceiling interessante rispetto al prezzo."
+            )
+
+        target_score = score_target_360_watch(p)
+        if target_score >= 70:
+            add_signal(
+                signals["target_360_watch"],
+                p,
+                target_score,
+                "Profilo utile per team target 360 grazie a ceiling/spike."
+            )
+
+        low_risk_score = score_low_risk_value(p)
+        if low_risk_score >= 70:
+            add_signal(
+                signals["low_risk_value"],
+                p,
+                low_risk_score,
+                "Value con rischio basso, buon floor e titolarità."
+            )
+
+        spike_score = score_high_spike_cheap(p)
+        if spike_score >= 70:
+            add_signal(
+                signals["high_spike_cheap"],
+                p,
+                spike_score,
+                "Profilo economico con alto potenziale spike."
             )
 
     for key in signals:
@@ -353,6 +549,7 @@ def main():
         "seasonStartYear": season,
         "source_metrics": metrics_file,
         "source_prices": prices_file,
+        "source_projections": projections_file,
         "counts": {
             key: len(value)
             for key, value in signals.items()
