@@ -1,0 +1,54 @@
+name: Generate Report
+
+on:
+  workflow_dispatch:
+    inputs:
+      league:
+        description: "League key"
+        required: true
+        default: "belgium"
+      season:
+        description: "Season start year"
+        required: true
+        default: "2025"
+      limit:
+        description: "Top players per section"
+        required: true
+        default: "15"
+
+permissions:
+  contents: write
+
+jobs:
+  generate-report:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Pull latest changes
+        run: git pull origin main
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Generate report
+        run: python generate_report.py --league ${{ github.event.inputs.league }} --season ${{ github.event.inputs.season }} --limit ${{ github.event.inputs.limit }}
+
+      - name: Upload report
+        uses: actions/upload-artifact@v4
+        with:
+          name: report-${{ github.event.inputs.league }}-${{ github.event.inputs.season }}
+          path: data/${{ github.event.inputs.league }}/${{ github.event.inputs.season }}/reports/report_latest.md
+
+      - name: Commit report
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+
+          git add data/${{ github.event.inputs.league }}/${{ github.event.inputs.season }}/reports/report_latest.md
+          git commit -m "Generate report ${{ github.event.inputs.league }} ${{ github.event.inputs.season }}" || echo "No changes to commit"
+          git push
