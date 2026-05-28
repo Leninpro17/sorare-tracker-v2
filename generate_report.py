@@ -44,9 +44,13 @@ def player_line(player, index):
         f"| {player.get('position', '-')} "
         f"| {fmt(player.get('age'))} "
         f"| {fmt(player.get('l10'))} "
-        f"| {fmt(player.get('l40'))} "
         f"| {fmt(player.get('aa'))} "
         f"| {fmt(player.get('starterRate'))}% "
+        f"| {fmt(player.get('floorProjected'))} "
+        f"| {fmt(player.get('baseProjected'))} "
+        f"| {fmt(player.get('ceilingProjected'))} "
+        f"| {fmt(player.get('spikeRating'))} "
+        f"| {player.get('riskLevel') or '-'} "
         f"| {limited_price} "
         f"| {player.get('limitedFloorType') or '-'} "
         f"| {player.get('signalScore', '-')} "
@@ -64,10 +68,10 @@ def section(title, players, limit):
         return lines
 
     lines.append(
-        "| # | Player | Club | Pos | Age | L10 | L40 | AA | Starter | Limited Floor | Type | Score |"
+        "| # | Player | Club | Pos | Age | L10 | AA | Starter | Floor Proj | Base Proj | Ceiling Proj | Spike | Risk | Limited Floor | Type | Score |"
     )
     lines.append(
-        "|---|--------|------|-----|-----|-----|-----|----|---------|---------------|------|-------|"
+        "|---|--------|------|-----|-----|-----|----|---------|------------|-----------|--------------|-------|------|---------------|------|-------|"
     )
 
     for i, player in enumerate(players[:limit], start=1):
@@ -75,46 +79,6 @@ def section(title, players, limit):
 
     lines.append("")
     return lines
-
-
-def filter_goalkeepers(signals):
-    all_players = []
-
-    for key in [
-        "safe_starter",
-        "aa_value",
-        "inseason_value_watch",
-        "classic_value_watch",
-        "u23_watch"
-    ]:
-        all_players.extend(signals.get(key, []))
-
-    by_slug = {}
-
-    for player in all_players:
-        if player.get("position") == "Goalkeeper":
-            slug = player.get("slug")
-
-            if not slug:
-                continue
-
-            previous = by_slug.get(slug)
-
-            if (
-                previous is None
-                or (player.get("signalScore") or 0) > (previous.get("signalScore") or 0)
-            ):
-                by_slug[slug] = player
-
-    return sorted(
-        by_slug.values(),
-        key=lambda x: (
-            x.get("starterRate") or 0,
-            x.get("l10") or 0,
-            x.get("signalScore") or 0
-        ),
-        reverse=True
-    )
 
 
 def main():
@@ -162,8 +126,6 @@ def main():
     signals = data.get("signals", {})
     counts = data.get("counts", {})
 
-    top_gk = filter_goalkeepers(signals)
-
     lines = []
 
     lines.append(f"# Sorare Report - {data.get('league', league_key)} {season}")
@@ -178,14 +140,12 @@ def main():
     lines.append(f"- Minutes Risk: **{counts.get('minutes_risk', 0)}**")
     lines.append(f"- Classic Value Watch: **{counts.get('classic_value_watch', 0)}**")
     lines.append(f"- In-Season Value Watch: **{counts.get('inseason_value_watch', 0)}**")
-    lines.append(f"- Top GK: **{len(top_gk)}**")
+    lines.append(f"- Safe Floor: **{counts.get('safe_floor', 0)}**")
+    lines.append(f"- Ceiling Value: **{counts.get('ceiling_value', 0)}**")
+    lines.append(f"- Target 360 Watch: **{counts.get('target_360_watch', 0)}**")
+    lines.append(f"- Low Risk Value: **{counts.get('low_risk_value', 0)}**")
+    lines.append(f"- High Spike Cheap: **{counts.get('high_spike_cheap', 0)}**")
     lines.append("")
-
-    lines += section(
-        "🧤 TOP GK",
-        top_gk,
-        limit
-    )
 
     lines += section(
         "🔥 TOP SAFE STARTER",
@@ -202,6 +162,36 @@ def main():
     lines += section(
         "🟢 TOP U23 WATCH",
         signals.get("u23_watch", []),
+        limit
+    )
+
+    lines += section(
+        "🧱 TOP SAFE FLOOR",
+        signals.get("safe_floor", []),
+        limit
+    )
+
+    lines += section(
+        "🚀 TOP CEILING VALUE",
+        signals.get("ceiling_value", []),
+        limit
+    )
+
+    lines += section(
+        "🎯 TOP TARGET 360 WATCH",
+        signals.get("target_360_watch", []),
+        limit
+    )
+
+    lines += section(
+        "🛡️ TOP LOW RISK VALUE",
+        signals.get("low_risk_value", []),
+        limit
+    )
+
+    lines += section(
+        "⚡ TOP HIGH SPIKE CHEAP",
+        signals.get("high_spike_cheap", []),
         limit
     )
 
@@ -229,7 +219,6 @@ def main():
     print("==============================")
     print("DONE")
     print("Report file:", output_file)
-    print("Top GK:", len(top_gk))
     print("==============================")
 
 
