@@ -6,24 +6,32 @@ from config import LEAGUES
 
 
 def get_floor_value(floor):
+    """
+    Ritorna sempre il prezzo normalizzato in EUR quando disponibile.
+    Richiede che update_player_prices.py abbia creato eurNormalized.
+    """
     if not floor:
         return None
 
+    if floor.get("eurNormalized") is not None:
+        return floor.get("eurNormalized")
+
     if floor.get("eur") is not None:
         return floor.get("eur")
-
-    if floor.get("usd") is not None:
-        return floor.get("usd")
-
-    if floor.get("eth") is not None:
-        return floor.get("eth")
 
     return None
 
 
 def get_floor_currency(floor):
+    """
+    Ora il valore principale usato per gli score è EUR normalizzato.
+    Qui teniamo comunque la valuta originale per debug/report.
+    """
     if not floor:
         return None
+
+    if floor.get("eurNormalized") is not None:
+        return "EUR"
 
     if floor.get("eur") is not None:
         return "EUR"
@@ -48,9 +56,33 @@ def build_index(items):
     return index
 
 
+def normalize_signal_score(raw_score):
+    """
+    Evita troppi 100 nel report.
+
+    70-79 = watch
+    80-89 = good
+    90-97 = top
+    98+ = elite raro
+    """
+    if raw_score <= 70:
+        return raw_score
+
+    if raw_score <= 90:
+        return 70 + (raw_score - 70) * 0.75
+
+    if raw_score <= 110:
+        return 85 + (raw_score - 90) * 0.5
+
+    return min(99, 95 + (raw_score - 110) * 0.15)
+
+
 def base_player(metric, price, projection):
     limited_floor = price.get("limitedFloor", {}) if price else {}
     rare_floor = price.get("rareFloor", {}) if price else {}
+
+    limited_floor_value = get_floor_value(limited_floor)
+    rare_floor_value = get_floor_value(rare_floor)
 
     return {
         "slug": metric.get("slug"),
@@ -74,15 +106,23 @@ def base_player(metric, price, projection):
         "ceilingProjected": projection.get("ceilingProjected"),
         "spikeRating": projection.get("spikeRating"),
         "consistencyScore": projection.get("consistencyScore"),
+        "volatilityScore": projection.get("volatilityScore"),
         "riskLevel": projection.get("riskLevel"),
+        "profileType": projection.get("profileType"),
+        "lineupUse": projection.get("lineupUse"),
 
-        "limitedFloorValue": get_floor_value(limited_floor),
+        # Prezzo normalizzato in EUR
+        "limitedFloorValue": limited_floor_value,
+        "limitedFloorEur": limited_floor_value,
         "limitedFloorCurrency": get_floor_currency(limited_floor),
+        "limitedFloorOriginalCurrency": limited_floor.get("referenceCurrency"),
         "limitedFloorType": limited_floor.get("type"),
         "limitedFloorSeasonYear": limited_floor.get("seasonYear"),
 
-        "rareFloorValue": get_floor_value(rare_floor),
+        "rareFloorValue": rare_floor_value,
+        "rareFloorEur": rare_floor_value,
         "rareFloorCurrency": get_floor_currency(rare_floor),
+        "rareFloorOriginalCurrency": rare_floor.get("referenceCurrency"),
         "rareFloorType": rare_floor.get("type"),
         "rareFloorSeasonYear": rare_floor.get("seasonYear"),
     }
@@ -90,7 +130,8 @@ def base_player(metric, price, projection):
 
 def add_signal(bucket, player, score, reason):
     item = dict(player)
-    item["signalScore"] = round(score, 1)
+    item["rawSignalScore"] = round(score, 1)
+    item["signalScore"] = round(normalize_signal_score(score), 1)
     item["reason"] = reason
     bucket.append(item)
 
@@ -113,7 +154,7 @@ def score_safe_starter(p):
     if (p.get("aa") or 0) >= 10:
         score += 10
 
-    if (p.get("riskLevel") == "LOW"):
+    if p.get("riskLevel") == "LOW":
         score += 15
 
     return score
@@ -121,7 +162,7 @@ def score_safe_starter(p):
 
 def score_aa_value(p):
     score = 0
-    floor = p.get("limitedFloorValue")
+    floor = p.get("limitedFloorEur")
 
     if (p.get("aa") or 0) >= 12:
         score += 30
@@ -145,7 +186,7 @@ def score_aa_value(p):
 
 def score_u23_watch(p):
     score = 0
-    floor = p.get("limitedFloorValue")
+    floor = p.get("limitedFloorEur")
 
     if p.get("u23") is True:
         score += 30
@@ -188,7 +229,7 @@ def score_minutes_risk(p):
 
 def score_classic_value(p):
     score = 0
-    floor = p.get("limitedFloorValue")
+    floor = p.get("limitedFloorEur")
 
     if p.get("limitedFloorType") == "CLASSIC":
         score += 25
@@ -213,7 +254,7 @@ def score_classic_value(p):
 
 def score_inseason_value(p):
     score = 0
-    floor = p.get("limitedFloorValue")
+    floor = p.get("limitedFloorEur")
 
     if p.get("limitedFloorType") == "IN_SEASON":
         score += 20
@@ -259,7 +300,7 @@ def score_safe_floor(p):
 
 def score_ceiling_value(p):
     score = 0
-    floor = p.get("limitedFloorValue")
+    floor = p.get("limitedFloorEur")
 
     if (p.get("ceilingProjected") or 0) >= 65:
         score += 35
@@ -288,7 +329,7 @@ def score_target_360_watch(p):
     ceiling alto, spike alto, prezzo accessibile.
     """
     score = 0
-    floor = p.get("limitedFloorValue")
+    floor = p.get("limitedFloorEur")
 
     if (p.get("ceilingProjected") or 0) >= 70:
         score += 35
@@ -317,7 +358,7 @@ def score_target_360_watch(p):
 
 def score_low_risk_value(p):
     score = 0
-    floor = p.get("limitedFloorValue")
+    floor = p.get("limitedFloorEur")
 
     if p.get("riskLevel") == "LOW":
         score += 25
@@ -342,7 +383,7 @@ def score_low_risk_value(p):
 
 def score_high_spike_cheap(p):
     score = 0
-    floor = p.get("limitedFloorValue")
+    floor = p.get("limitedFloorEur")
 
     if (p.get("spikeRating") or 0) >= 70:
         score += 35
@@ -451,7 +492,7 @@ def main():
                 signals["aa_value"],
                 p,
                 aa_score,
-                "Buon AA rispetto al prezzo Limited e projection solida."
+                "Buon AA rispetto al prezzo Limited normalizzato in EUR e projection solida."
             )
 
         u23_score = score_u23_watch(p)
@@ -505,7 +546,7 @@ def main():
                 signals["ceiling_value"],
                 p,
                 ceiling_score,
-                "Ceiling interessante rispetto al prezzo."
+                "Ceiling interessante rispetto al prezzo Limited normalizzato in EUR."
             )
 
         target_score = score_target_360_watch(p)
@@ -550,6 +591,8 @@ def main():
         "source_metrics": metrics_file,
         "source_prices": prices_file,
         "source_projections": projections_file,
+        "price_note": "limitedFloorValue and limitedFloorEur use eurNormalized when available.",
+        "score_note": "signalScore is normalized to avoid too many 100s. rawSignalScore keeps the original score.",
         "counts": {
             key: len(value)
             for key, value in signals.items()
