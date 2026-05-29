@@ -4,7 +4,7 @@ import time
 import argparse
 import requests
 from datetime import datetime
-from config import LEAGUES
+from config import LEAGUES, PRICE_CONVERSION
 
 SORARE_URL = "https://api.sorare.com/graphql"
 
@@ -54,6 +54,41 @@ def wei_to_eth(value):
         return float(value) / 10**18
     except Exception:
         return None
+
+
+def normalize_to_eur(amounts):
+    """
+    Normalizza EUR / USD / ETH in un unico valore EUR.
+    Serve per confrontare correttamente i prezzi nei buy signals.
+    """
+    eur = amounts.get("eur")
+    usd = amounts.get("usd")
+    eth = amounts.get("eth")
+
+    if eur is not None:
+        return round(eur, 2)
+
+    if usd is not None:
+        return round(usd * PRICE_CONVERSION["USD_TO_EUR"], 2)
+
+    if eth is not None:
+        return round(eth * PRICE_CONVERSION["ETH_TO_EUR"], 2)
+
+    return None
+
+
+def empty_floor():
+    return {
+        "eur": None,
+        "usd": None,
+        "eth": None,
+        "eurNormalized": None,
+        "referenceCurrency": None,
+        "seasonYear": None,
+        "type": None,
+        "cardSlug": None,
+        "offerEndDate": None
+    }
 
 
 def get_amounts(card):
@@ -106,26 +141,17 @@ def floor_type(card, season):
 def extract_card_floor(any_player, field_name, season):
     card = any_player.get(field_name)
 
-    amounts = get_amounts(card)
-
     if not card:
-        return {
-            "eur": None,
-            "usd": None,
-            "eth": None,
-            "referenceCurrency": None,
-            "seasonYear": None,
-            "type": None,
-            "cardSlug": None,
-            "offerEndDate": None
-        }
+        return empty_floor()
 
+    amounts = get_amounts(card)
     offer = card.get("liveSingleSaleOffer")
 
     return {
         "eur": amounts["eur"],
         "usd": amounts["usd"],
         "eth": amounts["eth"],
+        "eurNormalized": normalize_to_eur(amounts),
         "referenceCurrency": amounts["referenceCurrency"],
         "seasonYear": card.get("seasonYear"),
         "type": floor_type(card, season),
@@ -261,6 +287,8 @@ def main():
     print("Offset:", OFFSET_PLAYERS)
     print("Limit:", LIMIT_PLAYERS)
     print("Players in this run:", len(players))
+    print("USD_TO_EUR:", PRICE_CONVERSION["USD_TO_EUR"])
+    print("ETH_TO_EUR:", PRICE_CONVERSION["ETH_TO_EUR"])
 
     errors = existing_errors
 
@@ -297,6 +325,7 @@ def main():
         "league_key": league_key,
         "seasonStartYear": season,
         "snapshot": snapshot_label,
+        "price_conversion": PRICE_CONVERSION,
         "total_players": len(prices),
         "total_errors": len(errors),
         "offset": OFFSET_PLAYERS,
