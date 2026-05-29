@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-29T11:51:02.609216",
+  "updated_at": "2026-05-29T12:01:58.246327",
   "source": "Sorare AnyPlayerLayoutQuery",
   "league": "Jupiler Pro League",
   "league_key": "belgium",
@@ -11,7 +11,7 @@
   },
   "total_players": 534,
   "total_errors": 0,
-  "offset": 300,
+  "offset": 450,
   "limit": 150,
   "errors": [],
   "players": [
@@ -24327,6 +24327,7 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
@@ -24337,6 +24338,7 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
@@ -24347,6 +24349,7 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
@@ -24357,13 +24360,14 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
         "cardSlug": null,
         "offerEndDate": null
       },
-      "updated_at": "2026-05-27T18:05:17.854617"
+      "updated_at": "2026-05-29T11:58:45.580907"
     },
     {
       "slug": "abdoulaye-sissako",
@@ -24376,44 +24380,48 @@
       "limitedFloor": {
         "eur": null,
         "usd": null,
-        "eth": null,
-        "referenceCurrency": "GBP",
-        "seasonYear": 2025,
-        "type": "IN_SEASON",
-        "cardSlug": "abdoulaye-sissako-2025-limited-198",
-        "offerEndDate": "2026-06-02T22:36:08Z"
-      },
-      "rareFloor": {
-        "eur": null,
-        "usd": null,
-        "eth": 0.0012,
+        "eth": 0.0004,
+        "eurNormalized": 1.2,
         "referenceCurrency": "WEI",
         "seasonYear": 2025,
         "type": "IN_SEASON",
-        "cardSlug": "abdoulaye-sissako-2025-rare-60",
-        "offerEndDate": "2026-06-03T01:51:09Z"
+        "cardSlug": "abdoulaye-sissako-2025-limited-136",
+        "offerEndDate": "2026-06-04T22:35:39Z"
       },
-      "superRareFloor": {
-        "eur": 22.0,
+      "rareFloor": {
+        "eur": 2.2,
         "usd": null,
         "eth": null,
+        "eurNormalized": 2.2,
         "referenceCurrency": "EUR",
+        "seasonYear": 2022,
+        "type": "CLASSIC",
+        "cardSlug": "abdoulaye-sissako-2022-rare-14",
+        "offerEndDate": "2026-06-04T13:51:33Z"
+      },
+      "superRareFloor": {
+        "eur": null,
+        "usd": null,
+        "eth": null,
+        "eurNormalized": null,
+        "referenceCurrency": null,
         "seasonYear": 2025,
         "type": "IN_SEASON",
-        "cardSlug": "abdoulaye-sissako-2025-super_rare-1",
-        "offerEndDate": "2026-05-28T18:55:55Z"
+        "cardSlug": "abdoulaye-sissako-2025-super_rare-5",
+        "offerEndDate": null
       },
       "uniqueFloor": {
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
         "cardSlug": null,
         "offerEndDate": null
       },
-      "updated_at": "2026-05-27T18:05:20.059465"
+      "updated_at": "2026-05-29T11:58:47.847976"
     },
     {
       "slug": "ilias-sebaoui",
@@ -24424,46 +24432,50 @@
       "age": 24,
       "u23": true,
       "limitedFloor": {
-        "eur": 1.5,
+        "eur": null,
+        "usd": 1.2,
+        "eth": null,
+        "eurNormalized": 1.1,
+        "referenceCurrency": "USD",
+        "seasonYear": 2025,
+        "type": "IN_SEASON",
+        "cardSlug": "ilias-sebaoui-2025-limited-27",
+        "offerEndDate": "2026-06-04T17:05:45Z"
+      },
+      "rareFloor": {
+        "eur": 5.0,
         "usd": null,
         "eth": null,
+        "eurNormalized": 5.0,
         "referenceCurrency": "EUR",
         "seasonYear": 2025,
         "type": "IN_SEASON",
-        "cardSlug": "ilias-sebaoui-2025-limited-653",
-        "offerEndDate": "2026-06-03T10:18:14Z"
-      },
-      "rareFloor": {
-        "eur": null,
-        "usd": null,
-        "eth": null,
-        "referenceCurrency": null,
-        "seasonYear": 2025,
-        "type": "IN_SEASON",
-        "cardSlug": "ilias-sebaoui-2025-rare-72",
-        "offerEndDate": null
+        "cardSlug": "ilias-sebaoui-2025-rare-31",
+        "offerEndDate": "2026-06-03T20:20:38Z"
       },
       "superRareFloor": {
         "eur": null,
         "usd": null,
-        "eth": 0.0215,
+        "eth": 0.0222,
+        "eurNormalized": 66.6,
         "referenceCurrency": "WEI",
         "seasonYear": 2025,
         "type": "IN_SEASON",
         "cardSlug": "ilias-sebaoui-2025-super_rare-1",
-        "offerEndDate": "2026-06-03T06:20:41Z"
+        "offerEndDate": "2026-06-05T08:29:37Z"
       },
       "uniqueFloor": {
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
         "cardSlug": null,
         "offerEndDate": null
       },
-      "updated_at": "2026-05-27T18:05:22.390037"
+      "updated_at": "2026-05-29T11:58:50.101058"
     },
     {
       "slug": "ryan-dylan-merlen",
@@ -24477,6 +24489,7 @@
         "eur": null,
         "usd": null,
         "eth": 0.0003,
+        "eurNormalized": 0.9,
         "referenceCurrency": "WEI",
         "seasonYear": 2025,
         "type": "IN_SEASON",
@@ -24487,6 +24500,7 @@
         "eur": 5.33,
         "usd": null,
         "eth": null,
+        "eurNormalized": 5.33,
         "referenceCurrency": "EUR",
         "seasonYear": 2025,
         "type": "IN_SEASON",
@@ -24496,24 +24510,26 @@
       "superRareFloor": {
         "eur": null,
         "usd": null,
-        "eth": 0.0195,
+        "eth": 0.0174,
+        "eurNormalized": 52.2,
         "referenceCurrency": "WEI",
         "seasonYear": 2025,
         "type": "IN_SEASON",
         "cardSlug": "ryan-dylan-merlen-2025-super_rare-9",
-        "offerEndDate": "2026-06-03T04:30:43Z"
+        "offerEndDate": "2026-06-05T06:40:21Z"
       },
       "uniqueFloor": {
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
         "cardSlug": null,
         "offerEndDate": null
       },
-      "updated_at": "2026-05-27T18:05:24.552778"
+      "updated_at": "2026-05-29T11:58:52.352559"
     },
     {
       "slug": "kaito-matsuzawa",
@@ -24524,29 +24540,32 @@
       "age": 25,
       "u23": false,
       "limitedFloor": {
-        "eur": 0.54,
+        "eur": null,
         "usd": null,
         "eth": null,
-        "referenceCurrency": "EUR",
+        "eurNormalized": null,
+        "referenceCurrency": "GBP",
         "seasonYear": 2025,
         "type": "IN_SEASON",
-        "cardSlug": "kaito-matsuzawa-2025-limited-297",
-        "offerEndDate": "2026-06-03T08:33:47Z"
+        "cardSlug": "kaito-matsuzawa-2025-limited-170",
+        "offerEndDate": "2026-06-04T14:06:52Z"
       },
       "rareFloor": {
-        "eur": 5.33,
-        "usd": null,
+        "eur": null,
+        "usd": 6.2,
         "eth": null,
-        "referenceCurrency": "EUR",
+        "eurNormalized": 5.7,
+        "referenceCurrency": "USD",
         "seasonYear": 2025,
         "type": "IN_SEASON",
-        "cardSlug": "kaito-matsuzawa-2025-rare-16",
-        "offerEndDate": "2026-06-03T16:57:36Z"
+        "cardSlug": "kaito-matsuzawa-2025-rare-40",
+        "offerEndDate": "2026-05-30T05:46:15Z"
       },
       "superRareFloor": {
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": 2025,
         "type": "IN_SEASON",
@@ -24557,13 +24576,14 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
         "cardSlug": null,
         "offerEndDate": null
       },
-      "updated_at": "2026-05-27T18:05:26.760661"
+      "updated_at": "2026-05-29T11:58:54.646175"
     },
     {
       "slug": "illyes-benachour",
@@ -24577,6 +24597,7 @@
         "eur": 0.91,
         "usd": null,
         "eth": null,
+        "eurNormalized": 0.91,
         "referenceCurrency": "EUR",
         "seasonYear": 2025,
         "type": "IN_SEASON",
@@ -24584,36 +24605,39 @@
         "offerEndDate": "2026-05-31T14:11:06Z"
       },
       "rareFloor": {
-        "eur": 4.0,
+        "eur": 3.5,
         "usd": null,
         "eth": null,
+        "eurNormalized": 3.5,
         "referenceCurrency": "EUR",
         "seasonYear": 2025,
         "type": "IN_SEASON",
         "cardSlug": "illyes-benachour-2025-rare-27",
-        "offerEndDate": "2026-05-29T09:17:59Z"
+        "offerEndDate": "2026-06-01T11:07:13Z"
       },
       "superRareFloor": {
         "eur": null,
-        "usd": 31.29,
+        "usd": 31.27,
         "eth": null,
+        "eurNormalized": 28.77,
         "referenceCurrency": "USD",
         "seasonYear": 2025,
         "type": "IN_SEASON",
         "cardSlug": "illyes-benachour-2025-super_rare-6",
-        "offerEndDate": "2026-05-27T19:08:45Z"
+        "offerEndDate": "2026-05-29T20:26:11Z"
       },
       "uniqueFloor": {
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
         "cardSlug": null,
         "offerEndDate": null
       },
-      "updated_at": "2026-05-27T18:05:28.995293"
+      "updated_at": "2026-05-29T11:58:56.898732"
     },
     {
       "slug": "taiga-hata",
@@ -24624,29 +24648,32 @@
       "age": 24,
       "u23": true,
       "limitedFloor": {
-        "eur": 0.37,
+        "eur": 0.35,
         "usd": null,
         "eth": null,
+        "eurNormalized": 0.35,
         "referenceCurrency": "EUR",
         "seasonYear": 2025,
         "type": "IN_SEASON",
         "cardSlug": "taiga-hata-2025-limited-22",
-        "offerEndDate": "2026-06-03T10:42:56Z"
+        "offerEndDate": "2026-06-04T09:43:00Z"
       },
       "rareFloor": {
-        "eur": null,
-        "usd": 1.64,
+        "eur": 1.3,
+        "usd": null,
         "eth": null,
-        "referenceCurrency": "USD",
+        "eurNormalized": 1.3,
+        "referenceCurrency": "EUR",
         "seasonYear": 2025,
         "type": "IN_SEASON",
-        "cardSlug": "taiga-hata-2025-rare-23",
-        "offerEndDate": "2026-05-30T12:09:34Z"
+        "cardSlug": "taiga-hata-2025-rare-55",
+        "offerEndDate": "2026-06-05T08:59:48Z"
       },
       "superRareFloor": {
         "eur": null,
         "usd": 13.0,
         "eth": null,
+        "eurNormalized": 11.96,
         "referenceCurrency": "USD",
         "seasonYear": 2025,
         "type": "IN_SEASON",
@@ -24657,13 +24684,14 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
         "cardSlug": null,
         "offerEndDate": null
       },
-      "updated_at": "2026-05-27T18:05:31.230743"
+      "updated_at": "2026-05-29T11:58:59.170859"
     },
     {
       "slug": "keisuke-goto",
@@ -24674,29 +24702,32 @@
       "age": 20,
       "u23": true,
       "limitedFloor": {
-        "eur": null,
-        "usd": 3.41,
-        "eth": null,
-        "referenceCurrency": "USD",
-        "seasonYear": 2025,
-        "type": "IN_SEASON",
-        "cardSlug": "keisuke-goto-2025-limited-532",
-        "offerEndDate": "2026-06-03T13:52:52Z"
-      },
-      "rareFloor": {
-        "eur": 26.65,
+        "eur": 2.45,
         "usd": null,
         "eth": null,
+        "eurNormalized": 2.45,
         "referenceCurrency": "EUR",
         "seasonYear": 2025,
         "type": "IN_SEASON",
-        "cardSlug": "keisuke-goto-2025-rare-12",
-        "offerEndDate": "2026-06-03T16:58:47Z"
+        "cardSlug": "keisuke-goto-2025-limited-59",
+        "offerEndDate": "2026-06-05T08:44:32Z"
+      },
+      "rareFloor": {
+        "eur": 26.6,
+        "usd": null,
+        "eth": null,
+        "eurNormalized": 26.6,
+        "referenceCurrency": "EUR",
+        "seasonYear": 2025,
+        "type": "IN_SEASON",
+        "cardSlug": "keisuke-goto-2025-rare-93",
+        "offerEndDate": "2026-06-04T20:45:21Z"
       },
       "superRareFloor": {
         "eur": null,
         "usd": null,
         "eth": 0.046,
+        "eurNormalized": 138.0,
         "referenceCurrency": "WEI",
         "seasonYear": 2025,
         "type": "IN_SEASON",
@@ -24707,13 +24738,14 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
         "cardSlug": null,
         "offerEndDate": null
       },
-      "updated_at": "2026-05-27T18:05:33.415435"
+      "updated_at": "2026-05-29T11:59:01.433964"
     },
     {
       "slug": "arbnor-muja",
@@ -24725,18 +24757,20 @@
       "u23": false,
       "limitedFloor": {
         "eur": null,
-        "usd": 0.6,
+        "usd": 0.57,
         "eth": null,
+        "eurNormalized": 0.52,
         "referenceCurrency": "USD",
         "seasonYear": 2025,
         "type": "IN_SEASON",
         "cardSlug": "arbnor-muja-2025-limited-360",
-        "offerEndDate": "2026-05-31T16:01:13Z"
+        "offerEndDate": "2026-06-04T13:54:59Z"
       },
       "rareFloor": {
         "eur": null,
         "usd": null,
         "eth": 0.0007,
+        "eurNormalized": 2.1,
         "referenceCurrency": "WEI",
         "seasonYear": 2022,
         "type": "CLASSIC",
@@ -24744,26 +24778,28 @@
         "offerEndDate": "2026-05-31T12:08:35Z"
       },
       "superRareFloor": {
-        "eur": 72.99,
-        "usd": null,
-        "eth": null,
-        "referenceCurrency": "EUR",
-        "seasonYear": 2025,
-        "type": "IN_SEASON",
-        "cardSlug": "arbnor-muja-2025-super_rare-1",
-        "offerEndDate": "2026-06-01T14:28:55Z"
-      },
-      "uniqueFloor": {
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
         "cardSlug": null,
         "offerEndDate": null
       },
-      "updated_at": "2026-05-27T18:05:35.665737"
+      "uniqueFloor": {
+        "eur": null,
+        "usd": null,
+        "eth": null,
+        "eurNormalized": null,
+        "referenceCurrency": null,
+        "seasonYear": null,
+        "type": null,
+        "cardSlug": null,
+        "offerEndDate": null
+      },
+      "updated_at": "2026-05-29T11:59:03.704193"
     },
     {
       "slug": "shion-shinkawa",
@@ -24777,6 +24813,7 @@
         "eur": 1.25,
         "usd": null,
         "eth": null,
+        "eurNormalized": 1.25,
         "referenceCurrency": "EUR",
         "seasonYear": 2025,
         "type": "IN_SEASON",
@@ -24784,19 +24821,21 @@
         "offerEndDate": "2026-06-03T00:17:31Z"
       },
       "rareFloor": {
-        "eur": 4.5,
+        "eur": 4.3,
         "usd": null,
         "eth": null,
+        "eurNormalized": 4.3,
         "referenceCurrency": "EUR",
         "seasonYear": 2025,
         "type": "IN_SEASON",
         "cardSlug": "shion-shinkawa-2025-rare-20",
-        "offerEndDate": "2026-05-31T17:55:03Z"
+        "offerEndDate": "2026-06-04T18:37:32Z"
       },
       "superRareFloor": {
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": 2025,
         "type": "IN_SEASON",
@@ -24807,13 +24846,14 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
         "cardSlug": null,
         "offerEndDate": null
       },
-      "updated_at": "2026-05-27T18:05:37.889678"
+      "updated_at": "2026-05-29T11:59:05.977643"
     },
     {
       "slug": "oumar-diouf",
@@ -24825,18 +24865,20 @@
       "u23": true,
       "limitedFloor": {
         "eur": null,
-        "usd": 0.66,
+        "usd": 0.67,
         "eth": null,
+        "eurNormalized": 0.62,
         "referenceCurrency": "USD",
         "seasonYear": 2025,
         "type": "IN_SEASON",
-        "cardSlug": "oumar-diouf-2025-limited-26",
-        "offerEndDate": "2026-06-03T09:49:29Z"
+        "cardSlug": "oumar-diouf-2025-limited-22",
+        "offerEndDate": "2026-06-03T08:37:09Z"
       },
       "rareFloor": {
         "eur": 7.0,
         "usd": null,
         "eth": null,
+        "eurNormalized": 7.0,
         "referenceCurrency": "EUR",
         "seasonYear": 2025,
         "type": "IN_SEASON",
@@ -24847,6 +24889,7 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": 2025,
         "type": "IN_SEASON",
@@ -24857,13 +24900,14 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
         "cardSlug": null,
         "offerEndDate": null
       },
-      "updated_at": "2026-05-27T18:05:40.086448"
+      "updated_at": "2026-05-29T11:59:08.248985"
     },
     {
       "slug": "loic-mbe-soh",
@@ -24874,19 +24918,21 @@
       "age": 24,
       "u23": false,
       "limitedFloor": {
-        "eur": 1.98,
+        "eur": 1.95,
         "usd": null,
         "eth": null,
+        "eurNormalized": 1.95,
         "referenceCurrency": "EUR",
         "seasonYear": 2025,
         "type": "IN_SEASON",
-        "cardSlug": "loic-mbe-soh-2025-limited-90",
-        "offerEndDate": "2026-06-02T08:43:48Z"
+        "cardSlug": "loic-mbe-soh-2025-limited-52",
+        "offerEndDate": "2026-05-30T15:27:47Z"
       },
       "rareFloor": {
         "eur": null,
         "usd": 4.66,
         "eth": null,
+        "eurNormalized": 4.29,
         "referenceCurrency": "USD",
         "seasonYear": 2024,
         "type": "CLASSIC",
@@ -24897,6 +24943,7 @@
         "eur": 49.0,
         "usd": null,
         "eth": null,
+        "eurNormalized": 49.0,
         "referenceCurrency": "EUR",
         "seasonYear": 2025,
         "type": "IN_SEASON",
@@ -24907,13 +24954,14 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
         "cardSlug": null,
         "offerEndDate": null
       },
-      "updated_at": "2026-05-27T18:05:42.340005"
+      "updated_at": "2026-05-29T11:59:10.542957"
     },
     {
       "slug": "joedrick-pupe",
@@ -24924,46 +24972,50 @@
       "age": 28,
       "u23": false,
       "limitedFloor": {
-        "eur": 1.1,
+        "eur": 1.0,
         "usd": null,
         "eth": null,
+        "eurNormalized": 1.0,
         "referenceCurrency": "EUR",
         "seasonYear": 2025,
         "type": "IN_SEASON",
-        "cardSlug": "joedrick-pupe-2025-limited-106",
-        "offerEndDate": "2026-06-02T22:52:39Z"
+        "cardSlug": "joedrick-pupe-2025-limited-250",
+        "offerEndDate": "2026-06-04T13:25:22Z"
       },
       "rareFloor": {
         "eur": null,
-        "usd": 1.35,
-        "eth": null,
-        "referenceCurrency": "USD",
+        "usd": null,
+        "eth": 0.0005,
+        "eurNormalized": 1.5,
+        "referenceCurrency": "WEI",
         "seasonYear": 2024,
         "type": "CLASSIC",
-        "cardSlug": "joedrick-pupe-2024-rare-13",
-        "offerEndDate": "2026-06-03T12:48:24Z"
+        "cardSlug": "joedrick-pupe-2024-rare-43",
+        "offerEndDate": "2026-06-05T11:38:52Z"
       },
       "superRareFloor": {
-        "eur": 80.0,
+        "eur": null,
         "usd": null,
         "eth": null,
-        "referenceCurrency": "EUR",
+        "eurNormalized": null,
+        "referenceCurrency": null,
         "seasonYear": 2025,
         "type": "IN_SEASON",
-        "cardSlug": "joedrick-pupe-2025-super_rare-4",
-        "offerEndDate": "2026-05-29T15:40:43Z"
+        "cardSlug": "joedrick-pupe-2025-super_rare-7",
+        "offerEndDate": null
       },
       "uniqueFloor": {
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
         "cardSlug": null,
         "offerEndDate": null
       },
-      "updated_at": "2026-05-27T18:05:44.534753"
+      "updated_at": "2026-05-29T11:59:12.886049"
     },
     {
       "slug": "matteo-godfroid",
@@ -24977,6 +25029,7 @@
         "eur": null,
         "usd": 0.66,
         "eth": null,
+        "eurNormalized": 0.61,
         "referenceCurrency": "USD",
         "seasonYear": 2025,
         "type": "IN_SEASON",
@@ -24984,19 +25037,21 @@
         "offerEndDate": "2026-06-03T15:25:58Z"
       },
       "rareFloor": {
-        "eur": null,
-        "usd": 8.05,
+        "eur": 5.0,
+        "usd": null,
         "eth": null,
-        "referenceCurrency": "USD",
+        "eurNormalized": 5.0,
+        "referenceCurrency": "EUR",
         "seasonYear": 2024,
         "type": "CLASSIC",
-        "cardSlug": "matteo-godfroid-2024-rare-6",
-        "offerEndDate": "2026-06-03T05:49:26Z"
+        "cardSlug": "matteo-godfroid-2024-rare-18",
+        "offerEndDate": "2026-06-04T09:39:10Z"
       },
       "superRareFloor": {
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": 2025,
         "type": "IN_SEASON",
@@ -25007,13 +25062,14 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
         "cardSlug": null,
         "offerEndDate": null
       },
-      "updated_at": "2026-05-27T18:05:46.714441"
+      "updated_at": "2026-05-29T11:59:15.153020"
     },
     {
       "slug": "matthieu-luka-epolo",
@@ -25024,29 +25080,32 @@
       "age": 21,
       "u23": true,
       "limitedFloor": {
-        "eur": 7.2,
+        "eur": 6.5,
         "usd": null,
         "eth": null,
+        "eurNormalized": 6.5,
         "referenceCurrency": "EUR",
         "seasonYear": 2025,
         "type": "IN_SEASON",
         "cardSlug": "matthieu-luka-epolo-2025-limited-904",
-        "offerEndDate": "2026-06-03T10:22:30Z"
+        "offerEndDate": "2026-06-05T10:58:36Z"
       },
       "rareFloor": {
         "eur": null,
         "usd": null,
-        "eth": null,
-        "referenceCurrency": null,
+        "eth": 0.0397,
+        "eurNormalized": 119.1,
+        "referenceCurrency": "WEI",
         "seasonYear": 2023,
         "type": "CLASSIC",
         "cardSlug": "matthieu-luka-epolo-2023-rare-25",
-        "offerEndDate": null
+        "offerEndDate": "2026-06-03T20:56:22Z"
       },
       "superRareFloor": {
         "eur": 249.99,
         "usd": null,
         "eth": null,
+        "eurNormalized": 249.99,
         "referenceCurrency": "EUR",
         "seasonYear": 2025,
         "type": "IN_SEASON",
@@ -25057,13 +25116,14 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
         "cardSlug": null,
         "offerEndDate": null
       },
-      "updated_at": "2026-05-27T18:05:48.970200"
+      "updated_at": "2026-05-29T11:59:17.426661"
     },
     {
       "slug": "marlon-fossey",
@@ -25074,19 +25134,21 @@
       "age": 27,
       "u23": false,
       "limitedFloor": {
-        "eur": null,
-        "usd": 1.26,
+        "eur": 0.65,
+        "usd": null,
         "eth": null,
-        "referenceCurrency": "USD",
+        "eurNormalized": 0.65,
+        "referenceCurrency": "EUR",
         "seasonYear": 2025,
         "type": "IN_SEASON",
-        "cardSlug": "marlon-fossey-2025-limited-314",
-        "offerEndDate": "2026-06-03T01:27:14Z"
+        "cardSlug": "marlon-fossey-2025-limited-250",
+        "offerEndDate": "2026-06-05T09:27:13Z"
       },
       "rareFloor": {
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": "GBP",
         "seasonYear": 2024,
         "type": "CLASSIC",
@@ -25094,26 +25156,28 @@
         "offerEndDate": "2026-06-03T17:36:39Z"
       },
       "superRareFloor": {
-        "eur": 20.0,
+        "eur": 19.0,
         "usd": null,
         "eth": null,
+        "eurNormalized": 19.0,
         "referenceCurrency": "EUR",
         "seasonYear": 2025,
         "type": "IN_SEASON",
-        "cardSlug": "marlon-fossey-2025-super_rare-5",
-        "offerEndDate": "2026-06-02T16:09:27Z"
+        "cardSlug": "marlon-fossey-2025-super_rare-1",
+        "offerEndDate": "2026-06-04T05:55:19Z"
       },
       "uniqueFloor": {
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
         "cardSlug": null,
         "offerEndDate": null
       },
-      "updated_at": "2026-05-27T18:05:51.312096"
+      "updated_at": "2026-05-29T11:59:19.673135"
     },
     {
       "slug": "ibe-tom-hautekiet",
@@ -25124,29 +25188,32 @@
       "age": 24,
       "u23": true,
       "limitedFloor": {
-        "eur": null,
-        "usd": null,
-        "eth": 0.0006,
-        "referenceCurrency": "WEI",
-        "seasonYear": 2025,
-        "type": "IN_SEASON",
-        "cardSlug": "ibe-tom-hautekiet-2025-limited-381",
-        "offerEndDate": "2026-06-02T21:35:40Z"
-      },
-      "rareFloor": {
-        "eur": 6.22,
+        "eur": 0.95,
         "usd": null,
         "eth": null,
+        "eurNormalized": 0.95,
         "referenceCurrency": "EUR",
         "seasonYear": 2025,
         "type": "IN_SEASON",
-        "cardSlug": "ibe-tom-hautekiet-2025-rare-41",
-        "offerEndDate": "2026-06-03T16:58:58Z"
+        "cardSlug": "ibe-tom-hautekiet-2025-limited-381",
+        "offerEndDate": "2026-06-05T06:59:07Z"
+      },
+      "rareFloor": {
+        "eur": 6.0,
+        "usd": null,
+        "eth": null,
+        "eurNormalized": 6.0,
+        "referenceCurrency": "EUR",
+        "seasonYear": 2024,
+        "type": "CLASSIC",
+        "cardSlug": "ibe-tom-hautekiet-2024-rare-71",
+        "offerEndDate": "2026-06-04T16:29:50Z"
       },
       "superRareFloor": {
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
@@ -25157,13 +25224,14 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
         "cardSlug": null,
         "offerEndDate": null
       },
-      "updated_at": "2026-05-27T18:05:53.479274"
+      "updated_at": "2026-05-29T11:59:21.961608"
     },
     {
       "slug": "henry-lawrence",
@@ -25174,19 +25242,21 @@
       "age": 24,
       "u23": true,
       "limitedFloor": {
-        "eur": null,
-        "usd": 0.64,
+        "eur": 0.51,
+        "usd": null,
         "eth": null,
-        "referenceCurrency": "USD",
+        "eurNormalized": 0.51,
+        "referenceCurrency": "EUR",
         "seasonYear": 2025,
         "type": "IN_SEASON",
-        "cardSlug": "henry-lawrence-2025-limited-589",
-        "offerEndDate": "2026-06-02T22:13:03Z"
+        "cardSlug": "henry-lawrence-2025-limited-130",
+        "offerEndDate": "2026-06-04T13:26:12Z"
       },
       "rareFloor": {
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": 2025,
         "type": "IN_SEASON",
@@ -25194,26 +25264,28 @@
         "offerEndDate": null
       },
       "superRareFloor": {
-        "eur": 49.0,
+        "eur": null,
         "usd": null,
         "eth": null,
-        "referenceCurrency": "EUR",
+        "eurNormalized": null,
+        "referenceCurrency": null,
         "seasonYear": 2025,
         "type": "IN_SEASON",
-        "cardSlug": "henry-lawrence-2025-super_rare-2",
-        "offerEndDate": "2026-05-29T05:47:10Z"
+        "cardSlug": "henry-lawrence-2025-super_rare-7",
+        "offerEndDate": null
       },
       "uniqueFloor": {
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
         "cardSlug": null,
         "offerEndDate": null
       },
-      "updated_at": "2026-05-27T18:05:55.749800"
+      "updated_at": "2026-05-29T11:59:24.240755"
     },
     {
       "slug": "daan-dierckx",
@@ -25225,18 +25297,20 @@
       "u23": true,
       "limitedFloor": {
         "eur": null,
-        "usd": 0.42,
+        "usd": 0.41,
         "eth": null,
+        "eurNormalized": 0.38,
         "referenceCurrency": "USD",
         "seasonYear": 2025,
         "type": "IN_SEASON",
         "cardSlug": "daan-dierckx-2025-limited-316",
-        "offerEndDate": "2026-05-30T02:50:28Z"
+        "offerEndDate": "2026-06-04T23:32:13Z"
       },
       "rareFloor": {
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": 2025,
         "type": "IN_SEASON",
@@ -25247,6 +25321,7 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
@@ -25257,13 +25332,14 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
         "cardSlug": null,
         "offerEndDate": null
       },
-      "updated_at": "2026-05-27T18:05:57.977298"
+      "updated_at": "2026-05-29T11:59:26.497459"
     },
     {
       "slug": "leandre-filipe-kuavita",
@@ -25277,6 +25353,7 @@
         "eur": null,
         "usd": 0.43,
         "eth": null,
+        "eurNormalized": 0.4,
         "referenceCurrency": "USD",
         "seasonYear": 2025,
         "type": "IN_SEASON",
@@ -25287,16 +25364,18 @@
         "eur": null,
         "usd": null,
         "eth": 0.0009,
+        "eurNormalized": 2.7,
         "referenceCurrency": "WEI",
         "seasonYear": 2025,
         "type": "IN_SEASON",
         "cardSlug": "leandre-filipe-kuavita-2025-rare-20",
-        "offerEndDate": "2026-06-02T14:03:25Z"
+        "offerEndDate": "2026-06-04T16:17:06Z"
       },
       "superRareFloor": {
         "eur": null,
         "usd": 5.43,
         "eth": null,
+        "eurNormalized": 5.0,
         "referenceCurrency": "USD",
         "seasonYear": 2025,
         "type": "IN_SEASON",
@@ -25307,13 +25386,14 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
         "cardSlug": null,
         "offerEndDate": null
       },
-      "updated_at": "2026-05-27T18:06:00.181651"
+      "updated_at": "2026-05-29T11:59:28.773127"
     },
     {
       "slug": "oscar-olivier",
@@ -25327,6 +25407,7 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
@@ -25337,6 +25418,7 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
@@ -25347,6 +25429,7 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
@@ -25357,13 +25440,14 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
         "cardSlug": null,
         "offerEndDate": null
       },
-      "updated_at": "2026-05-27T18:06:02.326061"
+      "updated_at": "2026-05-29T11:59:30.994985"
     },
     {
       "slug": "alexandro-calut",
@@ -25377,6 +25461,7 @@
         "eur": null,
         "usd": 0.46,
         "eth": null,
+        "eurNormalized": 0.42,
         "referenceCurrency": "USD",
         "seasonYear": 2025,
         "type": "IN_SEASON",
@@ -25387,6 +25472,7 @@
         "eur": null,
         "usd": 1.1,
         "eth": null,
+        "eurNormalized": 1.01,
         "referenceCurrency": "USD",
         "seasonYear": 2024,
         "type": "CLASSIC",
@@ -25394,26 +25480,28 @@
         "offerEndDate": "2026-05-31T11:24:21Z"
       },
       "superRareFloor": {
-        "eur": 29.0,
+        "eur": 19.0,
         "usd": null,
         "eth": null,
+        "eurNormalized": 19.0,
         "referenceCurrency": "EUR",
         "seasonYear": 2025,
         "type": "IN_SEASON",
-        "cardSlug": "alexandro-calut-2025-super_rare-1",
-        "offerEndDate": "2026-05-28T05:31:11Z"
+        "cardSlug": "alexandro-calut-2025-super_rare-7",
+        "offerEndDate": "2026-06-04T13:04:07Z"
       },
       "uniqueFloor": {
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
         "cardSlug": null,
         "offerEndDate": null
       },
-      "updated_at": "2026-05-27T18:06:04.520131"
+      "updated_at": "2026-05-29T11:59:33.280063"
     },
     {
       "slug": "boli-bolingoli-mbombo",
@@ -25427,16 +25515,18 @@
         "eur": 0.36,
         "usd": null,
         "eth": null,
+        "eurNormalized": 0.36,
         "referenceCurrency": "EUR",
         "seasonYear": 2025,
         "type": "IN_SEASON",
         "cardSlug": "boli-bolingoli-mbombo-2025-limited-16",
-        "offerEndDate": "2026-06-03T14:29:55Z"
+        "offerEndDate": "2026-06-04T16:17:43Z"
       },
       "rareFloor": {
         "eur": 0.54,
         "usd": null,
         "eth": null,
+        "eurNormalized": 0.54,
         "referenceCurrency": "EUR",
         "seasonYear": 2023,
         "type": "CLASSIC",
@@ -25447,6 +25537,7 @@
         "eur": null,
         "usd": 59.77,
         "eth": null,
+        "eurNormalized": 54.99,
         "referenceCurrency": "USD",
         "seasonYear": 2025,
         "type": "IN_SEASON",
@@ -25457,13 +25548,14 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
         "cardSlug": null,
         "offerEndDate": null
       },
-      "updated_at": "2026-05-27T18:06:06.738055"
+      "updated_at": "2026-05-29T11:59:35.534922"
     },
     {
       "slug": "david-bates",
@@ -25474,19 +25566,21 @@
       "age": 29,
       "u23": false,
       "limitedFloor": {
-        "eur": 1.0,
+        "eur": 0.9,
         "usd": null,
         "eth": null,
+        "eurNormalized": 0.9,
         "referenceCurrency": "EUR",
         "seasonYear": 2025,
         "type": "IN_SEASON",
-        "cardSlug": "david-bates-2025-limited-394",
-        "offerEndDate": "2026-06-03T13:05:45Z"
+        "cardSlug": "david-bates-2025-limited-59",
+        "offerEndDate": "2026-06-05T08:54:27Z"
       },
       "rareFloor": {
         "eur": 1.85,
         "usd": null,
         "eth": null,
+        "eurNormalized": 1.85,
         "referenceCurrency": "EUR",
         "seasonYear": 2023,
         "type": "CLASSIC",
@@ -25497,6 +25591,7 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": 2025,
         "type": "IN_SEASON",
@@ -25507,13 +25602,14 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
         "cardSlug": null,
         "offerEndDate": null
       },
-      "updated_at": "2026-05-27T18:06:09.009567"
+      "updated_at": "2026-05-29T11:59:37.792034"
     },
     {
       "slug": "dennis-yerai-eckert-ayensa",
@@ -25524,46 +25620,50 @@
       "age": 29,
       "u23": false,
       "limitedFloor": {
-        "eur": null,
-        "usd": null,
-        "eth": 0.0003,
-        "referenceCurrency": "WEI",
-        "seasonYear": 2025,
-        "type": "IN_SEASON",
-        "cardSlug": "dennis-yerai-eckert-ayensa-2025-limited-284",
-        "offerEndDate": "2026-06-01T14:10:14Z"
-      },
-      "rareFloor": {
-        "eur": 0.87,
+        "eur": 0.51,
         "usd": null,
         "eth": null,
+        "eurNormalized": 0.51,
+        "referenceCurrency": "EUR",
+        "seasonYear": 2025,
+        "type": "IN_SEASON",
+        "cardSlug": "dennis-yerai-eckert-ayensa-2025-limited-124",
+        "offerEndDate": "2026-06-04T10:58:27Z"
+      },
+      "rareFloor": {
+        "eur": 0.99,
+        "usd": null,
+        "eth": null,
+        "eurNormalized": 0.99,
         "referenceCurrency": "EUR",
         "seasonYear": 2024,
         "type": "CLASSIC",
-        "cardSlug": "dennis-yerai-eckert-ayensa-2024-rare-17",
-        "offerEndDate": "2026-06-01T11:06:31Z"
+        "cardSlug": "dennis-yerai-eckert-ayensa-2024-rare-5",
+        "offerEndDate": "2026-06-05T11:36:25Z"
       },
       "superRareFloor": {
         "eur": null,
         "usd": null,
-        "eth": 0.0129,
+        "eth": 0.0133,
+        "eurNormalized": 39.9,
         "referenceCurrency": "WEI",
         "seasonYear": 2025,
         "type": "IN_SEASON",
         "cardSlug": "dennis-yerai-eckert-ayensa-2025-super_rare-5",
-        "offerEndDate": "2026-06-03T16:15:20Z"
+        "offerEndDate": "2026-06-05T06:11:20Z"
       },
       "uniqueFloor": {
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
         "cardSlug": null,
         "offerEndDate": null
       },
-      "updated_at": "2026-05-27T18:06:11.210576"
+      "updated_at": "2026-05-29T11:59:40.074461"
     },
     {
       "slug": "steeven-david-assengue-essola",
@@ -25577,6 +25677,7 @@
         "eur": 1.57,
         "usd": null,
         "eth": null,
+        "eurNormalized": 1.57,
         "referenceCurrency": "EUR",
         "seasonYear": 2025,
         "type": "IN_SEASON",
@@ -25584,19 +25685,21 @@
         "offerEndDate": "2026-06-02T15:31:17Z"
       },
       "rareFloor": {
-        "eur": 5.75,
+        "eur": 5.74,
         "usd": null,
         "eth": null,
+        "eurNormalized": 5.74,
         "referenceCurrency": "EUR",
         "seasonYear": 2025,
         "type": "IN_SEASON",
         "cardSlug": "steeven-david-assengue-essola-2025-rare-4",
-        "offerEndDate": "2026-06-01T10:27:07Z"
+        "offerEndDate": "2026-06-04T11:36:00Z"
       },
       "superRareFloor": {
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
@@ -25607,13 +25710,14 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
         "cardSlug": null,
         "offerEndDate": null
       },
-      "updated_at": "2026-05-27T18:06:13.444813"
+      "updated_at": "2026-05-29T11:59:42.321478"
     },
     {
       "slug": "ibrahim-karamoko",
@@ -25627,6 +25731,7 @@
         "eur": null,
         "usd": null,
         "eth": 0.0003,
+        "eurNormalized": 0.9,
         "referenceCurrency": "WEI",
         "seasonYear": 2025,
         "type": "IN_SEASON",
@@ -25637,6 +25742,7 @@
         "eur": 1.44,
         "usd": null,
         "eth": null,
+        "eurNormalized": 1.44,
         "referenceCurrency": "EUR",
         "seasonYear": 2025,
         "type": "IN_SEASON",
@@ -25647,23 +25753,25 @@
         "eur": 10.0,
         "usd": null,
         "eth": null,
+        "eurNormalized": 10.0,
         "referenceCurrency": "EUR",
         "seasonYear": 2025,
         "type": "IN_SEASON",
         "cardSlug": "ibrahim-karamoko-2025-super_rare-5",
-        "offerEndDate": "2026-06-03T06:22:11Z"
+        "offerEndDate": "2026-06-05T06:28:57Z"
       },
       "uniqueFloor": {
         "eur": null,
         "usd": null,
         "eth": 0.1799,
+        "eurNormalized": 539.7,
         "referenceCurrency": "WEI",
         "seasonYear": 2025,
         "type": "IN_SEASON",
         "cardSlug": "ibrahim-karamoko-2025-unique-1",
         "offerEndDate": "2026-06-02T18:13:47Z"
       },
-      "updated_at": "2026-05-27T18:06:15.648055"
+      "updated_at": "2026-05-29T11:59:44.612023"
     },
     {
       "slug": "quentin-durka",
@@ -25677,6 +25785,7 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
@@ -25687,6 +25796,7 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
@@ -25697,6 +25807,7 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
@@ -25707,13 +25818,14 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
         "cardSlug": null,
         "offerEndDate": null
       },
-      "updated_at": "2026-05-27T18:06:17.884479"
+      "updated_at": "2026-05-29T11:59:46.932899"
     },
     {
       "slug": "rene-mitongo-muteba",
@@ -25724,46 +25836,50 @@
       "age": 18,
       "u23": true,
       "limitedFloor": {
-        "eur": 1.25,
+        "eur": 1.0,
         "usd": null,
         "eth": null,
+        "eurNormalized": 1.0,
         "referenceCurrency": "EUR",
         "seasonYear": 2025,
         "type": "IN_SEASON",
-        "cardSlug": "rene-mitongo-muteba-2025-limited-239",
-        "offerEndDate": "2026-06-03T10:33:26Z"
+        "cardSlug": "rene-mitongo-muteba-2025-limited-252",
+        "offerEndDate": "2026-06-03T20:30:33Z"
       },
       "rareFloor": {
         "eur": null,
         "usd": null,
         "eth": 0.0015,
+        "eurNormalized": 4.5,
         "referenceCurrency": "WEI",
         "seasonYear": 2025,
         "type": "IN_SEASON",
         "cardSlug": "rene-mitongo-muteba-2025-rare-24",
-        "offerEndDate": "2026-06-03T07:20:49Z"
+        "offerEndDate": "2026-06-05T09:21:07Z"
       },
       "superRareFloor": {
         "eur": null,
         "usd": null,
-        "eth": 0.0222,
+        "eth": 0.0156,
+        "eurNormalized": 46.8,
         "referenceCurrency": "WEI",
         "seasonYear": 2025,
         "type": "IN_SEASON",
         "cardSlug": "rene-mitongo-muteba-2025-super_rare-7",
-        "offerEndDate": "2026-06-03T04:30:49Z"
+        "offerEndDate": "2026-06-05T06:40:28Z"
       },
       "uniqueFloor": {
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
         "cardSlug": null,
         "offerEndDate": null
       },
-      "updated_at": "2026-05-27T18:06:20.076471"
+      "updated_at": "2026-05-29T11:59:49.193708"
     },
     {
       "slug": "james-nam",
@@ -25777,6 +25893,7 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
@@ -25787,6 +25904,7 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
@@ -25797,6 +25915,7 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
@@ -25807,13 +25926,14 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
         "cardSlug": null,
         "offerEndDate": null
       },
-      "updated_at": "2026-05-27T18:06:22.254309"
+      "updated_at": "2026-05-29T11:59:51.413708"
     },
     {
       "slug": "adnane-abid",
@@ -25824,19 +25944,21 @@
       "age": 22,
       "u23": true,
       "limitedFloor": {
-        "eur": 2.36,
+        "eur": 1.5,
         "usd": null,
         "eth": null,
+        "eurNormalized": 1.5,
         "referenceCurrency": "EUR",
         "seasonYear": 2025,
         "type": "IN_SEASON",
-        "cardSlug": "adnane-abid-2025-limited-150",
-        "offerEndDate": "2026-06-03T12:28:36Z"
+        "cardSlug": "adnane-abid-2025-limited-640",
+        "offerEndDate": "2026-05-30T10:58:07Z"
       },
       "rareFloor": {
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": 2025,
         "type": "IN_SEASON",
@@ -25847,6 +25969,7 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": 2025,
         "type": "IN_SEASON",
@@ -25857,13 +25980,14 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
         "cardSlug": null,
         "offerEndDate": null
       },
-      "updated_at": "2026-05-27T18:06:24.442777"
+      "updated_at": "2026-05-29T11:59:53.708560"
     },
     {
       "slug": "marco-ilaimaharitra",
@@ -25877,6 +26001,7 @@
         "eur": 0.47,
         "usd": null,
         "eth": null,
+        "eurNormalized": 0.47,
         "referenceCurrency": "EUR",
         "seasonYear": 2025,
         "type": "IN_SEASON",
@@ -25887,6 +26012,7 @@
         "eur": 1.1,
         "usd": null,
         "eth": null,
+        "eurNormalized": 1.1,
         "referenceCurrency": "EUR",
         "seasonYear": 2022,
         "type": "CLASSIC",
@@ -25894,26 +26020,28 @@
         "offerEndDate": "2026-05-30T21:56:35Z"
       },
       "superRareFloor": {
-        "eur": 14.0,
+        "eur": null,
         "usd": null,
         "eth": null,
-        "referenceCurrency": "EUR",
+        "eurNormalized": null,
+        "referenceCurrency": null,
         "seasonYear": 2025,
         "type": "IN_SEASON",
-        "cardSlug": "marco-ilaimaharitra-2025-super_rare-5",
-        "offerEndDate": "2026-05-29T06:34:09Z"
+        "cardSlug": "marco-ilaimaharitra-2025-super_rare-10",
+        "offerEndDate": null
       },
       "uniqueFloor": {
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
         "cardSlug": null,
         "offerEndDate": null
       },
-      "updated_at": "2026-05-27T18:06:26.645276"
+      "updated_at": "2026-05-29T11:59:56.058083"
     },
     {
       "slug": "josue-homawoo",
@@ -25924,19 +26052,21 @@
       "age": 28,
       "u23": false,
       "limitedFloor": {
-        "eur": null,
-        "usd": 0.6,
+        "eur": 0.51,
+        "usd": null,
         "eth": null,
-        "referenceCurrency": "USD",
+        "eurNormalized": 0.51,
+        "referenceCurrency": "EUR",
         "seasonYear": 2025,
         "type": "IN_SEASON",
-        "cardSlug": "josue-homawoo-2025-limited-477",
-        "offerEndDate": "2026-06-02T20:54:56Z"
+        "cardSlug": "josue-homawoo-2025-limited-61",
+        "offerEndDate": "2026-06-04T08:56:19Z"
       },
       "rareFloor": {
         "eur": 5.0,
         "usd": null,
         "eth": null,
+        "eurNormalized": 5.0,
         "referenceCurrency": "EUR",
         "seasonYear": 2025,
         "type": "IN_SEASON",
@@ -25947,6 +26077,7 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
@@ -25957,13 +26088,14 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
         "cardSlug": null,
         "offerEndDate": null
       },
-      "updated_at": "2026-05-27T18:06:28.818325"
+      "updated_at": "2026-05-29T11:59:58.316731"
     },
     {
       "slug": "nayel-mehssatou-sepulveda",
@@ -25975,28 +26107,31 @@
       "u23": true,
       "limitedFloor": {
         "eur": null,
-        "usd": 0.42,
+        "usd": 0.41,
         "eth": null,
+        "eurNormalized": 0.38,
         "referenceCurrency": "USD",
         "seasonYear": 2025,
         "type": "IN_SEASON",
         "cardSlug": "nayel-mehssatou-sepulveda-2025-limited-35",
-        "offerEndDate": "2026-05-30T08:11:14Z"
+        "offerEndDate": "2026-06-05T01:23:20Z"
       },
       "rareFloor": {
-        "eur": 0.65,
+        "eur": null,
         "usd": null,
         "eth": null,
-        "referenceCurrency": "EUR",
+        "eurNormalized": null,
+        "referenceCurrency": "GBP",
         "seasonYear": 2022,
         "type": "CLASSIC",
-        "cardSlug": "nayel-mehssatou-sepulveda-2022-rare-42",
-        "offerEndDate": "2026-06-02T05:55:11Z"
+        "cardSlug": "nayel-mehssatou-sepulveda-2022-rare-31",
+        "offerEndDate": "2026-05-29T14:04:17Z"
       },
       "superRareFloor": {
         "eur": 14.0,
         "usd": null,
         "eth": null,
+        "eurNormalized": 14.0,
         "referenceCurrency": "EUR",
         "seasonYear": 2025,
         "type": "IN_SEASON",
@@ -26007,13 +26142,14 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
         "cardSlug": null,
         "offerEndDate": null
       },
-      "updated_at": "2026-05-27T18:06:31.003195"
+      "updated_at": "2026-05-29T12:00:00.592786"
     },
     {
       "slug": "lucas-pirard",
@@ -26024,19 +26160,21 @@
       "age": 31,
       "u23": false,
       "limitedFloor": {
-        "eur": null,
-        "usd": 0.65,
+        "eur": 0.51,
+        "usd": null,
         "eth": null,
-        "referenceCurrency": "USD",
+        "eurNormalized": 0.51,
+        "referenceCurrency": "EUR",
         "seasonYear": 2025,
         "type": "IN_SEASON",
-        "cardSlug": "lucas-pirard-2025-limited-98",
-        "offerEndDate": "2026-05-31T12:21:31Z"
+        "cardSlug": "lucas-pirard-2025-limited-82",
+        "offerEndDate": "2026-06-04T08:58:57Z"
       },
       "rareFloor": {
         "eur": null,
         "usd": 2.38,
         "eth": null,
+        "eurNormalized": 2.19,
         "referenceCurrency": "USD",
         "seasonYear": 2024,
         "type": "CLASSIC",
@@ -26047,6 +26185,7 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": "GBP",
         "seasonYear": 2025,
         "type": "IN_SEASON",
@@ -26057,13 +26196,14 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
         "cardSlug": null,
         "offerEndDate": null
       },
-      "updated_at": "2026-05-27T18:06:33.179506"
+      "updated_at": "2026-05-29T12:00:02.887019"
     },
     {
       "slug": "grejohn-kyei",
@@ -26077,6 +26217,7 @@
         "eur": null,
         "usd": 0.46,
         "eth": null,
+        "eurNormalized": 0.42,
         "referenceCurrency": "USD",
         "seasonYear": 2025,
         "type": "IN_SEASON",
@@ -26085,18 +26226,20 @@
       },
       "rareFloor": {
         "eur": null,
-        "usd": 0.62,
+        "usd": 0.6,
         "eth": null,
+        "eurNormalized": 0.55,
         "referenceCurrency": "USD",
         "seasonYear": 2022,
         "type": "CLASSIC",
         "cardSlug": "grejohn-kyei-2022-rare-52",
-        "offerEndDate": "2026-06-03T04:05:25Z"
+        "offerEndDate": "2026-06-04T08:13:25Z"
       },
       "superRareFloor": {
         "eur": null,
         "usd": 5.95,
         "eth": null,
+        "eurNormalized": 5.47,
         "referenceCurrency": "USD",
         "seasonYear": 2025,
         "type": "IN_SEASON",
@@ -26107,13 +26250,14 @@
         "eur": 42.0,
         "usd": null,
         "eth": null,
+        "eurNormalized": 42.0,
         "referenceCurrency": "EUR",
         "seasonYear": 2025,
         "type": "IN_SEASON",
         "cardSlug": "grejohn-kyei-2025-unique-1",
-        "offerEndDate": "2026-05-29T16:34:14Z"
+        "offerEndDate": "2026-05-31T10:34:29Z"
       },
-      "updated_at": "2026-05-27T18:06:35.442038"
+      "updated_at": "2026-05-29T12:00:05.178551"
     },
     {
       "slug": "tobias-mohr",
@@ -26125,45 +26269,49 @@
       "u23": false,
       "limitedFloor": {
         "eur": null,
-        "usd": 0.45,
+        "usd": 0.46,
         "eth": null,
+        "eurNormalized": 0.42,
         "referenceCurrency": "USD",
         "seasonYear": 2025,
         "type": "IN_SEASON",
         "cardSlug": "tobias-mohr-2025-limited-595",
-        "offerEndDate": "2026-05-31T16:02:31Z"
+        "offerEndDate": "2026-06-04T13:56:08Z"
       },
       "rareFloor": {
         "eur": null,
-        "usd": null,
+        "usd": 0.77,
         "eth": null,
-        "referenceCurrency": "GBP",
+        "eurNormalized": 0.71,
+        "referenceCurrency": "USD",
         "seasonYear": 2024,
         "type": "CLASSIC",
-        "cardSlug": "tobias-mohr-2024-rare-42",
-        "offerEndDate": "2026-06-03T14:44:04Z"
+        "cardSlug": "tobias-mohr-2024-rare-4",
+        "offerEndDate": "2026-06-03T23:58:20Z"
       },
       "superRareFloor": {
-        "eur": null,
+        "eur": 14.0,
         "usd": null,
         "eth": null,
-        "referenceCurrency": null,
+        "eurNormalized": 14.0,
+        "referenceCurrency": "EUR",
         "seasonYear": 2025,
         "type": "IN_SEASON",
-        "cardSlug": "tobias-mohr-2025-super_rare-5",
-        "offerEndDate": null
+        "cardSlug": "tobias-mohr-2025-super_rare-4",
+        "offerEndDate": "2026-06-04T05:30:36Z"
       },
       "uniqueFloor": {
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
         "cardSlug": null,
         "offerEndDate": null
       },
-      "updated_at": "2026-05-27T18:06:37.630849"
+      "updated_at": "2026-05-29T12:00:07.480778"
     },
     {
       "slug": "casper-nielsen",
@@ -26174,46 +26322,50 @@
       "age": 32,
       "u23": false,
       "limitedFloor": {
-        "eur": null,
+        "eur": 0.65,
         "usd": null,
-        "eth": 0.0004,
-        "referenceCurrency": "WEI",
+        "eth": null,
+        "eurNormalized": 0.65,
+        "referenceCurrency": "EUR",
         "seasonYear": 2025,
         "type": "IN_SEASON",
-        "cardSlug": "casper-nielsen-2025-limited-464",
-        "offerEndDate": "2026-06-01T20:43:18Z"
+        "cardSlug": "casper-nielsen-2025-limited-423",
+        "offerEndDate": "2026-06-04T19:10:51Z"
       },
       "rareFloor": {
-        "eur": 2.19,
-        "usd": null,
+        "eur": null,
+        "usd": 2.48,
         "eth": null,
-        "referenceCurrency": "EUR",
-        "seasonYear": 2024,
+        "eurNormalized": 2.28,
+        "referenceCurrency": "USD",
+        "seasonYear": 2022,
         "type": "CLASSIC",
-        "cardSlug": "casper-nielsen-2024-rare-54",
-        "offerEndDate": "2026-06-02T14:05:40Z"
+        "cardSlug": "casper-nielsen-2022-rare-25",
+        "offerEndDate": "2026-06-04T11:10:29Z"
       },
       "superRareFloor": {
-        "eur": 34.0,
+        "eur": null,
         "usd": null,
         "eth": null,
-        "referenceCurrency": "EUR",
+        "eurNormalized": null,
+        "referenceCurrency": null,
         "seasonYear": 2025,
         "type": "IN_SEASON",
-        "cardSlug": "casper-nielsen-2025-super_rare-4",
-        "offerEndDate": "2026-05-28T05:50:15Z"
+        "cardSlug": "casper-nielsen-2025-super_rare-9",
+        "offerEndDate": null
       },
       "uniqueFloor": {
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
         "cardSlug": null,
         "offerEndDate": null
       },
-      "updated_at": "2026-05-27T18:06:39.836586"
+      "updated_at": "2026-05-29T12:00:09.799830"
     },
     {
       "slug": "thomas-henry",
@@ -26225,18 +26377,20 @@
       "u23": false,
       "limitedFloor": {
         "eur": null,
-        "usd": 0.42,
+        "usd": 0.41,
         "eth": null,
+        "eurNormalized": 0.38,
         "referenceCurrency": "USD",
         "seasonYear": 2025,
         "type": "IN_SEASON",
         "cardSlug": "thomas-henry-2025-limited-314",
-        "offerEndDate": "2026-05-30T09:29:15Z"
+        "offerEndDate": "2026-06-05T01:57:05Z"
       },
       "rareFloor": {
         "eur": 0.54,
         "usd": null,
         "eth": null,
+        "eurNormalized": 0.54,
         "referenceCurrency": "EUR",
         "seasonYear": 2023,
         "type": "CLASSIC",
@@ -26247,6 +26401,7 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
@@ -26257,13 +26412,14 @@
         "eur": null,
         "usd": null,
         "eth": 0.1799,
+        "eurNormalized": 539.7,
         "referenceCurrency": "WEI",
         "seasonYear": 2025,
         "type": "IN_SEASON",
         "cardSlug": "thomas-henry-2025-unique-1",
         "offerEndDate": "2026-06-02T12:35:52Z"
       },
-      "updated_at": "2026-05-27T18:06:42.080796"
+      "updated_at": "2026-05-29T12:00:12.090610"
     },
     {
       "slug": "rafiki-said-ahamada",
@@ -26274,46 +26430,50 @@
       "age": 26,
       "u23": false,
       "limitedFloor": {
-        "eur": null,
+        "eur": 1.18,
         "usd": null,
         "eth": null,
-        "referenceCurrency": "GBP",
+        "eurNormalized": 1.18,
+        "referenceCurrency": "EUR",
         "seasonYear": 2025,
         "type": "IN_SEASON",
-        "cardSlug": "rafiki-said-ahamada-2025-limited-72",
-        "offerEndDate": "2026-05-30T17:58:16Z"
+        "cardSlug": "rafiki-said-ahamada-2025-limited-735",
+        "offerEndDate": "2026-06-05T11:31:55Z"
       },
       "rareFloor": {
         "eur": null,
-        "usd": 10.41,
+        "usd": 10.0,
         "eth": null,
+        "eurNormalized": 9.2,
         "referenceCurrency": "USD",
         "seasonYear": 2025,
         "type": "IN_SEASON",
-        "cardSlug": "rafiki-said-ahamada-2025-rare-45",
-        "offerEndDate": "2026-05-28T14:43:59Z"
+        "cardSlug": "rafiki-said-ahamada-2025-rare-8",
+        "offerEndDate": "2026-06-05T03:49:29Z"
       },
       "superRareFloor": {
         "eur": null,
         "usd": null,
-        "eth": 0.0634,
+        "eth": 0.0655,
+        "eurNormalized": 196.5,
         "referenceCurrency": "WEI",
         "seasonYear": 2025,
         "type": "IN_SEASON",
         "cardSlug": "rafiki-said-ahamada-2025-super_rare-4",
-        "offerEndDate": "2026-06-03T06:20:06Z"
+        "offerEndDate": "2026-06-05T08:29:01Z"
       },
       "uniqueFloor": {
         "eur": 1000.0,
         "usd": null,
         "eth": null,
+        "eurNormalized": 1000.0,
         "referenceCurrency": "EUR",
         "seasonYear": 2025,
         "type": "IN_SEASON",
         "cardSlug": "rafiki-said-ahamada-2025-unique-1",
         "offerEndDate": "2026-06-02T17:21:00Z"
       },
-      "updated_at": "2026-05-27T18:06:44.287492"
+      "updated_at": "2026-05-29T12:00:14.709326"
     },
     {
       "slug": "mohamed-el-hankouri",
@@ -26327,6 +26487,7 @@
         "eur": 0.37,
         "usd": null,
         "eth": null,
+        "eurNormalized": 0.37,
         "referenceCurrency": "EUR",
         "seasonYear": 2025,
         "type": "IN_SEASON",
@@ -26334,19 +26495,21 @@
         "offerEndDate": "2026-06-03T10:17:48Z"
       },
       "rareFloor": {
-        "eur": null,
-        "usd": 0.71,
+        "eur": 0.55,
+        "usd": null,
         "eth": null,
-        "referenceCurrency": "USD",
-        "seasonYear": 2021,
+        "eurNormalized": 0.55,
+        "referenceCurrency": "EUR",
+        "seasonYear": 2024,
         "type": "CLASSIC",
-        "cardSlug": "mohamed-el-hankouri-2021-rare-37",
-        "offerEndDate": "2026-06-02T13:24:47Z"
+        "cardSlug": "mohamed-el-hankouri-2024-rare-48",
+        "offerEndDate": "2026-06-04T13:43:38Z"
       },
       "superRareFloor": {
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": 2025,
         "type": "IN_SEASON",
@@ -26357,13 +26520,14 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
         "cardSlug": null,
         "offerEndDate": null
       },
-      "updated_at": "2026-05-27T18:06:46.574857"
+      "updated_at": "2026-05-29T12:00:16.967120"
     },
     {
       "slug": "timothee-nkada",
@@ -26377,6 +26541,7 @@
         "eur": 0.85,
         "usd": null,
         "eth": null,
+        "eurNormalized": 0.85,
         "referenceCurrency": "EUR",
         "seasonYear": 2025,
         "type": "IN_SEASON",
@@ -26387,6 +26552,7 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": 2025,
         "type": "IN_SEASON",
@@ -26396,24 +26562,26 @@
       "superRareFloor": {
         "eur": null,
         "usd": null,
-        "eth": 0.0303,
+        "eth": 0.0242,
+        "eurNormalized": 72.6,
         "referenceCurrency": "WEI",
         "seasonYear": 2025,
         "type": "IN_SEASON",
         "cardSlug": "timothee-nkada-2025-super_rare-1",
-        "offerEndDate": "2026-06-03T16:18:50Z"
+        "offerEndDate": "2026-06-05T06:14:41Z"
       },
       "uniqueFloor": {
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
         "cardSlug": null,
         "offerEndDate": null
       },
-      "updated_at": "2026-05-27T18:06:48.765585"
+      "updated_at": "2026-05-29T12:00:19.448426"
     },
     {
       "slug": "souleyman-doumbia",
@@ -26427,6 +26595,7 @@
         "eur": null,
         "usd": 2.5,
         "eth": null,
+        "eurNormalized": 2.3,
         "referenceCurrency": "USD",
         "seasonYear": 2025,
         "type": "IN_SEASON",
@@ -26437,16 +26606,18 @@
         "eur": null,
         "usd": null,
         "eth": 0.0003,
+        "eurNormalized": 0.9,
         "referenceCurrency": "WEI",
         "seasonYear": 2024,
         "type": "CLASSIC",
         "cardSlug": "souleyman-doumbia-2024-rare-23",
-        "offerEndDate": "2026-06-03T15:29:24Z"
+        "offerEndDate": "2026-06-05T09:12:39Z"
       },
       "superRareFloor": {
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
@@ -26457,13 +26628,14 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
         "cardSlug": null,
         "offerEndDate": null
       },
-      "updated_at": "2026-05-27T18:06:50.949542"
+      "updated_at": "2026-05-29T12:00:21.699426"
     },
     {
       "slug": "vincent-euvrard",
@@ -26477,6 +26649,7 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
@@ -26487,6 +26660,7 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
@@ -26497,6 +26671,7 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
@@ -26507,13 +26682,14 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
         "cardSlug": null,
         "offerEndDate": null
       },
-      "updated_at": "2026-05-27T18:06:53.134876"
+      "updated_at": "2026-05-29T12:00:23.920925"
     },
     {
       "slug": "charli-spoden",
@@ -26527,6 +26703,7 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
@@ -26537,6 +26714,7 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
@@ -26547,6 +26725,7 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
@@ -26557,13 +26736,14 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
         "cardSlug": null,
         "offerEndDate": null
       },
-      "updated_at": "2026-05-27T18:06:55.297425"
+      "updated_at": "2026-05-29T12:00:26.195894"
     },
     {
       "slug": "gustav-julius-mortensen",
@@ -26574,29 +26754,32 @@
       "age": 22,
       "u23": true,
       "limitedFloor": {
-        "eur": 1.99,
+        "eur": 1.8,
         "usd": null,
         "eth": null,
+        "eurNormalized": 1.8,
         "referenceCurrency": "EUR",
         "seasonYear": 2025,
         "type": "IN_SEASON",
-        "cardSlug": "gustav-julius-mortensen-2025-limited-117",
-        "offerEndDate": "2026-06-03T17:37:01Z"
+        "cardSlug": "gustav-julius-mortensen-2025-limited-137",
+        "offerEndDate": "2026-06-03T18:35:43Z"
       },
       "rareFloor": {
         "eur": null,
-        "usd": null,
+        "usd": 8.0,
         "eth": null,
-        "referenceCurrency": null,
+        "eurNormalized": 7.36,
+        "referenceCurrency": "USD",
         "seasonYear": 2025,
         "type": "IN_SEASON",
-        "cardSlug": "gustav-julius-mortensen-2025-rare-9",
-        "offerEndDate": null
+        "cardSlug": "gustav-julius-mortensen-2025-rare-10",
+        "offerEndDate": "2026-06-05T03:52:18Z"
       },
       "superRareFloor": {
         "eur": null,
         "usd": 8.7,
         "eth": null,
+        "eurNormalized": 8.0,
         "referenceCurrency": "USD",
         "seasonYear": 2025,
         "type": "IN_SEASON",
@@ -26607,13 +26790,14 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
         "cardSlug": null,
         "offerEndDate": null
       },
-      "updated_at": "2026-05-27T18:06:57.527678"
+      "updated_at": "2026-05-29T12:00:28.489571"
     },
     {
       "slug": "teddy-teuma",
@@ -26625,18 +26809,20 @@
       "u23": false,
       "limitedFloor": {
         "eur": null,
-        "usd": 0.62,
+        "usd": 0.58,
         "eth": null,
+        "eurNormalized": 0.53,
         "referenceCurrency": "USD",
         "seasonYear": 2025,
         "type": "IN_SEASON",
         "cardSlug": "teddy-teuma-2025-limited-128",
-        "offerEndDate": "2026-05-28T09:05:54Z"
+        "offerEndDate": "2026-05-30T11:35:20Z"
       },
       "rareFloor": {
         "eur": 2.13,
         "usd": null,
         "eth": null,
+        "eurNormalized": 2.13,
         "referenceCurrency": "EUR",
         "seasonYear": 2024,
         "type": "CLASSIC",
@@ -26644,26 +26830,28 @@
         "offerEndDate": "2026-06-01T23:03:12Z"
       },
       "superRareFloor": {
-        "eur": 97.5,
+        "eur": null,
         "usd": null,
-        "eth": null,
-        "referenceCurrency": "EUR",
+        "eth": 0.0559,
+        "eurNormalized": 167.7,
+        "referenceCurrency": "WEI",
         "seasonYear": 2025,
         "type": "IN_SEASON",
-        "cardSlug": "teddy-teuma-2025-super_rare-5",
-        "offerEndDate": "2026-05-30T07:53:46Z"
+        "cardSlug": "teddy-teuma-2025-super_rare-3",
+        "offerEndDate": "2026-06-05T04:27:58Z"
       },
       "uniqueFloor": {
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
         "cardSlug": null,
         "offerEndDate": null
       },
-      "updated_at": "2026-05-27T18:07:00.106553"
+      "updated_at": "2026-05-29T12:00:30.781087"
     },
     {
       "slug": "bernard-nguene",
@@ -26677,26 +26865,29 @@
         "eur": 0.54,
         "usd": null,
         "eth": null,
+        "eurNormalized": 0.54,
         "referenceCurrency": "EUR",
         "seasonYear": 2025,
         "type": "IN_SEASON",
-        "cardSlug": "bernard-nguene-2025-limited-22",
-        "offerEndDate": "2026-06-03T10:03:50Z"
+        "cardSlug": "bernard-nguene-2025-limited-483",
+        "offerEndDate": "2026-06-01T14:44:13Z"
       },
       "rareFloor": {
         "eur": null,
         "usd": 5.07,
         "eth": null,
+        "eurNormalized": 4.66,
         "referenceCurrency": "USD",
         "seasonYear": 2025,
         "type": "IN_SEASON",
         "cardSlug": "bernard-nguene-2025-rare-6",
-        "offerEndDate": "2026-05-28T12:30:48Z"
+        "offerEndDate": "2026-05-29T13:21:49Z"
       },
       "superRareFloor": {
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": 2025,
         "type": "IN_SEASON",
@@ -26707,13 +26898,14 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
         "cardSlug": null,
         "offerEndDate": null
       },
-      "updated_at": "2026-05-27T18:07:02.334632"
+      "updated_at": "2026-05-29T12:00:33.070138"
     },
     {
       "slug": "belmin-dizdarevic",
@@ -26727,6 +26919,7 @@
         "eur": 1.2,
         "usd": null,
         "eth": null,
+        "eurNormalized": 1.2,
         "referenceCurrency": "EUR",
         "seasonYear": 2025,
         "type": "IN_SEASON",
@@ -26737,6 +26930,7 @@
         "eur": null,
         "usd": null,
         "eth": 0.0049,
+        "eurNormalized": 14.7,
         "referenceCurrency": "WEI",
         "seasonYear": 2024,
         "type": "CLASSIC",
@@ -26747,6 +26941,7 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
@@ -26757,13 +26952,14 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
         "cardSlug": null,
         "offerEndDate": null
       },
-      "updated_at": "2026-05-27T18:07:04.514819"
+      "updated_at": "2026-05-29T12:00:35.322342"
     },
     {
       "slug": "noah-abdoulaye-sy",
@@ -26777,6 +26973,7 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
@@ -26787,6 +26984,7 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
@@ -26797,6 +26995,7 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
@@ -26807,13 +27006,14 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
         "cardSlug": null,
         "offerEndDate": null
       },
-      "updated_at": "2026-05-27T18:07:06.675607"
+      "updated_at": "2026-05-29T12:00:37.563617"
     },
     {
       "slug": "jordi-ramses-makiese-alberto",
@@ -26827,6 +27027,7 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
@@ -26837,6 +27038,7 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
@@ -26847,6 +27049,7 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
@@ -26857,13 +27060,14 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
         "cardSlug": null,
         "offerEndDate": null
       },
-      "updated_at": "2026-05-27T18:07:08.843317"
+      "updated_at": "2026-05-29T12:00:39.814749"
     },
     {
       "slug": "kerim-mrabti",
@@ -26875,18 +27079,20 @@
       "u23": false,
       "limitedFloor": {
         "eur": null,
-        "usd": 0.6,
+        "usd": 0.57,
         "eth": null,
+        "eurNormalized": 0.52,
         "referenceCurrency": "USD",
         "seasonYear": 2025,
         "type": "IN_SEASON",
-        "cardSlug": "kerim-mrabti-2025-limited-618",
-        "offerEndDate": "2026-05-31T16:08:09Z"
+        "cardSlug": "kerim-mrabti-2025-limited-548",
+        "offerEndDate": "2026-06-04T12:50:52Z"
       },
       "rareFloor": {
         "eur": null,
         "usd": 0.67,
         "eth": null,
+        "eurNormalized": 0.62,
         "referenceCurrency": "USD",
         "seasonYear": 2023,
         "type": "CLASSIC",
@@ -26897,6 +27103,7 @@
         "eur": null,
         "usd": 11.96,
         "eth": null,
+        "eurNormalized": 11.0,
         "referenceCurrency": "USD",
         "seasonYear": 2025,
         "type": "IN_SEASON",
@@ -26907,13 +27114,14 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
         "cardSlug": null,
         "offerEndDate": null
       },
-      "updated_at": "2026-05-27T18:07:11.053407"
+      "updated_at": "2026-05-29T12:00:42.127172"
     },
     {
       "slug": "bilal-bafdili",
@@ -26927,6 +27135,7 @@
         "eur": null,
         "usd": 0.42,
         "eth": null,
+        "eurNormalized": 0.39,
         "referenceCurrency": "USD",
         "seasonYear": 2025,
         "type": "IN_SEASON",
@@ -26935,18 +27144,20 @@
       },
       "rareFloor": {
         "eur": null,
-        "usd": null,
+        "usd": 2.1,
         "eth": null,
-        "referenceCurrency": "GBP",
-        "seasonYear": 2025,
-        "type": "IN_SEASON",
-        "cardSlug": "bilal-bafdili-2025-rare-27",
-        "offerEndDate": "2026-05-30T13:35:04Z"
+        "eurNormalized": 1.93,
+        "referenceCurrency": "USD",
+        "seasonYear": 2024,
+        "type": "CLASSIC",
+        "cardSlug": "bilal-bafdili-2024-rare-56",
+        "offerEndDate": "2026-06-04T07:24:07Z"
       },
       "superRareFloor": {
         "eur": null,
         "usd": 26.01,
         "eth": null,
+        "eurNormalized": 23.93,
         "referenceCurrency": "USD",
         "seasonYear": 2025,
         "type": "IN_SEASON",
@@ -26957,13 +27168,14 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
         "cardSlug": null,
         "offerEndDate": null
       },
-      "updated_at": "2026-05-27T18:07:13.328975"
+      "updated_at": "2026-05-29T12:00:44.415287"
     },
     {
       "slug": "bill-antonio",
@@ -26975,28 +27187,31 @@
       "u23": true,
       "limitedFloor": {
         "eur": null,
-        "usd": 0.62,
-        "eth": null,
-        "referenceCurrency": "USD",
+        "usd": null,
+        "eth": 0.0003,
+        "eurNormalized": 0.9,
+        "referenceCurrency": "WEI",
         "seasonYear": 2025,
         "type": "IN_SEASON",
-        "cardSlug": "bill-antonio-2025-limited-223",
-        "offerEndDate": "2026-06-02T22:51:26Z"
+        "cardSlug": "bill-antonio-2025-limited-145",
+        "offerEndDate": "2026-06-04T13:11:40Z"
       },
       "rareFloor": {
-        "eur": 1.54,
+        "eur": null,
         "usd": null,
         "eth": null,
-        "referenceCurrency": "EUR",
+        "eurNormalized": null,
+        "referenceCurrency": null,
         "seasonYear": 2025,
         "type": "IN_SEASON",
         "cardSlug": "bill-antonio-2025-rare-46",
-        "offerEndDate": "2026-06-03T16:45:28Z"
+        "offerEndDate": null
       },
       "superRareFloor": {
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": 2025,
         "type": "IN_SEASON",
@@ -27007,13 +27222,14 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
         "cardSlug": null,
         "offerEndDate": null
       },
-      "updated_at": "2026-05-27T18:07:15.569229"
+      "updated_at": "2026-05-29T12:00:46.680728"
     },
     {
       "slug": "gaetan-carina-alexander-bosiers",
@@ -27027,6 +27243,7 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
@@ -27037,6 +27254,7 @@
         "eur": null,
         "usd": 1000.0,
         "eth": null,
+        "eurNormalized": 920.0,
         "referenceCurrency": "USD",
         "seasonYear": 2019,
         "type": "CLASSIC",
@@ -27047,6 +27265,7 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
@@ -27057,13 +27276,14 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
         "cardSlug": null,
         "offerEndDate": null
       },
-      "updated_at": "2026-05-27T18:07:17.739709"
+      "updated_at": "2026-05-29T12:00:49.057232"
     },
     {
       "slug": "mory-konate",
@@ -27077,43 +27297,47 @@
         "eur": 0.36,
         "usd": null,
         "eth": null,
+        "eurNormalized": 0.36,
         "referenceCurrency": "EUR",
         "seasonYear": 2025,
         "type": "IN_SEASON",
         "cardSlug": "mory-konate-2025-limited-415",
-        "offerEndDate": "2026-06-03T14:31:23Z"
+        "offerEndDate": "2026-06-04T20:26:45Z"
       },
       "rareFloor": {
         "eur": 0.5,
         "usd": null,
         "eth": null,
+        "eurNormalized": 0.5,
         "referenceCurrency": "EUR",
-        "seasonYear": 2023,
+        "seasonYear": 2024,
         "type": "CLASSIC",
-        "cardSlug": "mory-konate-2023-rare-17",
-        "offerEndDate": "2026-05-29T10:27:37Z"
+        "cardSlug": "mory-konate-2024-rare-3",
+        "offerEndDate": "2026-06-01T16:29:46Z"
       },
       "superRareFloor": {
         "eur": null,
         "usd": null,
-        "eth": 0.009,
+        "eth": 0.0092,
+        "eurNormalized": 27.6,
         "referenceCurrency": "WEI",
         "seasonYear": 2025,
         "type": "IN_SEASON",
         "cardSlug": "mory-konate-2025-super_rare-7",
-        "offerEndDate": "2026-06-03T14:10:54Z"
+        "offerEndDate": "2026-06-05T04:07:23Z"
       },
       "uniqueFloor": {
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
         "cardSlug": null,
         "offerEndDate": null
       },
-      "updated_at": "2026-05-27T18:07:20.090392"
+      "updated_at": "2026-05-29T12:00:51.356899"
     },
     {
       "slug": "ortwin-de-wolf",
@@ -27124,29 +27348,32 @@
       "age": 29,
       "u23": false,
       "limitedFloor": {
-        "eur": 1.19,
+        "eur": 1.13,
         "usd": null,
         "eth": null,
+        "eurNormalized": 1.13,
         "referenceCurrency": "EUR",
         "seasonYear": 2025,
         "type": "IN_SEASON",
-        "cardSlug": "ortwin-de-wolf-2025-limited-598",
-        "offerEndDate": "2026-06-01T07:35:03Z"
+        "cardSlug": "ortwin-de-wolf-2025-limited-666",
+        "offerEndDate": "2026-05-30T12:26:08Z"
       },
       "rareFloor": {
-        "eur": 4.0,
+        "eur": null,
         "usd": null,
-        "eth": null,
-        "referenceCurrency": "EUR",
-        "seasonYear": 2024,
+        "eth": 0.0025,
+        "eurNormalized": 7.5,
+        "referenceCurrency": "WEI",
+        "seasonYear": 2021,
         "type": "CLASSIC",
-        "cardSlug": "ortwin-de-wolf-2024-rare-55",
-        "offerEndDate": "2026-05-28T06:59:36Z"
+        "cardSlug": "ortwin-de-wolf-2021-rare-42",
+        "offerEndDate": "2026-06-04T17:26:22Z"
       },
       "superRareFloor": {
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
@@ -27157,13 +27384,14 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
         "cardSlug": null,
         "offerEndDate": null
       },
-      "updated_at": "2026-05-27T18:07:22.272929"
+      "updated_at": "2026-05-29T12:00:53.626308"
     },
     {
       "slug": "jose-martinez-marsa",
@@ -27177,6 +27405,7 @@
         "eur": 0.49,
         "usd": null,
         "eth": null,
+        "eurNormalized": 0.49,
         "referenceCurrency": "EUR",
         "seasonYear": 2025,
         "type": "IN_SEASON",
@@ -27187,6 +27416,7 @@
         "eur": null,
         "usd": null,
         "eth": 0.0012,
+        "eurNormalized": 3.6,
         "referenceCurrency": "WEI",
         "seasonYear": 2024,
         "type": "CLASSIC",
@@ -27197,6 +27427,7 @@
         "eur": null,
         "usd": null,
         "eth": 0.016,
+        "eurNormalized": 48.0,
         "referenceCurrency": "WEI",
         "seasonYear": 2025,
         "type": "IN_SEASON",
@@ -27207,13 +27438,14 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
         "cardSlug": null,
         "offerEndDate": null
       },
-      "updated_at": "2026-05-27T18:07:24.472969"
+      "updated_at": "2026-05-29T12:00:55.897350"
     },
     {
       "slug": "benito-raman",
@@ -27225,28 +27457,31 @@
       "u23": false,
       "limitedFloor": {
         "eur": null,
-        "usd": 0.42,
+        "usd": 0.41,
         "eth": null,
+        "eurNormalized": 0.38,
         "referenceCurrency": "USD",
         "seasonYear": 2025,
         "type": "IN_SEASON",
         "cardSlug": "benito-raman-2025-limited-87",
-        "offerEndDate": "2026-05-30T08:27:46Z"
+        "offerEndDate": "2026-06-05T01:28:49Z"
       },
       "rareFloor": {
         "eur": null,
-        "usd": null,
+        "usd": 0.78,
         "eth": null,
-        "referenceCurrency": "GBP",
+        "eurNormalized": 0.72,
+        "referenceCurrency": "USD",
         "seasonYear": 2024,
         "type": "CLASSIC",
-        "cardSlug": "benito-raman-2024-rare-65",
-        "offerEndDate": "2026-06-03T17:45:38Z"
+        "cardSlug": "benito-raman-2024-rare-38",
+        "offerEndDate": "2026-06-04T04:27:43Z"
       },
       "superRareFloor": {
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": 2025,
         "type": "IN_SEASON",
@@ -27257,13 +27492,14 @@
         "eur": null,
         "usd": 238.0,
         "eth": null,
+        "eurNormalized": 218.96,
         "referenceCurrency": "USD",
         "seasonYear": 2025,
         "type": "IN_SEASON",
         "cardSlug": "benito-raman-2025-unique-1",
         "offerEndDate": "2026-06-01T05:16:08Z"
       },
-      "updated_at": "2026-05-27T18:07:26.693045"
+      "updated_at": "2026-05-29T12:00:58.202725"
     },
     {
       "slug": "amine-ouahabi",
@@ -27277,6 +27513,7 @@
         "eur": null,
         "usd": null,
         "eth": 0.0003,
+        "eurNormalized": 0.9,
         "referenceCurrency": "WEI",
         "seasonYear": 2025,
         "type": "IN_SEASON",
@@ -27287,6 +27524,7 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": 2025,
         "type": "IN_SEASON",
@@ -27297,6 +27535,7 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": 2025,
         "type": "IN_SEASON",
@@ -27307,13 +27546,14 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
         "cardSlug": null,
         "offerEndDate": null
       },
-      "updated_at": "2026-05-27T18:07:28.885486"
+      "updated_at": "2026-05-29T12:01:00.500032"
     },
     {
       "slug": "fredrik-hammar",
@@ -27324,46 +27564,50 @@
       "age": 25,
       "u23": false,
       "limitedFloor": {
-        "eur": 1.19,
+        "eur": 1.13,
         "usd": null,
         "eth": null,
+        "eurNormalized": 1.13,
         "referenceCurrency": "EUR",
         "seasonYear": 2025,
         "type": "IN_SEASON",
         "cardSlug": "fredrik-hammar-2025-limited-35",
-        "offerEndDate": "2026-06-03T07:06:50Z"
+        "offerEndDate": "2026-06-05T11:40:52Z"
       },
       "rareFloor": {
-        "eur": 8.36,
+        "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
+        "referenceCurrency": "GBP",
+        "seasonYear": 2025,
+        "type": "IN_SEASON",
+        "cardSlug": "fredrik-hammar-2025-rare-85",
+        "offerEndDate": "2026-06-04T14:36:15Z"
+      },
+      "superRareFloor": {
+        "eur": 49.99,
+        "usd": null,
+        "eth": null,
+        "eurNormalized": 49.99,
         "referenceCurrency": "EUR",
         "seasonYear": 2025,
         "type": "IN_SEASON",
-        "cardSlug": "fredrik-hammar-2025-rare-89",
-        "offerEndDate": "2026-06-03T09:22:03Z"
-      },
-      "superRareFloor": {
-        "eur": null,
-        "usd": null,
-        "eth": 0.0308,
-        "referenceCurrency": "WEI",
-        "seasonYear": 2025,
-        "type": "IN_SEASON",
-        "cardSlug": "fredrik-hammar-2025-super_rare-3",
-        "offerEndDate": "2026-06-03T06:33:50Z"
+        "cardSlug": "fredrik-hammar-2025-super_rare-7",
+        "offerEndDate": "2026-06-05T10:14:41Z"
       },
       "uniqueFloor": {
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
         "cardSlug": null,
         "offerEndDate": null
       },
-      "updated_at": "2026-05-27T18:07:31.249658"
+      "updated_at": "2026-05-29T12:01:02.821842"
     },
     {
       "slug": "ignacio-miras-blanco",
@@ -27374,46 +27618,50 @@
       "age": 28,
       "u23": false,
       "limitedFloor": {
-        "eur": null,
-        "usd": null,
-        "eth": 0.0017,
-        "referenceCurrency": "WEI",
-        "seasonYear": 2025,
-        "type": "IN_SEASON",
-        "cardSlug": "ignacio-miras-blanco-2025-limited-468",
-        "offerEndDate": "2026-05-29T08:38:38Z"
-      },
-      "rareFloor": {
-        "eur": 13.0,
+        "eur": 3.49,
         "usd": null,
         "eth": null,
+        "eurNormalized": 3.49,
+        "referenceCurrency": "EUR",
+        "seasonYear": 2025,
+        "type": "IN_SEASON",
+        "cardSlug": "ignacio-miras-blanco-2025-limited-373",
+        "offerEndDate": "2026-06-04T19:54:57Z"
+      },
+      "rareFloor": {
+        "eur": 12.4,
+        "usd": null,
+        "eth": null,
+        "eurNormalized": 12.4,
         "referenceCurrency": "EUR",
         "seasonYear": 2025,
         "type": "IN_SEASON",
         "cardSlug": "ignacio-miras-blanco-2025-rare-46",
-        "offerEndDate": "2026-06-03T08:09:06Z"
+        "offerEndDate": "2026-06-04T14:53:42Z"
       },
       "superRareFloor": {
-        "eur": null,
+        "eur": 295.0,
         "usd": null,
         "eth": null,
-        "referenceCurrency": null,
-        "seasonYear": null,
-        "type": null,
-        "cardSlug": null,
-        "offerEndDate": null
+        "eurNormalized": 295.0,
+        "referenceCurrency": "EUR",
+        "seasonYear": 2025,
+        "type": "IN_SEASON",
+        "cardSlug": "ignacio-miras-blanco-2025-super_rare-9",
+        "offerEndDate": "2026-06-03T21:16:45Z"
       },
       "uniqueFloor": {
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
         "cardSlug": null,
         "offerEndDate": null
       },
-      "updated_at": "2026-05-27T18:07:33.422819"
+      "updated_at": "2026-05-29T12:01:05.243563"
     },
     {
       "slug": "keano-van-rafelghem",
@@ -27425,18 +27673,20 @@
       "u23": true,
       "limitedFloor": {
         "eur": null,
-        "usd": 0.61,
+        "usd": 0.58,
         "eth": null,
+        "eurNormalized": 0.53,
         "referenceCurrency": "USD",
         "seasonYear": 2025,
         "type": "IN_SEASON",
         "cardSlug": "keano-van-rafelghem-2025-limited-192",
-        "offerEndDate": "2026-05-31T13:26:12Z"
+        "offerEndDate": "2026-06-04T11:20:49Z"
       },
       "rareFloor": {
         "eur": 0.99,
         "usd": null,
         "eth": null,
+        "eurNormalized": 0.99,
         "referenceCurrency": "EUR",
         "seasonYear": 2025,
         "type": "IN_SEASON",
@@ -27447,6 +27697,7 @@
         "eur": null,
         "usd": 9.76,
         "eth": null,
+        "eurNormalized": 8.98,
         "referenceCurrency": "USD",
         "seasonYear": 2025,
         "type": "IN_SEASON",
@@ -27457,13 +27708,14 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
         "cardSlug": null,
         "offerEndDate": null
       },
-      "updated_at": "2026-05-27T18:07:35.624630"
+      "updated_at": "2026-05-29T12:01:07.610876"
     },
     {
       "slug": "frederik-vanderbiest",
@@ -27477,6 +27729,7 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
@@ -27487,6 +27740,7 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
@@ -27497,6 +27751,7 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
@@ -27507,13 +27762,14 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
         "cardSlug": null,
         "offerEndDate": null
       },
-      "updated_at": "2026-05-27T18:07:37.817345"
+      "updated_at": "2026-05-29T12:01:09.849151"
     },
     {
       "slug": "axel-willockx",
@@ -27527,6 +27783,7 @@
         "eur": null,
         "usd": 0.68,
         "eth": null,
+        "eurNormalized": 0.63,
         "referenceCurrency": "USD",
         "seasonYear": 2025,
         "type": "IN_SEASON",
@@ -27537,6 +27794,7 @@
         "eur": null,
         "usd": 1.7,
         "eth": null,
+        "eurNormalized": 1.56,
         "referenceCurrency": "USD",
         "seasonYear": 2025,
         "type": "IN_SEASON",
@@ -27547,6 +27805,7 @@
         "eur": null,
         "usd": 32.52,
         "eth": null,
+        "eurNormalized": 29.92,
         "referenceCurrency": "USD",
         "seasonYear": 2025,
         "type": "IN_SEASON",
@@ -27557,13 +27816,14 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
         "cardSlug": null,
         "offerEndDate": null
       },
-      "updated_at": "2026-05-27T18:07:40.029806"
+      "updated_at": "2026-05-29T12:01:12.091706"
     },
     {
       "slug": "moncef-zekri",
@@ -27574,19 +27834,21 @@
       "age": 17,
       "u23": true,
       "limitedFloor": {
-        "eur": null,
-        "usd": 1.6,
+        "eur": 0.52,
+        "usd": null,
         "eth": null,
-        "referenceCurrency": "USD",
+        "eurNormalized": 0.52,
+        "referenceCurrency": "EUR",
         "seasonYear": 2025,
         "type": "IN_SEASON",
-        "cardSlug": "moncef-zekri-2025-limited-276",
-        "offerEndDate": "2026-05-28T17:00:54Z"
+        "cardSlug": "moncef-zekri-2025-limited-248",
+        "offerEndDate": "2026-06-02T11:12:34Z"
       },
       "rareFloor": {
         "eur": 5.17,
         "usd": null,
         "eth": null,
+        "eurNormalized": 5.17,
         "referenceCurrency": "EUR",
         "seasonYear": 2025,
         "type": "IN_SEASON",
@@ -27597,23 +27859,25 @@
         "eur": null,
         "usd": null,
         "eth": null,
-        "referenceCurrency": "GBP",
+        "eurNormalized": null,
+        "referenceCurrency": null,
         "seasonYear": 2025,
         "type": "IN_SEASON",
-        "cardSlug": "moncef-zekri-2025-super_rare-6",
-        "offerEndDate": "2026-05-28T15:25:28Z"
+        "cardSlug": "moncef-zekri-2025-super_rare-2",
+        "offerEndDate": null
       },
       "uniqueFloor": {
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
         "cardSlug": null,
         "offerEndDate": null
       },
-      "updated_at": "2026-05-27T18:07:42.205213"
+      "updated_at": "2026-05-29T12:01:14.358897"
     },
     {
       "slug": "tommy-st-jago",
@@ -27624,29 +27888,32 @@
       "age": 26,
       "u23": false,
       "limitedFloor": {
-        "eur": 0.52,
+        "eur": 0.45,
         "usd": null,
         "eth": null,
+        "eurNormalized": 0.45,
         "referenceCurrency": "EUR",
         "seasonYear": 2025,
         "type": "IN_SEASON",
         "cardSlug": "tommy-st-jago-2025-limited-485",
-        "offerEndDate": "2026-05-30T17:11:28Z"
+        "offerEndDate": "2026-06-04T06:42:06Z"
       },
       "rareFloor": {
-        "eur": 1.42,
+        "eur": 0.99,
         "usd": null,
         "eth": null,
+        "eurNormalized": 0.99,
         "referenceCurrency": "EUR",
-        "seasonYear": 2020,
+        "seasonYear": 2024,
         "type": "CLASSIC",
-        "cardSlug": "tommy-st-jago-2020-rare-48",
-        "offerEndDate": "2026-06-02T09:50:19Z"
+        "cardSlug": "tommy-st-jago-2024-rare-77",
+        "offerEndDate": "2026-06-05T02:31:09Z"
       },
       "superRareFloor": {
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": 2025,
         "type": "IN_SEASON",
@@ -27657,13 +27924,14 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
         "cardSlug": null,
         "offerEndDate": null
       },
-      "updated_at": "2026-05-27T18:07:44.410169"
+      "updated_at": "2026-05-29T12:01:16.987307"
     },
     {
       "slug": "redouane-halhal",
@@ -27674,29 +27942,32 @@
       "age": 23,
       "u23": true,
       "limitedFloor": {
-        "eur": 0.95,
+        "eur": 0.85,
         "usd": null,
         "eth": null,
+        "eurNormalized": 0.85,
         "referenceCurrency": "EUR",
         "seasonYear": 2025,
         "type": "IN_SEASON",
-        "cardSlug": "redouane-halhal-2025-limited-58",
-        "offerEndDate": "2026-06-03T00:21:43Z"
+        "cardSlug": "redouane-halhal-2025-limited-537",
+        "offerEndDate": "2026-06-04T20:31:51Z"
       },
       "rareFloor": {
         "eur": 5.21,
         "usd": null,
         "eth": null,
+        "eurNormalized": 5.21,
         "referenceCurrency": "EUR",
         "seasonYear": 2025,
         "type": "IN_SEASON",
         "cardSlug": "redouane-halhal-2025-rare-39",
-        "offerEndDate": "2026-06-03T08:02:33Z"
+        "offerEndDate": "2026-06-04T14:48:18Z"
       },
       "superRareFloor": {
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": 2025,
         "type": "IN_SEASON",
@@ -27707,13 +27978,14 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
         "cardSlug": null,
         "offerEndDate": null
       },
-      "updated_at": "2026-05-27T18:07:46.590971"
+      "updated_at": "2026-05-29T12:01:19.548140"
     },
     {
       "slug": "gora-diouf",
@@ -27724,29 +27996,32 @@
       "age": 22,
       "u23": true,
       "limitedFloor": {
-        "eur": null,
-        "usd": 0.43,
-        "eth": null,
-        "referenceCurrency": "USD",
-        "seasonYear": 2025,
-        "type": "IN_SEASON",
-        "cardSlug": "gora-diouf-2025-limited-13",
-        "offerEndDate": "2026-06-02T06:54:45Z"
-      },
-      "rareFloor": {
-        "eur": 2.09,
+        "eur": 0.36,
         "usd": null,
         "eth": null,
+        "eurNormalized": 0.36,
+        "referenceCurrency": "EUR",
+        "seasonYear": 2025,
+        "type": "IN_SEASON",
+        "cardSlug": "gora-diouf-2025-limited-64",
+        "offerEndDate": "2026-06-04T08:01:08Z"
+      },
+      "rareFloor": {
+        "eur": 2.1,
+        "usd": null,
+        "eth": null,
+        "eurNormalized": 2.1,
         "referenceCurrency": "EUR",
         "seasonYear": 2025,
         "type": "IN_SEASON",
         "cardSlug": "gora-diouf-2025-rare-25",
-        "offerEndDate": "2026-06-03T08:00:39Z"
+        "offerEndDate": "2026-06-04T07:40:56Z"
       },
       "superRareFloor": {
         "eur": 9.99,
         "usd": null,
         "eth": null,
+        "eurNormalized": 9.99,
         "referenceCurrency": "EUR",
         "seasonYear": 2025,
         "type": "IN_SEASON",
@@ -27757,13 +28032,14 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
         "cardSlug": null,
         "offerEndDate": null
       },
-      "updated_at": "2026-05-27T18:07:48.962818"
+      "updated_at": "2026-05-29T12:01:21.844570"
     },
     {
       "slug": "tijn-van-ingelgom",
@@ -27774,46 +28050,50 @@
       "age": 19,
       "u23": true,
       "limitedFloor": {
-        "eur": 0.79,
+        "eur": 0.83,
         "usd": null,
         "eth": null,
+        "eurNormalized": 0.83,
         "referenceCurrency": "EUR",
         "seasonYear": 2025,
         "type": "IN_SEASON",
-        "cardSlug": "tijn-van-ingelgom-2025-limited-358",
-        "offerEndDate": "2026-05-29T00:17:01Z"
+        "cardSlug": "tijn-van-ingelgom-2025-limited-297",
+        "offerEndDate": "2026-06-02T06:00:51Z"
       },
       "rareFloor": {
-        "eur": null,
-        "usd": 2.5,
+        "eur": 2.23,
+        "usd": null,
         "eth": null,
-        "referenceCurrency": "USD",
+        "eurNormalized": 2.23,
+        "referenceCurrency": "EUR",
         "seasonYear": 2025,
         "type": "IN_SEASON",
-        "cardSlug": "tijn-van-ingelgom-2025-rare-55",
-        "offerEndDate": "2026-05-30T16:15:19Z"
+        "cardSlug": "tijn-van-ingelgom-2025-rare-25",
+        "offerEndDate": "2026-05-29T18:47:11Z"
       },
       "superRareFloor": {
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
-        "seasonYear": null,
-        "type": null,
-        "cardSlug": null,
+        "seasonYear": 2025,
+        "type": "IN_SEASON",
+        "cardSlug": "tijn-van-ingelgom-2025-super_rare-7",
         "offerEndDate": null
       },
       "uniqueFloor": {
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
         "cardSlug": null,
         "offerEndDate": null
       },
-      "updated_at": "2026-05-27T18:07:51.138060"
+      "updated_at": "2026-05-29T12:01:24.205841"
     },
     {
       "slug": "lovro-golic",
@@ -27827,6 +28107,7 @@
         "eur": null,
         "usd": 0.46,
         "eth": null,
+        "eurNormalized": 0.42,
         "referenceCurrency": "USD",
         "seasonYear": 2025,
         "type": "IN_SEASON",
@@ -27834,19 +28115,21 @@
         "offerEndDate": "2026-06-01T21:40:33Z"
       },
       "rareFloor": {
-        "eur": 4.24,
+        "eur": 4.23,
         "usd": null,
         "eth": null,
+        "eurNormalized": 4.23,
         "referenceCurrency": "EUR",
         "seasonYear": 2025,
         "type": "IN_SEASON",
         "cardSlug": "lovro-golic-2025-rare-43",
-        "offerEndDate": "2026-06-03T03:09:37Z"
+        "offerEndDate": "2026-06-04T19:36:08Z"
       },
       "superRareFloor": {
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": 2025,
         "type": "IN_SEASON",
@@ -27857,13 +28140,14 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
         "cardSlug": null,
         "offerEndDate": null
       },
-      "updated_at": "2026-05-27T18:07:53.323989"
+      "updated_at": "2026-05-29T12:01:26.444594"
     },
     {
       "slug": "therence-koudou",
@@ -27877,6 +28161,7 @@
         "eur": 0.88,
         "usd": null,
         "eth": null,
+        "eurNormalized": 0.88,
         "referenceCurrency": "EUR",
         "seasonYear": 2025,
         "type": "IN_SEASON",
@@ -27884,19 +28169,21 @@
         "offerEndDate": "2026-06-02T18:36:15Z"
       },
       "rareFloor": {
-        "eur": 3.7,
-        "usd": null,
+        "eur": null,
+        "usd": 3.81,
         "eth": null,
-        "referenceCurrency": "EUR",
-        "seasonYear": 2023,
-        "type": "CLASSIC",
-        "cardSlug": "therence-koudou-2023-rare-43",
-        "offerEndDate": "2026-06-02T09:02:57Z"
+        "eurNormalized": 3.51,
+        "referenceCurrency": "USD",
+        "seasonYear": 2025,
+        "type": "IN_SEASON",
+        "cardSlug": "therence-koudou-2025-rare-23",
+        "offerEndDate": "2026-05-30T02:29:36Z"
       },
       "superRareFloor": {
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": 2025,
         "type": "IN_SEASON",
@@ -27907,13 +28194,14 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
         "cardSlug": null,
         "offerEndDate": null
       },
-      "updated_at": "2026-05-27T18:07:55.589351"
+      "updated_at": "2026-05-29T12:01:28.733415"
     },
     {
       "slug": "halil-ozdemir",
@@ -27927,6 +28215,7 @@
         "eur": 0.52,
         "usd": null,
         "eth": null,
+        "eurNormalized": 0.52,
         "referenceCurrency": "EUR",
         "seasonYear": 2025,
         "type": "IN_SEASON",
@@ -27937,6 +28226,7 @@
         "eur": 1.19,
         "usd": null,
         "eth": null,
+        "eurNormalized": 1.19,
         "referenceCurrency": "EUR",
         "seasonYear": 2025,
         "type": "IN_SEASON",
@@ -27947,6 +28237,7 @@
         "eur": null,
         "usd": 17.38,
         "eth": null,
+        "eurNormalized": 15.99,
         "referenceCurrency": "USD",
         "seasonYear": 2025,
         "type": "IN_SEASON",
@@ -27957,13 +28248,14 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
         "cardSlug": null,
         "offerEndDate": null
       },
-      "updated_at": "2026-05-27T18:07:57.772913"
+      "updated_at": "2026-05-29T12:01:31.091939"
     },
     {
       "slug": "ian-struyf",
@@ -27977,6 +28269,7 @@
         "eur": null,
         "usd": null,
         "eth": 0.0003,
+        "eurNormalized": 0.9,
         "referenceCurrency": "WEI",
         "seasonYear": 2025,
         "type": "IN_SEASON",
@@ -27986,34 +28279,37 @@
       "rareFloor": {
         "eur": null,
         "usd": null,
-        "eth": 0.0012,
+        "eth": 0.001,
+        "eurNormalized": 3.0,
         "referenceCurrency": "WEI",
         "seasonYear": 2025,
         "type": "IN_SEASON",
         "cardSlug": "ian-struyf-2025-rare-23",
-        "offerEndDate": "2026-06-03T07:44:25Z"
+        "offerEndDate": "2026-06-05T10:02:04Z"
       },
       "superRareFloor": {
-        "eur": 25.0,
+        "eur": 30.98,
         "usd": null,
         "eth": null,
+        "eurNormalized": 30.98,
         "referenceCurrency": "EUR",
         "seasonYear": 2025,
         "type": "IN_SEASON",
         "cardSlug": "ian-struyf-2025-super_rare-5",
-        "offerEndDate": "2026-06-01T12:03:12Z"
+        "offerEndDate": "2026-06-04T19:29:55Z"
       },
       "uniqueFloor": {
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
         "cardSlug": null,
         "offerEndDate": null
       },
-      "updated_at": "2026-05-27T18:08:00.170339"
+      "updated_at": "2026-05-29T12:01:33.340580"
     },
     {
       "slug": "maksim-kireev",
@@ -28027,6 +28323,7 @@
         "eur": null,
         "usd": 0.6,
         "eth": null,
+        "eurNormalized": 0.55,
         "referenceCurrency": "USD",
         "seasonYear": 2025,
         "type": "IN_SEASON",
@@ -28036,17 +28333,19 @@
       "rareFloor": {
         "eur": null,
         "usd": null,
-        "eth": 0.0013,
+        "eth": 0.0018,
+        "eurNormalized": 5.4,
         "referenceCurrency": "WEI",
         "seasonYear": 2025,
         "type": "IN_SEASON",
         "cardSlug": "maksim-kireev-2025-rare-14",
-        "offerEndDate": "2026-06-02T01:42:07Z"
+        "offerEndDate": "2026-06-04T15:21:01Z"
       },
       "superRareFloor": {
         "eur": null,
         "usd": 16.24,
         "eth": null,
+        "eurNormalized": 14.94,
         "referenceCurrency": "USD",
         "seasonYear": 2025,
         "type": "IN_SEASON",
@@ -28057,13 +28356,14 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
         "cardSlug": null,
         "offerEndDate": null
       },
-      "updated_at": "2026-05-27T18:08:02.365029"
+      "updated_at": "2026-05-29T12:01:35.617077"
     },
     {
       "slug": "mathis-servais",
@@ -28074,29 +28374,32 @@
       "age": 21,
       "u23": true,
       "limitedFloor": {
-        "eur": null,
-        "usd": 1.03,
+        "eur": 0.85,
+        "usd": null,
         "eth": null,
-        "referenceCurrency": "USD",
+        "eurNormalized": 0.85,
+        "referenceCurrency": "EUR",
         "seasonYear": 2025,
         "type": "IN_SEASON",
-        "cardSlug": "mathis-servais-2025-limited-169",
-        "offerEndDate": "2026-06-03T06:19:57Z"
+        "cardSlug": "mathis-servais-2025-limited-330",
+        "offerEndDate": "2026-06-04T20:32:05Z"
       },
       "rareFloor": {
         "eur": null,
         "usd": null,
         "eth": 0.0067,
+        "eurNormalized": 20.1,
         "referenceCurrency": "WEI",
         "seasonYear": 2025,
         "type": "IN_SEASON",
         "cardSlug": "mathis-servais-2025-rare-2",
-        "offerEndDate": "2026-06-03T16:42:53Z"
+        "offerEndDate": "2026-06-05T09:54:16Z"
       },
       "superRareFloor": {
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": 2025,
         "type": "IN_SEASON",
@@ -28107,13 +28410,14 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
         "cardSlug": null,
         "offerEndDate": null
       },
-      "updated_at": "2026-05-27T18:08:04.582156"
+      "updated_at": "2026-05-29T12:01:37.895931"
     },
     {
       "slug": "myron-van-brederode",
@@ -28124,46 +28428,50 @@
       "age": 22,
       "u23": true,
       "limitedFloor": {
-        "eur": 2.4,
+        "eur": 2.0,
         "usd": null,
         "eth": null,
+        "eurNormalized": 2.0,
         "referenceCurrency": "EUR",
         "seasonYear": 2025,
         "type": "IN_SEASON",
-        "cardSlug": "myron-van-brederode-2025-limited-566",
-        "offerEndDate": "2026-06-03T13:16:30Z"
+        "cardSlug": "myron-van-brederode-2025-limited-647",
+        "offerEndDate": "2026-05-30T14:37:47Z"
       },
       "rareFloor": {
         "eur": null,
         "usd": null,
         "eth": null,
-        "referenceCurrency": "GBP",
+        "eurNormalized": null,
+        "referenceCurrency": null,
         "seasonYear": 2025,
         "type": "IN_SEASON",
-        "cardSlug": "myron-van-brederode-2025-rare-10",
-        "offerEndDate": "2026-06-03T12:49:01Z"
+        "cardSlug": "myron-van-brederode-2025-rare-88",
+        "offerEndDate": null
       },
       "superRareFloor": {
         "eur": 79.99,
         "usd": null,
         "eth": null,
+        "eurNormalized": 79.99,
         "referenceCurrency": "EUR",
         "seasonYear": 2025,
         "type": "IN_SEASON",
         "cardSlug": "myron-van-brederode-2025-super_rare-9",
-        "offerEndDate": "2026-06-03T04:55:25Z"
+        "offerEndDate": "2026-06-05T11:46:13Z"
       },
       "uniqueFloor": {
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
         "cardSlug": null,
         "offerEndDate": null
       },
-      "updated_at": "2026-05-27T18:08:06.794311"
+      "updated_at": "2026-05-29T12:01:40.308176"
     },
     {
       "slug": "dikeni-rafid-salifou",
@@ -28174,29 +28482,32 @@
       "age": 22,
       "u23": true,
       "limitedFloor": {
-        "eur": 0.36,
-        "usd": null,
+        "eur": null,
+        "usd": 0.41,
         "eth": null,
-        "referenceCurrency": "EUR",
+        "eurNormalized": 0.38,
+        "referenceCurrency": "USD",
         "seasonYear": 2025,
         "type": "IN_SEASON",
-        "cardSlug": "dikeni-rafid-salifou-2025-limited-273",
-        "offerEndDate": "2026-06-03T14:22:44Z"
+        "cardSlug": "dikeni-rafid-salifou-2025-limited-247",
+        "offerEndDate": "2026-06-03T23:32:56Z"
       },
       "rareFloor": {
-        "eur": 2.99,
-        "usd": null,
+        "eur": null,
+        "usd": 3.39,
         "eth": null,
-        "referenceCurrency": "EUR",
-        "seasonYear": 2025,
-        "type": "IN_SEASON",
-        "cardSlug": "dikeni-rafid-salifou-2025-rare-34",
-        "offerEndDate": "2026-06-03T17:26:56Z"
+        "eurNormalized": 3.12,
+        "referenceCurrency": "USD",
+        "seasonYear": 2024,
+        "type": "CLASSIC",
+        "cardSlug": "dikeni-rafid-salifou-2024-rare-27",
+        "offerEndDate": "2026-06-04T04:02:38Z"
       },
       "superRareFloor": {
         "eur": null,
         "usd": null,
         "eth": 0.013,
+        "eurNormalized": 39.0,
         "referenceCurrency": "WEI",
         "seasonYear": 2025,
         "type": "IN_SEASON",
@@ -28207,13 +28518,14 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
         "cardSlug": null,
         "offerEndDate": null
       },
-      "updated_at": "2026-05-27T18:08:08.987908"
+      "updated_at": "2026-05-29T12:01:42.631354"
     },
     {
       "slug": "massimo-decoene",
@@ -28227,6 +28539,7 @@
         "eur": 1.09,
         "usd": null,
         "eth": null,
+        "eurNormalized": 1.09,
         "referenceCurrency": "EUR",
         "seasonYear": 2025,
         "type": "IN_SEASON",
@@ -28237,16 +28550,18 @@
         "eur": null,
         "usd": null,
         "eth": 0.001,
+        "eurNormalized": 3.0,
         "referenceCurrency": "WEI",
         "seasonYear": 2022,
         "type": "CLASSIC",
         "cardSlug": "massimo-decoene-2022-rare-6",
-        "offerEndDate": "2026-06-03T15:44:38Z"
+        "offerEndDate": "2026-06-05T09:27:55Z"
       },
       "superRareFloor": {
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
@@ -28257,13 +28572,14 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
         "cardSlug": null,
         "offerEndDate": null
       },
-      "updated_at": "2026-05-27T18:08:11.201030"
+      "updated_at": "2026-05-29T12:01:44.882274"
     },
     {
       "slug": "boureima-hassane-bande",
@@ -28274,19 +28590,21 @@
       "age": 27,
       "u23": false,
       "limitedFloor": {
-        "eur": null,
-        "usd": 0.73,
+        "eur": 0.58,
+        "usd": null,
         "eth": null,
-        "referenceCurrency": "USD",
+        "eurNormalized": 0.58,
+        "referenceCurrency": "EUR",
         "seasonYear": 2025,
         "type": "IN_SEASON",
-        "cardSlug": "boureima-hassane-bande-2025-limited-15",
-        "offerEndDate": "2026-06-03T13:08:56Z"
+        "cardSlug": "boureima-hassane-bande-2025-limited-18",
+        "offerEndDate": "2026-06-03T21:58:21Z"
       },
       "rareFloor": {
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
@@ -28297,6 +28615,7 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
@@ -28307,13 +28626,14 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
         "cardSlug": null,
         "offerEndDate": null
       },
-      "updated_at": "2026-05-27T18:08:13.371119"
+      "updated_at": "2026-05-29T12:01:47.169659"
     },
     {
       "slug": "xander-jan-van-der-velde",
@@ -28327,6 +28647,7 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
@@ -28337,6 +28658,7 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
@@ -28347,6 +28669,7 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
@@ -28357,13 +28680,14 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
         "cardSlug": null,
         "offerEndDate": null
       },
-      "updated_at": "2026-05-27T18:08:15.534271"
+      "updated_at": "2026-05-29T12:01:49.489580"
     },
     {
       "slug": "xavi-everaert",
@@ -28377,6 +28701,7 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
@@ -28387,6 +28712,7 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
@@ -28397,6 +28723,7 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
@@ -28407,13 +28734,14 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
         "cardSlug": null,
         "offerEndDate": null
       },
-      "updated_at": "2026-05-27T18:08:17.677192"
+      "updated_at": "2026-05-29T12:01:51.750200"
     },
     {
       "slug": "mauro-lenaerts",
@@ -28427,6 +28755,7 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": 2025,
         "type": "IN_SEASON",
@@ -28437,16 +28766,18 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": "GBP",
         "seasonYear": 2025,
         "type": "IN_SEASON",
         "cardSlug": "mauro-lenaerts-2025-rare-3",
-        "offerEndDate": "2026-05-29T18:06:54Z"
+        "offerEndDate": "2026-06-04T07:28:35Z"
       },
       "superRareFloor": {
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
@@ -28457,13 +28788,14 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
         "cardSlug": null,
         "offerEndDate": null
       },
-      "updated_at": "2026-05-27T18:08:19.846432"
+      "updated_at": "2026-05-29T12:01:53.998403"
     },
     {
       "slug": "bouke-boersma",
@@ -28476,17 +28808,19 @@
       "limitedFloor": {
         "eur": null,
         "usd": null,
-        "eth": 0.0005,
+        "eth": 0.0006,
+        "eurNormalized": 1.8,
         "referenceCurrency": "WEI",
         "seasonYear": 2025,
         "type": "IN_SEASON",
         "cardSlug": "bouke-boersma-2025-limited-117",
-        "offerEndDate": "2026-06-03T17:58:45Z"
+        "offerEndDate": "2026-06-03T20:59:15Z"
       },
       "rareFloor": {
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": 2025,
         "type": "IN_SEASON",
@@ -28497,6 +28831,7 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": 2025,
         "type": "IN_SEASON",
@@ -28507,13 +28842,14 @@
         "eur": null,
         "usd": null,
         "eth": null,
+        "eurNormalized": null,
         "referenceCurrency": null,
         "seasonYear": null,
         "type": null,
         "cardSlug": null,
         "offerEndDate": null
       },
-      "updated_at": "2026-05-27T18:08:22.107489"
+      "updated_at": "2026-05-29T12:01:56.245803"
     }
   ]
 }
