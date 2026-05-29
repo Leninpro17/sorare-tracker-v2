@@ -1,6 +1,6 @@
 # Sorare Report - Jupiler Pro League 2025
 
-Generated at: `2026-05-28T22:53:32.451779`
+Generated at: `2026-05-29T09:27:56.999343`
 
 ## Summary
 
