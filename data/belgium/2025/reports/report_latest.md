@@ -1,6 +1,6 @@
 # Sorare Report - Jupiler Pro League 2025
 
-Generated at: `2026-05-29T12:20:29.300026`
+Generated at: `2026-05-29T14:18:49.369288`
 
 ## Summary
 
@@ -21,226 +21,226 @@ Generated at: `2026-05-29T12:20:29.300026`
 
 | # | Player | Club | Pos | Age | L10 | AA | Starter | Floor Proj | Base Proj | Ceiling Proj | Spike | Risk | Limited Floor | Type | Score |
 |---|--------|------|-----|-----|-----|----|---------|------------|-----------|--------------|-------|------|---------------|------|-------|
-| 1 | Geoffrey Kondo | Cercle Brugge KSV | Defender | 24 | 51.0 | 16.21 | 90.0% | 45.4 | 48.9 | 70.3 | 67.1 | LOW | €0.78 | IN_SEASON | 90.0 |
-| 2 | Hans Vanaken | Club Brugge KV | Midfielder | 33 | 67.0 | 22.93 | 90.0% | 55.8 | 61.2 | 88.8 | 85.5 | LOW | €7.89 | IN_SEASON | 90.0 |
-| 3 | Brandon Mechele | Club Brugge KV | Defender | 33 | 58.0 | 20.29 | 100.0% | 51.4 | 55.4 | 76.9 | 70.1 | LOW | €4.11 | IN_SEASON | 90.0 |
-| 4 | Joel Ordoñez | Club Brugge KV | Defender | 22 | 49.0 | 11.38 | 100.0% | 42.1 | 44.8 | 57.2 | 58.1 | LOW | €8.4 | IN_SEASON | 90.0 |
-| 5 | Joaquin Seys | Club Brugge KV | Defender | 21 | 54.0 | 11.09 | 100.0% | 46.3 | 51.4 | 67.9 | 65.9 | LOW | €3.0 | IN_SEASON | 90.0 |
-| 6 | Christos Tzolis | Club Brugge KV | Forward | 24 | 89.0 | 26.28 | 100.0% | 79.8 | 88.6 | 104.6 | 97.0 | LOW | - | IN_SEASON | 90.0 |
-| 7 | Carlos Forbs | Club Brugge KV | Forward | 22 | 60.0 | 12.03 | 100.0% | 51.7 | 60.7 | 92.8 | 89.7 | LOW | €7.28 | IN_SEASON | 90.0 |
-| 8 | Aleksandar Stanković | Club Brugge KV | Midfielder | 20 | 51.0 | 11.34 | 90.0% | 43.0 | 47.4 | 61.5 | 65.3 | LOW | €7.8 | IN_SEASON | 90.0 |
-| 9 | Tibe De Vlieger | KAA Gent | Midfielder | 20 | 57.0 | 24.12 | 90.0% | 49.2 | 54.7 | 75.5 | 73.8 | LOW | €3.49 | IN_SEASON | 90.0 |
-| 10 | Siebe Van der Heyden | KAA Gent | Defender | 27 | 49.0 | 12.6 | 90.0% | 40.6 | 44.5 | 58.9 | 59.2 | LOW | €0.9 | IN_SEASON | 90.0 |
-| 11 | Michał Skóraś | KAA Gent | Forward | 26 | 50.0 | 12.22 | 90.0% | 47.1 | 49.1 | 70.2 | 70.9 | LOW | €0.85 | IN_SEASON | 90.0 |
-| 12 | Bryan Heynen | KRC Genk | Midfielder | 29 | 51.0 | 16.04 | 100.0% | 47.2 | 49.4 | 54.8 | 58.6 | LOW | €1.85 | IN_SEASON | 90.0 |
-| 13 | Zakaria El Ouahdi | KRC Genk | Midfielder | 24 | 59.0 | 18.44 | 100.0% | 51.5 | 54.6 | 86.3 | 84.2 | LOW | €4.48 | IN_SEASON | 90.0 |
-| 14 | Matte Smets | KRC Genk | Defender | 22 | 60.0 | 26.5 | 90.0% | 55.4 | 56.8 | 78.6 | 70.6 | LOW | €3.38 | IN_SEASON | 90.0 |
-| 15 | Lucca Kiaba Mounganga | KRC Genk | Goalkeeper | 17 | 57.0 | 11.35 | 100.0% | 53.2 | 60.7 | 85.5 | 76.5 | LOW | €18.0 | IN_SEASON | 90.0 |
+| 1 | Christos Tzolis | Club Brugge KV | Forward | 24 | 89.0 | 26.28 | 100.0% | 79.8 | 88.6 | 104.6 | 97.0 | LOW | - | IN_SEASON | 97.7 |
+| 2 | Visar Musliu | Sint-Truidense VV | Defender | 31 | 61.0 | 23.71 | 90.0% | 53.2 | 57.5 | 81.0 | 73.4 | LOW | €0.94 | IN_SEASON | 97.1 |
+| 3 | Daam Foulon | Royal Antwerp FC | Defender | 27 | 63.0 | 21.16 | 90.0% | 49.7 | 56.7 | 94.8 | 85.2 | LOW | €0.54 | IN_SEASON | 97.1 |
+| 4 | Antoine Bernier | Royal Charleroi S.C. | Forward | 28 | 53.0 | 25.88 | 80.0% | 49.6 | 48.5 | 92.7 | 90.9 | LOW | €0.53 | IN_SEASON | 97.1 |
+| 5 | Aiham Ousou | Royal Charleroi S.C. | Defender | 26 | 58.0 | 20.75 | 100.0% | 50.2 | 56.2 | 83.8 | 76.2 | LOW | €1.15 | IN_SEASON | 96.7 |
+| 6 | Ross Sykes | Royal Union Saint-Gilloise | Defender | 27 | 63.0 | 20.56 | 90.0% | 52.6 | 56.1 | 89.8 | 80.4 | LOW | €2.55 | IN_SEASON | 96.7 |
+| 7 | Junya Ito | KRC Genk | Forward | 33 | 65.0 | 18.6 | 90.0% | 55.4 | 64.9 | 91.3 | 87.2 | LOW | €4.5 | IN_SEASON | 96.6 |
+| 8 | Jeppe Erenbjerg | SV Zulte-Waregem | Forward | 26 | 66.0 | 14.48 | 80.0% | 54.3 | 63.9 | 89.9 | 87.1 | LOW | €1.79 | IN_SEASON | 96.6 |
+| 9 | Rihito Yamamoto | Sint-Truidense VV | Midfielder | 24 | 58.0 | 19.2 | 90.0% | 50.6 | 58.2 | 80.1 | 79.2 | LOW | €1.72 | IN_SEASON | 96.6 |
+| 10 | Matte Smets | KRC Genk | Defender | 22 | 60.0 | 26.5 | 90.0% | 55.4 | 56.8 | 78.6 | 70.6 | LOW | €3.38 | IN_SEASON | 96.6 |
+| 11 | Ibe Hautekiet | Standard de Liège | Defender | 24 | 51.0 | 17.94 | 100.0% | 44.4 | 51.1 | 77.3 | 70.3 | LOW | €0.95 | IN_SEASON | 96.6 |
+| 12 | Hans Vanaken | Club Brugge KV | Midfielder | 33 | 67.0 | 22.93 | 90.0% | 55.8 | 61.2 | 88.8 | 85.5 | LOW | €7.89 | IN_SEASON | 96.5 |
+| 13 | David Bates | Standard de Liège | Defender | 29 | 58.0 | 12.41 | 90.0% | 46.1 | 53.5 | 89.7 | 82.2 | LOW | €0.9 | IN_SEASON | 96.5 |
+| 14 | Shogo Taniguchi | Sint-Truidense VV | Defender | 34 | 58.0 | 25.08 | 80.0% | 50.3 | 52.3 | 73.9 | 69.2 | LOW | €2.53 | IN_SEASON | 96.5 |
+| 15 | Myron van Brederode | YR KV Mechelen | Forward | 22 | 57.0 | 13.17 | 100.0% | 52.6 | 58.7 | 75.3 | 75.1 | LOW | €2.0 | IN_SEASON | 96.4 |
 
 
 ## 💎 TOP AA VALUE
 
 | # | Player | Club | Pos | Age | L10 | AA | Starter | Floor Proj | Base Proj | Ceiling Proj | Spike | Risk | Limited Floor | Type | Score |
 |---|--------|------|-----|-----|-----|----|---------|------------|-----------|--------------|-------|------|---------------|------|-------|
-| 1 | Geoffrey Kondo | Cercle Brugge KSV | Defender | 24 | 51.0 | 16.21 | 90.0% | 45.4 | 48.9 | 70.3 | 67.1 | LOW | €0.78 | IN_SEASON | 90.0 |
-| 2 | Gauthier Gallon | F.C.V. Dender E.H. | Goalkeeper | 33 | 55.0 | 15.0 | 70.0% | 43.2 | 46.7 | 87.3 | 80.1 | MEDIUM | €0.49 | IN_SEASON | 90.0 |
-| 3 | Michał Skóraś | KAA Gent | Forward | 26 | 50.0 | 12.22 | 90.0% | 47.1 | 49.1 | 70.2 | 70.9 | LOW | €0.85 | IN_SEASON | 90.0 |
-| 4 | Arthur Piedfort | KVC Westerlo | Midfielder | 21 | 53.0 | 14.83 | 90.0% | 44.5 | 49.7 | 63.9 | 66.5 | LOW | €0.68 | IN_SEASON | 90.0 |
-| 5 | Emin Bayram | KVC Westerlo | Defender | 23 | 55.0 | 21.44 | 90.0% | 45.5 | 51.6 | 83.3 | 75.9 | MEDIUM | €0.68 | IN_SEASON | 90.0 |
-| 6 | Dennis Praet | Royal Antwerp FC | Midfielder | 32 | 53.0 | 15.07 | 90.0% | 44.6 | 46.7 | 61.0 | 63.9 | LOW | €0.59 | IN_SEASON | 90.0 |
-| 7 | Daam Foulon | Royal Antwerp FC | Defender | 27 | 63.0 | 21.16 | 90.0% | 49.7 | 56.7 | 94.8 | 85.2 | LOW | €0.54 | IN_SEASON | 90.0 |
-| 8 | Antoine Bernier | Royal Charleroi S.C. | Forward | 28 | 53.0 | 25.88 | 80.0% | 49.6 | 48.5 | 92.7 | 90.9 | LOW | €0.53 | IN_SEASON | 90.0 |
-| 9 | Visar Musliu | Sint-Truidense VV | Defender | 31 | 61.0 | 23.71 | 90.0% | 53.2 | 57.5 | 81.0 | 73.4 | LOW | €0.94 | IN_SEASON | 90.0 |
-| 10 | Ibe Hautekiet | Standard de Liège | Defender | 24 | 51.0 | 17.94 | 100.0% | 44.4 | 51.1 | 77.3 | 70.3 | LOW | €0.95 | IN_SEASON | 90.0 |
-| 11 | David Bates | Standard de Liège | Defender | 29 | 58.0 | 12.41 | 90.0% | 46.1 | 53.5 | 89.7 | 82.2 | LOW | €0.9 | IN_SEASON | 90.0 |
-| 12 | Valy Konaté | Cercle Brugge KSV | Defender | 19 | 59.0 | 21.7 | 90.0% | 48.4 | 55.9 | 90.3 | 80.2 | MEDIUM | €1.39 | IN_SEASON | 85.0 |
-| 13 | Davy Roef | KAA Gent | Goalkeeper | 32 | 55.0 | 12.15 | 100.0% | 49.2 | 54.1 | 91.6 | 81.1 | MEDIUM | €2.95 | IN_SEASON | 85.0 |
-| 14 | Bryan Heynen | KRC Genk | Midfielder | 29 | 51.0 | 16.04 | 100.0% | 47.2 | 49.4 | 54.8 | 58.6 | LOW | €1.85 | IN_SEASON | 85.0 |
-| 15 | Doğucan Haspolat | KVC Westerlo | Midfielder | 26 | 53.0 | 15.01 | 90.0% | 46.3 | 51.3 | 70.0 | 70.2 | LOW | €1.2 | IN_SEASON | 85.0 |
+| 1 | Visar Musliu | Sint-Truidense VV | Defender | 31 | 61.0 | 23.71 | 90.0% | 53.2 | 57.5 | 81.0 | 73.4 | LOW | €0.94 | IN_SEASON | 97.1 |
+| 2 | Daam Foulon | Royal Antwerp FC | Defender | 27 | 63.0 | 21.16 | 90.0% | 49.7 | 56.7 | 94.8 | 85.2 | LOW | €0.54 | IN_SEASON | 97.1 |
+| 3 | Antoine Bernier | Royal Charleroi S.C. | Forward | 28 | 53.0 | 25.88 | 80.0% | 49.6 | 48.5 | 92.7 | 90.9 | LOW | €0.53 | IN_SEASON | 97.1 |
+| 4 | Ibe Hautekiet | Standard de Liège | Defender | 24 | 51.0 | 17.94 | 100.0% | 44.4 | 51.1 | 77.3 | 70.3 | LOW | €0.95 | IN_SEASON | 96.6 |
+| 5 | David Bates | Standard de Liège | Defender | 29 | 58.0 | 12.41 | 90.0% | 46.1 | 53.5 | 89.7 | 82.2 | LOW | €0.9 | IN_SEASON | 96.5 |
+| 6 | Geoffrey Kondo | Cercle Brugge KSV | Defender | 24 | 51.0 | 16.21 | 90.0% | 45.4 | 48.9 | 70.3 | 67.1 | LOW | €0.78 | IN_SEASON | 96.3 |
+| 7 | Emin Bayram | KVC Westerlo | Defender | 23 | 55.0 | 21.44 | 90.0% | 45.5 | 51.6 | 83.3 | 75.9 | MEDIUM | €0.68 | IN_SEASON | 96.2 |
+| 8 | Michał Skóraś | KAA Gent | Forward | 26 | 50.0 | 12.22 | 90.0% | 47.1 | 49.1 | 70.2 | 70.9 | LOW | €0.85 | IN_SEASON | 96.2 |
+| 9 | Arthur Piedfort | KVC Westerlo | Midfielder | 21 | 53.0 | 14.83 | 90.0% | 44.5 | 49.7 | 63.9 | 66.5 | LOW | €0.68 | IN_SEASON | 96.1 |
+| 10 | Dennis Praet | Royal Antwerp FC | Midfielder | 32 | 53.0 | 15.07 | 90.0% | 44.6 | 46.7 | 61.0 | 63.9 | LOW | €0.59 | IN_SEASON | 96.1 |
+| 11 | Gauthier Gallon | F.C.V. Dender E.H. | Goalkeeper | 33 | 55.0 | 15.0 | 70.0% | 43.2 | 46.7 | 87.3 | 80.1 | MEDIUM | €0.49 | IN_SEASON | 95.8 |
+| 12 | Aiham Ousou | Royal Charleroi S.C. | Defender | 26 | 58.0 | 20.75 | 100.0% | 50.2 | 56.2 | 83.8 | 76.2 | LOW | €1.15 | IN_SEASON | 91.7 |
+| 13 | Ross Sykes | Royal Union Saint-Gilloise | Defender | 27 | 63.0 | 20.56 | 90.0% | 52.6 | 56.1 | 89.8 | 80.4 | LOW | €2.55 | IN_SEASON | 91.7 |
+| 14 | Jeppe Erenbjerg | SV Zulte-Waregem | Forward | 26 | 66.0 | 14.48 | 80.0% | 54.3 | 63.9 | 89.9 | 87.1 | LOW | €1.79 | IN_SEASON | 91.6 |
+| 15 | Rihito Yamamoto | Sint-Truidense VV | Midfielder | 24 | 58.0 | 19.2 | 90.0% | 50.6 | 58.2 | 80.1 | 79.2 | LOW | €1.72 | IN_SEASON | 91.6 |
 
 
 ## 🟢 TOP U23 WATCH
 
 | # | Player | Club | Pos | Age | L10 | AA | Starter | Floor Proj | Base Proj | Ceiling Proj | Spike | Risk | Limited Floor | Type | Score |
 |---|--------|------|-----|-----|-----|----|---------|------------|-----------|--------------|-------|------|---------------|------|-------|
-| 1 | Emmanuel Kakou | Cercle Brugge KSV | Defender | 20 | 54.0 | 13.97 | 80.0% | 41.3 | 43.2 | 66.7 | 65.4 | MEDIUM | €1.0 | IN_SEASON | 90.0 |
-| 2 | Flávio Nazinho | Cercle Brugge KSV | Defender | 22 | 57.0 | 7.19 | 70.0% | 35.4 | 41.2 | 87.1 | 82.0 | MEDIUM | €2.0 | IN_SEASON | 90.0 |
-| 3 | Valy Konaté | Cercle Brugge KSV | Defender | 19 | 59.0 | 21.7 | 90.0% | 48.4 | 55.9 | 90.3 | 80.2 | MEDIUM | €1.39 | IN_SEASON | 90.0 |
-| 4 | Edan Diop | Cercle Brugge KSV | Midfielder | 21 | 61.0 | 8.74 | 80.0% | 42.9 | 49.3 | 80.2 | 82.8 | MEDIUM | €1.28 | IN_SEASON | 90.0 |
-| 5 | Geoffrey Kondo | Cercle Brugge KSV | Defender | 24 | 51.0 | 16.21 | 90.0% | 45.4 | 48.9 | 70.3 | 67.1 | LOW | €0.78 | IN_SEASON | 90.0 |
-| 6 | Joaquin Seys | Club Brugge KV | Defender | 21 | 54.0 | 11.09 | 100.0% | 46.3 | 51.4 | 67.9 | 65.9 | LOW | €3.0 | IN_SEASON | 90.0 |
-| 7 | Hugo Siquet | Club Brugge KV | Defender | 23 | 57.0 | 19.95 | 70.0% | 38.9 | 44.9 | 83.4 | 78.1 | MEDIUM | €1.1 | IN_SEASON | 90.0 |
-| 8 | Noah Mbamba | F.C.V. Dender E.H. | Midfielder | 21 | 55.0 | 13.81 | 70.0% | 37.1 | 41.5 | 71.1 | 74.5 | MEDIUM | €0.9 | IN_SEASON | 90.0 |
-| 9 | Tibe De Vlieger | KAA Gent | Midfielder | 20 | 57.0 | 24.12 | 90.0% | 49.2 | 54.7 | 75.5 | 73.8 | LOW | €3.49 | IN_SEASON | 90.0 |
-| 10 | Zakaria El Ouahdi | KRC Genk | Midfielder | 24 | 59.0 | 18.44 | 100.0% | 51.5 | 54.6 | 86.3 | 84.2 | LOW | €4.48 | IN_SEASON | 90.0 |
-| 11 | Matte Smets | KRC Genk | Defender | 22 | 60.0 | 26.5 | 90.0% | 55.4 | 56.8 | 78.6 | 70.6 | LOW | €3.38 | IN_SEASON | 90.0 |
-| 12 | Arthur Piedfort | KVC Westerlo | Midfielder | 21 | 53.0 | 14.83 | 90.0% | 44.5 | 49.7 | 63.9 | 66.5 | LOW | €0.68 | IN_SEASON | 90.0 |
-| 13 | Josimar Alcócer | KVC Westerlo | Forward | 21 | 44.0 | 7.47 | 90.0% | 40.1 | 42.9 | 64.1 | 67.9 | LOW | €0.52 | IN_SEASON | 90.0 |
-| 14 | Emin Bayram | KVC Westerlo | Defender | 23 | 55.0 | 21.44 | 90.0% | 45.5 | 51.6 | 83.3 | 75.9 | MEDIUM | €0.68 | IN_SEASON | 90.0 |
-| 15 | Isa Sakamoto | KVC Westerlo | Forward | 22 | 48.0 | 6.86 | 80.0% | 38.3 | 43.0 | 68.2 | 70.5 | MEDIUM | €0.99 | IN_SEASON | 90.0 |
+| 1 | Malick Mbaye | SV Zulte-Waregem | Forward | 22 | 41.0 | 25.88 | 80.0% | 43.2 | 43.1 | 91.9 | 90.9 | LOW | €0.58 | IN_SEASON | 97.0 |
+| 2 | Rihito Yamamoto | Sint-Truidense VV | Midfielder | 24 | 58.0 | 19.2 | 90.0% | 50.6 | 58.2 | 80.1 | 79.2 | LOW | €1.72 | IN_SEASON | 96.6 |
+| 3 | Matte Smets | KRC Genk | Defender | 22 | 60.0 | 26.5 | 90.0% | 55.4 | 56.8 | 78.6 | 70.6 | LOW | €3.38 | IN_SEASON | 96.6 |
+| 4 | Ibe Hautekiet | Standard de Liège | Defender | 24 | 51.0 | 17.94 | 100.0% | 44.4 | 51.1 | 77.3 | 70.3 | LOW | €0.95 | IN_SEASON | 96.6 |
+| 5 | Myron van Brederode | YR KV Mechelen | Forward | 22 | 57.0 | 13.17 | 100.0% | 52.6 | 58.7 | 75.3 | 75.1 | LOW | €2.0 | IN_SEASON | 96.4 |
+| 6 | Zakaria El Ouahdi | KRC Genk | Midfielder | 24 | 59.0 | 18.44 | 100.0% | 51.5 | 54.6 | 86.3 | 84.2 | LOW | €4.48 | IN_SEASON | 96.4 |
+| 7 | Anan Khalaili | Royal Union Saint-Gilloise | Forward | 21 | 61.0 | 15.36 | 100.0% | 53.8 | 59.7 | 83.1 | 80.5 | LOW | €4.9 | IN_SEASON | 96.3 |
+| 8 | Tibe De Vlieger | KAA Gent | Midfielder | 20 | 57.0 | 24.12 | 90.0% | 49.2 | 54.7 | 75.5 | 73.8 | LOW | €3.49 | IN_SEASON | 96.3 |
+| 9 | Geoffrey Kondo | Cercle Brugge KSV | Defender | 24 | 51.0 | 16.21 | 90.0% | 45.4 | 48.9 | 70.3 | 67.1 | LOW | €0.78 | IN_SEASON | 96.3 |
+| 10 | Valy Konaté | Cercle Brugge KSV | Defender | 19 | 59.0 | 21.7 | 90.0% | 48.4 | 55.9 | 90.3 | 80.2 | MEDIUM | €1.39 | IN_SEASON | 96.2 |
+| 11 | Anosike Ementa | SV Zulte-Waregem | Forward | 24 | 54.0 | 9.75 | 90.0% | 46.9 | 55.5 | 88.7 | 86.0 | LOW | €1.2 | IN_SEASON | 96.2 |
+| 12 | Emin Bayram | KVC Westerlo | Defender | 23 | 55.0 | 21.44 | 90.0% | 45.5 | 51.6 | 83.3 | 75.9 | MEDIUM | €0.68 | IN_SEASON | 96.2 |
+| 13 | Arthur Piedfort | KVC Westerlo | Midfielder | 21 | 53.0 | 14.83 | 90.0% | 44.5 | 49.7 | 63.9 | 66.5 | LOW | €0.68 | IN_SEASON | 96.1 |
+| 14 | Yllan Okou | RAAL La Louvière | Defender | 23 | 47.0 | 14.46 | 100.0% | 43.4 | 44.6 | 68.3 | 65.2 | LOW | €0.9 | IN_SEASON | 96.1 |
+| 15 | Redouane Halhal | YR KV Mechelen | Defender | 23 | 48.0 | 14.79 | 90.0% | 43.0 | 43.6 | 63.9 | 61.3 | LOW | €0.85 | IN_SEASON | 96.0 |
 
 
 ## 🧱 TOP SAFE FLOOR
 
 | # | Player | Club | Pos | Age | L10 | AA | Starter | Floor Proj | Base Proj | Ceiling Proj | Spike | Risk | Limited Floor | Type | Score |
 |---|--------|------|-----|-----|-----|----|---------|------------|-----------|--------------|-------|------|---------------|------|-------|
-| 1 | Geoffrey Kondo | Cercle Brugge KSV | Defender | 24 | 51.0 | 16.21 | 90.0% | 45.4 | 48.9 | 70.3 | 67.1 | LOW | €0.78 | IN_SEASON | 90.0 |
-| 2 | Hans Vanaken | Club Brugge KV | Midfielder | 33 | 67.0 | 22.93 | 90.0% | 55.8 | 61.2 | 88.8 | 85.5 | LOW | €7.89 | IN_SEASON | 90.0 |
-| 3 | Brandon Mechele | Club Brugge KV | Defender | 33 | 58.0 | 20.29 | 100.0% | 51.4 | 55.4 | 76.9 | 70.1 | LOW | €4.11 | IN_SEASON | 90.0 |
-| 4 | Joaquin Seys | Club Brugge KV | Defender | 21 | 54.0 | 11.09 | 100.0% | 46.3 | 51.4 | 67.9 | 65.9 | LOW | €3.0 | IN_SEASON | 90.0 |
-| 5 | Christos Tzolis | Club Brugge KV | Forward | 24 | 89.0 | 26.28 | 100.0% | 79.8 | 88.6 | 104.6 | 97.0 | LOW | - | IN_SEASON | 90.0 |
-| 6 | Carlos Forbs | Club Brugge KV | Forward | 22 | 60.0 | 12.03 | 100.0% | 51.7 | 60.7 | 92.8 | 89.7 | LOW | €7.28 | IN_SEASON | 90.0 |
-| 7 | Aleksandar Stanković | Club Brugge KV | Midfielder | 20 | 51.0 | 11.34 | 90.0% | 43.0 | 47.4 | 61.5 | 65.3 | LOW | €7.8 | IN_SEASON | 90.0 |
-| 8 | Tibe De Vlieger | KAA Gent | Midfielder | 20 | 57.0 | 24.12 | 90.0% | 49.2 | 54.7 | 75.5 | 73.8 | LOW | €3.49 | IN_SEASON | 90.0 |
-| 9 | Michał Skóraś | KAA Gent | Forward | 26 | 50.0 | 12.22 | 90.0% | 47.1 | 49.1 | 70.2 | 70.9 | LOW | €0.85 | IN_SEASON | 90.0 |
-| 10 | Bryan Heynen | KRC Genk | Midfielder | 29 | 51.0 | 16.04 | 100.0% | 47.2 | 49.4 | 54.8 | 58.6 | LOW | €1.85 | IN_SEASON | 90.0 |
-| 11 | Zakaria El Ouahdi | KRC Genk | Midfielder | 24 | 59.0 | 18.44 | 100.0% | 51.5 | 54.6 | 86.3 | 84.2 | LOW | €4.48 | IN_SEASON | 90.0 |
-| 12 | Matte Smets | KRC Genk | Defender | 22 | 60.0 | 26.5 | 90.0% | 55.4 | 56.8 | 78.6 | 70.6 | LOW | €3.38 | IN_SEASON | 90.0 |
-| 13 | Junya Ito | KRC Genk | Forward | 33 | 65.0 | 18.6 | 90.0% | 55.4 | 64.9 | 91.3 | 87.2 | LOW | €4.5 | IN_SEASON | 90.0 |
-| 14 | Arthur Piedfort | KVC Westerlo | Midfielder | 21 | 53.0 | 14.83 | 90.0% | 44.5 | 49.7 | 63.9 | 66.5 | LOW | €0.68 | IN_SEASON | 90.0 |
-| 15 | Doğucan Haspolat | KVC Westerlo | Midfielder | 26 | 53.0 | 15.01 | 90.0% | 46.3 | 51.3 | 70.0 | 70.2 | LOW | €1.2 | IN_SEASON | 90.0 |
+| 1 | Christos Tzolis | Club Brugge KV | Forward | 24 | 89.0 | 26.28 | 100.0% | 79.8 | 88.6 | 104.6 | 97.0 | LOW | - | IN_SEASON | 97.7 |
+| 2 | Visar Musliu | Sint-Truidense VV | Defender | 31 | 61.0 | 23.71 | 90.0% | 53.2 | 57.5 | 81.0 | 73.4 | LOW | €0.94 | IN_SEASON | 97.1 |
+| 3 | Antoine Bernier | Royal Charleroi S.C. | Forward | 28 | 53.0 | 25.88 | 80.0% | 49.6 | 48.5 | 92.7 | 90.9 | LOW | €0.53 | IN_SEASON | 97.1 |
+| 4 | Aiham Ousou | Royal Charleroi S.C. | Defender | 26 | 58.0 | 20.75 | 100.0% | 50.2 | 56.2 | 83.8 | 76.2 | LOW | €1.15 | IN_SEASON | 96.7 |
+| 5 | Junya Ito | KRC Genk | Forward | 33 | 65.0 | 18.6 | 90.0% | 55.4 | 64.9 | 91.3 | 87.2 | LOW | €4.5 | IN_SEASON | 96.6 |
+| 6 | Jeppe Erenbjerg | SV Zulte-Waregem | Forward | 26 | 66.0 | 14.48 | 80.0% | 54.3 | 63.9 | 89.9 | 87.1 | LOW | €1.79 | IN_SEASON | 96.6 |
+| 7 | Rihito Yamamoto | Sint-Truidense VV | Midfielder | 24 | 58.0 | 19.2 | 90.0% | 50.6 | 58.2 | 80.1 | 79.2 | LOW | €1.72 | IN_SEASON | 96.6 |
+| 8 | Matte Smets | KRC Genk | Defender | 22 | 60.0 | 26.5 | 90.0% | 55.4 | 56.8 | 78.6 | 70.6 | LOW | €3.38 | IN_SEASON | 96.6 |
+| 9 | Hans Vanaken | Club Brugge KV | Midfielder | 33 | 67.0 | 22.93 | 90.0% | 55.8 | 61.2 | 88.8 | 85.5 | LOW | €7.89 | IN_SEASON | 96.5 |
+| 10 | Shogo Taniguchi | Sint-Truidense VV | Defender | 34 | 58.0 | 25.08 | 80.0% | 50.3 | 52.3 | 73.9 | 69.2 | LOW | €2.53 | IN_SEASON | 96.5 |
+| 11 | Myron van Brederode | YR KV Mechelen | Forward | 22 | 57.0 | 13.17 | 100.0% | 52.6 | 58.7 | 75.3 | 75.1 | LOW | €2.0 | IN_SEASON | 96.4 |
+| 12 | Zakaria El Ouahdi | KRC Genk | Midfielder | 24 | 59.0 | 18.44 | 100.0% | 51.5 | 54.6 | 86.3 | 84.2 | LOW | €4.48 | IN_SEASON | 96.4 |
+| 13 | Anan Khalaili | Royal Union Saint-Gilloise | Forward | 21 | 61.0 | 15.36 | 100.0% | 53.8 | 59.7 | 83.1 | 80.5 | LOW | €4.9 | IN_SEASON | 96.3 |
+| 14 | Brandon Mechele | Club Brugge KV | Defender | 33 | 58.0 | 20.29 | 100.0% | 51.4 | 55.4 | 76.9 | 70.1 | LOW | €4.11 | IN_SEASON | 96.3 |
+| 15 | Tibe De Vlieger | KAA Gent | Midfielder | 20 | 57.0 | 24.12 | 90.0% | 49.2 | 54.7 | 75.5 | 73.8 | LOW | €3.49 | IN_SEASON | 96.3 |
 
 
 ## 🚀 TOP CEILING VALUE
 
 | # | Player | Club | Pos | Age | L10 | AA | Starter | Floor Proj | Base Proj | Ceiling Proj | Spike | Risk | Limited Floor | Type | Score |
 |---|--------|------|-----|-----|-----|----|---------|------------|-----------|--------------|-------|------|---------------|------|-------|
-| 1 | Warleson | Cercle Brugge KSV | Goalkeeper | 29 | 50.0 | 7.62 | 90.0% | 44.5 | 49.0 | 78.4 | 72.1 | MEDIUM | €1.76 | IN_SEASON | 90.0 |
-| 2 | Emmanuel Kakou | Cercle Brugge KSV | Defender | 20 | 54.0 | 13.97 | 80.0% | 41.3 | 43.2 | 66.7 | 65.4 | MEDIUM | €1.0 | IN_SEASON | 90.0 |
-| 3 | Flávio Nazinho | Cercle Brugge KSV | Defender | 22 | 57.0 | 7.19 | 70.0% | 35.4 | 41.2 | 87.1 | 82.0 | MEDIUM | €2.0 | IN_SEASON | 90.0 |
-| 4 | Gary Magnée | Cercle Brugge KSV | Defender | 26 | 53.0 | 11.18 | 70.0% | 36.6 | 38.7 | 75.0 | 72.9 | MEDIUM | €1.14 | IN_SEASON | 90.0 |
-| 5 | Valy Konaté | Cercle Brugge KSV | Defender | 19 | 59.0 | 21.7 | 90.0% | 48.4 | 55.9 | 90.3 | 80.2 | MEDIUM | €1.39 | IN_SEASON | 90.0 |
-| 6 | Edan Diop | Cercle Brugge KSV | Midfielder | 21 | 61.0 | 8.74 | 80.0% | 42.9 | 49.3 | 80.2 | 82.8 | MEDIUM | €1.28 | IN_SEASON | 90.0 |
-| 7 | Oluwaseun Adewumi | Cercle Brugge KSV | Forward | 21 | 39.0 | 25.88 | 80.0% | 41.1 | 38.7 | 91.1 | 90.9 | MEDIUM | €0.51 | IN_SEASON | 90.0 |
-| 8 | Oumar Diakité | Cercle Brugge KSV | Forward | 22 | 46.0 | 2.67 | 60.0% | 32.2 | 38.4 | 68.7 | 72.0 | MEDIUM | €1.85 | IN_SEASON | 90.0 |
-| 9 | Dante Vanzeir | Cercle Brugge KSV | Forward | 28 | 50.0 | 4.75 | 80.0% | 38.3 | 45.7 | 69.1 | 71.4 | MEDIUM | €0.53 | IN_SEASON | 90.0 |
-| 10 | Geoffrey Kondo | Cercle Brugge KSV | Defender | 24 | 51.0 | 16.21 | 90.0% | 45.4 | 48.9 | 70.3 | 67.1 | LOW | €0.78 | IN_SEASON | 90.0 |
-| 11 | Hugo Vetlesen | Club Brugge KV | Midfielder | 26 | 58.0 | 6.67 | 70.0% | 34.7 | 41.1 | 72.1 | 78.4 | MEDIUM | €1.0 | IN_SEASON | 90.0 |
-| 12 | Hugo Siquet | Club Brugge KV | Defender | 23 | 57.0 | 19.95 | 70.0% | 38.9 | 44.9 | 83.4 | 78.1 | MEDIUM | €1.1 | IN_SEASON | 90.0 |
-| 13 | Bryan Goncalves | F.C.V. Dender E.H. | Defender | 29 | 49.0 | 11.86 | 100.0% | 41.7 | 45.2 | 82.0 | 77.1 | MEDIUM | €0.51 | IN_SEASON | 90.0 |
-| 14 | Noah Mbamba | F.C.V. Dender E.H. | Midfielder | 21 | 55.0 | 13.81 | 70.0% | 37.1 | 41.5 | 71.1 | 74.5 | MEDIUM | €0.9 | IN_SEASON | 90.0 |
-| 15 | Fabrice Sambu | F.C.V. Dender E.H. | Defender | 29 | 48.0 | 8.83 | 90.0% | 38.9 | 40.0 | 78.1 | 74.8 | LOW | €0.47 | IN_SEASON | 90.0 |
+| 1 | Visar Musliu | Sint-Truidense VV | Defender | 31 | 61.0 | 23.71 | 90.0% | 53.2 | 57.5 | 81.0 | 73.4 | LOW | €0.94 | IN_SEASON | 97.1 |
+| 2 | Daam Foulon | Royal Antwerp FC | Defender | 27 | 63.0 | 21.16 | 90.0% | 49.7 | 56.7 | 94.8 | 85.2 | LOW | €0.54 | IN_SEASON | 97.1 |
+| 3 | Antoine Bernier | Royal Charleroi S.C. | Forward | 28 | 53.0 | 25.88 | 80.0% | 49.6 | 48.5 | 92.7 | 90.9 | LOW | €0.53 | IN_SEASON | 97.1 |
+| 4 | Malick Mbaye | SV Zulte-Waregem | Forward | 22 | 41.0 | 25.88 | 80.0% | 43.2 | 43.1 | 91.9 | 90.9 | LOW | €0.58 | IN_SEASON | 97.0 |
+| 5 | Aiham Ousou | Royal Charleroi S.C. | Defender | 26 | 58.0 | 20.75 | 100.0% | 50.2 | 56.2 | 83.8 | 76.2 | LOW | €1.15 | IN_SEASON | 96.7 |
+| 6 | Jeppe Erenbjerg | SV Zulte-Waregem | Forward | 26 | 66.0 | 14.48 | 80.0% | 54.3 | 63.9 | 89.9 | 87.1 | LOW | €1.79 | IN_SEASON | 96.6 |
+| 7 | Rihito Yamamoto | Sint-Truidense VV | Midfielder | 24 | 58.0 | 19.2 | 90.0% | 50.6 | 58.2 | 80.1 | 79.2 | LOW | €1.72 | IN_SEASON | 96.6 |
+| 8 | Ibe Hautekiet | Standard de Liège | Defender | 24 | 51.0 | 17.94 | 100.0% | 44.4 | 51.1 | 77.3 | 70.3 | LOW | €0.95 | IN_SEASON | 96.6 |
+| 9 | David Bates | Standard de Liège | Defender | 29 | 58.0 | 12.41 | 90.0% | 46.1 | 53.5 | 89.7 | 82.2 | LOW | €0.9 | IN_SEASON | 96.5 |
+| 10 | Myron van Brederode | YR KV Mechelen | Forward | 22 | 57.0 | 13.17 | 100.0% | 52.6 | 58.7 | 75.3 | 75.1 | LOW | €2.0 | IN_SEASON | 96.4 |
+| 11 | Rafiki Saïd | Standard de Liège | Forward | 26 | 55.0 | 12.56 | 90.0% | 46.7 | 57.6 | 90.4 | 86.9 | LOW | €1.18 | IN_SEASON | 96.4 |
+| 12 | Geoffrey Kondo | Cercle Brugge KSV | Defender | 24 | 51.0 | 16.21 | 90.0% | 45.4 | 48.9 | 70.3 | 67.1 | LOW | €0.78 | IN_SEASON | 96.3 |
+| 13 | Oluwaseun Adewumi | Cercle Brugge KSV | Forward | 21 | 39.0 | 25.88 | 80.0% | 41.1 | 38.7 | 91.1 | 90.9 | MEDIUM | €0.51 | IN_SEASON | 96.3 |
+| 14 | Valy Konaté | Cercle Brugge KSV | Defender | 19 | 59.0 | 21.7 | 90.0% | 48.4 | 55.9 | 90.3 | 80.2 | MEDIUM | €1.39 | IN_SEASON | 96.2 |
+| 15 | Anosike Ementa | SV Zulte-Waregem | Forward | 24 | 54.0 | 9.75 | 90.0% | 46.9 | 55.5 | 88.7 | 86.0 | LOW | €1.2 | IN_SEASON | 96.2 |
 
 
 ## 🎯 TOP TARGET 360 WATCH
 
 | # | Player | Club | Pos | Age | L10 | AA | Starter | Floor Proj | Base Proj | Ceiling Proj | Spike | Risk | Limited Floor | Type | Score |
 |---|--------|------|-----|-----|-----|----|---------|------------|-----------|--------------|-------|------|---------------|------|-------|
-| 1 | Warleson | Cercle Brugge KSV | Goalkeeper | 29 | 50.0 | 7.62 | 90.0% | 44.5 | 49.0 | 78.4 | 72.1 | MEDIUM | €1.76 | IN_SEASON | 90.0 |
-| 2 | Valy Konaté | Cercle Brugge KSV | Defender | 19 | 59.0 | 21.7 | 90.0% | 48.4 | 55.9 | 90.3 | 80.2 | MEDIUM | €1.39 | IN_SEASON | 90.0 |
-| 3 | Edan Diop | Cercle Brugge KSV | Midfielder | 21 | 61.0 | 8.74 | 80.0% | 42.9 | 49.3 | 80.2 | 82.8 | MEDIUM | €1.28 | IN_SEASON | 90.0 |
-| 4 | Brandon Mechele | Club Brugge KV | Defender | 33 | 58.0 | 20.29 | 100.0% | 51.4 | 55.4 | 76.9 | 70.1 | LOW | €4.11 | IN_SEASON | 90.0 |
-| 5 | Bryan Goncalves | F.C.V. Dender E.H. | Defender | 29 | 49.0 | 11.86 | 100.0% | 41.7 | 45.2 | 82.0 | 77.1 | MEDIUM | €0.51 | IN_SEASON | 90.0 |
-| 6 | Gauthier Gallon | F.C.V. Dender E.H. | Goalkeeper | 33 | 55.0 | 15.0 | 70.0% | 43.2 | 46.7 | 87.3 | 80.1 | MEDIUM | €0.49 | IN_SEASON | 90.0 |
-| 7 | Davy Roef | KAA Gent | Goalkeeper | 32 | 55.0 | 12.15 | 100.0% | 49.2 | 54.1 | 91.6 | 81.1 | MEDIUM | €2.95 | IN_SEASON | 90.0 |
-| 8 | Tibe De Vlieger | KAA Gent | Midfielder | 20 | 57.0 | 24.12 | 90.0% | 49.2 | 54.7 | 75.5 | 73.8 | LOW | €3.49 | IN_SEASON | 90.0 |
-| 9 | Michał Skóraś | KAA Gent | Forward | 26 | 50.0 | 12.22 | 90.0% | 47.1 | 49.1 | 70.2 | 70.9 | LOW | €0.85 | IN_SEASON | 90.0 |
-| 10 | Zakaria El Ouahdi | KRC Genk | Midfielder | 24 | 59.0 | 18.44 | 100.0% | 51.5 | 54.6 | 86.3 | 84.2 | LOW | €4.48 | IN_SEASON | 90.0 |
-| 11 | Matte Smets | KRC Genk | Defender | 22 | 60.0 | 26.5 | 90.0% | 55.4 | 56.8 | 78.6 | 70.6 | LOW | €3.38 | IN_SEASON | 90.0 |
-| 12 | Junya Ito | KRC Genk | Forward | 33 | 65.0 | 18.6 | 90.0% | 55.4 | 64.9 | 91.3 | 87.2 | LOW | €4.5 | IN_SEASON | 90.0 |
-| 13 | Doğucan Haspolat | KVC Westerlo | Midfielder | 26 | 53.0 | 15.01 | 90.0% | 46.3 | 51.3 | 70.0 | 70.2 | LOW | €1.2 | IN_SEASON | 90.0 |
-| 14 | Emin Bayram | KVC Westerlo | Defender | 23 | 55.0 | 21.44 | 90.0% | 45.5 | 51.6 | 83.3 | 75.9 | MEDIUM | €0.68 | IN_SEASON | 90.0 |
-| 15 | Andreas Jungdal | KVC Westerlo | Goalkeeper | 24 | 53.0 | 11.31 | 100.0% | 47.4 | 51.4 | 83.1 | 76.0 | MEDIUM | €5.0 | IN_SEASON | 90.0 |
+| 1 | Visar Musliu | Sint-Truidense VV | Defender | 31 | 61.0 | 23.71 | 90.0% | 53.2 | 57.5 | 81.0 | 73.4 | LOW | €0.94 | IN_SEASON | 97.1 |
+| 2 | Daam Foulon | Royal Antwerp FC | Defender | 27 | 63.0 | 21.16 | 90.0% | 49.7 | 56.7 | 94.8 | 85.2 | LOW | €0.54 | IN_SEASON | 97.1 |
+| 3 | Antoine Bernier | Royal Charleroi S.C. | Forward | 28 | 53.0 | 25.88 | 80.0% | 49.6 | 48.5 | 92.7 | 90.9 | LOW | €0.53 | IN_SEASON | 97.1 |
+| 4 | Aiham Ousou | Royal Charleroi S.C. | Defender | 26 | 58.0 | 20.75 | 100.0% | 50.2 | 56.2 | 83.8 | 76.2 | LOW | €1.15 | IN_SEASON | 96.7 |
+| 5 | Ross Sykes | Royal Union Saint-Gilloise | Defender | 27 | 63.0 | 20.56 | 90.0% | 52.6 | 56.1 | 89.8 | 80.4 | LOW | €2.55 | IN_SEASON | 96.7 |
+| 6 | Junya Ito | KRC Genk | Forward | 33 | 65.0 | 18.6 | 90.0% | 55.4 | 64.9 | 91.3 | 87.2 | LOW | €4.5 | IN_SEASON | 96.6 |
+| 7 | Jeppe Erenbjerg | SV Zulte-Waregem | Forward | 26 | 66.0 | 14.48 | 80.0% | 54.3 | 63.9 | 89.9 | 87.1 | LOW | €1.79 | IN_SEASON | 96.6 |
+| 8 | Rihito Yamamoto | Sint-Truidense VV | Midfielder | 24 | 58.0 | 19.2 | 90.0% | 50.6 | 58.2 | 80.1 | 79.2 | LOW | €1.72 | IN_SEASON | 96.6 |
+| 9 | Matte Smets | KRC Genk | Defender | 22 | 60.0 | 26.5 | 90.0% | 55.4 | 56.8 | 78.6 | 70.6 | LOW | €3.38 | IN_SEASON | 96.6 |
+| 10 | Ibe Hautekiet | Standard de Liège | Defender | 24 | 51.0 | 17.94 | 100.0% | 44.4 | 51.1 | 77.3 | 70.3 | LOW | €0.95 | IN_SEASON | 96.6 |
+| 11 | David Bates | Standard de Liège | Defender | 29 | 58.0 | 12.41 | 90.0% | 46.1 | 53.5 | 89.7 | 82.2 | LOW | €0.9 | IN_SEASON | 96.5 |
+| 12 | Myron van Brederode | YR KV Mechelen | Forward | 22 | 57.0 | 13.17 | 100.0% | 52.6 | 58.7 | 75.3 | 75.1 | LOW | €2.0 | IN_SEASON | 96.4 |
+| 13 | Rafiki Saïd | Standard de Liège | Forward | 26 | 55.0 | 12.56 | 90.0% | 46.7 | 57.6 | 90.4 | 86.9 | LOW | €1.18 | IN_SEASON | 96.4 |
+| 14 | Zakaria El Ouahdi | KRC Genk | Midfielder | 24 | 59.0 | 18.44 | 100.0% | 51.5 | 54.6 | 86.3 | 84.2 | LOW | €4.48 | IN_SEASON | 96.4 |
+| 15 | Kevin Mac Allister | Royal Union Saint-Gilloise | Defender | 28 | 56.0 | 22.82 | 90.0% | 48.8 | 52.1 | 77.2 | 70.0 | LOW | €2.41 | IN_SEASON | 96.4 |
 
 
 ## 🛡️ TOP LOW RISK VALUE
 
 | # | Player | Club | Pos | Age | L10 | AA | Starter | Floor Proj | Base Proj | Ceiling Proj | Spike | Risk | Limited Floor | Type | Score |
 |---|--------|------|-----|-----|-----|----|---------|------------|-----------|--------------|-------|------|---------------|------|-------|
-| 1 | Geoffrey Kondo | Cercle Brugge KSV | Defender | 24 | 51.0 | 16.21 | 90.0% | 45.4 | 48.9 | 70.3 | 67.1 | LOW | €0.78 | IN_SEASON | 90.0 |
-| 2 | Joaquin Seys | Club Brugge KV | Defender | 21 | 54.0 | 11.09 | 100.0% | 46.3 | 51.4 | 67.9 | 65.9 | LOW | €3.0 | IN_SEASON | 90.0 |
-| 3 | Michał Skóraś | KAA Gent | Forward | 26 | 50.0 | 12.22 | 90.0% | 47.1 | 49.1 | 70.2 | 70.9 | LOW | €0.85 | IN_SEASON | 90.0 |
-| 4 | Bryan Heynen | KRC Genk | Midfielder | 29 | 51.0 | 16.04 | 100.0% | 47.2 | 49.4 | 54.8 | 58.6 | LOW | €1.85 | IN_SEASON | 90.0 |
-| 5 | Arthur Piedfort | KVC Westerlo | Midfielder | 21 | 53.0 | 14.83 | 90.0% | 44.5 | 49.7 | 63.9 | 66.5 | LOW | €0.68 | IN_SEASON | 90.0 |
-| 6 | Doğucan Haspolat | KVC Westerlo | Midfielder | 26 | 53.0 | 15.01 | 90.0% | 46.3 | 51.3 | 70.0 | 70.2 | LOW | €1.2 | IN_SEASON | 90.0 |
-| 7 | Dennis Praet | Royal Antwerp FC | Midfielder | 32 | 53.0 | 15.07 | 90.0% | 44.6 | 46.7 | 61.0 | 63.9 | LOW | €0.59 | IN_SEASON | 90.0 |
-| 8 | Daam Foulon | Royal Antwerp FC | Defender | 27 | 63.0 | 21.16 | 90.0% | 49.7 | 56.7 | 94.8 | 85.2 | LOW | €0.54 | IN_SEASON | 90.0 |
-| 9 | Antoine Bernier | Royal Charleroi S.C. | Forward | 28 | 53.0 | 25.88 | 80.0% | 49.6 | 48.5 | 92.7 | 90.9 | LOW | €0.53 | IN_SEASON | 90.0 |
-| 10 | Aiham Ousou | Royal Charleroi S.C. | Defender | 26 | 58.0 | 20.75 | 100.0% | 50.2 | 56.2 | 83.8 | 76.2 | LOW | €1.15 | IN_SEASON | 90.0 |
-| 11 | Ross Sykes | Royal Union Saint-Gilloise | Defender | 27 | 63.0 | 20.56 | 90.0% | 52.6 | 56.1 | 89.8 | 80.4 | LOW | €2.55 | IN_SEASON | 90.0 |
-| 12 | Kevin Mac Allister | Royal Union Saint-Gilloise | Defender | 28 | 56.0 | 22.82 | 90.0% | 48.8 | 52.1 | 77.2 | 70.0 | LOW | €2.41 | IN_SEASON | 90.0 |
-| 13 | Adem Zorgane | Royal Union Saint-Gilloise | Midfielder | 26 | 54.0 | 13.57 | 90.0% | 44.1 | 47.7 | 73.0 | 75.2 | LOW | €1.46 | IN_SEASON | 90.0 |
-| 14 | Jeppe Erenbjerg | SV Zulte-Waregem | Forward | 26 | 66.0 | 14.48 | 80.0% | 54.3 | 63.9 | 89.9 | 87.1 | LOW | €1.79 | IN_SEASON | 90.0 |
-| 15 | Brent Gabriel | SV Zulte-Waregem | Goalkeeper | 27 | 51.0 | 10.87 | 100.0% | 47.7 | 53.3 | 77.4 | 70.0 | LOW | €1.65 | IN_SEASON | 90.0 |
+| 1 | Visar Musliu | Sint-Truidense VV | Defender | 31 | 61.0 | 23.71 | 90.0% | 53.2 | 57.5 | 81.0 | 73.4 | LOW | €0.94 | IN_SEASON | 97.1 |
+| 2 | Daam Foulon | Royal Antwerp FC | Defender | 27 | 63.0 | 21.16 | 90.0% | 49.7 | 56.7 | 94.8 | 85.2 | LOW | €0.54 | IN_SEASON | 97.1 |
+| 3 | Antoine Bernier | Royal Charleroi S.C. | Forward | 28 | 53.0 | 25.88 | 80.0% | 49.6 | 48.5 | 92.7 | 90.9 | LOW | €0.53 | IN_SEASON | 97.1 |
+| 4 | Aiham Ousou | Royal Charleroi S.C. | Defender | 26 | 58.0 | 20.75 | 100.0% | 50.2 | 56.2 | 83.8 | 76.2 | LOW | €1.15 | IN_SEASON | 96.7 |
+| 5 | Ross Sykes | Royal Union Saint-Gilloise | Defender | 27 | 63.0 | 20.56 | 90.0% | 52.6 | 56.1 | 89.8 | 80.4 | LOW | €2.55 | IN_SEASON | 96.7 |
+| 6 | Jeppe Erenbjerg | SV Zulte-Waregem | Forward | 26 | 66.0 | 14.48 | 80.0% | 54.3 | 63.9 | 89.9 | 87.1 | LOW | €1.79 | IN_SEASON | 96.6 |
+| 7 | Rihito Yamamoto | Sint-Truidense VV | Midfielder | 24 | 58.0 | 19.2 | 90.0% | 50.6 | 58.2 | 80.1 | 79.2 | LOW | €1.72 | IN_SEASON | 96.6 |
+| 8 | Ibe Hautekiet | Standard de Liège | Defender | 24 | 51.0 | 17.94 | 100.0% | 44.4 | 51.1 | 77.3 | 70.3 | LOW | €0.95 | IN_SEASON | 96.6 |
+| 9 | David Bates | Standard de Liège | Defender | 29 | 58.0 | 12.41 | 90.0% | 46.1 | 53.5 | 89.7 | 82.2 | LOW | €0.9 | IN_SEASON | 96.5 |
+| 10 | Shogo Taniguchi | Sint-Truidense VV | Defender | 34 | 58.0 | 25.08 | 80.0% | 50.3 | 52.3 | 73.9 | 69.2 | LOW | €2.53 | IN_SEASON | 96.5 |
+| 11 | Myron van Brederode | YR KV Mechelen | Forward | 22 | 57.0 | 13.17 | 100.0% | 52.6 | 58.7 | 75.3 | 75.1 | LOW | €2.0 | IN_SEASON | 96.4 |
+| 12 | Rafiki Saïd | Standard de Liège | Forward | 26 | 55.0 | 12.56 | 90.0% | 46.7 | 57.6 | 90.4 | 86.9 | LOW | €1.18 | IN_SEASON | 96.4 |
+| 13 | Kevin Mac Allister | Royal Union Saint-Gilloise | Defender | 28 | 56.0 | 22.82 | 90.0% | 48.8 | 52.1 | 77.2 | 70.0 | LOW | €2.41 | IN_SEASON | 96.4 |
+| 14 | Geoffrey Kondo | Cercle Brugge KSV | Defender | 24 | 51.0 | 16.21 | 90.0% | 45.4 | 48.9 | 70.3 | 67.1 | LOW | €0.78 | IN_SEASON | 96.3 |
+| 15 | Anosike Ementa | SV Zulte-Waregem | Forward | 24 | 54.0 | 9.75 | 90.0% | 46.9 | 55.5 | 88.7 | 86.0 | LOW | €1.2 | IN_SEASON | 96.2 |
 
 
 ## ⚡ TOP HIGH SPIKE CHEAP
 
 | # | Player | Club | Pos | Age | L10 | AA | Starter | Floor Proj | Base Proj | Ceiling Proj | Spike | Risk | Limited Floor | Type | Score |
 |---|--------|------|-----|-----|-----|----|---------|------------|-----------|--------------|-------|------|---------------|------|-------|
-| 1 | Warleson | Cercle Brugge KSV | Goalkeeper | 29 | 50.0 | 7.62 | 90.0% | 44.5 | 49.0 | 78.4 | 72.1 | MEDIUM | €1.76 | IN_SEASON | 90.0 |
-| 2 | Flávio Nazinho | Cercle Brugge KSV | Defender | 22 | 57.0 | 7.19 | 70.0% | 35.4 | 41.2 | 87.1 | 82.0 | MEDIUM | €2.0 | IN_SEASON | 90.0 |
-| 3 | Gary Magnée | Cercle Brugge KSV | Defender | 26 | 53.0 | 11.18 | 70.0% | 36.6 | 38.7 | 75.0 | 72.9 | MEDIUM | €1.14 | IN_SEASON | 90.0 |
-| 4 | Valy Konaté | Cercle Brugge KSV | Defender | 19 | 59.0 | 21.7 | 90.0% | 48.4 | 55.9 | 90.3 | 80.2 | MEDIUM | €1.39 | IN_SEASON | 90.0 |
-| 5 | Edan Diop | Cercle Brugge KSV | Midfielder | 21 | 61.0 | 8.74 | 80.0% | 42.9 | 49.3 | 80.2 | 82.8 | MEDIUM | €1.28 | IN_SEASON | 90.0 |
-| 6 | Oluwaseun Adewumi | Cercle Brugge KSV | Forward | 21 | 39.0 | 25.88 | 80.0% | 41.1 | 38.7 | 91.1 | 90.9 | MEDIUM | €0.51 | IN_SEASON | 90.0 |
-| 7 | Oumar Diakité | Cercle Brugge KSV | Forward | 22 | 46.0 | 2.67 | 60.0% | 32.2 | 38.4 | 68.7 | 72.0 | MEDIUM | €1.85 | IN_SEASON | 90.0 |
-| 8 | Dante Vanzeir | Cercle Brugge KSV | Forward | 28 | 50.0 | 4.75 | 80.0% | 38.3 | 45.7 | 69.1 | 71.4 | MEDIUM | €0.53 | IN_SEASON | 90.0 |
-| 9 | Hugo Vetlesen | Club Brugge KV | Midfielder | 26 | 58.0 | 6.67 | 70.0% | 34.7 | 41.1 | 72.1 | 78.4 | MEDIUM | €1.0 | IN_SEASON | 90.0 |
-| 10 | Hugo Siquet | Club Brugge KV | Defender | 23 | 57.0 | 19.95 | 70.0% | 38.9 | 44.9 | 83.4 | 78.1 | MEDIUM | €1.1 | IN_SEASON | 90.0 |
-| 11 | Bryan Goncalves | F.C.V. Dender E.H. | Defender | 29 | 49.0 | 11.86 | 100.0% | 41.7 | 45.2 | 82.0 | 77.1 | MEDIUM | €0.51 | IN_SEASON | 90.0 |
-| 12 | Noah Mbamba | F.C.V. Dender E.H. | Midfielder | 21 | 55.0 | 13.81 | 70.0% | 37.1 | 41.5 | 71.1 | 74.5 | MEDIUM | €0.9 | IN_SEASON | 90.0 |
-| 13 | Fabrice Sambu | F.C.V. Dender E.H. | Defender | 29 | 48.0 | 8.83 | 90.0% | 38.9 | 40.0 | 78.1 | 74.8 | LOW | €0.47 | IN_SEASON | 90.0 |
-| 14 | Gauthier Gallon | F.C.V. Dender E.H. | Goalkeeper | 33 | 55.0 | 15.0 | 70.0% | 43.2 | 46.7 | 87.3 | 80.1 | MEDIUM | €0.49 | IN_SEASON | 90.0 |
-| 15 | Michał Skóraś | KAA Gent | Forward | 26 | 50.0 | 12.22 | 90.0% | 47.1 | 49.1 | 70.2 | 70.9 | LOW | €0.85 | IN_SEASON | 90.0 |
+| 1 | Visar Musliu | Sint-Truidense VV | Defender | 31 | 61.0 | 23.71 | 90.0% | 53.2 | 57.5 | 81.0 | 73.4 | LOW | €0.94 | IN_SEASON | 97.1 |
+| 2 | Daam Foulon | Royal Antwerp FC | Defender | 27 | 63.0 | 21.16 | 90.0% | 49.7 | 56.7 | 94.8 | 85.2 | LOW | €0.54 | IN_SEASON | 97.1 |
+| 3 | Antoine Bernier | Royal Charleroi S.C. | Forward | 28 | 53.0 | 25.88 | 80.0% | 49.6 | 48.5 | 92.7 | 90.9 | LOW | €0.53 | IN_SEASON | 97.1 |
+| 4 | Malick Mbaye | SV Zulte-Waregem | Forward | 22 | 41.0 | 25.88 | 80.0% | 43.2 | 43.1 | 91.9 | 90.9 | LOW | €0.58 | IN_SEASON | 97.0 |
+| 5 | Aiham Ousou | Royal Charleroi S.C. | Defender | 26 | 58.0 | 20.75 | 100.0% | 50.2 | 56.2 | 83.8 | 76.2 | LOW | €1.15 | IN_SEASON | 96.7 |
+| 6 | Jeppe Erenbjerg | SV Zulte-Waregem | Forward | 26 | 66.0 | 14.48 | 80.0% | 54.3 | 63.9 | 89.9 | 87.1 | LOW | €1.79 | IN_SEASON | 96.6 |
+| 7 | Rihito Yamamoto | Sint-Truidense VV | Midfielder | 24 | 58.0 | 19.2 | 90.0% | 50.6 | 58.2 | 80.1 | 79.2 | LOW | €1.72 | IN_SEASON | 96.6 |
+| 8 | Ibe Hautekiet | Standard de Liège | Defender | 24 | 51.0 | 17.94 | 100.0% | 44.4 | 51.1 | 77.3 | 70.3 | LOW | €0.95 | IN_SEASON | 96.6 |
+| 9 | David Bates | Standard de Liège | Defender | 29 | 58.0 | 12.41 | 90.0% | 46.1 | 53.5 | 89.7 | 82.2 | LOW | €0.9 | IN_SEASON | 96.5 |
+| 10 | Myron van Brederode | YR KV Mechelen | Forward | 22 | 57.0 | 13.17 | 100.0% | 52.6 | 58.7 | 75.3 | 75.1 | LOW | €2.0 | IN_SEASON | 96.4 |
+| 11 | Rafiki Saïd | Standard de Liège | Forward | 26 | 55.0 | 12.56 | 90.0% | 46.7 | 57.6 | 90.4 | 86.9 | LOW | €1.18 | IN_SEASON | 96.4 |
+| 12 | Oluwaseun Adewumi | Cercle Brugge KSV | Forward | 21 | 39.0 | 25.88 | 80.0% | 41.1 | 38.7 | 91.1 | 90.9 | MEDIUM | €0.51 | IN_SEASON | 96.3 |
+| 13 | Valy Konaté | Cercle Brugge KSV | Defender | 19 | 59.0 | 21.7 | 90.0% | 48.4 | 55.9 | 90.3 | 80.2 | MEDIUM | €1.39 | IN_SEASON | 96.2 |
+| 14 | Anosike Ementa | SV Zulte-Waregem | Forward | 24 | 54.0 | 9.75 | 90.0% | 46.9 | 55.5 | 88.7 | 86.0 | LOW | €1.2 | IN_SEASON | 96.2 |
+| 15 | Emin Bayram | KVC Westerlo | Defender | 23 | 55.0 | 21.44 | 90.0% | 45.5 | 51.6 | 83.3 | 75.9 | MEDIUM | €0.68 | IN_SEASON | 96.2 |
 
 
 ## 📉 TOP CLASSIC VALUE WATCH
 
 | # | Player | Club | Pos | Age | L10 | AA | Starter | Floor Proj | Base Proj | Ceiling Proj | Spike | Risk | Limited Floor | Type | Score |
 |---|--------|------|-----|-----|-----|----|---------|------------|-----------|--------------|-------|------|---------------|------|-------|
-| 1 | Geoffrey Kondo | Cercle Brugge KSV | Defender | 24 | 51.0 | 16.21 | 90.0% | 45.4 | 48.9 | 70.3 | 67.1 | LOW | €0.78 | IN_SEASON | 73.8 |
-| 2 | Bryan Goncalves | F.C.V. Dender E.H. | Defender | 29 | 49.0 | 11.86 | 100.0% | 41.7 | 45.2 | 82.0 | 77.1 | MEDIUM | €0.51 | IN_SEASON | 73.8 |
-| 3 | Gauthier Gallon | F.C.V. Dender E.H. | Goalkeeper | 33 | 55.0 | 15.0 | 70.0% | 43.2 | 46.7 | 87.3 | 80.1 | MEDIUM | €0.49 | IN_SEASON | 73.8 |
-| 4 | Michał Skóraś | KAA Gent | Forward | 26 | 50.0 | 12.22 | 90.0% | 47.1 | 49.1 | 70.2 | 70.9 | LOW | €0.85 | IN_SEASON | 73.8 |
-| 5 | Arthur Piedfort | KVC Westerlo | Midfielder | 21 | 53.0 | 14.83 | 90.0% | 44.5 | 49.7 | 63.9 | 66.5 | LOW | €0.68 | IN_SEASON | 73.8 |
-| 6 | Emin Bayram | KVC Westerlo | Defender | 23 | 55.0 | 21.44 | 90.0% | 45.5 | 51.6 | 83.3 | 75.9 | MEDIUM | €0.68 | IN_SEASON | 73.8 |
-| 7 | Dennis Praet | Royal Antwerp FC | Midfielder | 32 | 53.0 | 15.07 | 90.0% | 44.6 | 46.7 | 61.0 | 63.9 | LOW | €0.59 | IN_SEASON | 73.8 |
-| 8 | Daam Foulon | Royal Antwerp FC | Defender | 27 | 63.0 | 21.16 | 90.0% | 49.7 | 56.7 | 94.8 | 85.2 | LOW | €0.54 | IN_SEASON | 73.8 |
-| 9 | Antoine Bernier | Royal Charleroi S.C. | Forward | 28 | 53.0 | 25.88 | 80.0% | 49.6 | 48.5 | 92.7 | 90.9 | LOW | €0.53 | IN_SEASON | 73.8 |
-| 10 | Kévin Van Den Kerkhof | Royal Charleroi S.C. | Defender | 30 | 54.0 | 10.49 | 100.0% | 40.9 | 49.3 | 88.8 | 81.9 | MEDIUM | €0.52 | IN_SEASON | 73.8 |
-| 11 | Visar Musliu | Sint-Truidense VV | Defender | 31 | 61.0 | 23.71 | 90.0% | 53.2 | 57.5 | 81.0 | 73.4 | LOW | €0.94 | IN_SEASON | 73.8 |
-| 12 | Ibe Hautekiet | Standard de Liège | Defender | 24 | 51.0 | 17.94 | 100.0% | 44.4 | 51.1 | 77.3 | 70.3 | LOW | €0.95 | IN_SEASON | 73.8 |
-| 13 | David Bates | Standard de Liège | Defender | 29 | 58.0 | 12.41 | 90.0% | 46.1 | 53.5 | 89.7 | 82.2 | LOW | €0.9 | IN_SEASON | 73.8 |
+| 1 | Daam Foulon | Royal Antwerp FC | Defender | 27 | 63.0 | 21.16 | 90.0% | 49.7 | 56.7 | 94.8 | 85.2 | LOW | €0.54 | IN_SEASON | 80.9 |
+| 2 | Antoine Bernier | Royal Charleroi S.C. | Forward | 28 | 53.0 | 25.88 | 80.0% | 49.6 | 48.5 | 92.7 | 90.9 | LOW | €0.53 | IN_SEASON | 80.9 |
+| 3 | Visar Musliu | Sint-Truidense VV | Defender | 31 | 61.0 | 23.71 | 90.0% | 53.2 | 57.5 | 81.0 | 73.4 | LOW | €0.94 | IN_SEASON | 80.8 |
+| 4 | David Bates | Standard de Liège | Defender | 29 | 58.0 | 12.41 | 90.0% | 46.1 | 53.5 | 89.7 | 82.2 | LOW | €0.9 | IN_SEASON | 80.3 |
+| 5 | Ibe Hautekiet | Standard de Liège | Defender | 24 | 51.0 | 17.94 | 100.0% | 44.4 | 51.1 | 77.3 | 70.3 | LOW | €0.95 | IN_SEASON | 80.3 |
+| 6 | Geoffrey Kondo | Cercle Brugge KSV | Defender | 24 | 51.0 | 16.21 | 90.0% | 45.4 | 48.9 | 70.3 | 67.1 | LOW | €0.78 | IN_SEASON | 80.0 |
+| 7 | Emin Bayram | KVC Westerlo | Defender | 23 | 55.0 | 21.44 | 90.0% | 45.5 | 51.6 | 83.3 | 75.9 | MEDIUM | €0.68 | IN_SEASON | 79.9 |
+| 8 | Arthur Piedfort | KVC Westerlo | Midfielder | 21 | 53.0 | 14.83 | 90.0% | 44.5 | 49.7 | 63.9 | 66.5 | LOW | €0.68 | IN_SEASON | 79.9 |
+| 9 | Michał Skóraś | KAA Gent | Forward | 26 | 50.0 | 12.22 | 90.0% | 47.1 | 49.1 | 70.2 | 70.9 | LOW | €0.85 | IN_SEASON | 79.9 |
+| 10 | Dennis Praet | Royal Antwerp FC | Midfielder | 32 | 53.0 | 15.07 | 90.0% | 44.6 | 46.7 | 61.0 | 63.9 | LOW | €0.59 | IN_SEASON | 79.8 |
+| 11 | Kévin Van Den Kerkhof | Royal Charleroi S.C. | Defender | 30 | 54.0 | 10.49 | 100.0% | 40.9 | 49.3 | 88.8 | 81.9 | MEDIUM | €0.52 | IN_SEASON | 79.6 |
+| 12 | Gauthier Gallon | F.C.V. Dender E.H. | Goalkeeper | 33 | 55.0 | 15.0 | 70.0% | 43.2 | 46.7 | 87.3 | 80.1 | MEDIUM | €0.49 | IN_SEASON | 79.5 |
+| 13 | Bryan Goncalves | F.C.V. Dender E.H. | Defender | 29 | 49.0 | 11.86 | 100.0% | 41.7 | 45.2 | 82.0 | 77.1 | MEDIUM | €0.51 | IN_SEASON | 79.5 |
 
 
 ## 🟣 TOP IN-SEASON VALUE WATCH
 
 | # | Player | Club | Pos | Age | L10 | AA | Starter | Floor Proj | Base Proj | Ceiling Proj | Spike | Risk | Limited Floor | Type | Score |
 |---|--------|------|-----|-----|-----|----|---------|------------|-----------|--------------|-------|------|---------------|------|-------|
-| 1 | Valy Konaté | Cercle Brugge KSV | Defender | 19 | 59.0 | 21.7 | 90.0% | 48.4 | 55.9 | 90.3 | 80.2 | MEDIUM | €1.39 | IN_SEASON | 90.0 |
-| 2 | Geoffrey Kondo | Cercle Brugge KSV | Defender | 24 | 51.0 | 16.21 | 90.0% | 45.4 | 48.9 | 70.3 | 67.1 | LOW | €0.78 | IN_SEASON | 90.0 |
-| 3 | Bryan Goncalves | F.C.V. Dender E.H. | Defender | 29 | 49.0 | 11.86 | 100.0% | 41.7 | 45.2 | 82.0 | 77.1 | MEDIUM | €0.51 | IN_SEASON | 90.0 |
-| 4 | Gauthier Gallon | F.C.V. Dender E.H. | Goalkeeper | 33 | 55.0 | 15.0 | 70.0% | 43.2 | 46.7 | 87.3 | 80.1 | MEDIUM | €0.49 | IN_SEASON | 90.0 |
-| 5 | Michał Skóraś | KAA Gent | Forward | 26 | 50.0 | 12.22 | 90.0% | 47.1 | 49.1 | 70.2 | 70.9 | LOW | €0.85 | IN_SEASON | 90.0 |
-| 6 | Bryan Heynen | KRC Genk | Midfielder | 29 | 51.0 | 16.04 | 100.0% | 47.2 | 49.4 | 54.8 | 58.6 | LOW | €1.85 | IN_SEASON | 90.0 |
-| 7 | Arthur Piedfort | KVC Westerlo | Midfielder | 21 | 53.0 | 14.83 | 90.0% | 44.5 | 49.7 | 63.9 | 66.5 | LOW | €0.68 | IN_SEASON | 90.0 |
-| 8 | Doğucan Haspolat | KVC Westerlo | Midfielder | 26 | 53.0 | 15.01 | 90.0% | 46.3 | 51.3 | 70.0 | 70.2 | LOW | €1.2 | IN_SEASON | 90.0 |
-| 9 | Emin Bayram | KVC Westerlo | Defender | 23 | 55.0 | 21.44 | 90.0% | 45.5 | 51.6 | 83.3 | 75.9 | MEDIUM | €0.68 | IN_SEASON | 90.0 |
-| 10 | Roggerio Nyakossi | Oud-Heverlee Leuven | Defender | 22 | 57.0 | 15.18 | 80.0% | 43.2 | 46.1 | 75.4 | 70.5 | MEDIUM | €1.49 | IN_SEASON | 90.0 |
-| 11 | Henok Teklab | Oud-Heverlee Leuven | Midfielder | 27 | 51.0 | 10.66 | 90.0% | 39.4 | 46.0 | 74.0 | 76.5 | LOW | €1.2 | IN_SEASON | 90.0 |
-| 12 | Dennis Praet | Royal Antwerp FC | Midfielder | 32 | 53.0 | 15.07 | 90.0% | 44.6 | 46.7 | 61.0 | 63.9 | LOW | €0.59 | IN_SEASON | 90.0 |
-| 13 | Daam Foulon | Royal Antwerp FC | Defender | 27 | 63.0 | 21.16 | 90.0% | 49.7 | 56.7 | 94.8 | 85.2 | LOW | €0.54 | IN_SEASON | 90.0 |
-| 14 | Antoine Bernier | Royal Charleroi S.C. | Forward | 28 | 53.0 | 25.88 | 80.0% | 49.6 | 48.5 | 92.7 | 90.9 | LOW | €0.53 | IN_SEASON | 90.0 |
-| 15 | Aiham Ousou | Royal Charleroi S.C. | Defender | 26 | 58.0 | 20.75 | 100.0% | 50.2 | 56.2 | 83.8 | 76.2 | LOW | €1.15 | IN_SEASON | 90.0 |
+| 1 | Visar Musliu | Sint-Truidense VV | Defender | 31 | 61.0 | 23.71 | 90.0% | 53.2 | 57.5 | 81.0 | 73.4 | LOW | €0.94 | IN_SEASON | 97.1 |
+| 2 | Daam Foulon | Royal Antwerp FC | Defender | 27 | 63.0 | 21.16 | 90.0% | 49.7 | 56.7 | 94.8 | 85.2 | LOW | €0.54 | IN_SEASON | 97.1 |
+| 3 | Antoine Bernier | Royal Charleroi S.C. | Forward | 28 | 53.0 | 25.88 | 80.0% | 49.6 | 48.5 | 92.7 | 90.9 | LOW | €0.53 | IN_SEASON | 97.1 |
+| 4 | Aiham Ousou | Royal Charleroi S.C. | Defender | 26 | 58.0 | 20.75 | 100.0% | 50.2 | 56.2 | 83.8 | 76.2 | LOW | €1.15 | IN_SEASON | 96.7 |
+| 5 | Jeppe Erenbjerg | SV Zulte-Waregem | Forward | 26 | 66.0 | 14.48 | 80.0% | 54.3 | 63.9 | 89.9 | 87.1 | LOW | €1.79 | IN_SEASON | 96.6 |
+| 6 | Rihito Yamamoto | Sint-Truidense VV | Midfielder | 24 | 58.0 | 19.2 | 90.0% | 50.6 | 58.2 | 80.1 | 79.2 | LOW | €1.72 | IN_SEASON | 96.6 |
+| 7 | Ibe Hautekiet | Standard de Liège | Defender | 24 | 51.0 | 17.94 | 100.0% | 44.4 | 51.1 | 77.3 | 70.3 | LOW | €0.95 | IN_SEASON | 96.6 |
+| 8 | David Bates | Standard de Liège | Defender | 29 | 58.0 | 12.41 | 90.0% | 46.1 | 53.5 | 89.7 | 82.2 | LOW | €0.9 | IN_SEASON | 96.5 |
+| 9 | Myron van Brederode | YR KV Mechelen | Forward | 22 | 57.0 | 13.17 | 100.0% | 52.6 | 58.7 | 75.3 | 75.1 | LOW | €2.0 | IN_SEASON | 96.4 |
+| 10 | Rafiki Saïd | Standard de Liège | Forward | 26 | 55.0 | 12.56 | 90.0% | 46.7 | 57.6 | 90.4 | 86.9 | LOW | €1.18 | IN_SEASON | 96.4 |
+| 11 | Geoffrey Kondo | Cercle Brugge KSV | Defender | 24 | 51.0 | 16.21 | 90.0% | 45.4 | 48.9 | 70.3 | 67.1 | LOW | €0.78 | IN_SEASON | 96.3 |
+| 12 | Valy Konaté | Cercle Brugge KSV | Defender | 19 | 59.0 | 21.7 | 90.0% | 48.4 | 55.9 | 90.3 | 80.2 | MEDIUM | €1.39 | IN_SEASON | 96.2 |
+| 13 | Emin Bayram | KVC Westerlo | Defender | 23 | 55.0 | 21.44 | 90.0% | 45.5 | 51.6 | 83.3 | 75.9 | MEDIUM | €0.68 | IN_SEASON | 96.2 |
+| 14 | Michał Skóraś | KAA Gent | Forward | 26 | 50.0 | 12.22 | 90.0% | 47.1 | 49.1 | 70.2 | 70.9 | LOW | €0.85 | IN_SEASON | 96.2 |
+| 15 | Fredrik Hammar | YR KV Mechelen | Midfielder | 25 | 52.0 | 16.84 | 100.0% | 44.8 | 50.2 | 71.3 | 71.4 | LOW | €1.13 | IN_SEASON | 96.1 |
 
 
 ## ⚠️ TOP MINUTES RISK
 
 | # | Player | Club | Pos | Age | L10 | AA | Starter | Floor Proj | Base Proj | Ceiling Proj | Spike | Risk | Limited Floor | Type | Score |
 |---|--------|------|-----|-----|-----|----|---------|------------|-----------|--------------|-------|------|---------------|------|-------|
-| 1 | Christiaan Ravych | Cercle Brugge KSV | Defender | 23 | 53.0 | 14.86 | 10.0% | 21.7 | 20.0 | 49.8 | 54.7 | HIGH | €0.5 | IN_SEASON | 90.0 |
-| 2 | Bas Langenbick | Cercle Brugge KSV | Goalkeeper | 22 | 29.0 | -5.7 | 10.0% | 12.5 | 12.5 | 25.1 | 32.2 | HIGH | €0.78 | IN_SEASON | 90.0 |
-| 3 | Xander Martlé | Cercle Brugge KSV | Forward | 22 | 0.0 | 0.0 | 0.0% | 0.0 | 0.0 | 0.0 | 30 | HIGH | €0.52 | IN_SEASON | 90.0 |
-| 4 | Maxime Delanghe | Cercle Brugge KSV | Goalkeeper | 25 | 36.0 | 0.0 | 0.0% | 16.0 | 13.1 | 15.7 | 30 | HIGH | - | IN_SEASON | 90.0 |
-| 5 | Nils De Wilde | Cercle Brugge KSV | Defender | 23 | 35.0 | 0.0 | 0.0% | 12.9 | 13.5 | 16.2 | 30 | HIGH | €0.53 | IN_SEASON | 90.0 |
-| 6 | Abdoul Ouattara | Cercle Brugge KSV | Forward | 21 | 38.0 | 0.0 | 0.0% | 14.9 | 12.1 | 14.5 | 30 | HIGH | €0.55 | IN_SEASON | 90.0 |
-| 7 | Sebbe Gheerardyns | Cercle Brugge KSV | Defender | 21 | 0.0 | 0.0 | 0.0% | 0.0 | 0.0 | 0.0 | 30 | HIGH | - | - | 90.0 |
-| 8 | Heriberto Jurado | Cercle Brugge KSV | Midfielder | 21 | 37.0 | 0.06 | 10.0% | 13.4 | 14.6 | 29.2 | 39.8 | HIGH | €0.51 | IN_SEASON | 90.0 |
-| 9 | Ilias Ben Sadik | Cercle Brugge KSV | Defender | 18 | 0.0 | 0.0 | 0.0% | 0.0 | 0.0 | 0.0 | 30 | HIGH | - | - | 90.0 |
-| 10 | Erick Nunes | Cercle Brugge KSV | Midfielder | 22 | 35.0 | 0.0 | 0.0% | 12.6 | 10.6 | 12.7 | 30 | HIGH | €0.37 | IN_SEASON | 90.0 |
-| 11 | Tiemen De Bel | Cercle Brugge KSV | Goalkeeper | 19 | 0.0 | 0.0 | 0.0% | 0.0 | 0.0 | 0.0 | 30 | HIGH | €0.58 | IN_SEASON | 90.0 |
-| 12 | Lawrence Agyekum | Cercle Brugge KSV | Midfielder | 22 | 43.0 | 5.98 | 30.0% | 16.2 | 17.1 | 37.9 | 48.3 | HIGH | €0.38 | IN_SEASON | 90.0 |
-| 13 | Ono Vanackere | Cercle Brugge KSV | Midfielder | 23 | 0.0 | 0.0 | 0.0% | 0.0 | 0.0 | 0.0 | 30 | HIGH | €0.56 | IN_SEASON | 90.0 |
-| 14 | Krys-Anthony Kouassi | Cercle Brugge KSV | Forward | 19 | 38.0 | -0.18 | 0.0% | 15.4 | 16.3 | 33.3 | 43.1 | HIGH | €0.5 | IN_SEASON | 90.0 |
-| 15 | Elhadji Koné | Cercle Brugge KSV | Forward | 20 | 0.0 | 0.0 | 0.0% | 0.0 | 0.0 | 0.0 | 30 | HIGH | - | - | 90.0 |
+| 1 | Mathias Delorge-Knieper | KAA Gent | Midfielder | 21 | 54.0 | 19.2 | 30.0% | 22.5 | 23.6 | 67.7 | 74.3 | HIGH | €1.0 | IN_SEASON | 93.8 |
+| 2 | Niels Devalckeneer | Royal Antwerp FC | Goalkeeper | 22 | 75.0 | 14.7 | 10.0% | 33.8 | 33.8 | 69.0 | 70.0 | HIGH | €1.15 | IN_SEASON | 93.3 |
+| 3 | Kyriani Sabbe | Club Brugge KV | Defender | 21 | 58.0 | 15.13 | 20.0% | 23.7 | 22.3 | 64.5 | 67.9 | HIGH | €1.75 | IN_SEASON | 93.1 |
+| 4 | Massiré Sylla | Royal Union Saint-Gilloise | Defender | 21 | 47.0 | 20.15 | 10.0% | 20.4 | 21.1 | 65.4 | 65.3 | HIGH | €2.78 | IN_SEASON | 93.0 |
+| 5 | Danylo Sikan | RSC Anderlecht | Forward | 25 | 43.0 | 3.48 | 30.0% | 18.0 | 20.2 | 67.7 | 74.7 | HIGH | €0.57 | IN_SEASON | 93.0 |
+| 6 | Christ Souanga | Oud-Heverlee Leuven | Defender | 19 | 68.0 | 7.74 | 10.0% | 27.4 | 27.4 | 58.9 | 65.8 | HIGH | €0.42 | IN_SEASON | 92.9 |
+| 7 | Loïc Mbe Soh | Sint-Truidense VV | Defender | 24 | 57.0 | 8.21 | 30.0% | 20.9 | 22.9 | 65.4 | 68.5 | HIGH | €1.95 | IN_SEASON | 92.9 |
+| 8 | Lucas Pirard | Standard de Liège | Goalkeeper | 31 | 50.0 | 16.35 | 20.0% | 23.3 | 18.2 | 44.9 | 50.6 | HIGH | €0.51 | IN_SEASON | 92.9 |
+| 9 | Ayumu Yokoyama | KRC Genk | Forward | 23 | 47.0 | 8.76 | 20.0% | 19.3 | 21.6 | 64.8 | 70.0 | HIGH | €2.38 | IN_SEASON | 92.8 |
+| 10 | Simon Mignolet | Club Brugge KV | Goalkeeper | 38 | 38.0 | 7.75 | 20.0% | 20.0 | 21.5 | 56.3 | 60.9 | HIGH | €0.51 | IN_SEASON | 92.8 |
+| 11 | Christiaan Ravych | Cercle Brugge KSV | Defender | 23 | 53.0 | 14.86 | 10.0% | 21.7 | 20.0 | 49.8 | 54.7 | HIGH | €0.5 | IN_SEASON | 92.8 |
+| 12 | Bi Goore | KAA Gent | Forward | 20 | 40.0 | 2.91 | 30.0% | 16.7 | 19.4 | 59.7 | 67.2 | HIGH | €0.67 | IN_SEASON | 92.8 |
+| 13 | Fedde Leysen | Royal Union Saint-Gilloise | Defender | 22 | 43.0 | 10.36 | 20.0% | 16.7 | 17.8 | 53.5 | 58.9 | HIGH | €0.5 | IN_SEASON | 92.8 |
+| 14 | Maxence Prévot | Oud-Heverlee Leuven | Goalkeeper | 29 | 49.0 | 8.75 | 20.0% | 22.7 | 17.2 | 56.6 | 62.3 | HIGH | €0.55 | IN_SEASON | 92.8 |
+| 15 | Noë Dussenne | Oud-Heverlee Leuven | Defender | 34 | 51.0 | 13.38 | 20.0% | 20.8 | 16.1 | 44.3 | 50.2 | HIGH | €0.35 | IN_SEASON | 92.7 |
