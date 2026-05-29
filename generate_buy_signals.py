@@ -24,7 +24,7 @@ def get_floor_value(floor):
 
 def get_floor_currency(floor):
     """
-    Ora il valore principale usato per gli score è EUR normalizzato.
+    Il valore principale usato per gli score è EUR normalizzato.
     Qui teniamo comunque la valuta originale per debug/report.
     """
     if not floor:
@@ -74,7 +74,49 @@ def normalize_signal_score(raw_score):
     if raw_score <= 110:
         return 85 + (raw_score - 90) * 0.5
 
-    return min(99, 95 + (raw_score - 110) * 0.15)
+    return min(97, 95 + (raw_score - 110) * 0.10)
+
+
+def quality_tiebreaker(player):
+    """
+    Piccolo bonus decimale per differenziare giocatori con lo stesso score.
+    Non deve stravolgere il ranking, solo rompere i pareggi.
+    """
+    bonus = 0
+
+    base_projected = player.get("baseProjected") or 0
+    ceiling_projected = player.get("ceilingProjected") or 0
+    floor_projected = player.get("floorProjected") or 0
+    aa = player.get("aa") or 0
+    starter_rate = player.get("starterRate") or 0
+    spike_rating = player.get("spikeRating") or 0
+    consistency = player.get("consistencyScore") or 0
+
+    bonus += min(base_projected / 100, 1) * 1.8
+    bonus += min(ceiling_projected / 100, 1) * 1.4
+    bonus += min(floor_projected / 80, 1) * 1.0
+    bonus += min(aa / 30, 1) * 1.3
+    bonus += min(starter_rate / 100, 1) * 0.9
+    bonus += min(spike_rating / 100, 1) * 0.7
+    bonus += min(consistency / 100, 1) * 0.5
+
+    floor = player.get("limitedFloorEur")
+    if floor is not None:
+        if floor <= 1:
+            bonus += 1.0
+        elif floor <= 3:
+            bonus += 0.7
+        elif floor <= 5:
+            bonus += 0.4
+        elif floor <= 10:
+            bonus += 0.2
+
+    if player.get("riskLevel") == "LOW":
+        bonus += 0.5
+    elif player.get("riskLevel") == "HIGH":
+        bonus -= 0.8
+
+    return max(0, bonus)
 
 
 def base_player(metric, price, projection):
@@ -130,9 +172,16 @@ def base_player(metric, price, projection):
 
 def add_signal(bucket, player, score, reason):
     item = dict(player)
+
+    normalized = normalize_signal_score(score)
+    tie = quality_tiebreaker(player)
+    final_score = min(99.9, normalized + tie)
+
     item["rawSignalScore"] = round(score, 1)
-    item["signalScore"] = round(normalize_signal_score(score), 1)
+    item["tieBreaker"] = round(tie, 2)
+    item["signalScore"] = round(final_score, 1)
     item["reason"] = reason
+
     bucket.append(item)
 
 
@@ -579,7 +628,13 @@ def main():
     for key in signals:
         signals[key] = sorted(
             signals[key],
-            key=lambda x: x["signalScore"],
+            key=lambda x: (
+                x.get("signalScore") or 0,
+                x.get("baseProjected") or 0,
+                x.get("ceilingProjected") or 0,
+                x.get("aa") or 0,
+                -1 * (x.get("limitedFloorEur") or 999999)
+            ),
             reverse=True
         )
 
@@ -592,7 +647,7 @@ def main():
         "source_prices": prices_file,
         "source_projections": projections_file,
         "price_note": "limitedFloorValue and limitedFloorEur use eurNormalized when available.",
-        "score_note": "signalScore is normalized to avoid too many 100s. rawSignalScore keeps the original score.",
+        "score_note": "signalScore is normalized and includes tieBreaker to avoid too many equal scores. rawSignalScore keeps the original score.",
         "counts": {
             key: len(value)
             for key, value in signals.items()
