@@ -3,11 +3,27 @@ import json
 import argparse
 import requests
 from datetime import datetime
-from config import LEAGUES
 
+# Configurazione dei campionati supportati
+LEAGUES = {
+    "laliga": {
+        "name": "LaLiga EA Sports",
+        "seed_club_slug": "real-madrid",
+        "league_slug": "laliga-santander"
+    },
+    "belgium": {
+        "name": "Jupiler Pro League",
+        "seed_club_slug": "club-brugge",
+        "league_slug": "first-division-a"
+    },
+    "croatia": {
+        "name": "HNL (SuperSport HNL)",
+        "seed_club_slug": "gnk-dinamo-zagreb",
+        "league_slug": "hnl"
+    }
+}
 
 SORARE_URL = "https://api.sorare.com/graphql"
-
 OPERATION_ID = "React/a288341ac39d1684e9492982e6dbcf7369b005b3df0afff9eeceaa81430ecf5b"
 
 
@@ -107,20 +123,20 @@ def save_club_list(league_key, league_name, seed_club_slug, season_start_year, d
 
 
 def main():
-    parser = argparse.ArgumentParser()
+    parser = argparse.ArgumentParser(description="Aggiorna la lista dei club per un campionato Sorare.")
 
     parser.add_argument(
         "--league",
         required=True,
         choices=LEAGUES.keys(),
-        help="Liga da aggiornare"
+        help="Campionato da aggiornare: 'laliga', 'belgium' o 'croatia'"
     )
 
     parser.add_argument(
         "--season",
         required=True,
         type=int,
-        help="Anno inizio stagione. Esempio: 2025 per stagione 2025/26"
+        help="Anno inizio stagione. Esempio: 2025 per la stagione 2025/26"
     )
 
     args = parser.parse_args()
@@ -131,6 +147,8 @@ def main():
     league_config = LEAGUES[league_key]
     league_name = league_config["name"]
     seed_club_slug = league_config["seed_club_slug"]
+
+    print(f"Recupero club per {league_name} (Stagione {season_start_year}/{season_start_year+1})...")
 
     domestic_league = fetch_domestic_league(
         seed_club_slug=seed_club_slug,
