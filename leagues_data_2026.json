@@ -1,0 +1,349 @@
+{
+  "belgium": {
+    "league_name": "First Division A",
+    "league_slug": "jupiler-pro-league",
+    "total_clubs": 18,
+    "clubs": [
+      {
+        "name": "RSC Anderlecht",
+        "slug": "anderlecht-bruxelles-brussel"
+      },
+      {
+        "name": "Royal Antwerp FC",
+        "slug": "antwerp-deurne"
+      },
+      {
+        "name": "Cercle Brugge KSV",
+        "slug": "cercle-brugge-brugge"
+      },
+      {
+        "name": "Club Brugge KV",
+        "slug": "club-brugge-brugge"
+      },
+      {
+        "name": "KRC Genk",
+        "slug": "genk-genk"
+      },
+      {
+        "name": "KAA Gent",
+        "slug": "gent-gent"
+      },
+      {
+        "name": "KV Kortrijk",
+        "slug": "kortrijk-kortrijk"
+      },
+      {
+        "name": "RAAL La Louvière",
+        "slug": "la-louviere-la-louviere"
+      },
+      {
+        "name": "Lommel SK",
+        "slug": "lommel-lommel"
+      },
+      {
+        "name": "YR KV Mechelen",
+        "slug": "mechelen-mechelen-malines"
+      },
+      {
+        "name": "Oud-Heverlee Leuven",
+        "slug": "oh-leuven-heverlee"
+      },
+      {
+        "name": "Sint-Truidense VV",
+        "slug": "sint-truiden-sint-truiden-st-trond"
+      },
+      {
+        "name": "Royal Charleroi S.C.",
+        "slug": "sporting-charleroi-charleroi"
+      },
+      {
+        "name": "Standard de Liège",
+        "slug": "standard-liege-liege-luik"
+      },
+      {
+        "name": "Royal Union Saint-Gilloise",
+        "slug": "union-saint-gilloise-bruxelles-brussels"
+      },
+      {
+        "name": "Waasland-Beveren",
+        "slug": "waasland-beveren-beveren-waas"
+      },
+      {
+        "name": "KVC Westerlo",
+        "slug": "westerlo-westerlo"
+      },
+      {
+        "name": "SV Zulte-Waregem",
+        "slug": "zulte-waregem-waregem"
+      }
+    ]
+  },
+  "spain": {
+    "league_name": "Primera División",
+    "league_slug": "laliga-es",
+    "total_clubs": 20,
+    "clubs": [
+      {
+        "name": "Athletic Club",
+        "slug": "athletic-club-bilbao"
+      },
+      {
+        "name": "Atlético de Madrid",
+        "slug": "atletico-madrid-madrid"
+      },
+      {
+        "name": "FC Barcelona",
+        "slug": "barcelona-barcelona"
+      },
+      {
+        "name": "RC Celta",
+        "slug": "celta-de-vigo-vigo"
+      },
+      {
+        "name": "D. Alavés",
+        "slug": "deportivo-alaves-vitoria-gasteiz"
+      },
+      {
+        "name": "Real Club Deportivo de La Coruña",
+        "slug": "deportivo-la-coruna-a-coruna"
+      },
+      {
+        "name": "Elche CF",
+        "slug": "elche-elche"
+      },
+      {
+        "name": "RCD Espanyol de Barcelona",
+        "slug": "espanyol-barcelona"
+      },
+      {
+        "name": "Getafe CF",
+        "slug": "getafe-getafe-madrid"
+      },
+      {
+        "name": "Levante UD",
+        "slug": "levante-valencia"
+      },
+      {
+        "name": "Málaga CF",
+        "slug": "malaga-malaga"
+      },
+      {
+        "name": "CA Osasuna",
+        "slug": "osasuna-pamplona-irunea"
+      },
+      {
+        "name": "Real Racing Club de Santander",
+        "slug": "racing-santander-santander"
+      },
+      {
+        "name": "Rayo Vallecano",
+        "slug": "rayo-vallecano-madrid"
+      },
+      {
+        "name": "Real Betis",
+        "slug": "real-betis-sevilla"
+      },
+      {
+        "name": "Real Madrid",
+        "slug": "real-madrid-madrid"
+      },
+      {
+        "name": "Real Sociedad",
+        "slug": "real-sociedad-donostia-san-sebastian"
+      },
+      {
+        "name": "Sevilla FC",
+        "slug": "sevilla-sevilla-1890"
+      },
+      {
+        "name": "Valencia CF",
+        "slug": "valencia-valencia"
+      },
+      {
+        "name": "Villarreal CF",
+        "slug": "villarreal-villarreal"
+      }
+    ]
+  },
+  "france": {
+    "league_name": "Ligue 1",
+    "league_slug": "ligue-1-fr",
+    "total_clubs": 18,
+    "clubs": [
+      {
+        "name": "Angers SCO",
+        "slug": "angers-sco-angers"
+      },
+      {
+        "name": "AJ Auxerre",
+        "slug": "auxerre-auxerre"
+      },
+      {
+        "name": "Stade Brestois 29",
+        "slug": "brest-brest"
+      },
+      {
+        "name": "Le Havre AC",
+        "slug": "le-havre-harfleur"
+      },
+      {
+        "name": "Le Mans FC",
+        "slug": "le-mans-le-mans"
+      },
+      {
+        "name": "RC Lens",
+        "slug": "lens-avion"
+      },
+      {
+        "name": "LOSC Lille",
+        "slug": "lille-villeneuve-d-ascq"
+      },
+      {
+        "name": "FC Lorient",
+        "slug": "lorient-ploemeur"
+      },
+      {
+        "name": "AS Monaco",
+        "slug": "monaco-monaco"
+      },
+      {
+        "name": "OGC Nice",
+        "slug": "nice-nice"
+      },
+      {
+        "name": "Olympique Lyonnais",
+        "slug": "olympique-lyonnais-lyon"
+      },
+      {
+        "name": "Olympique de Marseille",
+        "slug": "olympique-marseille-marseille"
+      },
+      {
+        "name": "Paris Saint-Germain",
+        "slug": "psg-paris"
+      },
+      {
+        "name": "Paris FC",
+        "slug": "paris-paris"
+      },
+      {
+        "name": "Stade Rennais F.C.",
+        "slug": "rennes-rennes"
+      },
+      {
+        "name": "RC Strasbourg Alsace",
+        "slug": "strasbourg-strasbourg"
+      },
+      {
+        "name": "Toulouse FC",
+        "slug": "toulouse-toulouse"
+      },
+      {
+        "name": "ESTAC Troyes",
+        "slug": "troyes-troyes"
+      }
+    ]
+  },
+  "scotland": {
+    "league_name": "Premiership",
+    "league_slug": "premiership-gb-sct",
+    "total_clubs": 12,
+    "clubs": [
+      {
+        "name": "Aberdeen FC",
+        "slug": "aberdeen-aberdeen"
+      },
+      {
+        "name": "Celtic FC",
+        "slug": "celtic-glasgow"
+      },
+      {
+        "name": "Dundee FC",
+        "slug": "dundee-dundee"
+      },
+      {
+        "name": "Dundee United FC",
+        "slug": "dundee-united-dundee"
+      },
+      {
+        "name": "Falkirk FC",
+        "slug": "falkirk-falkirk"
+      },
+      {
+        "name": "Heart of Midlothian FC",
+        "slug": "hearts-edinburgh"
+      },
+      {
+        "name": "Hibernian FC",
+        "slug": "hibernian-edinburgh"
+      },
+      {
+        "name": "Kilmarnock FC",
+        "slug": "kilmarnock-kilmarnock"
+      },
+      {
+        "name": "Motherwell FC",
+        "slug": "motherwell-motherwell"
+      },
+      {
+        "name": "Rangers FC",
+        "slug": "rangers-glasgow"
+      },
+      {
+        "name": "Saint Johnstone FC",
+        "slug": "st-johnstone-perth"
+      },
+      {
+        "name": "Saint Mirren FC",
+        "slug": "st-mirren-paisley"
+      }
+    ]
+  },
+  "croatia": {
+    "league_name": "HNL",
+    "league_slug": "1-hnl",
+    "total_clubs": 10,
+    "clubs": [
+      {
+        "name": "GNK Dinamo Zagreb",
+        "slug": "dinamo-zagreb-zagreb"
+      },
+      {
+        "name": "HNK Gorica",
+        "slug": "gorica-velika-gorica"
+      },
+      {
+        "name": "HNK Hajduk Split",
+        "slug": "hajduk-split-split"
+      },
+      {
+        "name": "NK Istra 1961",
+        "slug": "istra-1961-pula"
+      },
+      {
+        "name": "NK Lokomotiva Zagreb",
+        "slug": "lokomotiva-zagreb-zagreb"
+      },
+      {
+        "name": "NK Osijek",
+        "slug": "osijek-osijek"
+      },
+      {
+        "name": "HNK Rijeka",
+        "slug": "rijeka-rijeka"
+      },
+      {
+        "name": "NK Rudeš Zagreb",
+        "slug": "rudes-zagreb"
+      },
+      {
+        "name": "NK Slaven Belupo",
+        "slug": "slaven-koprivnica-koprivnica"
+      },
+      {
+        "name": "NK Varaždin",
+        "slug": "varazdin-varazdin"
+      }
+    ]
+  }
+}
