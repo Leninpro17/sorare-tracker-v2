@@ -3,25 +3,7 @@ import json
 import argparse
 import requests
 from datetime import datetime
-
-# Configurazione dei campionati supportati
-LEAGUES = {
-    "laliga": {
-        "name": "LaLiga EA Sports",
-        "seed_club_slug": "real-madrid",
-        "league_slug": "laliga-santander"
-    },
-    "belgium": {
-        "name": "Jupiler Pro League",
-        "seed_club_slug": "club-brugge",
-        "league_slug": "first-division-a"
-    },
-    "croatia": {
-        "name": "HNL (SuperSport HNL)",
-        "seed_club_slug": "gnk-dinamo-zagreb",
-        "league_slug": "hnl"
-    }
-}
+from config import LEAGUES, get_data_dir, get_club_list_file
 
 SORARE_URL = "https://api.sorare.com/graphql"
 OPERATION_ID = "React/a288341ac39d1684e9492982e6dbcf7369b005b3df0afff9eeceaa81430ecf5b"
@@ -100,10 +82,11 @@ def extract_clubs(domestic_league):
 
 
 def save_club_list(league_key, league_name, seed_club_slug, season_start_year, domestic_league, clubs):
-    output_dir = f"data/{league_key}/{season_start_year}"
+    # Sfruttiamo le funzioni centralizzate di config.py
+    output_dir = get_data_dir(league_key, season_start_year)
     os.makedirs(output_dir, exist_ok=True)
 
-    output_file = f"{output_dir}/club_list.json"
+    output_file = get_club_list_file(league_key, season_start_year)
 
     output = {
         "updated_at": datetime.utcnow().isoformat(),
@@ -129,7 +112,7 @@ def main():
         "--league",
         required=True,
         choices=LEAGUES.keys(),
-        help="Campionato da aggiornare: 'laliga', 'belgium' o 'croatia'"
+        help="Campionato da aggiornare (es. laliga, belgium, croatia, korea)"
     )
 
     parser.add_argument(
@@ -144,6 +127,7 @@ def main():
     league_key = args.league
     season_start_year = args.season
 
+    # Legge direttamente le informazioni da config.py
     league_config = LEAGUES[league_key]
     league_name = league_config["name"]
     seed_club_slug = league_config["seed_club_slug"]
