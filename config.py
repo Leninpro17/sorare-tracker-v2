@@ -1,8 +1,18 @@
 LEAGUES = {
+    "laliga": {
+        "name": "LaLiga EA Sports",
+        "country": "Spain",
+        "seed_club_slug": "real-madrid"
+    },
     "belgium": {
         "name": "Jupiler Pro League",
         "country": "Belgium",
-        "seed_club_slug": "genk-genk"
+        "seed_club_slug": "club-brugge"
+    },
+    "croatia": {
+        "name": "HNL",
+        "country": "Croatia",
+        "seed_club_slug": "gnk-dinamo-zagreb"
     },
     "korea": {
         "name": "K league 1",
@@ -11,18 +21,11 @@ LEAGUES = {
     }
 
     # Esempi futuri, da attivare/modificare quando serviranno
-    # "croatia": {
-    #     "name": "HNL",
-    #     "country": "Croatia",
-    #     "seed_club_slug": "rijeka-rijeka"
-    # },
-    #
     # "germany2": {
     #     "name": "2. Bundesliga",
     #     "country": "Germany",
     #     "seed_club_slug": "paderborn-paderborn"
     # },
-    #
     # "france2": {
     #     "name": "Ligue 2",
     #     "country": "France",
