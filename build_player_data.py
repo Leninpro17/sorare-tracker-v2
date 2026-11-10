@@ -4,7 +4,7 @@ import time
 import argparse
 import requests
 from datetime import datetime
-from config import LEAGUES
+from config import LEAGUES, get_club_list_file, get_player_data_file
 
 SORARE_URL = "https://api.sorare.com/graphql"
 
@@ -39,7 +39,8 @@ def post_sorare(payload, label):
 
 
 def load_club_list(league_key, season_start_year):
-    file_path = f"data/{league_key}/{season_start_year}/club_list.json"
+    # Ora usa la funzione centralizzata di config.py
+    file_path = get_club_list_file(league_key, season_start_year)
 
     if not os.path.exists(file_path):
         raise Exception(f"club_list.json non trovato: {file_path}")
@@ -115,7 +116,7 @@ def main():
         "--league",
         required=True,
         choices=LEAGUES.keys(),
-        help="Liga da aggiornare"
+        help="Campionato da aggiornare"
     )
 
     parser.add_argument(
@@ -133,10 +134,9 @@ def main():
     league_config = LEAGUES[league_key]
     league_name = league_config["name"]
 
-    output_dir = f"data/{league_key}/{season_start_year}"
-    os.makedirs(output_dir, exist_ok=True)
-
-    output_file = f"{output_dir}/player_data.json"
+    # Sostituito con la funzione di config.py per puntare alla cartella corretta
+    output_file = get_player_data_file(league_key, season_start_year)
+    os.makedirs(os.path.dirname(output_file), exist_ok=True)
 
     club_list, club_list_file = load_club_list(
         league_key,
