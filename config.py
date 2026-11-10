@@ -1,22 +1,40 @@
+# config.py - Configurazione ufficiale Sorare Tracker (Stagione 2026/2027)
+
 LEAGUES = {
     "laliga": {
         "name": "LaLiga EA Sports",
         "country": "Spain",
-        "seed_club_slug": "real-madrid"
+        "competition_slug": "laliga-es",       # Slug ufficiale validato
+        "seed_club_slug": "real-madrid-madrid" # Slug ufficiale del club seed
     },
     "belgium": {
         "name": "Jupiler Pro League",
         "country": "Belgium",
-        "seed_club_slug": "club-brugge"
+        "competition_slug": "jupiler-pro-league", # Slug ufficiale validato
+        "seed_club_slug": "club-brugge-brugge"     # Slug ufficiale del club seed
+    },
+    "france": {
+        "name": "Ligue 1",
+        "country": "France",
+        "competition_slug": "ligue-1-fr",        # Slug ufficiale validato
+        "seed_club_slug": "paris-saint-germain-paris" # Slug ufficiale del club seed
+    },
+    "scotland": {
+        "name": "Scottish Premiership",
+        "country": "Scotland",
+        "competition_slug": "premiership-gb-sct", # Slug ufficiale validato
+        "seed_club_slug": "celtic-glasgow"       # Slug ufficiale del club seed
     },
     "croatia": {
         "name": "HNL",
         "country": "Croatia",
-        "seed_club_slug": "gnk-dinamo-zagreb"
+        "competition_slug": "1-hnl",             # Slug ufficiale validato
+        "seed_club_slug": "dinamo-zagreb-zagreb" # Slug ufficiale del club seed
     },
     "korea": {
         "name": "K league 1",
-        "country": "south korea",
+        "country": "South Korea",
+        "competition_slug": "k-league-1",        # Mantenuto come riferimento standard
         "seed_club_slug": "ulsan-ulsan"
     }
 
@@ -24,11 +42,13 @@ LEAGUES = {
     # "germany2": {
     #     "name": "2. Bundesliga",
     #     "country": "Germany",
+    #     "competition_slug": "2-bundesliga",
     #     "seed_club_slug": "paderborn-paderborn"
     # },
     # "france2": {
     #     "name": "Ligue 2",
     #     "country": "France",
+    #     "competition_slug": "ligue-2",
     #     "seed_club_slug": "troyes-troyes"
     # }
 }
